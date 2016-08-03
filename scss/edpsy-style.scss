@@ -1,0 +1,103 @@
+@import 'wp-header';
+
+/* Variables */
+/*
+$color-blog: #06D6A0;
+$color-features: #ef476f;
+$color-training: #1b9aaa;
+$color-about: #ffc43d; 
+$color-tile: #f7f1ee;
+$color-highlight: #FFA500;
+$color-copy: #3d4449;
+$color-copy-reverse: #fff;
+$color-overlay: rgba(255, 255, 255, 0.67);
+$color-outline: #ddd;
+*/
+
+
+@mixin wash-line($wash-color)
+{border-top-width: 3px; border-top-style: solid; border-color: $wash-color}
+
+@import 'variables';
+@import 'grid';
+@import 'superfish';
+@import 'original-style';
+@import 'page-headings';
+@import 'listing';
+@import 'navigation';
+
+
+
+/* Home page */
+
+body {font-family: $font-heading; }
+
+#front-content-box .container 
+{ padding-top: 55px;}
+
+#front-content-box.block--about .container {
+padding-top:0;}
+
+#front-content-box.block--blog .container, .category-blog .bread-title-holder .container
+{ @include wash-line($color-blog) }
+
+#front-content-box.block--features .container, .category-features .bread-title-holder .container
+{ @include wash-line($color-features) }
+
+.page-id-8 .bread-title-holder .container, .category-about .bread-title-holder .container
+{ @include wash-line($color-about) }
+
+#front-content-box.block--training .container, .category-training .bread-title-holder .container
+{ @include wash-line($color-training) }
+
+.blog-template #content, .blog #content {margin-bottom:17px;}
+
+.tag #content, .category #content,.archive  #content, .search  #content {margin-bottom:15px;}
+
+.blog-template .container.post-wrap, .blog .container.post-wrap {margin-top:60px;}
+
+.blog-template .navigation #advertica-paginate, .blog .navigation #advertica-paginate {margin-bottom:38px;}
+
+
+/*   */
+a:link p, a:visited p { color:$color-copy ;}
+
+.post #content .skepost p:first-child {
+font-size: 1.5em;
+line-height: 1.3em;
+}
+
+
+/* Blocks */
+
+#front-content-blocks .container {border-top: $feature-color 4px solid;}
+
+#front-blog-wrap .span4 {padding-bottom:25px;}
+
+#front-blog-wrap .span4 a:link, #front-blog-wrap .span4 a:visited {background-color:$color-tile;}
+
+#front-blog-wrap .span4 a:hover, #front-blog-wrap .span4 a:active {display: block; box-shadow: 0px 0px 12px #8C8A8A;}
+
+.block--blog .blog-posts a, .block--features .feature-posts a {padding: 10px; display: block;} 
+
+.size-edpsy_loop_img {width:100%; height:auto;}
+
+.block--features {margin-top:0!important; }
+.block--training { margin-top:0!important;}
+.block--promo {margin-top: -10px; margin-bottom: 70px;}
+
+.bg--dark h2, .bg--dark a, .bg--dark a:link, .bg--dark a:visited {color:$color-copy-reverse}
+
+.skt-section.block--about {margin-top:30px; margin-bottom:40px;}
+
+p.front-section-extra { margin-bottom: 45px; text-align: right; clear:left;}
+.front-section-extra a {text-decoration: underline;}
+.skt-section a:hover {
+	display: inline-block;
+    background: repeat scroll 0 0 $color-highlight;
+    color: #fff;
+    transition: all 0.1s linear 0s;
+    -webkit-transition: all 0.1s linear 0s;
+    -moz-transition: all 0.1s linear 0s;
+    -o-transition: all 0.1s linear 0s;}
+#featured-box{margin-top:95px;}

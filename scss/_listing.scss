@@ -1,0 +1,19 @@
+/* ---------- post (blog or feature article) ---------- */
+
+/* ----- listing -----*/
+
+.archive #content .post:first-child ,.page-template-template-blog-page-php #content .post:first-child,.page-template-template-blog-fullwidth-php #content .post:first-child ,.blog #content div.post:first-child,.page-template-template-blog-left-sidebar-page-php #content .post:first-child  { padding-top: 0;}
+
+.blog #content .post,.archive #content .post,.page-template-template-blog-page-php #content .post,.page-template-template-blog-fullwidth-php #content .post ,.page-template-template-blog-left-sidebar-page-php #content .post
+{border-bottom: 1px dotted $color-outline ;padding-bottom: 55px; padding-top: 50px;}
+
+.blog-template #content .post:last-child, .blog #content .post:last-child {border-bottom:0;}
+
+.category #content .post:last-child,.tag #content .post:last-child, .archive  #content .post:last-child, .search  #content .post:last-child 
+{border-bottom:0;}
+
+
+/* ----- search listing ----- */
+
+.search #content .post { border-bottom: 1px solid #E1E1E1 ;}
+

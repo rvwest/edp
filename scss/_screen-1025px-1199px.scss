@@ -1,0 +1,38 @@
+@media only screen and (min-width : 1025px) and (max-width : 1199px) {
+	.container,
+	.navbar-static-top .container,
+	.navbar-fixed-top .container,
+	.navbar-fixed-bottom .container {
+		width: 1005px;
+		margin-left: auto !important;
+	}
+	#skt-stream-sktmultisocialfeed-2 img ,
+	.ske-container.sktmultisocialstream li, 
+	#main .ske-container.sktmultisocialstream li{
+		width:68px;
+		height:68px;
+	}
+	.clients-items li img, .project-item img {
+		width:100%;
+	}
+	.project-item .feature_image, .project-item .mask {
+		height:198px;
+	}
+	.flexslider {
+		min-height:464px;
+	}
+	.error404 #searchform input[type="text"], .search #searchform input[type="text"], #sidebar #searchform input[type="text"], #footer #searchform input[type="text"] {
+		width:158px;
+	}
+	.image-gallery-slider {height: 314px;}
+	.page-template-template-blog-fullwidth-php .image-gallery-slider {height: 477px;}
+	#content .portfolio.two-col .isotope-item {height:457px;width:47.5%;}
+	#container-isotop.two-col .project-item .mask, .two-col .project-item .feature_image {height:402px;}
+	#content .portfolio.three-col .isotope-item {height:375px;width:31.1%;}
+	#container-isotop.three-col .project-item .mask, .three-col .project-item .feature_image {height:319px;}
+	#content .portfolio.four-col .isotope-item {width: 22.4767%;height:254px;}
+	#container-isotop.four-col .project-item .mask, .four-col .project-item .feature_image {height:198px;}
+	#content .ske_tab_v .ske_tab_container {width:75.7%;}
+	.flex-caption .slider-title { font-size:40px;line-height:48px; }
+	.flex-caption .text { font-size: 13px;line-height: 21px;}
+}

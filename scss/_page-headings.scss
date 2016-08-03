@@ -1,0 +1,90 @@
+/* ----- post detail page ----- */
+
+
+.category .bread-title-holder h1.title, .single-post .bread-title-holder h1.title, .bread-title-holder h1.title, .page h1.title  {
+margin-top:20px;
+margin-left: -3px;
+}
+
+h1.title { font-size: 62px; line-height: 66px; font-weight: 200; letter-spacing: -0.2px; text-transform: none; padding-bottom: 45px;}
+
+#front-content-box h2
+{ font-size: 50px; line-height: 60px; font-family: $font-heading; font-weight: 300; letter-spacing: -2px; margin-left:0; padding: 0 5px 40px 0}
+
+.block--blog h2 a, .category-blog h1 {color: $color-blog;}
+.block--features h2 a, .category-features h1 {color: $color-features;}
+.block--training h2 a, .category-training h1 {color: $color-training;}
+.category-about h1.title { color: $color-about;}
+
+.skt-section a h3,  .skt-section h3 a
+{ font-family: $font-heading; font-size: 1.4em; font-weight: 600; background:none; letter-spacing: -0.5px; -webkit-transition: all 0.3s linear 0s; -moz-transition: all 0.3s linear 0s; -o-transition: all 0.3s linear 0s;}
+
+.skt-section h2 a {}
+
+
+/* --- site description --- */
+#logo #site-description { color: $color-secondary;  font-size: 18px; line-height: 26px;position: relative; left: 1px; width: 200px;}
+
+
+/* --- overlapping title --- */
+.single-post .container_inner.overlap, .home .container_inner.overlap  {
+display:block;
+position: absolute;
+bottom:1px;
+}
+
+.overlap-img-title img
+{ width: 100%; height: auto;}
+
+.overlap-img-title
+{
+display:block;
+position: relative;
+}
+
+.overlap-title {bottom:0px; position: absolute; }
+
+.size-large.wp-post-image {
+width:100%;
+height:auto;
+}
+
+.overlap-title h1.title{ color: $color-copy;}
+
+.home .overlap-title h1.title{ text-align: right;}
+
+.single-post .overlap-title h1.title, .home .overlap-title h1.title {
+background: $color-overlay;
+display: inline-block;
+font-size: 46px;
+line-height: 62px;
+margin-right: 5px;
+padding: 4px 20px 13px 20px;
+vertical-align: center;
+}
+
+.skt-section .overlap-img-title a:hover, .skt-section .overlap-img-title a:active {
+    box-shadow: 0px 0px 12px #8c8a8a;
+    background: none;
+}
+
+.home .overlap-title h1.title .fa-angle-right {
+margin-left: 20px;
+margin-right: 5px;
+}
+
+.home a:hover .overlap-title h1.title {
+color: $color-highlight;
+}
+
+
+h1.author-title {font-size: 3em;}
+
+/* --- home page --- */
+
+.home-subhead {
+    line-height: 1.2em;
+}
+
+a.subhead-link:link, a.subhead-link:visited {
+	color: $color-about;}
