@@ -3951,7 +3951,7 @@ h1.title {
   text-align: right;
 }
 .single-post .overlap-title h1.title, .home .overlap-title h1.title {
-  background: rgba(255, 255, 255, 0.67);
+  background-color: rgba(255, 255, 255, 0.67);
   display: inline-block;
   font-size: 46px;
   line-height: 62px;
@@ -3973,7 +3973,12 @@ h1.title {
   margin-right: 5px;
 }
 .home a:hover .overlap-title h1.title {
-  color: #ffab40;
+  color: #e0e0e0;
+  background-color: rgba(56, 56, 56, 0.67);
+  transition: all 0.5s linear 0s;
+  -webkit-transition: all 0.5s linear 0s;
+  -moz-transition: all 0.5s linear 0s;
+  -o-transition: all 0.5s linear 0s;
 }
 h1.author-title {
   font-size: 3em;
@@ -4301,7 +4306,7 @@ a:link p, a:visited p {
   margin-bottom: 70px;
 }
 .bg--dark h2, .bg--dark a, .bg--dark a:link, .bg--dark a:visited {
-  color: #fff;
+  color: #e0e0e0;
 }
 .skt-section.block--about {
   margin-top: 30px;

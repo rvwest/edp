@@ -54,7 +54,7 @@ height:auto;
 .home .overlap-title h1.title{ text-align: right;}
 
 .single-post .overlap-title h1.title, .home .overlap-title h1.title {
-background: $color-overlay;
+background-color: $color-overlay;
 display: inline-block;
 font-size: 46px;
 line-height: 62px;
@@ -80,7 +80,12 @@ margin-right: 5px;
 }
 
 .home a:hover .overlap-title h1.title {
-color: $color-highlight;
+color: $color-copy-reverse;
+background-color: $color-overlay-reverse;
+     transition: all 0.5s linear 0s;
+    -webkit-transition: all 0.5s linear 0s;
+    -moz-transition: all 0.5s linear 0s;
+    -o-transition: all 0.5s linear 0s;
 }
 
 
