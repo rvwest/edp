@@ -390,6 +390,10 @@ $color-outline: #ddd;
   #full-client-box {
     margin-bottom: 55px;
   }
+  .home .promo .overlap-title h1.title {
+    font-size: 1.6em;
+    line-height: 1.3em;
+  }
 }
 @media only screen and (min-width: 600px) and (max-width: 789px) {
   .row-fluid {
@@ -461,6 +465,10 @@ $color-outline: #ddd;
   }
   .row-fluid .span1 {
     width: 5.98291%;
+  }
+  .home .promo .overlap-title h1.title {
+    font-size: 1.6em;
+    line-height: 1.3em;
   }
   .overlap-title {
     bottom: inherit;
@@ -540,6 +548,10 @@ $color-outline: #ddd;
   }
   .row-fluid .span1 {
     width: 5.98291%;
+  }
+  .home .promo .overlap-title h1.title {
+    font-size: 2em;
+    line-height: 1.8em;
   }
 }
 @media (min-width: 1200px) {
