@@ -1,6 +1,6 @@
 <div id="front-content-box" class="skt-section block--promo">
 	<div class="container">
-		<div class="row-fluid">
+		<div class="row-fluid promo">
 		
 		
 		

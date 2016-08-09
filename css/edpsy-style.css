@@ -3952,6 +3952,10 @@ h1.title {
   background: none;
   line-height: 0;
 }
+.home .promo {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 .home .overlap-title h1.title .fa-angle-right {
   margin-left: 20px;
   margin-right: 5px;
