@@ -4,8 +4,15 @@
 		margin-left: 12px;}
 		
 		
+			
+		
 	/* Article text */	
-	.overlap-title {bottom: inherit; position: relative; }
+	.home .overlap-title h1.title {
+		font-size: 1.6em;
+		line-height: 1.3em;
+		background-color: none;
+		}
+	.home .overlap-title h1.title {text-align: left;}
 	.single-post .overlap-title h1.title {padding-left:0; font-size:1.8em; line-height:1.3em; }
 	.category-blog .overlap-title h1 {color: $color-blog}
 .category-features .overlap-title h1 {color: $color-features}
@@ -259,9 +266,6 @@
 	.skt-service-page .one_third {margin-bottom: 35px;}
 	.flexslider .flex-caption{display:none !important;}
 	#full-client-box {margin-bottom:55px;}
-	.home .promo .overlap-title h1.title {
-		font-size: 1.6em;
-		line-height: 1.3em;
-		}
 
+	
 }

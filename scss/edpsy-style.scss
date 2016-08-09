@@ -19,13 +19,12 @@ $color-outline: #ddd;
 {border-top-width: 3px; border-top-style: solid; border-color: $wash-color}
 
 @import 'variables';
-@import 'grid';
 @import 'superfish';
 @import 'original-style';
 @import 'page-headings';
 @import 'listing';
 @import 'navigation';
-
+@import 'grid';
 
 
 /* Home page */
