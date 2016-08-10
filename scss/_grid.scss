@@ -120,7 +120,7 @@
 	.flex-control-nav {
 		display:none;
 	}
-	#front-blog-wrap .span4:nth-child(3n+1) { margin-left: 0px;}
+
 
 }
 
@@ -140,11 +140,9 @@
    float: none;
 }
 
-[class*="span"].no-gutter-l {
-margin-left: 0;
-}
 
-#front-blog-wrap .span4:nth-child(3n+1) { margin-left: -10px;}
+
+/* #front-blog-wrap .span4:nth-child(3n+1) { margin-left: -10px;} */
 
 
 /*

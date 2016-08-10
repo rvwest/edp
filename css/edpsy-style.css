@@ -2647,12 +2647,6 @@ ul.menu.skt-mob-menu {
     font-size: 1.8em;
     line-height: 1.3em;
   }
-  .category-blog .overlap-title h1 {
-    color: #00bcd4;
-  }
-  .category-features .overlap-title h1 {
-    color: #e91e63;
-  }
   .post #content .skepost p:first-child {
     font-size: 1.3em;
     line-height: 1.3em;
@@ -2989,6 +2983,10 @@ ul.menu.skt-mob-menu {
   }
   #full-client-box {
     margin-bottom: 55px;
+    /* #front-blog-wrap .span4:nth-child(3n+1) {margin-left:0px;} */
+  }
+  #front-blog-wrap .span4 {
+    margin-left: -7px;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 789px) {
@@ -3066,11 +3064,8 @@ ul.menu.skt-mob-menu {
     font-size: 1.6em;
     line-height: 1.3em;
   }
-  .category-blog .overlap-title h1 {
-    color: #00bcd4;
-  }
-  .category-features .overlap-title h1 {
-    color: #e91e63;
+  #front-blog-wrap .span4:nth-child(3n+1) {
+    margin-left: -10px;
   }
 }
 @media only screen and (min-width: 790px) and (max-width: 1199px) {
@@ -3108,10 +3103,10 @@ ul.menu.skt-mob-menu {
   .row-fluid .span11 {
     width: 91.45299%;
   }
-  .row-fluid .span10 {
+  .row-fluid .span10, .row-fluid .span8.center-col {
     width: 82.90598%;
   }
-  .row-fluid .span9, .row-fluid .span8.center-col {
+  .row-fluid .span9 {
     width: 74.35897%;
   }
   .row-fluid .span8.center-col {
@@ -3144,6 +3139,9 @@ ul.menu.skt-mob-menu {
   .home .promo .overlap-title h1.title {
     font-size: 2em;
     line-height: 1.8em;
+  }
+  #front-blog-wrap .span4:nth-child(3n+1) {
+    margin-left: -10px;
   }
 }
 @media (min-width: 1200px) {
@@ -3430,6 +3428,9 @@ ul.menu.skt-mob-menu {
   #header {
     padding: 0;
   }
+  #front-blog-wrap .span4:nth-child(3n+1) {
+    margin-left: -10px;
+  }
 }
 .clearfix:before, .clearfix:after {
   display: table;
@@ -3521,9 +3522,6 @@ ul.menu.skt-mob-menu {
   .flex-control-nav {
     display: none;
   }
-  #front-blog-wrap .span4:nth-child(3n+1) {
-    margin-left: 0px;
-  }
 }
 @media print {
   /* edpsy */  .visible-print {
@@ -3536,12 +3534,7 @@ ul.menu.skt-mob-menu {
 .row-fluid [class*="span"].center-col {
   margin: 0 auto;
   float: none;
-}
-[class*="span"].no-gutter-l {
-  margin-left: 0;
-}
-#front-blog-wrap .span4:nth-child(3n+1) {
-  margin-left: -10px;
+  /* #front-blog-wrap .span4:nth-child(3n+1) { margin-left: -10px;} */
   /*
 @media (min-width: 768px) and (max-width: 979px) {
 

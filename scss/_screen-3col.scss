@@ -36,10 +36,10 @@
 	.row-fluid .span11 {
 		width: 91.45299145299145%;
 	}
-	.row-fluid .span10 {
+	.row-fluid .span10, .row-fluid .span8.center-col {
 		width: 82.90598290598291%;
 	}
-	.row-fluid .span9, .row-fluid .span8.center-col {
+	.row-fluid .span9 {
 		width: 74.35897435897436%;
 	}
 	
@@ -75,5 +75,6 @@
 		font-size: 2em;
 		line-height: 1.8em;
 		}
-	
+	#front-blog-wrap .span4:nth-child(3n+1) { margin-left: -10px;}
+
 }
