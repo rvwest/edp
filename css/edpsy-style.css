@@ -2339,6 +2339,7 @@ h1.title {
 .overlap-img-title {
   display: block;
   position: relative;
+  min-height: 100px;
 }
 .overlap-title {
   bottom: 0px;
