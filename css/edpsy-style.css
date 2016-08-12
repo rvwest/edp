@@ -2373,6 +2373,9 @@ h1.title {
   margin-left: 10px;
   margin-right: 10px;
 }
+.row-fluid .promo {
+  width: auto;
+}
 .home .overlap-title h1.title .fa-angle-right {
   margin-left: 20px;
   margin-right: 5px;
