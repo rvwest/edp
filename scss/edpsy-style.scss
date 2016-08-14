@@ -75,7 +75,11 @@ line-height: 1.3em;
 
 #front-blog-wrap .span4 a:link, #front-blog-wrap .span4 a:visited {background-color:$color-blog;}
 
+#front-blog-wrap .span4 a:hover, #front-blog-wrap .span4 a:active {background-color:$color-blog-highlight;}
+
 #front-blog-wrap .span4.feature-posts a:link, #front-blog-wrap .span4.feature-posts a:visited {background-color:$color-features;}
+
+#front-blog-wrap .span4.feature-posts a:hover, #front-blog-wrap .span4.feature-posts a:active {background-color:$color-features-highlight;}
 
 #front-blog-wrap .span4 a:hover, #front-blog-wrap .span4 a:active {display: block; box-shadow: 0px 0px 12px #8C8A8A;}
 
@@ -101,4 +105,6 @@ p.front-section-extra { margin-bottom: 45px; text-align: right; clear:left;}
     -webkit-transition: all 0.1s linear 0s;
     -moz-transition: all 0.1s linear 0s;
     -o-transition: all 0.1s linear 0s;}
+
+
 #featured-box{margin-top:95px;}
