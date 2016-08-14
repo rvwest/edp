@@ -78,3 +78,16 @@
 /*	#front-blog-wrap .span4:nth-child(3n+1) { margin-left: -10px;} */
 
 }
+
+@media only screen and (min-width : $col3half-max +1 + px) and (max-width : $col3-max + px) {
+	.row-fluid .center-col .span10 {
+		width: 82.90598290598291%;
+	}
+	}
+	
+@media only screen and (min-width : $col2-max +1 + px) and (max-width : $col3half-max + px) {
+	.row-fluid .center-col .span10 {
+		width: 91.45299145299145%;
+	}
+	}
+	

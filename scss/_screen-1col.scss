@@ -1,9 +1,13 @@
  @media only screen and (max-width : $col1-max + px) {
 
 	.row-fluid {
-		margin-left: 12px;}
+		margin-left: 12px;
+		margin-right: 12px;
+		}
 		
-		
+	.overlap-img {
+		margin: 0 -12px 0 -12px;
+	}
 			
 		
 	/* Article text */	
@@ -13,7 +17,8 @@
 		background-color: none;
 		}
 	.home .overlap-title h1.title {text-align: left;}
-	.single-post .overlap-title h1.title {padding-left:0; font-size:1.8em; line-height:1.3em; }
+	.single-post .overlap-title h1.title {padding-left:0; font-size:1.8em; line-height:1.3em; 	margin-left: -12px;
+   		padding-left: 12px; }
 	.post #content .skepost p:first-child {font-size: 1.3em; line-height: 1.3em; }
 
 	/* ---------------- */

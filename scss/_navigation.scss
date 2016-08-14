@@ -50,11 +50,11 @@
 #skenav .sfHover a { color: $color-copy;}
 
 
-#skenav li a[href$="/blog/"]:hover, #skenav li a[href$="/blog/"]:hover, #skenav li a[href$="/blog/"]:active, #skenav ul li.current-menu-item > a[href$="/blog/"] {
+#skenav li a[href$="/blog/"]:hover, #skenav li a[href$="/blog/"]:hover, #skenav li a[href$="/blog/"]:active, #skenav ul li.current-menu-item > a[href$="/blog/"], #skenav ul li.current-menu-parent > a[href$="/blog/"] {
 background-color: $color-blog;
 }
 
-#skenav li a[href$="/features/"]:hover, #skenav li a[href$="/features/"]:active, #skenav ul li.current-menu-item > a[href$="/features/"] {
+#skenav li a[href$="/features/"]:hover, #skenav li a[href$="/features/"]:active, #skenav ul li.current-menu-item > a[href$="/features/"], #skenav ul li.current-menu-parent > a[href$="/features/"]  {
 background-color: $color-features;
 }
 

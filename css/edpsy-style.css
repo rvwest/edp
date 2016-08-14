@@ -2285,8 +2285,8 @@ h1.title {
   padding-bottom: 45px;
 }
 #front-content-box h2 {
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 2.6rem;
+  line-height: 2.6rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   letter-spacing: -2px;
@@ -2361,8 +2361,8 @@ h1.title {
 .single-post .overlap-title h1.title, .home .overlap-title h1.title {
   background-color: rgba(255, 255, 255, 0.67);
   display: inline-block;
-  font-size: 46px;
-  line-height: 62px;
+  font-size: 2.6rem;
+  line-height: 3.2rem;
   margin-right: 5px;
   padding: 4px 20px 13px 20px;
   vertical-align: center;
@@ -2511,10 +2511,10 @@ a.subhead-link:link, a.subhead-link:visited {
 #skenav .sfHover a {
   color: #3d4449;
 }
-#skenav li a[href$="/blog/"]:hover, #skenav li a[href$="/blog/"]:hover, #skenav li a[href$="/blog/"]:active, #skenav ul li.current-menu-item > a[href$="/blog/"] {
+#skenav li a[href$="/blog/"]:hover, #skenav li a[href$="/blog/"]:hover, #skenav li a[href$="/blog/"]:active, #skenav ul li.current-menu-item > a[href$="/blog/"], #skenav ul li.current-menu-parent > a[href$="/blog/"] {
   background-color: #00bcd4;
 }
-#skenav li a[href$="/features/"]:hover, #skenav li a[href$="/features/"]:active, #skenav ul li.current-menu-item > a[href$="/features/"] {
+#skenav li a[href$="/features/"]:hover, #skenav li a[href$="/features/"]:active, #skenav ul li.current-menu-item > a[href$="/features/"], #skenav ul li.current-menu-parent > a[href$="/features/"] {
   background-color: #e91e63;
 }
 #skenav li sfhover.a[href*="training/"], #skenav li a[href*="training/"]:hover, #skenav li a[href*="training/"]:active, #skenav ul li.current-menu-item > a[href*="training/"], #skenav ul li.current-menu-parent > a[href*="training/"] {
@@ -2638,6 +2638,10 @@ ul.menu.skt-mob-menu {
 @media only screen and (max-width: 599px) {
   .row-fluid {
     margin-left: 12px;
+    margin-right: 12px;
+  }
+  .overlap-img {
+    margin: 0 -12px 0 -12px;
     /* Article text */
   }
   .home .overlap-title h1.title {
@@ -2652,6 +2656,8 @@ ul.menu.skt-mob-menu {
     padding-left: 0;
     font-size: 1.8em;
     line-height: 1.3em;
+    margin-left: -12px;
+    padding-left: 12px;
   }
   .post #content .skepost p:first-child {
     font-size: 1.3em;
@@ -3027,10 +3033,10 @@ ul.menu.skt-mob-menu {
   .row-fluid .span12, .row-fluid .overlap-title.span10 {
     width: 100%;
   }
-  .row-fluid .span11 {
+  .row-fluid .span11, .row-fluid .span10.center-col, .row-fluid .center-col .span10 {
     width: 91.45299%;
   }
-  .row-fluid .span10, .row-fluid .span8.center-col {
+  .row-fluid .span10 {
     width: 82.90598%;
   }
   .row-fluid .span9 {
@@ -3070,6 +3076,12 @@ ul.menu.skt-mob-menu {
     font-size: 1.6em;
     line-height: 1.3em;
     /*	#front-blog-wrap .span4:nth-child(3n+1) { margin-left: -10px;} */
+  }
+  .single-post .overlap-title h1.title {
+    padding-left: 0;
+    font-size: 1.8em;
+    line-height: 1.3em;
+    padding-left: 12px;
   }
 }
 @media only screen and (min-width: 790px) and (max-width: 1199px) {
@@ -3144,6 +3156,16 @@ ul.menu.skt-mob-menu {
     font-size: 2em;
     line-height: 1.8em;
     /*	#front-blog-wrap .span4:nth-child(3n+1) { margin-left: -10px;} */
+  }
+}
+@media only screen and (min-width: 1001px) and (max-width: 1199px) {
+  .row-fluid .center-col .span10 {
+    width: 82.90598%;
+  }
+}
+@media only screen and (min-width: 790px) and (max-width: 1000px) {
+  .row-fluid .center-col .span10 {
+    width: 91.45299%;
   }
 }
 @media (min-width: 1200px) {
@@ -4254,6 +4276,9 @@ body {
 }
 .blog-template .navigation #advertica-paginate, .blog .navigation #advertica-paginate {
   margin-bottom: 38px;
+}
+.block--blog h2 a:hover, .block--blog h2 a:active {
+  text-decoration: underline;
   /*   */
 }
 a:link p, a:visited p {
@@ -4321,8 +4346,6 @@ p.front-section-extra {
 }
 .skt-section a:hover {
   display: inline-block;
-  background: repeat scroll 0 0 #ffab40;
-  color: #fff;
   transition: all 0.1s linear 0s;
   -webkit-transition: all 0.1s linear 0s;
   -moz-transition: all 0.1s linear 0s;

@@ -57,6 +57,12 @@ padding-top:0;}
 
 .blog-template .navigation #advertica-paginate, .blog .navigation #advertica-paginate {margin-bottom:38px;}
 
+.block--blog h2 a:hover, .block--blog h2 a:active {
+    text-decoration: underline;
+}
+
+
+
 
 /*   */
 a:link p, a:visited p { color:$color-copy ;}
@@ -99,8 +105,6 @@ p.front-section-extra { margin-bottom: 45px; text-align: right; clear:left;}
 .front-section-extra a {text-decoration: underline;}
 .skt-section a:hover {
 	display: inline-block;
-    background: repeat scroll 0 0 $color-highlight;
-    color: #fff;
     transition: all 0.1s linear 0s;
     -webkit-transition: all 0.1s linear 0s;
     -moz-transition: all 0.1s linear 0s;

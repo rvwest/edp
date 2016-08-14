@@ -9,9 +9,9 @@ margin-left: -3px;
 h1.title { font-size: 62px; line-height: 66px; font-weight: 200; letter-spacing: -0.2px; text-transform: none; padding-bottom: 45px;}
 
 #front-content-box h2
-{ font-size: 40px; line-height: 40px; font-family: $font-heading; font-weight: 300; letter-spacing: -2px; margin-left:0; padding: 0 5px 30px 0}
+{ font-size: 2.6rem;     line-height: 2.6rem; font-family: $font-heading; font-weight: 300; letter-spacing: -2px; margin-left:0; padding: 0 5px 30px 0}
 
-.block--blog h2 a, .category-blog h1 {color: $color-blog;}
+.block--blog h2 a, .category-blog h1 {color: $color-blog}
 .block--features h2 a, .category-features h1 {color: $color-features;}
 .block--training h2 a, .category-training h1 {color: $color-training;}
 .category-about h1.title { color: $color-about;}
@@ -57,8 +57,7 @@ height:auto;
 .single-post .overlap-title h1.title, .home .overlap-title h1.title {
 background-color: $color-overlay;
 display: inline-block;
-font-size: 46px;
-line-height: 62px;
+font-size: 2.6rem; line-height: 3.2rem;
 margin-right: 5px;
 padding: 4px 20px 13px 20px;
 vertical-align: center;

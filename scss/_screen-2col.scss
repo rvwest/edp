@@ -32,10 +32,10 @@
 	.row-fluid .span12 , .row-fluid .overlap-title.span10 {
 		width: 100%;
 	}
-	.row-fluid .span11{
+	.row-fluid .span11, .row-fluid .span10.center-col, .row-fluid .center-col .span10 {
 		width: 91.45299145299145%;
 	}
-	.row-fluid .span10 , .row-fluid .span8.center-col  {
+	.row-fluid .span10  {
 		width: 82.90598290598291%;
 	}
 	.row-fluid .span9 {
@@ -84,5 +84,7 @@
 		line-height: 1.3em;
 		}
 /*	#front-blog-wrap .span4:nth-child(3n+1) { margin-left: -10px;} */
+	.single-post .overlap-title h1.title {padding-left:0; font-size:1.8em; line-height:1.3em; 	
+   		padding-left: 12px; }
 
 }
