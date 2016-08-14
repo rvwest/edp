@@ -4320,6 +4320,12 @@ a:link p, a:visited p {
 #front-blog-wrap .span4.feature-posts a:hover, #front-blog-wrap .span4.feature-posts a:active {
   background-color: #c2185b;
 }
+#front-blog-wrap .span3.training-posts a:link, #front-blog-wrap .span3.training-posts a:visited {
+  background-color: #673ab7;
+}
+#front-blog-wrap .span3.training-posts a:hover, #front-blog-wrap .span3.training-posts a:active {
+  background-color: #512da8;
+}
 #front-blog-wrap .span4 a:hover, #front-blog-wrap .span4 a:active {
   display: block;
   box-shadow: 0px 0px 12px #8c8a8a;

@@ -127,13 +127,45 @@ if(count($posts) >= 4)
 			
 		</div>
 		<div id="front-blog-wrap" class="row-fluid">
-					<div class="span12 feature-posts"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-						<h3>Blah</h3></a>
-<p>some text extra</p>
-    <p class="front-section-extra"><a href="/features" >Find out more about training to be an EP</a></p>
 
-			
-		</div>
+									<div class="span3 training-posts"><a href="http://localhost:8888/blog/2016/feeling-prepared-to-start-your-year-2-placement/" title="Feeling prepared to start your Year 2 placement">
+						
+  
+<img width="480" height="208" src="http://localhost:8888/wp-content/uploads/2016/07/Screen-Shot-2016-07-31-at-21.20.25-1-480x208.png" class="attachment-edpsy_loop_img size-edpsy_loop_img wp-post-image" alt="Screen Shot 2016-07-31 at 21.20.25 1">
+    
+<h3 style="height: 64px;">England</h3>
+					</a></div>
+									<div class="span3 training-posts"><a href="http://localhost:8888/blog/2016/hello-world/" title="Mental health is driving me crazy">
+						
+  
+<img width="480" height="208" src="http://localhost:8888/wp-content/uploads/2016/04/Antelope-Canyon-480x208.jpg" class="attachment-edpsy_loop_img size-edpsy_loop_img wp-post-image" alt="Antelope Canyon">
+    
+<h3 style="height: 64px;">Northern Ireland</h3>
+					</a></div>
+									<div class="span3 training-posts"><a href="http://localhost:8888/blog/2015/its-here/" title="It’s here">
+						
+  
+<img width="480" height="208" src="http://localhost:8888/wp-content/uploads/2016/04/Beach-480x208.jpg" class="attachment-edpsy_loop_img size-edpsy_loop_img wp-post-image" alt="Beach">
+    
+<h3 style="height: 64px;">Scotland</h3>
+					</a></div>
+					<div class="span3 training-posts"><a href="http://localhost:8888/blog/2015/its-here/" title="It’s here">
+						
+  
+<img width="480" height="208" src="http://localhost:8888/wp-content/uploads/2016/04/Beach-480x208.jpg" class="attachment-edpsy_loop_img size-edpsy_loop_img wp-post-image" alt="Beach">
+    
+<h3 style="height: 64px;">Wales</h3>
+					</a></div>
+								<!-- end of the loop -->
+
+				<!-- pagination here -->
+
+    <p class="front-section-extra"><a href="/blog/">See more blog posts</a></p>
+
+
+				
+					</div>
+		
  	</div>
 </div>
 <?php } ?>
