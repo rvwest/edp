@@ -28,7 +28,7 @@ get_header(); ?>
 	<div class="row-fluid">
 		<div id="container" class="span10 center-col">
 <div class="overlap-img-title">			
-		<div class="overlap-title span10 no-gutter-l">
+		<div class="overlap-title span11 no-gutter-l">
 					<h1 class="title "><?php the_title(); ?></h1>
 					
 					
@@ -60,7 +60,7 @@ get_header(); ?>
 							<span class="comments">&nbsp;<?php comments_popup_link(__('','advertica-lite'), __('1 comment ','advertica-lite'), __('% comments ','advertica-lite')) ; ?></span>
 						</div>
 						<!-- skepost-meta -->
-			<div id="container" class="span9">
+			<div id="container" class="span10">
 <div id="content">  
 						<div class="skepost clearfix">
 							<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'advertica-lite' ) ); ?>
