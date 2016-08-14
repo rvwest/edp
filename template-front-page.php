@@ -26,17 +26,13 @@
 				<!-- the loop -->
 				<?php while ( $advertica_lite_latest_loop->have_posts() ) : $advertica_lite_latest_loop->the_post(); ?>
 					<div class="span4 blog-posts"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-						<h3><?php the_title(); ?></h3>
+						
 <?php if ( has_post_thumbnail() ) : ?>
   
 <?php if ( has_post_thumbnail() ) {the_post_thumbnail('edpsy_loop_img');} ?>
 
     
-<?php endif; ?>
-
-
-						<?php the_excerpt(); ?>
-							  
+<?php endif; ?><h3><?php the_title(); ?></h3>
 					</a></div>
 				<?php endwhile; ?>
 				<!-- end of the loop -->
@@ -85,16 +81,16 @@ if(count($posts) >= 4)
 				<!-- the loop -->
 				<?php while ( $advertica_lite_latest_loop->have_posts() ) : $advertica_lite_latest_loop->the_post(); ?>
 					<div class="span4 feature-posts"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-						<h3><?php the_title(); ?></h3>
+						
 <?php if ( has_post_thumbnail() ) : ?>
   
 <?php if ( has_post_thumbnail() ) {the_post_thumbnail('edpsy_loop_img');} ?>
 
     
-<?php endif; ?>
+<?php endif; ?><h3><?php the_title(); ?></h3>
 
 
-						<?php the_excerpt(); ?>
+						
 							  
 					</a></div>
 				<?php endwhile; ?>

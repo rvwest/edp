@@ -2308,12 +2308,14 @@ h1.title {
 .skt-section a h3, .skt-section h3 a {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.4em;
-  font-weight: 600;
+  font-weight: 500;
   background: none;
-  letter-spacing: -0.5px;
+  letter-spacing: 0px;
   -webkit-transition: all 0.3s linear 0s;
+  padding: 10px 20px 60px 20px;
   -moz-transition: all 0.3s linear 0s;
   -o-transition: all 0.3s linear 0s;
+  color: #fff;
 }
 .skt-section h2 a {
   /* --- site description --- */
@@ -4274,14 +4276,17 @@ a:link p, a:visited p {
   padding-bottom: 25px;
 }
 #front-blog-wrap .span4 a:link, #front-blog-wrap .span4 a:visited {
-  background-color: #efebe9;
+  background-color: #00bcd4;
+}
+#front-blog-wrap .span4.feature-posts a:link, #front-blog-wrap .span4.feature-posts a:visited {
+  background-color: #e91e63;
 }
 #front-blog-wrap .span4 a:hover, #front-blog-wrap .span4 a:active {
   display: block;
   box-shadow: 0px 0px 12px #8c8a8a;
 }
 .block--blog .blog-posts a, .block--features .feature-posts a {
-  padding: 10px;
+  padding: 0px;
   display: block;
 }
 .size-edpsy_loop_img {
