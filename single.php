@@ -41,7 +41,7 @@ get_header(); ?>
 
 					</div>	
 
-						<div class="skepost-meta clearfix">
+						<div class="skepost-meta span10 clearfix">
 							<span class="date"><?php the_time('F j, Y') ?></span>
 							
 							
