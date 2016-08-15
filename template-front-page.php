@@ -155,12 +155,9 @@ if(count($posts) >= 4)
 <img width="480" height="208" src="http://localhost:8888/wp-content/uploads/2016/04/Beach-480x208.jpg" class="attachment-edpsy_loop_img size-edpsy_loop_img wp-post-image" alt="Beach">
     
 <h3 style="height: 64px;">Wales</h3>
-					</a></div>
-								<!-- end of the loop -->
-
-				<!-- pagination here -->
-
-    <p class="front-section-extra"><a href="/blog/">See more blog posts</a></p>
+					</a>
+					</div>
+	<p>&nbsp;</p>
 
 
 				

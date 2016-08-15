@@ -4330,7 +4330,7 @@ a:link p, a:visited p {
   display: block;
   box-shadow: 0px 0px 12px #8c8a8a;
 }
-.block--blog .blog-posts a, .block--features .feature-posts a {
+.block--blog .blog-posts a, .block--features .feature-posts a, .block--training .training-posts a {
   padding: 0px;
   display: block;
 }
