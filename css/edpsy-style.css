@@ -1963,7 +1963,6 @@ div.m-style-iw {
 #footer .third_wrapper a {
   color: #969595;
   text-decoration: none;
-  font-size: 12px;
 }
 #footer .third_wrapper a:hover {
   color: #f54336;
@@ -2321,7 +2320,7 @@ h1.title {
   /* --- site description --- */
 }
 #logo #site-description {
-  color: #999;
+  color: #8bc34a;
   font-size: 18px;
   line-height: 26px;
   position: relative;
@@ -4337,6 +4336,11 @@ a:link p, a:visited p {
 .size-edpsy_loop_img {
   width: 100%;
   height: auto;
+}
+.third_wrapper .foot-message {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  padding-top: 8px;
 }
 .block--features {
   margin-top: 0 !important;

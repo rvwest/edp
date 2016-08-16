@@ -9,7 +9,7 @@
 ?>
 	<div class="clearfix"></div>
 </div>
-<!-- #main --> 
+<!-- #main -->
 
 <!-- #footer -->
 <div id="footer">
@@ -25,19 +25,17 @@
 	<div class="third_wrapper">
 		<div class="container">
 			<div class="row-fluid">
-				
-				
-			
-<p class="home-subhead">Community<br/> 
-Engagement<br/>
-Creativity</p>
-<p><a href="/about/" class="subhead-link">find out more about us</a></p>
-				
-				
+
+
+
+<p class="foot-message"><a href="mailto:hello@edpsy.org.uk">Say hello</a><br/>
+	or <a href="/about/">find out more about us</a></p>
+
+
 				<div class="clearfix"></div>
 			</div>
 		</div>
-	</div><!-- third_wrapper --> 
+	</div><!-- third_wrapper -->
 </div>
 <!-- #footer -->
 
