@@ -128,31 +128,29 @@ if(count($posts) >= 4)
 		</div>
 		<div id="front-blog-wrap" class="row-fluid">
 
-									<div class="span3 training-posts"><a href="http://localhost:8888/blog/2016/feeling-prepared-to-start-your-year-2-placement/" title="Feeling prepared to start your Year 2 placement">
+									<div class="span3 training-posts">
 
-
-
-<h3 style="height: 64px;">England</h3>
+							<a href="/ep-training/in-england"><h3 >England</h3>
 					</a></div>
-									<div class="span3 training-posts"><a href="http://localhost:8888/blog/2016/hello-world/" title="Mental health is driving me crazy">
+									<div class="span3 training-posts"><a href="/ep-training/in-northern-ireland">
 
 
 
-<h3 style="height: 64px;">Northern Ireland</h3>
+<h3>Northern Ireland</h3>
 					</a></div>
-									<div class="span3 training-posts"><a href="http://localhost:8888/blog/2015/its-here/" title="It’s here">
+									<div class="span3 training-posts"><a href="/ep-training/in-scotland">
 
 
 
 
-<h3 style="height: 64px;">Scotland</h3>
+<h3>Scotland</h3>
 					</a></div>
-					<div class="span3 training-posts"><a href="http://localhost:8888/blog/2015/its-here/" title="It’s here">
+					<div class="span3 training-posts"><a href="/ep-training/in-wales">
 
 
 
 
-<h3 style="height: 64px;">Wales</h3>
+<h3>Wales</h3>
 					</a>
 					</div>
 	<p>&nbsp;</p>
