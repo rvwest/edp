@@ -135,3 +135,22 @@ p.front-section-extra { margin-bottom: 45px; text-align: right; clear:left;}
 
 
 #featured-box{margin-top:95px;}
+
+.feature-posts .quote {font-size: 2.5rem;
+line-height: 2.8rem;
+padding-top: 25px;
+padding-left: 20px;
+padding-right: 60px;
+}
+
+/* .feature-posts .quote a:link, .feature-posts .quote a:visited {
+	color: $color-secondary;
+}*/
+
+.big-quote-mark {
+color: $color-features;
+}
+
+.big-quote-mark.qu-l {
+		margin-left: -14px;
+}
