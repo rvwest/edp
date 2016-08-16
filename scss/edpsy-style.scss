@@ -5,7 +5,7 @@
 $color-blog: #06D6A0;
 $color-features: #ef476f;
 $color-training: #1b9aaa;
-$color-about: #ffc43d; 
+$color-about: #ffc43d;
 $color-tile: #f7f1ee;
 $color-highlight: #FFA500;
 $color-copy: #3d4449;
@@ -31,7 +31,7 @@ $color-outline: #ddd;
 
 body {font-family: $font-heading; }
 
-#front-content-box .container 
+#front-content-box .container
 { padding-top: 45px;}
 
 #front-content-box.block--about .container {
@@ -109,9 +109,9 @@ line-height: 1.3em;
 
 #front-blog-wrap .span3.training-posts a:hover, #front-blog-wrap .span3.training-posts a:active {background-color:$color-training-highlight;}
 
-#front-blog-wrap .span4 a:hover, #front-blog-wrap .span4 a:active {display: block; box-shadow: 0px 0px 12px #8C8A8A;}
+#front-blog-wrap .span4 a:hover, #front-blog-wrap .span4 a:active, #front-blog-wrap .span3 a:hover, #front-blog-wrap .span3 a:active {display: block; box-shadow: 0px 0px 12px #8C8A8A;}
 
-.block--blog .blog-posts a, .block--features .feature-posts a, .block--training .training-posts a  {padding: 0px; display: block;} 
+.block--blog .blog-posts a, .block--features .feature-posts a, .block--training .training-posts a  {padding: 0px; display: block;}
 
 .size-edpsy_loop_img {width:100%; height:auto;}
 
