@@ -22,21 +22,17 @@
 		</h1>
 
 		<div class="skepost-meta clearfix">
-		    <span class="date"><?php _e('On','advertica-lite');?> <?php the_time('F j, Y') ?></span><?php _e(',','advertica-lite');?>
+		    <span class="date"><?php _e('On','advertica-lite');?> <?php the_time('F j Y') ?></span><?php _e(',','advertica-lite');?>
             <span class="author-name"><?php _e('by ','advertica-lite'); 							if ( function_exists( 'coauthors_posts_links' ) ) {
     coauthors_posts_links(first_name, last_name);
 } else {
-    the_author_posts_link(first_name, last_name);
-} ?> </span>
-			<?php if (has_category()) { ?><?php } ?>
-            <?php the_tags('<span class="tags">By ',',','</span> ,'); ?>
-            <span class="comments"><?php comments_popup_link(__('','advertica-lite'), __(', 1 Comment ','advertica-lite'), __(', % Comments ','advertica-lite')) ; ?></span>
+    the_author_posts_link(first_name, last_name);}?></span><?php if (has_category()) { ?><?php } ?><!-- <?php the_tags('<span class="tags">By ', ', ', '</span> ,'); ?>--><span class="comments"><?php comments_popup_link(__('','advertica-lite'), __(', 1 Comment ','advertica-lite'), __(', % Comments ','advertica-lite')) ; ?></span>
         </div>
 
 		<!-- skepost-meta -->
         <div class="skepost clearfix">
-			<?php the_excerpt(); ?> 
-			<div class="continue"><a href="<?php the_permalink(); ?>"><?php _e('Read More','advertica-lite');?></a></div>		  
+			<?php the_excerpt(); ?>
+			<div class="continue"><a href="<?php the_permalink(); ?>"><?php _e('Read More','advertica-lite');?></a></div>
         </div>
         <!-- skepost -->
 </div>
