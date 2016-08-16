@@ -74,7 +74,7 @@ function advertica_lite_theme_setup() {
 	 * template files.
 	 */
 	load_theme_textdomain( 'advertica-lite', get_template_directory() . '/languages' );
-	 
+
 	// This theme styles the visual editor with editor-style.css to match the theme style.
 	add_editor_style();
 
@@ -105,7 +105,7 @@ function advertica_lite_theme_setup() {
 	 */
 	set_post_thumbnail_size( 600, 220, true );
 	add_image_size( 'advertica_standard_img',770,365,true); //standard size
-	add_image_size( 'edpsy_loop_img',480,208,true); //homepage
+	add_image_size( 'edpsy_loop_img',480,280,true); //homepage
 
 	/**
 	* SETS UP THE CONTENT WIDTH VALUE BASED ON THE THEME'S DESIGN.
@@ -120,7 +120,7 @@ function advertica_lite_theme_setup() {
 		'Header' => __( 'Main Navigation', 'advertica-lite' ),
 	));
 }
-add_action( 'after_setup_theme', 'advertica_lite_theme_setup' ); 
+add_action( 'after_setup_theme', 'advertica_lite_theme_setup' );
 
 /**
 * Funtion to add CSS class to body
@@ -130,7 +130,7 @@ function advertica_lite_add_class( $classes ) {
 	if ( 'page' == get_option( 'show_on_front' ) && ( '' != get_option( 'page_for_posts' ) ) && is_front_page() ) {
 		$classes[] = 'front-page';
 	}
-	
+
 	return $classes;
 }
 add_filter( 'body_class','advertica_lite_add_class' );
@@ -150,7 +150,7 @@ function advertica_lite_untitled($title) {
 }
 
 /**
- * Add Customizer 
+ * Add Customizer
  */
 require get_template_directory() . '/includes/customizer.php';
 /**

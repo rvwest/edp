@@ -23,13 +23,13 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?> >
-	<div id="wrapper" class="skepage">
+<body <?php body_class(); ?>  >
+	<div id="wrapper" class="skepage " >
 		<div id="header" class="skehead-headernav clearfix">
 			<div class="glow">
 				<div id="skehead">
-					<div class="container">      
-						<div class="row-fluid fixedrow">      
+					<div class="container">
+						<div class="row-fluid fixedrow">
 							<!-- #logo -->
 							<div id="logo" class="span4">
 								<?php if( get_theme_mod('advertica_lite_logo_img', '') != '' ){ ?>
@@ -37,7 +37,7 @@
 								<?php } elseif ( display_header_text() ) { ?>
 								<!-- #description -->
 								<div id="site-title" class="logo_desp">
-									<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php bloginfo('name') ?>" ><?php bloginfo('name'); ?></a> 
+									<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php bloginfo('name') ?>" ><?php bloginfo('name'); ?></a>
 									<div id="site-description"><?php bloginfo( 'description' ); ?></div>
 								</div>
 								<!-- #description -->
@@ -46,9 +46,9 @@
 							<!-- #logo -->
 							<!-- navigation-->
 							<div class="top-nav-menu span8">
-							<?php 
+							<?php
 								if( function_exists( 'has_nav_menu' ) && has_nav_menu( 'Header' ) ) {
-									wp_nav_menu(array( 'container_class' => 'ske-menu', 'container_id' => 'skenav', 'menu_id' => 'menu-main','theme_location' => 'Header' )); 
+									wp_nav_menu(array( 'container_class' => 'ske-menu', 'container_id' => 'skenav', 'menu_id' => 'menu-main','theme_location' => 'Header' ));
 								} else {
 								?>
 								<div class="ske-menu" id="skenav">
@@ -59,18 +59,18 @@
 								<?php } ?>
 							</div>
 							<div class="clearfix"></div>
-							<!-- #navigation --> 
+							<!-- #navigation -->
 						</div>
 					</div>
 				</div>
 				<!-- #skehead -->
 			</div>
-			<!-- glow --> 
+			<!-- glow -->
 		</div>
 <!-- #header -->
 		<div class="header-clone"></div>
-		
+
 <!-- header image section -->
 <?php include("includes/front-header-image-section.php"); ?>
 
-<div id="main" class="clearfix">
+<div id="main" class="clearfix ">
