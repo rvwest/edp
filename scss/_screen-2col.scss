@@ -44,47 +44,47 @@
 	.row-fluid .span8{
 		width: 65.81196581196582%;
 	}
-	
+
 	.row-fluid .span8.center-col {
 	max-width: 541px;
 	}
-	
+
 	.row-fluid .span7 {
 		width: 57.26495726495726%;
 	}
-	.row-fluid .span6, .row-fluid .span4  {
+	.row-fluid .span6, .row-fluid .span4, .row-fluid .span3  {
 		width: 48.717948717948715%;
 	}
-	
-	.row-fluid .span4:nth-child(3) {
-		margin-left: -10px;
+
+	.row-fluid .span4:nth-child(3), .row-fluid .span3:nth-child(3) {
+		margin-left: 0px;
 	}
-	
+
 	.row-fluid.fixedrow .span4  {
 		width: 31.623931623931625%;
 	}
-	
-	
+
+
 	.row-fluid .span5 {
 		width: 40.17094017094017%;
 	}
 	/*.row-fluid .span4 {
 		width: 31.623931623931625%;
 	}*/
-	
+
 	.row-fluid .span2 {
 		width: 14.52991452991453%;
 	}
 	.row-fluid .span1 {
 		width: 5.982905982905983%;
 	}
-	
+
 	.home .promo .overlap-title h1.title {
 		font-size: 1.6em;
 		line-height: 1.3em;
 		}
 /*	#front-blog-wrap .span4:nth-child(3n+1) { margin-left: -10px;} */
-	.single-post .overlap-title h1.title {padding-left:0; font-size:1.8em; line-height:1.3em; 	
+	.single-post .overlap-title h1.title {padding-left:0; font-size:1.8em; line-height:1.3em;
    		padding-left: 12px; }
 
 }
