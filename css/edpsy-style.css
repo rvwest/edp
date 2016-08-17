@@ -4385,9 +4385,9 @@ p.front-section-extra {
   /* .feature-posts .quote a:link, .feature-posts .quote a:visited {
 	color: $color-secondary;
 }*/
-}
-.big-quote-mark {
-  color: #e91e63;
+  /* .big-quote-mark {
+color: $color-features;
+}*/
 }
 .big-quote-mark.qu-l {
   margin-left: -14px;
