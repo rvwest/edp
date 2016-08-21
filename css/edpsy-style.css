@@ -17,7 +17,6 @@ $color-outline: #ddd;
 /* ---------- post (blog or feature article) ---------- */
 /* ----- listing -----*/
 /* ----- Navigation ----- */
-/* Home page */
 /*!
 * Bootstrap Responsive v2.3.2
 *
@@ -33,6 +32,7 @@ $color-outline: #ddd;
 /* 2 col */
 /* 3 col */
 /* 3 col + padding */
+/* Home page */
 .sf-menu, .sf-menu * {
   margin: 0;
   padding: 0;
@@ -253,18 +253,6 @@ dt {
 }
 dd {
   margin-bottom: 18px;
-}
-blockquote {
-  background-color: #f54336;
-  border-radius: 2px;
-  font-size: 14px !important;
-  padding: 8px 5px 8px 20px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  color: #fff;
-  quotes: none;
-  font-style: italic;
-  line-height: 22px;
 }
 cite {
   font-weight: 400;
@@ -4234,6 +4222,25 @@ ul.menu.skt-mob-menu {
 	}
 
 }*/
+}
+blockquote {
+  border-radius: 2px;
+  font-size: 1.2rem !important;
+  padding: 10px 5px 8px 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  quotes: none;
+  font-style: italic;
+  line-height: 22px;
+  background-color: none;
+  color: #3d4449;
+}
+.category-blog blockquote {
+  color: #00bcd4;
+}
+.category-features blockquote {
+  color: #e91e63;
 }
 body {
   font-family: 'Open Sans', sans-serif;
