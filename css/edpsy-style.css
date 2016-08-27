@@ -2188,8 +2188,26 @@ blockquote {
 .category-features blockquote {
   color: #e91e63;
 }
-.post #content .skepost a:link, .post #content .skepost a:visited {
+#content a:link, #content a:visited {
   text-decoration: underline;
+}
+.post #content h2 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.wp-caption {
+  background: none repeat scroll 0 0 #fff;
+  border: 1px solid #f0f0f0;
+  padding: 5px 3px;
+  text-align: center;
+  border: 1px solid #eee;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.wp-caption-text {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-size: 11px;
 }
 .clear {
   clear: both;
@@ -4107,19 +4125,6 @@ ul.childpages {
   margin-top: 20px;
   /* =Theme Check Include Classes
 -------------------------------------------------------------- */
-}
-.wp-caption {
-  background: none repeat scroll 0 0 #fff;
-  border: 1px solid #f0f0f0;
-  padding: 5px 3px;
-  text-align: center;
-  border: 1px solid #eee;
-  max-width: 100%;
-}
-.wp-caption-text {
-  margin-bottom: 5px;
-  margin-top: 5px;
-  font-size: 11px;
 }
 .gallery-item dd {
   float: none;
