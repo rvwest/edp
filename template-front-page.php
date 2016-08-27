@@ -93,7 +93,7 @@ if(count($posts) >= 4)
 
 
 					</a></div><div class="span8 feature-posts">
-				  <div class="quote"><a href="http://localhost:8888/features/2016/test-post-only-feature/" title="Test post – only feature"><span class="big-quote-mark qu-l">&#8220;</span>What I’d like you to do is take the thought and sing it to the tune of happy birthday.<span class="big-quote-mark qu-r">&#8221;</span></a></div>
+				  <div class="quote"><a href="/features/2016/struggling-with-a-monster-acceptance-and-commitment-therapy-with-anxious-students/" title="Test post – only feature"><span class="big-quote-mark qu-l">&#8220;</span>What I’d like you to do is take the thought and sing it to the tune of happy birthday.<span class="big-quote-mark qu-r">&#8221;</span></a></div>
 					</div>
 				<?php endwhile; ?>
 				<!-- end of the loop -->
