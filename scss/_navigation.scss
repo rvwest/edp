@@ -1,10 +1,10 @@
 /* ----- Navigation ----- */
 
-#skenav {background:none repeat scroll 0 0 transparent;  display:block;  margin-left:auto;  margin-right:auto;  border:medium none;  } 
+#skenav {background:none repeat scroll 0 0 transparent;  display:block;  margin-left:auto;  margin-right:auto;  border:medium none;  }
 
-#skehead .sub-menu { display: none; } 
+#skehead .sub-menu { display: none; }
 
-#logo #site-title a { color: #333333;display: inline-block;font-size: 30px;font-weight: 700; line-height: 30px; margin-top: 5px; text-decoration: none; text-transform: none;} 
+#logo #site-title a { color: #333333;display: inline-block;font-size: 30px;font-weight: 700; line-height: 30px; margin-top: 5px; text-decoration: none; text-transform: none;}
 
 /*#logo #site-title { display: block;font-size: 30px;margin: 8px 0 11px;}*/
 
@@ -12,17 +12,23 @@
 
 #skenav .ske-menu .menu li, ul.menu li {  float: left;  position: relative;  margin-left: 0px;  list-style: none outside none;  }
 
-#skenav a {color: #333333; display: block; font-size: 18px; line-height: 85px; padding: 0 22px; text-decoration: none; transition: color 0.1s linear 0s, background 0.1s linear 0s; -webkit-transition: color 0.1s linear 0s, background 0.1s linear 0s;  	-moz-transition: color 0.1s linear 0s, background 0.1s linear 0s; -o-transition: color 0.1s linear 0s, background 0.1s linear 0s; } 
+#skenav a {color: #333333; display: block; font-size: 18px; line-height: 85px; padding: 0 22px; text-decoration: none; transition: color 0.1s linear 0s, background 0.1s linear 0s; -webkit-transition: color 0.1s linear 0s, background 0.1s linear 0s;  	-moz-transition: color 0.1s linear 0s, background 0.1s linear 0s; -o-transition: color 0.1s linear 0s, background 0.1s linear 0s; }
 
 
-#skenav ul ul {  
-	position: absolute;  
-	top: 100%;  
-	left: 0px;  
-	float: left;  
-	width: 230px;  
-	z-index: 99999;  
+#skenav ul ul {
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	float: left;
+	width: 230px;
+	z-index: 99999;
 	}
+
+	#skenav ul li:last-of-type ul {
+		right: 0px;
+		left:inherit;
+		}
+
 
 #skenav ul .sub-menu li ,#skenav ul ul li {  display: block; width:100%;  }
 
@@ -66,7 +72,7 @@ background-color: $color-training;
 background-color: $color-about;
 }
 
-#skenav ul li.current-menu-parent > a { 
+#skenav ul li.current-menu-parent > a {
 background-color: $color-tile;
 }
 
@@ -93,7 +99,7 @@ background-color: $color-tile;
 
 /* --- mobile menu --- */
 
-ul.menu.skt-mob-menu{  
+ul.menu.skt-mob-menu{
 
 box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.5);	 background: none repeat scroll 0 0 #FFFFFF !important;left: 0 !important; margin-right: -3% !important; position: absolute !important; top: 73px; width: 100% !important; z-index: 99999 !important;     padding: 20px 0 15px 0px; }
 
@@ -112,7 +118,7 @@ box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.5);	 background: none repeat scroll 0
 
 
 
-       
+
 #skehead ul.skt-mob-menu li ul li a {
 	border:none;}
 
@@ -137,14 +143,14 @@ box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.5);	 background: none repeat scroll 0
             margin-top: 1px;
             top: 6px;
 		}
-		
-		#header { padding: 0 0 12px 0;} 
-	
+
+		#header { padding: 0 0 12px 0;}
+
 		#logo #site-title a {font-size: 20px; line-height: 25px;}
-		
+
 		#logo {margin-left:7px; margin-right:-7px;}
-  
-  		#logo #site-description { font-size:15px; line-height:18px;}	
-  		
+
+  		#logo #site-description { font-size:15px; line-height:18px;}
+
   		#skenav a { padding-left: 4.5%;}
 }

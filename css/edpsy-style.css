@@ -406,6 +406,10 @@ a.subhead-link:link, a.subhead-link:visited {
   width: 230px;
   z-index: 99999;
 }
+#skenav ul li:last-of-type ul {
+  right: 0px;
+  left: inherit;
+}
 #skenav ul .sub-menu li, #skenav ul ul li {
   display: block;
   width: 100%;
