@@ -4,11 +4,11 @@
 		margin-left: 12px;
 		margin-right: 12px;
 		}
-
+/*
 	.overlap-img {
 		margin: 0 -12px 0 -12px;
 	}
-
+*/
 
 	/* Article text */
 	.home .overlap-title h1.title {
@@ -269,6 +269,10 @@
 	.skt-service-page .one_third {margin-bottom: 35px;}
 	.flexslider .flex-caption{display:none !important;}
 	#full-client-box {margin-bottom:55px;}
+  .overlap-title {bottom: inherit; position: relative;}
+  .row-fluid .skepost-meta.span10 {margin-top:15px; margin-bottom: 15px;}
+  .bread-title-holder .cont_nav {margin-left: 15px;}
+  .post #content .skepost p:first-child {font-size: 1.3rem}
 
 	/* #front-blog-wrap .span4:nth-child(3n+1) {margin-left:0px;} */
 
