@@ -2840,7 +2840,7 @@ ul.childpages {
   }
   .post #content .skepost p:first-child {
     font-size: 1.3em;
-    line-height: 1.3em;
+    line-height: 1.6em;
     /* ---------------- */
   }
   .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
@@ -3185,9 +3185,6 @@ ul.childpages {
   }
   .bread-title-holder .cont_nav {
     margin-left: 15px;
-  }
-  .post #content .skepost p:first-child {
-    font-size: 1.3rem;
     /* #front-blog-wrap .span4:nth-child(3n+1) {margin-left:0px;} */
     /*#front-blog-wrap .span4 {margin-left:-7px;}*/
   }
