@@ -224,7 +224,7 @@ $color-outline: #ddd;
 #front-content-box.block--training .container, .category-training .bread-title-holder .container {
   border-top-width: 3px;
   border-top-style: solid;
-  border-color: #673ab7;
+  border-color: #546e7a;
 }
 .blog-template #content, .blog #content {
   margin-bottom: 17px;
@@ -252,7 +252,7 @@ $color-outline: #ddd;
   border-bottom-color: #e91e63;
 }
 .block--training h2 a:hover, .block--training h2 a:active {
-  border-bottom-color: #673ab7;
+  border-bottom-color: #546e7a;
   /*   */
 }
 a:link p, a:visited p {
@@ -282,10 +282,10 @@ a:link p, a:visited p {
   background-color: #c2185b;
 }
 #front-blog-wrap .span3.training-posts a:link, #front-blog-wrap .span3.training-posts a:visited {
-  background-color: #673ab7;
+  background-color: #546e7a;
 }
 #front-blog-wrap .span3.training-posts a:hover, #front-blog-wrap .span3.training-posts a:active {
-  background-color: #512da8;
+  background-color: #37474f;
 }
 #front-blog-wrap .span4 a:hover, #front-blog-wrap .span4 a:active, #front-blog-wrap .span3 a:hover, #front-blog-wrap .span3 a:active {
   display: block;
@@ -382,7 +382,7 @@ h1.title {
   color: #e91e63;
 }
 .block--training h2 a, .category-training h1 {
-  color: #673ab7;
+  color: #546e7a;
 }
 .category-about h1.title {
   color: #8bc34a;
@@ -607,7 +607,7 @@ a.subhead-link:link, a.subhead-link:visited {
   background-color: #e91e63;
 }
 #skenav li sfhover.a[href*="training/"], #skenav li a[href*="training/"]:hover, #skenav li a[href*="training/"]:active, #skenav ul li.current-menu-item > a[href*="training/"], #skenav ul li.current-menu-parent > a[href*="training/"] {
-  background-color: #673ab7;
+  background-color: #546e7a;
 }
 #skenav li a[href*="about/"]:hover, #skenav li a[href*="about/"]:active, #skenav ul li.current-menu-item > a[href*="about/"], #skenav ul li.current-menu-parent > a[href*="about/"] {
   background-color: #8bc34a;

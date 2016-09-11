@@ -135,26 +135,28 @@ if(count($posts) >= 4)
 
 									<div class="span3 training-posts">
 
-							<a href="/ep-training/in-england"><h3 >England</h3>
+							<a href="/ep-training/in-england">
+<img src="<?php echo get_template_directory_uri().'/images/training-england.jpg'; ?>" width="100%">
+								<h3 >England</h3>
 					</a></div>
 									<div class="span3 training-posts"><a href="/ep-training/in-northern-ireland">
 
 
-
+<img src="<?php echo get_template_directory_uri().'/images/training-ni.jpg'; ?>" width="100%">
 <h3>Northern Ireland</h3>
 					</a></div>
 									<div class="span3 training-posts"><a href="/ep-training/in-scotland">
 
 
 
-
+<img src="<?php echo get_template_directory_uri().'/images/training-scotland.jpg'; ?>" width="100%">
 <h3>Scotland</h3>
 					</a></div>
 					<div class="span3 training-posts"><a href="/ep-training/in-wales">
 
 
 
-
+<img src="<?php echo get_template_directory_uri().'/images/training-wales.jpg'; ?>" width="100%">
 <h3>Wales</h3>
 					</a>
 					</div>
