@@ -302,7 +302,7 @@ a:link p, a:visited p {
 .third_wrapper .foot-message {
   font-size: 1.4rem;
   line-height: 2.2rem;
-  padding-top: 8px;
+  padding-top: 15px;
 }
 .block--features {
   margin-top: 0 !important;
@@ -4432,4 +4432,13 @@ ul.childpages {
 }
 body {
   font-family: 'Open Sans', sans-serif;
+}
+#copyright {
+  background-color: #212223;
+}
+#copyright a:link, #copyright a:visited {
+  color: #969595;
+}
+#copyright a:hover, #copyright a:active {
+  color: #007bc7;
 }

@@ -1,1 +1,13 @@
 body {font-family: $font-heading; }
+
+#copyright {
+  background-color: #212223;
+}
+
+#copyright a:link, #copyright a:visited {
+  color: $color-footer-reverse;
+}
+
+#copyright a:hover, #copyright a:active {
+  color: $color-link; 
+}

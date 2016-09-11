@@ -29,7 +29,31 @@
 
 
 <p class="foot-message"><a href="mailto:hello@edpsy.org.uk">Say hello</a><br/>
-	or <a href="/about/">find out more about us</a></p>
+<a href="/about/">Find out more about us</a><br/>Spotted something wrong? <a href="mailto:hello@edpsy.org.uk">let us know</a></p>
+
+
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div><!-- third_wrapper -->
+</div>
+<div id="copyright">
+	<div class="container">
+		<div class="row-fluid">
+			<div class="second_wrapper">
+				<?php dynamic_sidebar( 'Footer Sidebar' ); ?>
+				<div class="clearfix"></div>
+			</div><!-- second_wrapper -->
+		</div>
+	</div>
+
+	<div class="third_wrapper">
+		<div class="container">
+			<div class="row-fluid">
+
+
+
+<p class="foot-message"><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA</a></p>
 
 
 				<div class="clearfix"></div>
