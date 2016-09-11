@@ -92,7 +92,7 @@ if(count($posts) >= 4)
 
 
 
-					</a></div><div class="span8 feature-posts">
+					</a></div><div class="span8 feature-posts quote-block">
 				  <div class="quote"><a href="/features/2016/acceptance-and-commitment-therapy-with-anxious-students/" title="Test post – only feature"><span class="big-quote-mark qu-l">&#8220;</span>What I’d like you to do is take the thought and sing it to the tune of happy birthday.<span class="big-quote-mark qu-r">&#8221;</span></a></div>
 					</div>
 				<?php endwhile; ?>
@@ -128,7 +128,7 @@ if(count($posts) >= 4)
 <div id="front-content-box" class="skt-section block--training">
 	<div class="container">
 		<div class="row-fluid">
-			<h2 class="inline-border"><a href="/features">Training to be an EP</a></h2>
+			<h2 class="inline-border"><a href="/ep-training">Training to be an EP</a></h2>
 
 		</div>
 		<div id="front-blog-wrap" class="row-fluid">

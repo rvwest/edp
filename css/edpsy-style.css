@@ -3233,6 +3233,12 @@ ul.childpages {
   .row-fluid .span8 {
     width: 65.81197%;
   }
+  .row-fluid .span8.quote-block {
+    width: 48.71795%;
+  }
+  .feature-posts .quote {
+    padding-top: 0;
+  }
   .row-fluid .span8.center-col {
     max-width: 541px;
   }
