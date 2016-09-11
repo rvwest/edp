@@ -335,6 +335,9 @@ p.front-section-extra {
   -moz-transition: all 0.1s linear 0s;
   -o-transition: all 0.1s linear 0s;
 }
+#front-content-box h3 {
+  margin-top: 0;
+}
 #featured-box {
   margin-top: 95px;
 }
