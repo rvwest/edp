@@ -749,10 +749,6 @@ blockquote {
 #content a:link, #content a:visited {
   text-decoration: underline;
 }
-.post #content h2 {
-  margin-top: 40px;
-  margin-bottom: 10px;
-}
 .wp-caption {
   background: none repeat scroll 0 0 #fff;
   border: 1px solid #f0f0f0;
@@ -784,7 +780,7 @@ body {
   line-height: 26px;
   font-weight: 300;
 }
-p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset, figure {
+p, dl, hr, h1, h4, h5, h6, ol, ul, pre, table, address, fieldset, figure {
   font-weight: 300;
   margin-bottom: 20px;
   line-height: 28px;
@@ -793,6 +789,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #555;
   font-weight: 600;
   letter-spacing: -0.5px;
+}
+h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 pre {
   overflow: auto;

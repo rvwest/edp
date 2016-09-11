@@ -4,6 +4,5 @@ blockquote {border-radius: 2px;font-size: 1rem !important; padding:10px 5px 8px 
 .category-features blockquote {color: $color-features;}
 
 #content a:link, #content a:visited {text-decoration:underline}
-.post #content h2 {margin-top: 40px; margin-bottom: 10px}
 .wp-caption {  background: none repeat scroll 0 0 #FFFFFF;  border: 1px solid #F0F0F0;  padding: 5px 3px;  text-align: center;  border: 1px solid #EEEEEE;  max-width: 100%; margin-bottom: 20px;  }
 .wp-caption-text {  margin-bottom: 5px;  margin-top: 5px;  font-size: 11px;  }
