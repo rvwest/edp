@@ -11,4 +11,7 @@ img.avatar {border-radius: 50%;}
 h2.author-title {
     margin-top: 20px;
 }
-.author-description {min-height: 96px;}
+
+.author-description {min-height: 96px; margin-left: 116px;}
+.title-w-bio {max-width: 900px}
+.author .author-description {margin-top:-40px; margin-bottom:40px }

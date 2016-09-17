@@ -20,7 +20,8 @@ if ( function_exists( 'coauthors_posts_links' ) ) {
                     <h2 class="author-title">About <span class="author-heading"><a href="<?php echo get_author_posts_url( $coauthor->ID, $coauthor->user_nicename ); ?>"></a></span> <?php echo $coauthor->display_name; ?></h2>
 
                     <p class="author-bio">
-                        <?php echo $coauthor->description; ?><br/>
+                        <?php echo $coauthor->description; ?></p>
+                        <p class="author-bio">
                         View all posts by <?php coauthors_posts_links() ?>
                     </p><!-- .author-bio -->
                 </div><!-- .author-description -->

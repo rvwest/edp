@@ -15,7 +15,7 @@ get_header(); ?>
 						if ((class_exists('advertica_lite_breadcrumb_class'))) {$advertica_breadcumb->advertica_lite_custom_breadcrumb();}
 					}
 					?>
-				<div class="container_inner clearfix">
+				<div class="container_inner clearfix title-w-bio">
 					<h1 class="title author-title">
 						<?php  $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author)); ?>
 						<?php _e('Articles by ','advertica-lite'); ?>
@@ -30,7 +30,6 @@ get_header(); ?>
 				<?php get_template_part( 'listing-biography', get_post_format() ); ?>
 				<!--	<p class="author-bio">
 						<?php $authorDesc = the_author_meta('description'); echo $authorDesc; ?>
-
 
 </p>-->
 				</div>
@@ -57,7 +56,7 @@ get_header(); ?>
 	</div>-->
 	<div class="container post-wrap">
 		<div class="row-fluid">
-			<div id="container" class="span8">
+			<div id="container" class="span8 center-col">
 				<div id="content">
 					<?php if(have_posts()) : ?>
 					<?php while(have_posts()) : the_post(); ?>

@@ -11,7 +11,7 @@ if ( function_exists( 'coauthors_posts_links' ) ) {
     global $post;
         $author_id=$post->post_author;
         foreach( get_coauthors() as $coauthor ): ?>
-            <div class="author-info">
+            <div class="author-info ">
                 <div class="author-avatar">
                     <?php echo get_avatar( $coauthor->user_email, '96' ); ?>
                 </div><!-- .author-avatar -->
