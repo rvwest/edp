@@ -25,6 +25,7 @@ h1.title { font-size: 62px; line-height: 66px; font-weight: 200; letter-spacing:
 /* --- site description --- */
 #logo #site-description { color: $color-secondary;  font-size: 18px; line-height: 26px;position: relative; left: 1px; width: 200px;}
 
+.author .author-description {margin-top:-40px; margin-bottom:40px}
 
 /* --- overlapping title --- */
 .single-post .container_inner.overlap, .home .container_inner.overlap  {
