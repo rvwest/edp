@@ -28,8 +28,8 @@
 
 
 
-<p class="foot-message"><a href="mailto:hello@edpsy.org.uk">Say hello</a><br/>
-<a href="/about/">Find out more about us</a><br/>Spotted something wrong? <a href="mailto:hello@edpsy.org.uk">let us know</a></p>
+<p class="foot-message"><a href="https://twitter.com/edpsyuk"><i class="fa fa-twitter" aria-hidden="true"></i> @edpsyuk</a> | <a href="mailto:hello@edpsy.org.uk"><i class="fa fa-envelope-o" aria-hidden="true"></i> hello@edpsy.org.uk</a></p>
+<p class="foot-message"><a href="/about/">Find out more about us</a><br/>Spotted something wrong? <a href="mailto:hello@edpsy.org.uk">let us know</a></p>
 
 
 				<div class="clearfix"></div>
@@ -53,7 +53,7 @@
 
 
 
-<p class="foot-message"><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA</a></p>
+<p class="foot-message"><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Reusing our content</a> | <a href="/cookies">Cookies and privacy</a></p>
 
 
 				<div class="clearfix"></div>
