@@ -1,4 +1,3 @@
-@import 'wp-header';
 
 /* Variables */
 /*
@@ -19,6 +18,8 @@ $color-outline: #ddd;
 {border-top-width: 3px; border-top-style: solid; border-color: $wash-color}
 
 @import 'original-style';
+@import 'skt-animation';
+@import 'superfish';
 @import 'variables';
 @import 'superfish';
 @import 'homepage';

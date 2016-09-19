@@ -110,7 +110,7 @@ border-left-color: white;
 }
 .skt-mob-menu{  box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.5);	 background: none repeat scroll 0 0 #FFFFFF !important;left: 0 !important; margin-right: -3% !important; position: absolute !important; top: 73px; width: 100% !important; z-index: 99999 !important;}
 .skt-mob-menu li{width:100% !important;margin: 0;}
-.skt-mob-menu li a{line-height: 36px !important;}
+.skt-mob-menu li a{line-height: 36px !important; padding: 0 5px 0 1.6% !important;}
 .skt-mob-menu .sub-menu{ position:relative !important;	left:0 !important;}
 .sktmenu-toggle:before{ color: #fff; content: "\f0c9";}
 .sktmenu-toggle{background-color: #D6D6D6;	cursor: pointer;	float: right;	font-family: "FontAwesome";	font-size: 21px;	font-style: normal;	font-weight: normal;	height: 35px;	line-height: 37px;	margin-top: 18px;	right: -6px;	text-align: center;	vertical-align: middle;	width: 35px;}
@@ -126,4 +126,4 @@ background-position: 98% center;
 #skenav ul.skt-mob-menu ul {width:100%;border:0;position:relative;margin:0;}
 #skenav ul.skt-mob-menu ul li a{padding-left:30px !important;-moz-box-sizing:border-box;box-sizing:border-box;}
 #skenav ul.skt-mob-menu ul ul li a{padding-left:60px !important;-moz-box-sizing:border-box;box-sizing:border-box;}
-/*#skenav ul.skt-mob-menu .children li:first-child, #skenav ul.skt-mob-menu .sub-menu li:first-child {border-top:1px solid rgba(0, 0, 0, 0.15);}*/
+#skenav ul.skt-mob-menu .children li:first-child, #skenav ul.skt-mob-menu .sub-menu li:first-child {border-top:1px solid rgba(0, 0, 0, 0.15);}
