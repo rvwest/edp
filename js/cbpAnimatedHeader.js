@@ -10,7 +10,7 @@
 
  * http://www.opensource.org/licenses/mit-license.php
 
- * 
+ *
 
  * Copyright 2013, Codrops
 
@@ -18,7 +18,7 @@
 
  */
 
- 
+
 
 /*!
 
@@ -26,7 +26,7 @@
 
  * from bonzo https://github.com/ded/bonzo
 
- * 
+ *
 
  * classie.has( elem, 'my-class' ) -> true/false
 
@@ -229,7 +229,7 @@ var cbpAnimatedHeader = (function() {
 
 
 			if(sy > 200) {
-				
+
 				jQuery('#header').fadeIn();
 
 			}
