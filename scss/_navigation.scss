@@ -64,6 +64,10 @@ background-color: $color-blog;
 background-color: $color-features;
 }
 
+#skenav li a[href$="/events/"]:hover, #skenav li a[href$="/events/"]:active, #skenav ul li.current-menu-item > a[href$="/events/"], #skenav ul li.current-menu-parent > a[href$="/events/"]  {
+background-color: $color-events;
+}
+
 #skenav li sfhover.a[href*="training/"], #skenav li a[href*="training/"]:hover, #skenav li a[href*="training/"]:active, #skenav ul li.current-menu-item > a[href*="training/"],  #skenav ul li.current-menu-parent > a[href*="training/"] {
 background-color: $color-training;
 }
