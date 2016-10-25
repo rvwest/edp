@@ -1,6 +1,6 @@
 @media only screen and (min-width : $col2-max +1 + px) and (max-width : $col3-max + px) {
- 
- 
+
+
 	.row-fluid {
 		width: 96%;
 		margin-left: 20px;
@@ -36,17 +36,17 @@
 	.row-fluid .span11 {
 		width: 91.45299145299145%;
 	}
-	.row-fluid .span10, .row-fluid .span8.center-col {
+	.row-fluid .span10, .single-tribe_events .tribe-events-single-event-description, .row-fluid .span8.center-col {
 		width: 82.90598290598291%;
 	}
 	.row-fluid .span9 {
 		width: 74.35897435897436%;
 	}
-	
+
 	.row-fluid .span8.center-col {
 	max-width: 739px;
 	}
-	
+
 	.row-fluid .span8 {
 		width: 65.81196581196582%;
 	}
@@ -84,10 +84,9 @@
 		width: 82.90598290598291%;
 	}
 	}
-	
+
 @media only screen and (min-width : $col2-max +1 + px) and (max-width : $col3half-max + px) {
 	.row-fluid .center-col .span10 {
 		width: 91.45299145299145%;
 	}
 	}
-	
