@@ -218,14 +218,14 @@ function is_child( $page_id ) {
 function tribe_breadcrumbs() {
 	global $post;
 
-	$separator = " &raquo; ";
+	$separator = '&nbsp;<span class="skt-breadcrumbs-separator"> &gt;&gt; </span>&nbsp;';
 
-	echo '<div class="tribe-breadcrumbs">';
-	echo '<a href="' . get_option('home') . '">' . bloginfo( 'name' ) . '</a>';
+	echo '<div class="tribe-breadcrumbs"><p>';
+	echo '<a href="' . get_option('home') . '">' . Home . '</a>';
 
 	if( tribe_is_month() && !is_tax() ) { // The Main Calendar Page
 		echo $separator;
-		echo 'The Events Calendar';
+		echo 'Events';
 	} elseif( tribe_is_month() && is_tax() ) { // Calendar Category Pages
 		global $wp_query;
 
@@ -281,6 +281,6 @@ function tribe_breadcrumbs() {
 		echo the_search_query();
 		echo '</em>"';
 	}
-	echo '</div>';
+	echo '</p></div>';
 }
 ?>

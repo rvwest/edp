@@ -19,9 +19,10 @@ get_header();
 <div class="bread-title-holder">
 		<div class="container">
 			<div class="row-fluid">
-				<section class="cont_nav"><div class="cont_nav_inner"><p><a href="https://www.edpsy.org.uk">Home</a>&nbsp;<span class="skt-breadcrumbs-separator"> &gt;&gt; </span>&nbsp;<a href="./events/">Events</a>&nbsp;<span class="skt-breadcrumbs-separator"> &gt;&gt; </span>&nbsp;	<?php the_title() ?></p></div></section>			</div>
+				<section class="cont_nav"><div class="cont_nav_inner"><?php	tribe_breadcrumbs(); ?></div></section>			</div>
 		</div>
 	</div>
+
 <div id="tribe-events-pg-template">
 	<?php tribe_events_before_html(); ?>
 	<?php tribe_get_view(); ?>
