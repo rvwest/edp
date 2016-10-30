@@ -31,7 +31,7 @@
 					<div class="container">
 						<div class="row-fluid fixedrow">
 							<!-- #logo -->
-							<div id="logo" class="span4">
+							<div id="logo" class="span3">
 								<?php if( get_theme_mod('advertica_lite_logo_img', '') != '' ){ ?>
 									<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php bloginfo('name'); ?>" ><img class="logo" src="<?php echo esc_url( get_theme_mod('advertica_lite_logo_img') ); ?>" alt="<?php bloginfo('name') ?>" /></a>
 								<?php } elseif ( display_header_text() ) { ?>
@@ -45,7 +45,7 @@
 							</div>
 							<!-- #logo -->
 							<!-- navigation-->
-							<div class="top-nav-menu span8">
+							<div class="top-nav-menu span9">
 							<?php
 								if( function_exists( 'has_nav_menu' ) && has_nav_menu( 'Header' ) ) {
 									wp_nav_menu(array( 'container_class' => 'ske-menu', 'container_id' => 'skenav', 'menu_id' => 'menu-main','theme_location' => 'Header' ));

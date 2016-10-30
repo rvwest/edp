@@ -64,11 +64,19 @@
 		width: 48.717948717948715%;
 	}
 
+	.row-fluid #logo.span3 {
+		width: 31.62393%;
+}
+
+	.top-nav-menu.span9 {
+		width:65.81197%;
+	}
+
 	.row-fluid .span4:nth-child(3), .row-fluid .span3:nth-child(3) {
 		margin-left: 0px;
 	}
 
-	.row-fluid.fixedrow .span4  {
+	.row-fluid.fixedrow .span4 {
 		width: 31.623931623931625%;
 	}
 
@@ -96,11 +104,6 @@
    		padding-left: 12px; }
 
 
-			.tribe-events-list .tribe-events-venue-details {
-			    padding-left: 0px;}
 
-			.tribe-events-loop .tribe-events-event-meta {
-			  padding-left:10px;
-			}
 
 }

@@ -21,15 +21,15 @@ function advertica_lite_title($title)
 	}
 	if ( is_front_page() ){
 		$advertica_lite_title .=  get_bloginfo('name');
-		$advertica_lite_title .= ' | '; 
+		$advertica_lite_title .= ' | ';
 		$advertica_lite_title .= get_bloginfo('description');
 	}
 	if ( is_search() ) {
 		$advertica_lite_title .=  get_bloginfo('name');
 	}
-	if ( is_author() ) { 
+	if ( is_author() ) {
 		global $wp_query;
-		$curauth = $wp_query->get_queried_object();	
+		$curauth = $wp_query->get_queried_object();
 		$advertica_lite_title .= __('Author: ','advertica-lite');
 		$advertica_lite_title .= $curauth->display_name;
 		$advertica_lite_title .= ' | ';
@@ -44,7 +44,7 @@ function advertica_lite_title($title)
 	if ( is_category() ) {
 		$advertica_lite_title .= get_bloginfo('name');
 	}
-	if ( is_year() ) { 
+	if ( is_year() ) {
 		$advertica_lite_title .= get_bloginfo('name');
 	}
 	if ( is_month() ) {
@@ -53,13 +53,13 @@ function advertica_lite_title($title)
 	if ( is_day() ) {
 		$advertica_lite_title .= get_bloginfo('name');
 	}
-	if (function_exists('is_tag')) { 
+	if (function_exists('is_tag')) {
 		if ( is_tag() ) {
 			$advertica_lite_title .= get_bloginfo('name');
 		}
 		if ( is_404() ) {
 			$advertica_lite_title .= get_bloginfo('name');
-		}					
+		}
 	}
 	return $advertica_lite_title;
 }
