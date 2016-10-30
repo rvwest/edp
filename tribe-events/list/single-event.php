@@ -53,7 +53,7 @@ $organizer = tribe_get_organizer();
 		<?php if ( $venue_details ) : ?>
 			<!-- Venue Display Info -->
 			<div class="tribe-events-venue-details">
-				<?php echo implode( ', ', $venue_details ); ?>
+				<?php echo tribe_get_city();?>
 			</div> <!-- .tribe-events-venue-details -->
 		<?php endif; ?>
 
