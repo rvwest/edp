@@ -23,10 +23,13 @@ get_header();
 		</div>
 	</div>
 
-<div id="tribe-events-pg-template">
+<!--<div id="tribe-events-pg-template">-->
+<div class="container post-wrap">
+	<div class="row-fluid">
+		<div id="container" class="span10 center-col">
 	<?php tribe_events_before_html(); ?>
 	<?php tribe_get_view(); ?>
 	<?php tribe_events_after_html(); ?>
-</div> <!-- #tribe-events-pg-template -->
+</div></div></div> <!-- #tribe-events-pg-template -->
 <?php
 get_footer();
