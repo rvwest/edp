@@ -283,4 +283,23 @@ function tribe_breadcrumbs() {
 	}
 	echo '</p></div>';
 }
+
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function arphabet_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Post call to action area',
+		'id'            => 'post_cta_1',
+		'before_widget' => '<div class="post_cta">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'arphabet_widgets_init' );
+
 ?>

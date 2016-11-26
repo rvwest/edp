@@ -52,7 +52,11 @@ get_header(); ?>
 						<div class="skepost clearfix">
 							<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'advertica-lite' ) ); ?>
 							<?php wp_link_pages(array('before' => '<p><strong>'.__('Pages :','advertica-lite').'</strong>','after' => '</p>', __('number','advertica-lite'),));	?>
-
+							<?php if ( is_active_sidebar( 'post_cta_1' ) ) : ?>
+								<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+									<?php dynamic_sidebar( 'post_cta_1' ); ?>
+								</div><!-- #primary-sidebar -->
+							<?php endif; ?>
 
 								<hr/>
 <?php get_template_part( 'biography', get_post_format() ); ?>
