@@ -80,7 +80,12 @@ $event_id = get_the_ID();
 			<li class="tribe-events-nav-next"><?php tribe_the_next_event_link( '%title% <span>&raquo;</span>' ) ?></li>
 		</ul>
 		<!-- .tribe-events-sub-nav -->
+
 	</div>
 	<!-- #tribe-events-footer -->
-
+	<?php if ( is_active_sidebar( 'post_cta_1' ) ) : ?>
+		<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+			<?php dynamic_sidebar( 'post_cta_1' ); ?>
+		</div><!-- #primary-sidebar -->
+	<?php endif; ?>
 </div><!-- #tribe-events-content -->
