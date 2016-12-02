@@ -293,7 +293,7 @@ function arphabet_widgets_init() {
 	register_sidebar( array(
 		'name'          => 'Post call to action area',
 		'id'            => 'post_cta_1',
-		'before_widget' => '<div class="post_cta">',
+		'before_widget' => '<div class="post_cta" id="signup">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h2>',
 		'after_title'   => '</h2>',

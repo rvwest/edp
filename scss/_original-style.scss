@@ -249,9 +249,9 @@ h3#reply-title {  margin: 18px 0;  }
 #cancel-comment-reply-link {  font-size: 12px;  font-weight: normal;  line-height: 18px;  color: #888;  text-decoration: none;  }
 #respond .required {  color: #ff4b33;font-size: 16px;}
 #respond label {  float: left;font-size: 13px; margin-top: 5px;color:#666;}
-#respond input[type="submit"] {background: none repeat scroll 0 0 rgba(0, 0, 0, 0); border: 1px solid #F54336; cursor: pointer; display: inline-block; height: auto; font-weight: 700;font-size: 12px !important;letter-spacing: 1px; margin-bottom: 0;padding: 8px 25px;position: relative; text-transform: uppercase;transition: all 0.3s linear 0s;-webkit-transition: all 0.3s linear 0s;-moz-transition: all 0.3s linear 0s;-o-transition: all 0.3s linear 0s;  }
-#respond input[type="submit"]:hover {background: none repeat scroll 0 0 #F54336; color: #FFFFFF; transition: all 0.3s linear 0s;  -webkit-transition: all 0.3s linear 0s; -moz-transition: all 0.3s linear 0s; -o-transition: all 0.3s linear 0s;  }
-#respond input, #respond textarea { background: none repeat scroll 0 0 #F9F9F9; border: 1px solid #E1E1E1; color: #666666; float: right; font-family: 'Open Sans', sans-serif; font-size: 12px; font-weight: 300; height: 30px; margin: 0 0 22px; padding: 4px; width: 78%;}
+#signup input[type="submit"], #respond input[type="submit"] {background: none repeat scroll 0 0 rgba(0, 0, 0, 0); border: 1px solid #F54336; cursor: pointer; display: inline-block; height: auto; font-weight: 700;font-size: 12px !important;letter-spacing: 1px; margin-bottom: 0;padding: 8px 25px;position: relative; text-transform: uppercase;transition: all 0.3s linear 0s;-webkit-transition: all 0.3s linear 0s;-moz-transition: all 0.3s linear 0s;-o-transition: all 0.3s linear 0s;  }
+#signup input[type="submit"]:hover, #respond input[type="submit"]:hover {background: none repeat scroll 0 0 #F54336; color: #FFFFFF; transition: all 0.3s linear 0s;  -webkit-transition: all 0.3s linear 0s; -moz-transition: all 0.3s linear 0s; -o-transition: all 0.3s linear 0s;  }
+#signup input, #signup textarea, #respond input, #respond textarea { background: none repeat scroll 0 0 #F9F9F9; border: 1px solid #E1E1E1; color: #666666; float: right; font-family: 'Open Sans', sans-serif; font-size: 12px; font-weight: 300; height: 30px; margin: 0 0 22px; padding: 4px; width: 78%;}
 #respond .comment-form-comment {      height: 102px;  }
 #commentform .submit {  float: right;  width: 175px;  }
 #respond textarea {  height: 182px;  overflow:auto;  }
