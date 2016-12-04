@@ -6718,33 +6718,49 @@ body {
 }
 
 /* line 32, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+.category-blog .mc4wp-alert {
+  background: #00BCD4;
+}
+
+/* line 36, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+.category-features .mc4wp-alert {
+  background: #E91E63;
+}
+
+/* line 40, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+#tribe-events .mc4wp-alert {
+  background: #CDDC39;
+  text-align: center;
+}
+
+/* line 45, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
 .post_cta h2 {
   margin-top: 10px;
 }
 
-/* line 36, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+/* line 49, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
 .post_cta input {
   width: 22%;
 }
 
-/* line 39, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+/* line 52, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
 .post_cta p {
   margin-bottom: 10px;
   margin-top: 10px;
 }
 
-/* line 45, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+/* line 58, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
 #signup .mc4wp-fields {
   display: flex;
   justify-content: space-around;
 }
 
-/* line 50, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+/* line 63, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
 #signup h2 {
   font-size: 27px;
 }
 
-/* line 52, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+/* line 65, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
 #signup input {
   border-color: #e1e1e1;
   margin-left: 10px;
@@ -6752,12 +6768,12 @@ body {
   background: #fff;
 }
 
-/* line 54, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+/* line 67, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
 #signup .mc4wp-fields input:first-child {
   margin-left: 0;
 }
 
-/* line 56, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+/* line 69, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
 #signup .mc4wp-submit {
   margin-top: 10px;
   display: flex;
@@ -6765,14 +6781,14 @@ body {
   font-size: 1rem;
 }
 
-/* line 61, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+/* line 74, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
 #signup input[type="submit"] {
   border: 1px solid #007bc7;
   color: #007bc7;
   width: 23%;
 }
 
-/* line 63, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+/* line 76, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
 #signup input[type="submit"]:hover, #signup input[type="submit"]:focus {
   background: none repeat scroll 0 0 #007bc7;
   color: #FFFFFF;
