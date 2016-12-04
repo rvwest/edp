@@ -4694,74 +4694,79 @@ h2.tribe-events-page-title {
 }
 
 /* line 18, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+.category-about .post_cta {
+  border-color: #8BC34A;
+}
+
+/* line 23, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
 .category-features .post_cta {
   border-color: #E91E63;
   background: #FCE4EC;
 }
 
-/* line 23, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+/* line 28, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
 #tribe-events .post_cta {
   border-color: #CDDC39;
   background: #F9FBE7;
 }
 
-/* line 28, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+/* line 33, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
 .mc4wp-alert {
   font-size: 18px;
   text-align: center;
   padding: 1px;
 }
 
-/* line 34, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+/* line 39, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
 .mc4wp-alert p {
   margin: 2px 2px;
 }
 
-/* line 38, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+/* line 43, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
 .category-blog .mc4wp-alert {
   background: #00BCD4;
   color: #fff;
 }
 
-/* line 43, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+/* line 48, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
 .category-features .mc4wp-alert {
   background: #E91E63;
   color: #fff;
 }
 
-/* line 48, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+/* line 53, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
 #tribe-events .mc4wp-alert {
   background: #CDDC39;
 }
 
-/* line 53, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+/* line 58, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
 .post_cta h2 {
   margin-top: 10px;
 }
 
-/* line 57, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+/* line 62, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
 .post_cta .mc4wp-fields input {
   width: 22%;
 }
 
-/* line 60, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+/* line 65, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
 .post_cta p {
   margin-bottom: 10px;
   margin-top: 10px;
 }
 
-/* line 66, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+/* line 71, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
 #signup .mc4wp-fields {
   display: flex;
   justify-content: space-around;
 }
 
-/* line 71, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+/* line 76, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
 #signup h2 {
   font-size: 27px;
 }
 
-/* line 73, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+/* line 78, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
 #signup input {
   border-color: #e1e1e1;
   margin-left: 10px;
@@ -4769,12 +4774,12 @@ h2.tribe-events-page-title {
   background: #fff;
 }
 
-/* line 75, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+/* line 80, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
 #signup .mc4wp-fields input:first-child {
   margin-left: 0;
 }
 
-/* line 77, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+/* line 82, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
 #signup .mc4wp-submit {
   margin-top: 10px;
   display: flex;
@@ -4782,14 +4787,14 @@ h2.tribe-events-page-title {
   font-size: 1rem;
 }
 
-/* line 83, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+/* line 88, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
 #signup input[type="submit"] {
   border: 1px solid #007bc7;
   color: #007bc7;
   width: inherit;
 }
 
-/* line 85, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
+/* line 90, /Applications/MAMP/htdocs/wp-content/themes/edpsy/scss/_forms */
 #signup input[type="submit"]:hover, #signup input[type="submit"]:focus {
   background: none repeat scroll 0 0 #007bc7;
   color: #FFFFFF;

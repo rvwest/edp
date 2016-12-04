@@ -15,6 +15,11 @@ border-color:$color-blog;
 background: $color-blog-pale;
 }
 
+.category-about .post_cta {
+border-color:$color-about;
+}
+
+
 .category-features .post_cta {
 border-color: $color-features;
 background: $color-features-pale;
