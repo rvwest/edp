@@ -27,19 +27,27 @@ background: $color-events-pale;
 
 .mc4wp-alert {
 font-size: 18px;
+text-align:center;
+padding:1px;
+}
+
+.mc4wp-alert p {
+margin: 2px 2px;
 }
 
 .category-blog .mc4wp-alert {
 background:$color-blog;
+color: $color-heading-reverse;
 }
 
 .category-features .mc4wp-alert {
 background:$color-features;
+color: $color-heading-reverse;
 }
 
 #tribe-events .mc4wp-alert {
 background:$color-events;
-text-align:center;
+
 }
 
 .post_cta h2 {
