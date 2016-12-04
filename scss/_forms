@@ -46,7 +46,7 @@ text-align:center;
 margin-top:10px;
 }
 
-.post_cta input {
+.post_cta .mc4wp-fields input {
  width:22%;
 }
 .post_cta p {
@@ -71,6 +71,7 @@ margin-top:10px;
 display:flex;
 justify-content:space-between;
 font-size:1rem;}
-#signup input[type="submit"] {border: 1px solid #007bc7; color: #007bc7; width:23%}
+
+#signup input[type="submit"] {border: 1px solid #007bc7; color: #007bc7; width:inherit}
 
 #signup input[type="submit"]:hover, #signup input[type="submit"]:focus {background: none repeat scroll 0 0 #007bc7; color: #FFFFFF; transition: all 0.3s linear 0s;  -webkit-transition: all 0.3s linear 0s; -moz-transition: all 0.3s linear 0s; -o-transition: all 0.3s linear 0s  }

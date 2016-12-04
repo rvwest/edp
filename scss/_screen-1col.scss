@@ -298,6 +298,30 @@
 
 	/* #front-blog-wrap .span4:nth-child(3n+1) {margin-left:0px;} */
 
+  /* signup form */
+
+  #signup .mc4wp-fields {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;;
+  }
+
+  #signup .mc4wp-fields input {
+    width:46%;
+  }
+
+  #signup .mc4wp-fields input[type="email"] {
+    flex-grow: 2;
+  }
+
+  #signup .mc4wp-fields input {margin-left:0;}
+
+
+  #signup .mc4wp-submit {
+  display:flex;
+  justify-content:space-between;
+  }
+
 /*#front-blog-wrap .span4 {margin-left:-7px;}*/
 
 }
