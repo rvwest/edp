@@ -22,7 +22,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
 }
 body {
-  color: #777;
+  color: #353535;
   font-family: "Helvetica Neue", Helvetica, "Open Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -3225,7 +3225,7 @@ ul.menu.skt-mob-menu {
   top: 73px;
   width: 100% !important;
   z-index: 99999 !important;
-  padding: 20px 0 15px 0px;
+  padding: 0 0 15px 0px;
 }
 .skt-mob-menu li {
   width: 100% !important;
