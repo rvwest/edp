@@ -2753,10 +2753,6 @@ ul.childpages {
   float: right;
   padding-bottom: 20px;
 }
-.rc-anchor-light.rc-anchor-normal {
-  box-shadow: none;
-  -webkit-box-shadow: none;
-}
 #front-content-box .container {
   padding-top: 45px;
 }
