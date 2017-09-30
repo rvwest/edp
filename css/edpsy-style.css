@@ -2555,7 +2555,7 @@ ul.childpages {
   margin: 0;
 }
 #skenav ul.skt-mob-menu ul li a {
-  padding-left: 30px !important;
+  padding-left: 40px !important;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -2739,7 +2739,7 @@ ul.childpages {
   margin: 0;
 }
 #skenav ul.skt-mob-menu ul li a {
-  padding-left: 30px !important;
+  padding-left: 40px !important;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -3294,7 +3294,7 @@ ul.menu.skt-mob-menu {
     line-height: 18px;
   }
   #skenav a {
-    padding-left: 4.5%;
+    padding-left: 6.3%;
   }
 }
 blockquote {
