@@ -3298,12 +3298,15 @@ ul.menu.skt-mob-menu {
   }
 }
 /** Fundraising banner **/
+.skehead-headernav-shrink .cta-header-block {
+  display: none;
+}
 .cta-header-block {
   padding: 20px;
-  background: #46a6ff;
+  background: #1565c0;
   color: white;
 }
-.cta-header-block a {
+.cta-header-block a.cta-header-button {
   border: 1px solid white;
   padding: 0 12px;
   display: inline-block;
@@ -3330,7 +3333,7 @@ ul.menu.skt-mob-menu {
   margin-left: 0;
   width: 100%;
 }
-.cta-header-block a:hover, .cta-header-block a:focus {
+.cta-header-block a.cta-header-button:hover, .cta-header-block a.cta-header-button:focus {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
   background-color: #c3e2ff;
 }

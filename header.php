@@ -28,7 +28,7 @@
 		<div id="header" class="skehead-headernav clearfix">
 			<div class="glow">
 				<div id="skehead">
-<div class="cta-header-block">					<div class="container"><div class="row-fluid fixedrow"><p>We need your help <br/>Donate a few pounds to help keep this site going and growing</p><p><a href="https://www.crowdfunder.co.uk/edpsy-org-uk">Donate</a></p></div></div> </div>
+<div class="cta-header-block">					<div class="container"><div class="row-fluid fixedrow"><p style="font-size: 1rem;">Dear edpsy readers, we won't keep you long.<br/> We're asking for your help to keep edpsy running. 2,000 people visit our site every month but so far only 1% of visitors have pledged to our crowdfunding and we only have 4 days left to reach our target. <strong>If everyone reading this article gave just 70p</strong> our crowdfunding would be done in a day. We want to keep edpsy free and continue to work hard to improve the visibility of a hugely important profession. Please take a minute to donate and help keep edpsy going to two more years. <em>Thank you</em>.</p><p><a href="https://www.crowdfunder.co.uk/edpsy-org-uk" class="cta-header-button">Donate</a></p></div></div> </div>
 					<div class="container">
 						<div class="row-fluid fixedrow">
 							<!-- #logo -->
