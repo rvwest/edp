@@ -3428,6 +3428,8 @@ h2.tribe-events-page-title {
 .tribe-events-schedule h2 {
   margin-top: 0px;
   font-weight: 300;
+  display: block;
+  margin-bottom: 20px;
 }
 .tribe-events-button, #tribe-bar-form .tribe-bar-submit input[type=submit] {
   background-color: #cddc39;
