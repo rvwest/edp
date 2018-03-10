@@ -11,6 +11,9 @@ padding-top:0;}
 #front-content-box.block--features .container, .category-features .bread-title-holder .container
 { @include wash-line($color-features) }
 
+#front-content-box.block--groups .container, .category-groups .bread-title-holder .container
+{ @include wash-line($color-groups) }
+
 .page-id-8 .bread-title-holder .container, .category-about .bread-title-holder .container
 { @include wash-line($color-about) }
 

@@ -3176,6 +3176,9 @@ a.subhead-link:link, a.subhead-link:visited {
 #skenav li a[href$="/features/"]:hover, #skenav li a[href$="/features/"]:active, #skenav ul li.current-menu-item > a[href$="/features/"], #skenav ul li.current-menu-parent > a[href$="/features/"] {
   background-color: #e91e63;
 }
+#skenav li a[href$="/interest-groups/"]:hover, #skenav li a[href$="/interest-groups/"]:hover, #skenav li a[href$="/interest-groups/"]:active, #skenav ul li.current-menu-item > a[href$="/interest-groups/"], #skenav ul li.current-menu-parent > a[href$="/interest-groups/"] {
+  background-color: #2196f3;
+}
 #skenav li a[href$="/events/"]:hover, #skenav li a[href$="/events/"]:active, #skenav ul li.current-menu-item > a[href$="/events/"], #skenav ul li.current-menu-parent > a[href$="/events/"], #skenav ul li a:hover[href*="/viewform"] {
   background-color: #cddc39;
 }
