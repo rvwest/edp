@@ -64,7 +64,7 @@ background-color: $color-blog;
 background-color: $color-features;
 }
 
-#skenav li a[href$="/interest-groups/"]:hover, #skenav li a[href$="/interest-groups/"]:hover, #skenav li a[href$="/interest-groups/"]:active, #skenav ul li.current-menu-item > a[href$="/interest-groups/"], #skenav ul li.current-menu-parent > a[href$="/interest-groups/"] {
+#skenav li a[href*="interest-groups/"]:hover, #skenav li a[href*="interest-groups/"]:hover, #skenav li a[href*="interest-groups/"]:active, #skenav ul li.current-menu-item > a[href*="interest-groups/"], #skenav ul li.current-menu-parent > a[href*="interest-groups/"] {
 background-color: $color-groups;
 }
 

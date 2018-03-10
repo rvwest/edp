@@ -2769,6 +2769,11 @@ ul.childpages {
   border-top-style: solid;
   border-color: #e91e63;
 }
+#front-content-box.block--groups .container, .category-groups .bread-title-holder .container {
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-color: #2196f3;
+}
 .page-id-8 .bread-title-holder .container, .category-about .bread-title-holder .container {
   border-top-width: 3px;
   border-top-style: solid;
@@ -2955,6 +2960,9 @@ h1.title {
 }
 .category-about h1.title {
   color: #8bc34a;
+}
+.category-groups h1 {
+  color: #2196f3;
 }
 .skt-section a h3, .skt-section h3 a {
   font-family: 'Open Sans', sans-serif;
@@ -3176,7 +3184,7 @@ a.subhead-link:link, a.subhead-link:visited {
 #skenav li a[href$="/features/"]:hover, #skenav li a[href$="/features/"]:active, #skenav ul li.current-menu-item > a[href$="/features/"], #skenav ul li.current-menu-parent > a[href$="/features/"] {
   background-color: #e91e63;
 }
-#skenav li a[href$="/interest-groups/"]:hover, #skenav li a[href$="/interest-groups/"]:hover, #skenav li a[href$="/interest-groups/"]:active, #skenav ul li.current-menu-item > a[href$="/interest-groups/"], #skenav ul li.current-menu-parent > a[href$="/interest-groups/"] {
+#skenav li a[href*="interest-groups/"]:hover, #skenav li a[href*="interest-groups/"]:hover, #skenav li a[href*="interest-groups/"]:active, #skenav ul li.current-menu-item > a[href*="interest-groups/"], #skenav ul li.current-menu-parent > a[href*="interest-groups/"] {
   background-color: #2196f3;
 }
 #skenav li a[href$="/events/"]:hover, #skenav li a[href$="/events/"]:active, #skenav ul li.current-menu-item > a[href$="/events/"], #skenav ul li.current-menu-parent > a[href$="/events/"], #skenav ul li a:hover[href*="/viewform"] {
