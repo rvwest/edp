@@ -2820,6 +2820,9 @@ ul.childpages {
 .block--features h2 a:hover, .block--features h2 a:active {
   border-bottom-color: #e91e63;
 }
+.block--groups h2 a:hover, .block--groups h2 a:active {
+  border-bottom-color: #2196f3;
+}
 .block--training h2 a:hover, .block--training h2 a:active {
   border-bottom-color: #546e7a;
 }
@@ -3187,7 +3190,7 @@ a.subhead-link:link, a.subhead-link:visited {
 #skenav li a[href*="interest-groups/"]:hover, #skenav li a[href*="interest-groups/"]:hover, #skenav li a[href*="interest-groups/"]:active, #skenav ul li.current-menu-item > a[href*="interest-groups/"], #skenav ul li.current-menu-parent > a[href*="interest-groups/"] {
   background-color: #2196f3;
 }
-#skenav li a[href$="/events/"]:hover, #skenav li a[href$="/events/"]:active, #skenav ul li.current-menu-item > a[href$="/events/"], #skenav ul li.current-menu-parent > a[href$="/events/"], #skenav ul li a:hover[href*="/viewform"] {
+#skenav li a[href*="events/"]:hover, #skenav li a[href*="events/"]:active, #skenav ul li.current-menu-item > a[href*="events/"], #skenav ul li.current-menu-parent > a[href*="events/"], #skenav ul li a:hover[href*="/viewform"] {
   background-color: #cddc39;
 }
 #skenav li sfhover.a[href*="training/"], #skenav li a[href*="training/"]:hover, #skenav li a[href*="training/"]:active, #skenav ul li.current-menu-item > a[href*="training/"], #skenav ul li.current-menu-parent > a[href*="training/"] {

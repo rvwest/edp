@@ -55,6 +55,10 @@ padding-top:0;}
    	  border-bottom-color: $color-features;
 }
 
+.block--groups h2 a:hover, .block--groups h2 a:active {
+   	  border-bottom-color: $color-groups;
+}
+
 .block--training h2 a:hover, .block--training h2 a:active {
    	  border-bottom-color: $color-training;
 }

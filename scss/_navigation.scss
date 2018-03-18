@@ -68,7 +68,7 @@ background-color: $color-features;
 background-color: $color-groups;
 }
 
-#skenav li a[href$="/events/"]:hover, #skenav li a[href$="/events/"]:active, #skenav ul li.current-menu-item > a[href$="/events/"], #skenav ul li.current-menu-parent > a[href$="/events/"], #skenav ul li a:hover[href*="/viewform"]  {
+#skenav li a[href*="events/"]:hover, #skenav li a[href*="events/"]:active, #skenav ul li.current-menu-item > a[href*="events/"], #skenav ul li.current-menu-parent > a[href*="events/"], #skenav ul li a:hover[href*="/viewform"]  {
 background-color: $color-events;
 }
 
