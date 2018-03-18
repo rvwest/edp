@@ -20,6 +20,9 @@ padding-top:0;}
 #front-content-box.block--training .container, .category-training .bread-title-holder .container
 { @include wash-line($color-training) }
 
+.category-events .bread-title-holder .container
+{ @include wash-line($color-events) }
+
 /*.tribe-theme-edpsy #skehead > .container
 {border-bottom-width: 3px; border-bottom-style: solid; border-color: $color-events}
 */

@@ -2784,6 +2784,11 @@ ul.childpages {
   border-top-style: solid;
   border-color: #546e7a;
 }
+.category-events .bread-title-holder .container {
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-color: #cddc39;
+}
 /*.tribe-theme-edpsy #skehead > .container
  {border-bottom-width: 3px; border-bottom-style: solid; border-color: $color-events}
  */
@@ -2966,6 +2971,9 @@ h1.title {
 }
 .category-groups h1 {
   color: #2196f3;
+}
+.category-events h1 {
+  color: #cddc39;
 }
 .skt-section a h3, .skt-section h3 a {
   font-family: 'Open Sans', sans-serif;
