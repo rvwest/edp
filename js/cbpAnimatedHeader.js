@@ -216,7 +216,7 @@ var cbpAnimatedHeader = (function() {
 
 		var sy = scrollY();
 
-		if ( sy >= changeHeaderOn ) {
+		if ( sy >= changeHeaderOn && !jQuery('#menu-main').hasClass('skt-mob-menu')) {
 
 			jQuery('.header-clone').css('height','85');
 
