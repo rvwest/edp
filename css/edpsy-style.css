@@ -2560,7 +2560,7 @@ ul.childpages {
   margin: 0;
 }
 #skenav ul.skt-mob-menu ul li a {
-  padding-left: 40px !important;
+  padding-left: 60px !important;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -2744,7 +2744,7 @@ ul.childpages {
   margin: 0;
 }
 #skenav ul.skt-mob-menu ul li a {
-  padding-left: 40px !important;
+  padding-left: 60px !important;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -3136,7 +3136,7 @@ a.subhead-link:link, a.subhead-link:visited {
   display: block;
   font-size: 18px;
   line-height: 85px;
-  padding: 0 22px;
+  padding: 0 20px 0 40px;
   text-decoration: none;
   transition: color 0.1s linear 0s, background 0.1s linear 0s;
   -webkit-transition: color 0.1s linear 0s, background 0.1s linear 0s;
