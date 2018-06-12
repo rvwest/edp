@@ -28,7 +28,7 @@
 
 
 
-<p class="foot-message"><a href="https://twitter.com/edpsyuk"><i class="fa fa-twitter" aria-hidden="true"></i> @edpsyuk</a> | <a href="mailto:hello@edpsy.org.uk"><i class="fa fa-envelope-o" aria-hidden="true"></i> hello@edpsy.org.uk</a></p>
+<p class="foot-message"><a href="https://twitter.com/edpsyuk"><i class="fab fa-twitter"></i> @edpsyuk</a> | <a href="mailto:hello@edpsy.org.uk"><i class="fal fa-envelope"></i> hello@edpsy.org.uk</a></p>
 <p class="foot-message"><a href="/about/">Find out more about us</a><br/>Spotted something wrong? <a href="mailto:hello@edpsy.org.uk">let us know</a></p>
 
 
@@ -65,7 +65,7 @@
 
 </div>
 <!-- #wrapper -->
-	<a href="JavaScript:void(0);" title="<?php _e('Back To Top', 'advertica-lite'); ?>" id="backtop"></a>
+	<a href="JavaScript:void(0);" title="<?php _e('Back To Top', 'advertica-lite'); ?>" id="backtop"><i class="fas fa-chevron-up"></i></a>
 	<?php wp_footer(); ?>
 </body>
 </html>

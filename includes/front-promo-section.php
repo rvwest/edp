@@ -7,7 +7,7 @@
 		<div class="overlap-img-title">
 		<a href="<?php echo do_shortcode( get_theme_mod('promo_url', '#') ); ?>"><div class="overlap-title span10 no-gutter-l">
 			<h1 class="title">
-					<?php echo do_shortcode( get_theme_mod('promo_content', 'The secret EP is coming') ); ?><i class="fa fa-angle-right" aria-hidden="true"></i>
+					<?php echo do_shortcode( get_theme_mod('promo_content', 'The secret EP is coming') ); ?><i class="far fa-angle-right"></i></i>
 			</h1>
 
 
