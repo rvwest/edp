@@ -95,7 +95,7 @@ jQuery('#menu-main').superfish('destroy');
 obj.addClass('skt-mob-menu').hide();
 obj.parent().css('position','relative');
 if(obj.prev('.sktmenu-toggle').length === 0) {
-obj.before('<div class="sktmenu-toggle" id="responsive-nav-button"><i class="far fa-bars"></i></div>');
+obj.before('<div class="sktmenu-toggle" id="responsive-nav-button">Menu <i class="far fa-bars"></i></div>');
 }
 obj.parent().find('.sktmenu-toggle').removeClass('active');
 }

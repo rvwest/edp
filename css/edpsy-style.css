@@ -1796,7 +1796,7 @@ div.m-style-iw {
   color: #f54336;
 }
 a#backtop svg {
-  margin-left: 11px;
+  margin-left: 10px;
   margin-top: 7px;
   color: #fff;
   /* a#backtop:before{color: #FFFFFF;content: "\f106"; display: block; font-family: 'FontAwesome'; font-size:14px; margin-top: 9px; text-align: center;}*/
@@ -2009,20 +2009,7 @@ ul.childpages {
 }
 #menu-icon {
   display: none;
-}
-.responsive-nav-button {
-  background-color: #d6d6d6;
-  border-radius: 3px 3px 3px 3px;
-  display: none;
-  font-family: "FontAwesome";
-  font-size: 21px;
-  font-style: normal;
-  font-weight: normal;
-  height: 35px;
-  line-height: 37px;
-  text-align: center;
-  vertical-align: middle;
-  width: 35px;
+  /* .responsive-nav-button {background-color: #D6D6D6;border-radius: 3px 3px 3px 3px; display: none;font-family: "FontAwesome";font-size: 21px;font-style: normal;font-weight: normal;height: 35px;line-height: 37px;text-align: center;vertical-align: middle;width: 35px; }*/
 }
 #mini-menu {
   background: url("images/menuulbg.png") repeat scroll 0 0 transparent;
@@ -2536,9 +2523,10 @@ ul.childpages {
 .sktmenu-toggle {
   background-color: #d6d6d6;
   cursor: pointer;
+  padding: 0 10px;
+  color: #fff;
   float: right;
-  font-family: "FontAwesome";
-  font-size: 21px;
+  font-size: 18px;
   font-style: normal;
   font-weight: normal;
   height: 35px;
@@ -2547,7 +2535,6 @@ ul.childpages {
   right: -6px;
   text-align: center;
   vertical-align: middle;
-  width: 35px;
   /*#header.skehead-headernav-shrink .sktmenu-toggle { margin-top:10px; }*/
 }
 #header.skehead-headernav-shrink .skt-mob-menu {
@@ -2719,9 +2706,10 @@ ul.childpages {
 .sktmenu-toggle {
   background-color: #d6d6d6;
   cursor: pointer;
+  padding: 0 10px;
+  color: #fff;
   float: right;
-  font-family: "FontAwesome";
-  font-size: 21px;
+  font-size: 18px;
   font-style: normal;
   font-weight: normal;
   height: 35px;
@@ -2730,7 +2718,6 @@ ul.childpages {
   right: -6px;
   text-align: center;
   vertical-align: middle;
-  width: 35px;
   /*#header.skehead-headernav-shrink .sktmenu-toggle { margin-top:10px; }*/
 }
 #header.skehead-headernav-shrink .skt-mob-menu {
