@@ -92,7 +92,9 @@ sktDeskRes();
 });
 function sktMobileRes() {
 jQuery('#menu-main').superfish('destroy');
-obj.addClass('skt-mob-menu').hide();
+// test 1
+//obj.addClass('skt-mob-menu').hide();
+obj.addClass('skt-mob-menu');
 obj.parent().css('position','relative');
 if(obj.prev('.sktmenu-toggle').length === 0) {
 obj.before('<div class="sktmenu-toggle" id="responsive-nav-button">Menu <i class="far fa-bars"></i></div>');
@@ -272,7 +274,8 @@ $j(window).resize(function(){
                 e.toggleClass(r)
             }, s = function (n, r) {
                 return n.find("li." + r.pathClass).slice(0, r.pathLevels).addClass(r.hoverClass + " " + t.bcClass).filter(function () {
-                    return e(this).children(r.popUpSelector).hide().show().length
+                    //test2
+										return e(this).children(r.popUpSelector).hide().show().length
                 }).removeClass(r.pathClass)
             }, o = function (e) {
                 e.children("a").toggleClass(t.anchorClass)
