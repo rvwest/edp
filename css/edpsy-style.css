@@ -2535,6 +2535,7 @@ ul.childpages {
   right: -6px;
   text-align: center;
   vertical-align: middle;
+  min-width: 35px;
   /*#header.skehead-headernav-shrink .sktmenu-toggle { margin-top:10px; }*/
 }
 #header.skehead-headernav-shrink .skt-mob-menu {
@@ -2718,6 +2719,7 @@ ul.childpages {
   right: -6px;
   text-align: center;
   vertical-align: middle;
+  min-width: 35px;
   /*#header.skehead-headernav-shrink .sktmenu-toggle { margin-top:10px; }*/
 }
 #header.skehead-headernav-shrink .skt-mob-menu {
@@ -3268,8 +3270,7 @@ ul.menu.skt-mob-menu {
 }
 #skehead .skt-mob-menu .sub-menu li a:before {
   color: #ddd;
-  content: "\f105";
-  font-family: "FontAwesome";
+  content: ">";
   font-size: 21px;
   padding-right: 7px;
 }
