@@ -74,7 +74,7 @@ jQuery(this).next('ul:first').stop(true,true).slideDown();
 'use strict';
 $.fn.sktmobilemenu = function( options ) {
 var defaults = {
-'fwidth': 901
+'fwidth': 1105
 };
 //call in the default otions
 var options = $.extend(defaults, options);

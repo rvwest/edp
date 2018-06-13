@@ -12,8 +12,9 @@
 
 #skenav .ske-menu .menu li, ul.menu li {  float: left;  position: relative;  margin-left: 0px;  list-style: none outside none;  }
 
-#skenav a {color: #333333; display: block; font-size: 18px; line-height: 85px; padding: 0 20px 0 40px; text-decoration: none; transition: color 0.1s linear 0s, background 0.1s linear 0s; -webkit-transition: color 0.1s linear 0s, background 0.1s linear 0s;  	-moz-transition: color 0.1s linear 0s, background 0.1s linear 0s; -o-transition: color 0.1s linear 0s, background 0.1s linear 0s; }
+#skenav a {color: #333333; display: block; font-size: 18px; line-height: 85px; padding: 0 22px; text-decoration: none; transition: color 0.1s linear 0s, background 0.1s linear 0s; -webkit-transition: color 0.1s linear 0s, background 0.1s linear 0s;  	-moz-transition: color 0.1s linear 0s, background 0.1s linear 0s; -o-transition: color 0.1s linear 0s, background 0.1s linear 0s; }
 
+#skenav skt-mob-menu a {padding: 0 20px 0 40px;}
 
 #skenav ul ul {
 	position: absolute;

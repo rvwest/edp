@@ -3136,12 +3136,15 @@ a.subhead-link:link, a.subhead-link:visited {
   display: block;
   font-size: 18px;
   line-height: 85px;
-  padding: 0 20px 0 40px;
+  padding: 0 22px;
   text-decoration: none;
   transition: color 0.1s linear 0s, background 0.1s linear 0s;
   -webkit-transition: color 0.1s linear 0s, background 0.1s linear 0s;
   -moz-transition: color 0.1s linear 0s, background 0.1s linear 0s;
   -o-transition: color 0.1s linear 0s, background 0.1s linear 0s;
+}
+#skenav skt-mob-menu a {
+  padding: 0 20px 0 40px;
 }
 #skenav ul ul {
   position: absolute;
@@ -3286,7 +3289,7 @@ ul.menu.skt-mob-menu {
   z-index: 9999;
   background: #fff;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1105px) {
   /** Fundraising banner **/  #menu-main {
     display: none;
   }
@@ -4870,7 +4873,7 @@ h2.tribe-events-page-title {
 	#featured-box{margin-top:0;}
 	#featured-box .mid-box {width:100%;margin-left:0; margin-top: 80px;}
 	#skt-stream-sktmultisocialfeed-2 img ,
-	.ske-container.sktmultisocialstream li, 
+	.ske-container.sktmultisocialstream li,
 	#main .ske-container.sktmultisocialstream li{
 		width:49px;
 		height:49px;
@@ -5062,7 +5065,7 @@ h2.tribe-events-page-title {
 		width: 89%;
 	}
 	.team-box.row-fluid .team-box-mid.span4.no-margin {
-		margin: 35px auto 30px; 
+		margin: 35px auto 30px;
 	}
 	.team-box.row-fluid div.team-box-mid.span4:first-child{margin-top:0 !important;}
 	.clients-items li img, .project-item img {
@@ -5135,9 +5138,9 @@ h2.tribe-events-page-title {
 	#content .ske_tab_v .ske_tab_container {width:65%;}
 	a#backtop { display:none !important;}
 	#content .contact-left form textarea { width: 97%;}
-	.alignright, 
-	.alignleft, 
-	.aligncenter, 
+	.alignright,
+	.alignleft,
+	.aligncenter,
 	.alignnone.size-full {float:none;}
 	.commentlist .children li{padding-left: 0;}
 	.reply{top: 0;}
@@ -5164,7 +5167,7 @@ h2.tribe-events-page-title {
 	}
 	.error404 #searchform input[type="text"], .search #searchform input[type="text"], #sidebar #searchform input[type="text"], #footer #searchform input[type="text"] {width:196px;}
 	#skt-stream-sktmultisocialfeed-2 img ,
-	.ske-container.sktmultisocialstream li, 
+	.ske-container.sktmultisocialstream li,
 	#main .ske-container.sktmultisocialstream li,.ske-container.sktmultisocialstream a, #main .ske-container.sktmultisocialstream a{
 		width:83px;
 		height:83px;
@@ -5212,7 +5215,7 @@ h2.tribe-events-page-title {
 	}
 	.skt-statistics-wrap .skt-counter{
 		 margin-bottom: 10px;
-	}	
+	}
 	.ouroffice-page .one_fourth {
 		margin: 0 auto !important;
 		width: 85%;
@@ -5241,8 +5244,8 @@ h2.tribe-events-page-title {
 		border:0px !important;
 	}
 
-	#header.skehead-headernav.skehead-headernav-shrink { 
-		padding-right:0px; 
+	#header.skehead-headernav.skehead-headernav-shrink {
+		padding-right:0px;
 	}
 
 }*/
