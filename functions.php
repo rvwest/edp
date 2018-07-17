@@ -96,9 +96,9 @@ function advertica_lite_theme_setup() {
 
 	/*
 	 * This theme uses a custom image size for featured images, displayed on
-	 * "standard" posts and pages.
+	 * "standard" posts and pages....
 	 */
-	add_theme_support('post-thumbnails');
+	add_theme_support('post-thumbnails'); 
 
 	/**
 	 * Enable support for Post Formats
