@@ -12,7 +12,6 @@ $color-overlay: rgba(255, 255, 255, 0.67);
 $color-outline: #ddd;
 */
 /*** ESSENTIAL STYLES ***/
-/*** ESSENTIAL STYLES ***/
 /* ----- post detail page ----- */
 /* ---------- post (blog or feature article) ---------- */
 /* ----- listing -----*/
@@ -2494,200 +2493,18 @@ ul.childpages {
 }
 .sf-arrows ul li > .sf-with-ul:focus:after, .sf-arrows ul li:hover > .sf-with-ul:after, .sf-arrows ul .sfHover > .sf-with-ul:after {
   border-left-color: white;
-}
-.skt-mob-menu {
-  box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.5);
-  background: none repeat scroll 0 0 #fff !important;
-  left: 0 !important;
-  margin-right: -3% !important;
-  position: absolute !important;
-  top: 73px;
-  width: 100% !important;
-  z-index: 99999 !important;
-}
-.skt-mob-menu li {
-  width: 100% !important;
-  margin: 0;
-}
-.skt-mob-menu li a {
-  line-height: 36px !important;
-}
-.skt-mob-menu .sub-menu {
-  position: relative !important;
-  left: 0 !important;
-  /*.sktmenu-toggle:before{ color: #fff; content: "\f0c9";}*/
-}
-.sktmenu-toggle svg {
-  color: #fff;
-}
-.sktmenu-toggle {
-  background-color: #d6d6d6;
-  cursor: pointer;
-  padding: 0 10px;
-  color: #fff;
-  float: right;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: normal;
-  height: 35px;
-  line-height: 37px;
-  margin-top: 18px;
-  right: -6px;
-  text-align: center;
-  vertical-align: middle;
-  min-width: 35px;
-  /*#header.skehead-headernav-shrink .sktmenu-toggle { margin-top:10px; }*/
-}
-#header.skehead-headernav-shrink .skt-mob-menu {
-  top: 56px;
-}
-.skt-mob-menu li.has_child > a {
-  background-image: url('../images/ch-arr.png');
-  background-repeat: no-repeat;
-  background-position: 98% center;
-  -webkit-transition: all 0.5s ease 0s;
-  -moz-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-}
-#skenav.ske-menu {
-  position: static !important;
-}
-#skenav ul.skt-mob-menu ul {
-  width: 100%;
-  border: 0;
-  position: relative;
-  margin: 0;
-}
-#skenav ul.skt-mob-menu ul li a {
-  padding-left: 60px !important;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-#skenav ul.skt-mob-menu ul ul li a {
-  padding-left: 60px !important;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  /*#skenav ul.skt-mob-menu .children li:first-child, #skenav ul.skt-mob-menu .sub-menu li:first-child {border-top:1px solid rgba(0, 0, 0, 0.15);}*/
-}
-.sf-menu, .sf-menu * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.sf-menu li {
-  position: relative;
-}
-.sf-menu ul {
-  position: absolute;
-  display: none;
-  top: 100%;
-  left: 0;
-  z-index: 99;
-}
-.sf-menu > li {
-  float: left;
-}
-.sf-menu li:hover > ul, .sf-menu li.sfHover > ul {
-  display: block;
-}
-.sf-menu a {
-  display: block;
-  position: relative;
-}
-.sf-menu ul ul {
-  top: 0;
-  left: 100%;
-  /*** DEMO SKIN ***/
-}
-.sf-menu {
-  float: left;
-  margin-bottom: 1em;
-}
-.sf-menu ul {
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, .2);
-  /* allow long menu items to determine submenu width */
-  min-width: 12em;
-}
-.sf-menu a {
-  border-left: 1px solid #fff;
-  /* fallback colour must use full shorthand */
-  border-top: 1px solid #dfeeff;
-  border-top: 1px solid rgba(255, 255, 255, .5);
-  padding: 0.75em 1em;
-  text-decoration: none;
-}
-.sf-menu a {
-  color: #13a;
-}
-.sf-menu li {
-  background: #bdd2ff;
-  /* no need for Supersubs plugin */
-  white-space: nowrap;
-  -webkit-transition: background 0.2s;
-  transition: background 0.2s;
-}
-.sf-menu ul li {
-  background: #aabde6;
-}
-.sf-menu ul ul li {
-  background: #9aaedb;
-}
-.sf-menu li:hover, .sf-menu li.sfHover {
-  /* only transition out, not in */
-  background: #cfdeff;
-  -webkit-transition: none;
-  transition: none;
-  /*** arrows (for all except IE7) **/
-}
-.sf-arrows .sf-with-ul {
-  padding-right: 2.5em;
-  /* styling for both css and generated arrows */
-}
-.sf-arrows .sf-with-ul:after {
-  content: '';
-  position: absolute;
-  top: 55%;
-  right: 0em;
-  margin-top: -3px;
-  height: 0;
-  width: 0;
-  color: transparent;
-  /* order of following 3 rules important for fallbacks to work */
-  /*border: 5px solid transparent;*/
-  /* edit this to suit design (no rgba in IE8) */
-  border-top-color: #dfeeff;
-  border-top-color: rgba(255, 255, 255, .5);
-}
-.sf-arrows > li > .sf-with-ul:focus:after, .sf-arrows > li:hover > .sf-with-ul:after, .sf-arrows > .sfHover > .sf-with-ul:after {
-  /* IE8 fallback colour */
-  border-top-color: white;
-  color: transparent;
-  /* styling for right-facing arrows */
-}
-.sf-arrows ul .sf-with-ul:after {
-  margin-top: -5px;
-  margin-right: -3px;
-  border-color: transparent;
-  border: 5px solid transparent;
-  /* edit this to suit design (no rgba in IE8) */
-  border-left-color: #dfeeff;
-  border-left-color: rgba(255, 255, 255, .5);
-  right: 1em;
-  top: 50%;
-}
-.sf-arrows ul li > .sf-with-ul:focus:after, .sf-arrows ul li:hover > .sf-with-ul:after, .sf-arrows ul .sfHover > .sf-with-ul:after {
-  border-left-color: white;
-}
-.skt-mob-menu {
-  box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.5);
-  background: none repeat scroll 0 0 #fff !important;
-  left: 0 !important;
-  margin-right: -3% !important;
-  position: absolute !important;
-  top: 73px;
-  width: 100% !important;
-  z-index: 99999 !important;
+  /* migrated to _navigation 
+.skt-mob-menu {box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.5);	
+    background: none repeat scroll 0 0 #FFFFFF !important;
+    max-width: 400px;
+    right: 0;
+    
+     left: 0 !important; 
+     margin-right: -3% !important; 
+     position: absolute !important; 
+     top: 73px; 
+     width: 100% !important; 
+     z-index: 99999 !important;}*/
 }
 .skt-mob-menu li {
   width: 100% !important;
@@ -2726,7 +2543,6 @@ ul.childpages {
   top: 56px;
 }
 .skt-mob-menu li.has_child > a {
-  background-image: url('../images/ch-arr.png');
   background-repeat: no-repeat;
   background-position: 98% center;
   -webkit-transition: all 0.5s ease 0s;
@@ -2744,7 +2560,7 @@ ul.childpages {
   margin: 0;
 }
 #skenav ul.skt-mob-menu ul li a {
-  padding-left: 60px !important;
+  padding-left: 46px !important;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -3244,24 +3060,23 @@ a.subhead-link:link, a.subhead-link:visited {
   margin-top: 2px;
   /* --- mobile menu --- */
 }
-ul.menu.skt-mob-menu {
-  box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.5);
+.skt-mob-menu {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
   background: none repeat scroll 0 0 #fff !important;
-  left: 0 !important;
-  margin-right: -3% !important;
-  position: absolute !important;
-  top: 73px;
-  width: 100% !important;
+  float: right;
+  position: absolute;
+  right: 20px;
+  top: 72px;
+  max-width: 400px;
   z-index: 99999 !important;
-  padding: 0 0 15px 0px;
+  padding: 15px 0 15px 0px;
 }
 .skt-mob-menu li {
-  width: 100% !important;
   margin: 0;
 }
-.skt-mob-menu li a {
+#skenav .skt-mob-menu li a {
   line-height: 36px !important;
-  padding: 0 5px 0 15px;
+  padding: 0 5px 0 35px;
 }
 #skehead .skt-mob-menu .sub-menu li a {
   line-height: 36px !important;
@@ -3279,6 +3094,7 @@ ul.menu.skt-mob-menu {
 }
 #skehead .skt-mob-menu .sub-menu {
   display: inherit;
+  list-style-type: none;
 }
 #skehead ul.skt-mob-menu li ul li a {
   border: none;
@@ -3289,7 +3105,7 @@ ul.menu.skt-mob-menu {
   z-index: 9999;
   background: #fff;
 }
-@media only screen and (max-width: 1105px) {
+@media only screen and (max-width: 900px) {
   /** Fundraising banner **/  #menu-main {
     display: none;
   }
@@ -4873,7 +4689,7 @@ h2.tribe-events-page-title {
 	#featured-box{margin-top:0;}
 	#featured-box .mid-box {width:100%;margin-left:0; margin-top: 80px;}
 	#skt-stream-sktmultisocialfeed-2 img ,
-	.ske-container.sktmultisocialstream li,
+	.ske-container.sktmultisocialstream li, 
 	#main .ske-container.sktmultisocialstream li{
 		width:49px;
 		height:49px;
@@ -5065,7 +4881,7 @@ h2.tribe-events-page-title {
 		width: 89%;
 	}
 	.team-box.row-fluid .team-box-mid.span4.no-margin {
-		margin: 35px auto 30px;
+		margin: 35px auto 30px; 
 	}
 	.team-box.row-fluid div.team-box-mid.span4:first-child{margin-top:0 !important;}
 	.clients-items li img, .project-item img {
@@ -5138,9 +4954,9 @@ h2.tribe-events-page-title {
 	#content .ske_tab_v .ske_tab_container {width:65%;}
 	a#backtop { display:none !important;}
 	#content .contact-left form textarea { width: 97%;}
-	.alignright,
-	.alignleft,
-	.aligncenter,
+	.alignright, 
+	.alignleft, 
+	.aligncenter, 
 	.alignnone.size-full {float:none;}
 	.commentlist .children li{padding-left: 0;}
 	.reply{top: 0;}
@@ -5167,7 +4983,7 @@ h2.tribe-events-page-title {
 	}
 	.error404 #searchform input[type="text"], .search #searchform input[type="text"], #sidebar #searchform input[type="text"], #footer #searchform input[type="text"] {width:196px;}
 	#skt-stream-sktmultisocialfeed-2 img ,
-	.ske-container.sktmultisocialstream li,
+	.ske-container.sktmultisocialstream li, 
 	#main .ske-container.sktmultisocialstream li,.ske-container.sktmultisocialstream a, #main .ske-container.sktmultisocialstream a{
 		width:83px;
 		height:83px;
@@ -5215,7 +5031,7 @@ h2.tribe-events-page-title {
 	}
 	.skt-statistics-wrap .skt-counter{
 		 margin-bottom: 10px;
-	}
+	}	
 	.ouroffice-page .one_fourth {
 		margin: 0 auto !important;
 		width: 85%;
@@ -5244,8 +5060,8 @@ h2.tribe-events-page-title {
 		border:0px !important;
 	}
 
-	#header.skehead-headernav.skehead-headernav-shrink {
-		padding-right:0px;
+	#header.skehead-headernav.skehead-headernav-shrink { 
+		padding-right:0px; 
 	}
 
 }*/
