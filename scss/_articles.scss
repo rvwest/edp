@@ -1,7 +1,7 @@
-blockquote {border-radius: 2px;font-size: 1rem !important; padding:10px 5px 8px 20px;  margin-right: 10px;  margin-bottom: 10px;  color: #FFFFFF;  quotes: none;  font-style: italic; line-height: 22px; background-color: none; color: $color-copy}
-.post #content .skepost blockquote p {font-size: 1rem}
-.category-blog blockquote {color: $color-blog;}
-.category-features blockquote {color: $color-features;}
+blockquote {padding:10px 5px 10px 20px; line-height: 28px;  margin-right: 10px;  margin-bottom: 10px;  quotes: none;  font-style: italic;  background-color: none; border-left: solid 2px $color-copy}
+//.post #content .skepost blockquote p {font-size: 1rem}
+.category-blog blockquote {border-left: solid 2px $color-blog;}
+.category-features blockquote {border-left: solid 2px $color-features;}
 
 #content a:link, #content a:visited {text-decoration:underline}
 .wp-caption {  background: none repeat scroll 0 0 #FFFFFF;  border: 1px solid #F0F0F0;  padding: 5px 3px;  text-align: center;  border: 1px solid #EEEEEE;  max-width: 100%; margin-bottom: 20px;  }

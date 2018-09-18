@@ -73,10 +73,12 @@ padding-top:0;}
 /*   */
 a:link p, a:visited p { color:$color-copy ;}
 
-.post #content .skepost p:first-child {
-font-size: 1.5em;
+.post #content .skepost > p:first-child {
+
+	font-size: 1.5em;
 line-height: 1.3em;
 }
+
 
 
 /* Blocks */

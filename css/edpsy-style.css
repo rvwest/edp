@@ -95,9 +95,6 @@ dd {
 cite {
   font-weight: 400;
 }
-blockquote cite a {
-  color: #fff;
-}
 iframe {
   max-width: 100%;
   width: 100%;
@@ -2656,7 +2653,7 @@ ul.childpages {
 a:link p, a:visited p {
   color: #3d4449;
 }
-.post #content .skepost p:first-child {
+.post #content .skepost > p:first-child {
   font-size: 1.5em;
   line-height: 1.3em;
   /* Blocks */
@@ -3066,7 +3063,7 @@ a.subhead-link:link, a.subhead-link:visited {
   float: right;
   position: absolute;
   right: 20px;
-  top: 72px;
+  top: 71px;
   max-width: 400px;
   z-index: 99999 !important;
   padding: 15px 0 15px 0px;
@@ -3183,26 +3180,20 @@ a.subhead-link:link, a.subhead-link:visited {
   display: none !important;
 }
 blockquote {
-  border-radius: 2px;
-  font-size: 1rem !important;
-  padding: 10px 5px 8px 20px;
+  padding: 10px 5px 10px 20px;
+  line-height: 28px;
   margin-right: 10px;
   margin-bottom: 10px;
-  color: #fff;
   quotes: none;
   font-style: italic;
-  line-height: 22px;
   background-color: none;
-  color: #3d4449;
-}
-.post #content .skepost blockquote p {
-  font-size: 1rem;
+  border-left: solid 2px #3d4449;
 }
 .category-blog blockquote {
-  color: #00bcd4;
+  border-left: solid 2px #00bcd4;
 }
 .category-features blockquote {
-  color: #e91e63;
+  border-left: solid 2px #e91e63;
 }
 #content a:link, #content a:visited {
   text-decoration: underline;
