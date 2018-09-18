@@ -3180,10 +3180,11 @@ a.subhead-link:link, a.subhead-link:visited {
   display: none !important;
 }
 blockquote {
-  padding: 10px 5px 10px 20px;
+  padding: 6px 5px 9px 20px;
   line-height: 28px;
   margin-right: 10px;
   margin-bottom: 10px;
+  margin-left: 10px;
   quotes: none;
   font-style: italic;
   background-color: none;
@@ -3194,6 +3195,9 @@ blockquote {
 }
 .category-features blockquote {
   border-left: solid 2px #e91e63;
+}
+blockquote p:last-child {
+  margin-bottom: 0;
 }
 #content a:link, #content a:visited {
   text-decoration: underline;
