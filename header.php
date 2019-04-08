@@ -30,6 +30,7 @@
 		<div id="header" class="skehead-headernav clearfix">
 			<div class="glow">
 				<div id="skehead">
+				<div class="cta-header-block">					<div class="container"><div class="row-fluid fixedrow"><p>Win a copy of Circles of Adults <br/><a href="/about/email-updates/">Join our mailing list</a></p><p><i class="fal fa-2x fa-gift"></i></p></div></div> </div>
 					<div class="container">
 						<div class="row-fluid fixedrow">
 							<!-- #logo -->

@@ -4,7 +4,7 @@
 
 #skehead .sub-menu { display: none; }
 
-#logo #site-title a { color: $color-site-title ;display: inline-block;font-size: 30px;font-weight: 700; line-height: 30px; margin-top: 5px; text-decoration: none; text-transform: none;}
+#logo #site-title a { color: $color-site-title ;display: inline-block;font-size: 30px;font-weight: 700; line-height: 30px; margin-top: 10px; text-decoration: none; text-transform: none;}
 
 /*#logo #site-title { display: block;font-size: 30px;margin: 8px 0 11px;}*/
 
@@ -101,9 +101,9 @@ background-color: $color-tile;
 
 .skehead-headernav.skehead-headernav-shrink #logo #site-title {margin: 0 0 2px;}
 
-.skehead-headernav.skehead-headernav-shrink #logo #site-title a {font-size: 15px; line-height: 20px;  margin-top: 6px;}
+.skehead-headernav.skehead-headernav-shrink #logo #site-title a {font-size: 15px; line-height: 20px;  margin-top: 8px;}
 
-.skehead-headernav.skehead-headernav-shrink  #logo #site-description {  font-size: 11px;margin-top: 2px;}
+.skehead-headernav.skehead-headernav-shrink  #logo #site-description {  font-size: 11px;margin-top: 0px;}
 
 
 /* --- mobile menu --- */
@@ -168,19 +168,26 @@ padding: 15px 0 15px 0px; }
 
 		#logo {margin-left:7px; margin-right:-7px;}
 
-  		#logo #site-description { font-size:15px; line-height:18px;}
+  		#logo #site-description { font-size:15px; line-height:11px;}
 
   		#skenav a { padding-left: 6.3%;}
 }
 
 /** Fundraising banner **/
 .skehead-headernav-shrink .cta-header-block {display:none;}
-.cta-header-block { padding: 20px; background: #1565C0; color: white;}
-.cta-header-block a.cta-header-button {border: 1px solid white; padding: 0 12px; display: inline-block; margin-left: 10px; font-size:1.5rem; line-height: 3rem; background-color: #fff;  border-width: 0; outline: none; border-radius: 2px; box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+.cta-header-block { padding: 20px; 
+	color: white; 
+	background: #331a99;
+	background: -moz-linear-gradient(-45deg, #331a99 0%, #b85abd 100%);
+	background: -webkit-linear-gradient(-45deg, #331a99 0%,#b85abd 100%); 
+	background: linear-gradient(135deg, #331a99 0%,#b85abd 100%)}
+.cta-header-block a.cta-header-button {border: 1px solid white; padding: 0 12px; display: inline-block; margin-left: 10px; font-size:18px; font-weight: bold; line-height: 3rem; background-color: #fff;  border-width: 0; outline: none; border-radius: 2px; box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
   transition: background-color .3s;}
 .cta-header-block .fixedrow {display: flex; justify-content: space-between; align-items: center;}
 .cta-header-block p {margin-bottom: 0; vertical-align: bottom}
 .cta-header-block .row-fluid {margin-left: 0; width:100%}
 .cta-header-block a.cta-header-button:hover, .cta-header-block a.cta-header-button:focus {box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
-    background-color: rgb(195, 226, 255)}
+		background-color: rgb(195, 226, 255)}
+		.cta-header-block a:link, .cta-header-block a:visited {color: #fff; text-decoration: underline;}
+		.cta-header-block a:hover, .cta-header-block a:focus {color: #fff; text-decoration: none;}
 .cta-header-block .row-fluid:before, .cta-header-block .row-fluid:after {display:none !important;}

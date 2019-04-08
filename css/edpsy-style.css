@@ -2925,7 +2925,7 @@ a.subhead-link:link, a.subhead-link:visited {
   font-size: 30px;
   font-weight: 700;
   line-height: 30px;
-  margin-top: 5px;
+  margin-top: 10px;
   text-decoration: none;
   text-transform: none;
   /*#logo #site-title { display: block;font-size: 30px;margin: 8px 0 11px;}*/
@@ -3050,11 +3050,11 @@ a.subhead-link:link, a.subhead-link:visited {
 .skehead-headernav.skehead-headernav-shrink #logo #site-title a {
   font-size: 15px;
   line-height: 20px;
-  margin-top: 6px;
+  margin-top: 8px;
 }
 .skehead-headernav.skehead-headernav-shrink #logo #site-description {
   font-size: 11px;
-  margin-top: 2px;
+  margin-top: 0px;
   /* --- mobile menu --- */
 }
 .skt-mob-menu {
@@ -3131,7 +3131,7 @@ a.subhead-link:link, a.subhead-link:visited {
   }
   #logo #site-description {
     font-size: 15px;
-    line-height: 18px;
+    line-height: 11px;
   }
   #skenav a {
     padding-left: 6.3%;
@@ -3142,15 +3142,19 @@ a.subhead-link:link, a.subhead-link:visited {
 }
 .cta-header-block {
   padding: 20px;
-  background: #1565c0;
   color: white;
+  background: #331a99;
+  background: -moz-linear-gradient(-45deg, #331a99 0%, #b85abd 100%);
+  background: -webkit-linear-gradient(-45deg, #331a99 0%, #b85abd 100%);
+  background: linear-gradient(135deg, #331a99 0%, #b85abd 100%);
 }
 .cta-header-block a.cta-header-button {
   border: 1px solid white;
   padding: 0 12px;
   display: inline-block;
   margin-left: 10px;
-  font-size: 1.5rem;
+  font-size: 18px;
+  font-weight: bold;
   line-height: 3rem;
   background-color: #fff;
   border-width: 0;
@@ -3175,6 +3179,14 @@ a.subhead-link:link, a.subhead-link:visited {
 .cta-header-block a.cta-header-button:hover, .cta-header-block a.cta-header-button:focus {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
   background-color: #c3e2ff;
+}
+.cta-header-block a:link, .cta-header-block a:visited {
+  color: #fff;
+  text-decoration: underline;
+}
+.cta-header-block a:hover, .cta-header-block a:focus {
+  color: #fff;
+  text-decoration: none;
 }
 .cta-header-block .row-fluid:before, .cta-header-block .row-fluid:after {
   display: none !important;
