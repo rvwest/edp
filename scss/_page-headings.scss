@@ -61,8 +61,14 @@ background-color: $color-overlay;
 display: inline-block;
 font-size: 2.6rem; line-height: 3.2rem;
 margin-right: 5px;
-padding: 4px 20px 13px 20px;
 vertical-align: center;
+}
+
+.single-post .overlap-title h1.title {
+padding: 4px 20px 13px 20px;}
+
+.home .overlap-title h1.title {
+    padding: 4px 20px 5px 20px;
 }
 
 .skt-section .overlap-img-title a:hover, .skt-section .overlap-img-title a:active, .featured-image-shadow-box a:hover {

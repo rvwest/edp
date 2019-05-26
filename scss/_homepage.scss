@@ -133,10 +133,14 @@ p.front-section-extra { margin-bottom: 45px; text-align: right; clear:left;}
 opacity: 0.8;
 }
 
+
+
 #front-content-box.block--promo a:hover h1, #front-content-box.block--promo a:active h1 {
 background-color: #fff;
-opacity: 0.99;
+text-decoration: underline;
 }
+
+	
 
 /*#front-content-box.block--promo a:hover img, #front-content-box.block--promo a:active img {
 	opacity: 0.8;
