@@ -14,7 +14,9 @@
 			</a>
 		</div>
 		<?php } ?>
-
+		<?php if (in_category( 'features' )) { ?>
+		<div class="side-tag">Longer read</div>
+		<?php } ?>
         <h1 class="post-title">
 			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 				<?php the_title(); ?>
@@ -29,10 +31,12 @@
     the_author_posts_link(first_name, last_name);}?></span><?php if (has_category()) { ?><?php } ?><!-- <?php the_tags('<span class="tags">By ', ', ', '</span> ,'); ?>--><span class="comments"><?php comments_popup_link(__('','advertica-lite'), __(', 1 Comment ','advertica-lite'), __(', % Comments ','advertica-lite')) ; ?></span>
         </div>
 
+		
+
 		<!-- skepost-meta -->
         <div class="skepost clearfix">
 			<?php the_excerpt(); ?>
-			<div class="continue"><a href="<?php the_permalink(); ?>"><?php _e('Read More','advertica-lite');?></a></div>
+			<!-- <div class="continue"><a href="<?php the_permalink(); ?>"><?php _e('Read More','advertica-lite');?></a></div>-->
         </div>
         <!-- skepost -->
 </div>
