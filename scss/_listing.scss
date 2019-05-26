@@ -4,7 +4,7 @@
 
 .archive #content .post:first-child ,.page-template-template-blog-page-php #content .post:first-child,.page-template-template-blog-fullwidth-php #content .post:first-child ,.blog #content div.post:first-child,.page-template-template-blog-left-sidebar-page-php #content .post:first-child  { padding-top: 0;}
 
-.blog #content .post,.archive #content .post,.page-template-template-blog-page-php #content .post,.page-template-template-blog-fullwidth-php #content .post ,.page-template-template-blog-left-sidebar-page-php #content .post
+.blog #content .post, /*.archive #content .post, */.page-template-template-blog-page-php #content .post,.page-template-template-blog-fullwidth-php #content .post ,.page-template-template-blog-left-sidebar-page-php #content .post
 {border-bottom: 1px dotted $color-outline ;padding-bottom: 55px; padding-top: 50px;}
 
 .blog-template #content .post:last-child, .blog #content .post:last-child {border-bottom:0;}
@@ -12,7 +12,28 @@
 .category #content .post:last-child,.tag #content .post:last-child, .archive  #content .post:last-child, .search  #content .post:last-child 
 {border-bottom:0;}
 
-.side-tag {float:right}
+.category-features .featured-image-listing {
+    border-bottom-color:  $color-features;
+}
+.featured-image-listing {
+    overflow: hidden;
+    padding-bottom: 25px;
+    border-bottom: solid 5px $color-outline;
+    }
+h2.post-title {
+    margin-top: 18px;
+}
+#content .post-title a:link, #content .post-title a:visited {
+    text-decoration: none;
+    color: $color-copy;
+}
+#content .post-title a:active, #content .post-title a:hover {
+    text-decoration: underline;
+}
+.title-tag {
+    color:  $color-features;
+}
+
 /* ----- search listing ----- */
 
 .search #content .post { border-bottom: 1px solid #E1E1E1 ;}
