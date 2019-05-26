@@ -90,8 +90,8 @@ margin-right: 5px;
 }
 
 .home a:hover .overlap-title h1.title {
-color: $color-copy-reverse;
-background-color: $color-overlay-reverse;
+/*color: $color-copy-reverse;*/
+background-color: $color-overlay;
      transition: all 0.5s linear 0s;
     -webkit-transition: all 0.5s linear 0s;
     -moz-transition: all 0.5s linear 0s;

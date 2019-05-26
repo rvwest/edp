@@ -14,7 +14,7 @@
 				</div>
 						<div class="overlap-img">
 
-						<img src="<?php echo do_shortcode( get_theme_mod('promo_image', get_template_directory_uri().'/images/Parallax_Section_Image.jpg') ); ?>">
+						<div class="hover-space"><img src="<?php echo do_shortcode( get_theme_mod('promo_image', get_template_directory_uri().'/images/Parallax_Section_Image.jpg') ); ?>"></div>
 
 						</div>
 					</a></div>

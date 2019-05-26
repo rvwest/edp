@@ -26,11 +26,11 @@
 				<!-- the loop -->
 				<?php while ( $advertica_lite_latest_loop->have_posts() ) : $advertica_lite_latest_loop->the_post(); ?>
 					<div  <?php post_class('span4'); ?>><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-
+					<div class="hover-space">
 <?php if ( has_post_thumbnail() ) : ?>
 
 <?php if ( has_post_thumbnail() ) {the_post_thumbnail('edpsy_loop_img');} ?>
-
+	</div>
 
 <?php endif; ?><h3><?php if (in_category( 'features' )) { ?>
 		<span class="title-tag">Longer read: </span>
@@ -76,27 +76,27 @@ if(count($posts) >= 4)
 									<div class="span3 training-posts">
 
 							<a href="/ep-training/in-england">
-<img src="<?php echo get_template_directory_uri().'/images/training-england-1.jpg'; ?>" width="100%">
+							<div class="hover-space"><img src="<?php echo get_template_directory_uri().'/images/training-england-1.jpg'; ?>" width="100%"></div>
 								<h3 >England</h3>
 					</a></div>
 									<div class="span3 training-posts"><a href="/ep-training/in-northern-ireland">
 
 
-<img src="<?php echo get_template_directory_uri().'/images/training-ni-1.jpg'; ?>" width="100%">
+									<div class="hover-space"><img src="<?php echo get_template_directory_uri().'/images/training-ni-1.jpg'; ?>" width="100%"></div>
 <h3>Northern Ireland</h3>
 					</a></div>
 									<div class="span3 training-posts"><a href="/ep-training/in-scotland">
 
 
 
-<img src="<?php echo get_template_directory_uri().'/images/training-scotland-1.jpg'; ?>" width="100%">
+									<div class="hover-space"><img src="<?php echo get_template_directory_uri().'/images/training-scotland-1.jpg'; ?>" width="100%"></div>
 <h3>Scotland</h3>
 					</a></div>
 					<div class="span3 training-posts"><a href="/ep-training/in-wales">
 
 
 
-<img src="<?php echo get_template_directory_uri().'/images/training-wales-1.jpg'; ?>" width="100%">
+					<div class="hover-space"><img src="<?php echo get_template_directory_uri().'/images/training-wales-1.jpg'; ?>" width="100%"></div>
 <h3>Wales</h3>
 					</a>
 					</div>

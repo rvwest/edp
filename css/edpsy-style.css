@@ -2714,11 +2714,26 @@ p.front-section-extra {
 .front-section-extra a {
   text-decoration: underline;
 }
-.skt-section a:hover {
-  transition: all 0.1s linear 0s;
-  -webkit-transition: all 0.1s linear 0s;
-  -moz-transition: all 0.1s linear 0s;
-  -o-transition: all 0.1s linear 0s;
+#front-content-box.block--training a:hover img, #front-content-box.block--training a:active img, #front-content-box.block--blog a:hover img, #front-content-box.block--blog a:active img {
+  opacity: 0.8;
+}
+#front-content-box.block--promo a:hover h1, #front-content-box.block--promo a:active h1 {
+  background-color: #fff;
+  opacity: 0.99;
+}
+/*#front-content-box.block--promo a:hover img, #front-content-box.block--promo a:active img {
+ opacity: 0.8;
+ }
+ */
+.skt-section a:hover, #front-content-box a:hover img {
+  transition: all 0.2s linear 0s;
+  -webkit-transition: all 0.2s linear 0s;
+  -moz-transition: all 0.2s linear 0s;
+  -o-transition: all 0.2s linear 0s;
+}
+.hover-space {
+  line-height: 0;
+  background: black;
 }
 #front-content-box h3 {
   margin-top: 0;
@@ -2852,8 +2867,8 @@ h1.title {
   margin-right: 5px;
 }
 .home a:hover .overlap-title h1.title {
-  color: #e0e0e0;
-  background-color: rgba(90, 89, 89, 0.67);
+  /*color: $color-copy-reverse;*/
+  background-color: rgba(255, 255, 255, 0.85);
   transition: all 0.5s linear 0s;
   -webkit-transition: all 0.5s linear 0s;
   -moz-transition: all 0.5s linear 0s;
