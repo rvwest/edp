@@ -46,7 +46,7 @@
 $posts = get_posts(array('category_name' => 'blog'));
 if(count($posts) >= 4)
 {?>
-    <p class="front-section-extra"><a href="/blog/" >See more blog posts</a></p>
+    <p class="front-section-extra"><a href="/blog/" >See more blog posts <i class="far fa-angle-right"></i></a></p>
 <?php } ?>
 
 

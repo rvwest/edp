@@ -35,8 +35,8 @@
 						if($prev_link || $next_link){
 						?>
 						<div class="navigation blog-navigation">			
-							<div class="alignleft"><?php previous_posts_link(__('&larr;Previous','advertica-lite')) ?></div>		
-							<div class="alignright"><?php next_posts_link(__('Next&rarr;','advertica-lite'),'') ?></div>    					
+							<div class="alignleft"><?php previous_posts_link(__('« Newer posts','advertica-lite')) ?></div>		
+							<div class="alignright"><?php next_posts_link(__(' Older posts »','advertica-lite'),'') ?></div>    					
 						</div>  
 						<?php
 						}

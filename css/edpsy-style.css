@@ -243,7 +243,7 @@ body.page-template-template-front-page-php #main {
 }
 .post-title a {
   font-weight: 500;
-  font-size: 26px;
+  font-size: 1.6rem;
   line-height: 30px;
   transition: all 0.3s linear 0s;
   -webkit-transition: all 0.3s linear 0s;
@@ -1902,9 +1902,6 @@ ul.childpages {
   margin: 10px 0 0;
   overflow: hidden;
 }
-.navigation.blog-navigation {
-  margin-top: 35px;
-}
 .category .blog-navigation, .tag .blog-navigation, .archive .blog-navigation, .search .blog-navigation {
   margin-bottom: 35px;
 }
@@ -2697,7 +2694,7 @@ a:link p, a:visited p {
   background: none;
   letter-spacing: 0px;
   -webkit-transition: all 0.3s linear 0s;
-  padding: 10px 20px 20px 0;
+  padding: 13px 20px 16px 0;
   -moz-transition: all 0.3s linear 0s;
   -o-transition: all 0.3s linear 0s;
   color: #3d4449;
@@ -2756,6 +2753,9 @@ p.front-section-extra {
  }*/
 .big-quote-mark.qu-l {
   margin-left: -14px;
+}
+.front-section-extra {
+  font-size: 1.12em;
 }
 /* ----- post detail page ----- */
 .category .bread-title-holder h1.title, .single-post .bread-title-holder h1.title, .bread-title-holder h1.title, .page h1.title {
@@ -2925,6 +2925,18 @@ h2.post-title {
 /* ----- search listing ----- */
 .search #content .post {
   border-bottom: 1px solid #e1e1e1;
+}
+/* ------ footer navigation ------ */
+#content .navigation.blog-navigation a, #content .tribe-events-nav-pagination ul.tribe-events-sub-nav a {
+  margin-top: 35px;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+#content .navigation.blog-navigation a:link, #content .navigation.blog-navigation a:visited, #content .tribe-events-nav-pagination ul.tribe-events-sub-nav a:link, #content .tribe-events-nav-pagination ul.tribe-events-sub-nav a:visited {
+  margin-top: 35px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: none;
 }
 /* ----- Navigation ----- */
 #skenav {

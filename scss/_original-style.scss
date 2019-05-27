@@ -74,7 +74,7 @@ body.page-template-template-front-page-php #main{margin-top:0 !important;}
 .entry {  margin: 10px 0 15px;  }
 .entry-title a {  color: #000000;  text-decoration: none;  }
 .post-title{ margin-bottom: 4px;}
-.post-title a { font-weight: 500; font-size: 26px; line-height: 30px;transition: all 0.3s linear 0s; -webkit-transition: all 0.3s linear 0s;-moz-transition: all 0.3s linear 0s;-o-transition: all 0.3s linear 0s;}
+.post-title a { font-weight: 500; font-size: 1.6rem; line-height: 30px;transition: all 0.3s linear 0s; -webkit-transition: all 0.3s linear 0s;-moz-transition: all 0.3s linear 0s;-o-transition: all 0.3s linear 0s;}
 .title{ font-weight: 600; font-size: 26px; line-height: 30px;}
 .skepost-meta {  color: #999; font-size: 0.9rem; margin-top: 15px; margin-bottom: 15px; word-spacing: 2px }
 .skepost-meta abbr {  border: none;  }
@@ -440,7 +440,6 @@ ul.childpages {  list-style-type: disc;  margin-left: 20px;  }
 #advertica-paginate .icon-angle-right,#advertica-paginate .icon-angle-left {font-size: 24px;line-height: 30px;}
 #advertica-paginate .advertica-current{  background: none repeat scroll 0 0 #F54336;color: #FFFFFF;border: 1px solid #E0DEDE;display:inline-block;height: 32px;line-height: 31px;padding: 0; width: 32px;transition: all 1s ease 0s;-webkit-transition: all 1s ease 0s;  	-moz-transition:all 1s ease 0s;-o-transition:all 1s ease 0s;}
 .navigation {color: #888888;font-size: 13px;line-height: 18px; margin: 10px 0 0;  overflow: hidden;  }
-.navigation.blog-navigation{margin-top:35px;}
 .category .blog-navigation,.tag .blog-navigation, .archive  .blog-navigation, .search  .blog-navigation{margin-bottom:35px;}
 .nav-previous {float: left;width: 50%;}
 .nav-next {float: right; text-align: right;width: 50%;  }
