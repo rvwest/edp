@@ -1,4 +1,3 @@
-@import 'forms';
 /* Variables */
 /*
  $color-blog: #06D6A0;
@@ -3361,6 +3360,97 @@ h2.tribe-events-page-title {
   font-size: 1.17em;
   font-weight: 600;
   margin-bottom: 20px;
+}
+#signup .mc4wp-form-fields input, .post #content .skepost div.mc4wp-response p:first-child {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+}
+.post_cta {
+  border: solid 2px;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+}
+.category-blog .post_cta {
+  border-color: #00bcd4;
+  background: #e0f7fa;
+}
+.category-about .post_cta {
+  border-color: #8bc34a;
+}
+.category-about .post_cta .mc4wp-message-hide {
+  display: none;
+}
+.category-features .post_cta {
+  border-color: #e91e63;
+  background: #fce4ec;
+}
+#tribe-events .post_cta {
+  border-color: #cddc39;
+  background: #f9fbe7;
+}
+.mc4wp-alert {
+  font-size: 18px;
+  text-align: center;
+  padding: 1px;
+}
+.mc4wp-alert p {
+  margin: 2px 2px;
+}
+.category-blog .mc4wp-alert {
+  background: #00bcd4;
+  color: #fff;
+}
+.category-features .mc4wp-alert {
+  background: #e91e63;
+  color: #fff;
+}
+#tribe-events .mc4wp-alert {
+  background: #cddc39;
+}
+.post_cta h2 {
+  margin-top: 10px;
+}
+.post_cta .mc4wp-fields input {
+  width: 22%;
+}
+.post_cta p {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+#signup .mc4wp-fields {
+  display: flex;
+  justify-content: space-around;
+}
+#signup h2 {
+  font-size: 27px;
+}
+#signup input {
+  border-color: #e1e1e1;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  background: #fff;
+}
+#signup .mc4wp-fields input:first-child {
+  margin-left: 0;
+}
+#signup .mc4wp-submit {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+#signup input[type="submit"] {
+  border: 1px solid #007bc7;
+  color: #007bc7;
+  width: inherit;
+}
+#signup input[type="submit"]:hover, #signup input[type="submit"]:focus {
+  background: none repeat scroll 0 0 #007bc7;
+  color: #fff;
+  transition: all 0.3s linear 0s;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
 }
 /*!
  * Bootstrap Responsive v2.3.2
