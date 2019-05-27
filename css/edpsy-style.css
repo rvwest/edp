@@ -242,7 +242,7 @@ body.page-template-template-front-page-php #main {
   margin-bottom: 4px;
 }
 .post-title a {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 26px;
   line-height: 30px;
   transition: all 0.3s linear 0s;
