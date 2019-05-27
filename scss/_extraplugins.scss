@@ -1,1 +1,21 @@
 .gglcptch_recaptcha:first-child {float:right; padding-bottom: 20px;}
+
+.tribe-events-read-more {display:none;}
+
+.tribe-events-list .type-tribe_events {
+        border-bottom: 5px solid $color-outline;
+        margin: 0;
+        padding: 2.25em 0;
+        }
+
+.tribe-events-list .type-tribe_events {
+    /* border-bottom: 0; */
+    margin-bottom: 2rem;
+    padding-bottom: 60px;
+    position: relative;
+    }
+
+.tribe-events-list-separator-month:after {
+border-bottom: none;}
+
+#tribe-events-header {display: none;}

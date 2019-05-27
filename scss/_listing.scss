@@ -41,6 +41,8 @@ h2.post-title {
 
 /* ------ footer navigation ------ */
 
-#content .navigation.blog-navigation a, #content .tribe-events-nav-pagination ul.tribe-events-sub-nav a{margin-top:35px; font-size:1.6rem; font-weight:500}
+#content .navigation.blog-navigation a, #tribe-events .tribe-events-nav-pagination ul.tribe-events-sub-nav a {margin-top:35px; font-size:1.6rem; font-weight:500}
 
-#content .navigation.blog-navigation a:link, #content .navigation.blog-navigation a:visited, #content .tribe-events-nav-pagination ul.tribe-events-sub-nav a:link, #content .tribe-events-nav-pagination ul.tribe-events-sub-nav a:visited{margin-top:35px; font-size:1.6rem; font-weight:500; text-decoration: none}
+#content .navigation.blog-navigation a:link, #content .navigation.blog-navigation a:visited, #content .tribe-events-nav-pagination ul.tribe-events-sub-nav a:link, #content .tribe-events-nav-pagination ul.tribe-events-sub-nav a:visited{ text-decoration: none}
+
+#content .navigation.blog-navigation a:hover, #content .navigation.blog-navigation a:active, #tribe-events .tribe-events-nav-pagination ul.tribe-events-sub-nav a:hover, #tribe-events .tribe-events-nav-pagination ul.tribe-events-sub-nav a:active{ text-decoration: underline}
