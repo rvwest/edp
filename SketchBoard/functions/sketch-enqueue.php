@@ -40,7 +40,7 @@ wp_enqueue_script('advertica-lite-easing-js',get_template_directory_uri().'/js/j
 	/*wp_enqueue_style( 'advertica-lite-bootstrap-stylesheet', get_template_directory_uri().'/css/bootstrap-responsive.css', false, $theme->Version);*/
 
 	// Google Fonts
-	wp_enqueue_style('advertica-lite-googlefont-opensans', '//fonts.googleapis.com/css?family=Open+Sans:800,700,600,500,300,200,100&subset=latin,latin-ext');
+	wp_enqueue_style('advertica-lite-googlefont-opensans', '//fonts.googleapis.com/css?family=Open+Sans:700,400,300&subset=latin,latin-ext');
 /*	wp_enqueue_style('advertica-lite-googlefont-raleway', '//fonts.googleapis.com/css?family=Raleway:900,700,400');*/
 }
 add_action('wp_enqueue_scripts', 'advertica_lite_theme_stylesheet');

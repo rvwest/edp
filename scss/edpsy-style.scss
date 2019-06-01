@@ -1,25 +1,10 @@
-/* Variables */
-/*
-$color-blog: #06D6A0;
-$color-features: #ef476f;
-$color-training: #1b9aaa;
-$color-about: #ffc43d;
-$color-tile: #f7f1ee;
-$color-highlight: #FFA500;
-$color-copy: #3d4449;
-$color-copy-reverse: #fff;
-$color-overlay: rgba(255, 255, 255, 0.67);
-$color-outline: #ddd;
-*/
-
-
 @mixin wash-line($wash-color)
 {border-top-width: 3px; border-top-style: solid; border-color: $wash-color}
 
+@import 'variables';
 @import 'original-style';
 @import 'skt-animation';
 @import 'superfish';
-@import 'variables';
 @import 'extraplugins' ;
 @import 'homepage';
 @import 'page-headings';

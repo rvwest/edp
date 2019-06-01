@@ -4,7 +4,7 @@
 
 #skehead .sub-menu { display: none; }
 
-#logo #site-title a { color: $color-site-title ;display: inline-block;font-size: 30px;font-weight: 700; line-height: 30px; margin-top: 10px; text-decoration: none; text-transform: none;}
+#logo #site-title a { color: $color-site-title ;display: inline-block;font-size: 30px;font-weight: $font-weight-bold; line-height: 30px; margin-top: 10px; text-decoration: none; text-transform: none;}
 
 /*#logo #site-title { display: block;font-size: 30px;margin: 8px 0 11px;}*/
 
@@ -12,7 +12,7 @@
 
 #skenav .ske-menu .menu li, ul.menu li {  float: left;  position: relative;  margin-left: 0px;  list-style: none outside none;  }
 
-#skenav a {color: #333333; display: block; font-size: 18px; line-height: 85px; padding: 0 22px; text-decoration: none; transition: color 0.1s linear 0s, background 0.1s linear 0s; -webkit-transition: color 0.1s linear 0s, background 0.1s linear 0s;  	-moz-transition: color 0.1s linear 0s, background 0.1s linear 0s; -o-transition: color 0.1s linear 0s, background 0.1s linear 0s; }
+#skenav a {color: #333333; display: block; font-size: 18px; line-height: 85px; padding: 0 22px; text-decoration: none; @include transition-0-1 }
 
 #skenav skt-mob-menu a {padding: 0 20px 0 40px;}
 

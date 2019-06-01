@@ -92,4 +92,4 @@ justify-content:space-between;
 
 #signup input[type="submit"] {border: 1px solid #007bc7; color: #007bc7; width:inherit}
 
-#signup input[type="submit"]:hover, #signup input[type="submit"]:focus {background: none repeat scroll 0 0 #007bc7; color: #FFFFFF; transition: all 0.3s linear 0s;  -webkit-transition: all 0.3s linear 0s; -moz-transition: all 0.3s linear 0s; -o-transition: all 0.3s linear 0s  }
+#signup input[type="submit"]:hover, #signup input[type="submit"]:focus {background: none repeat scroll 0 0 #007bc7; color: #FFFFFF; @include transition-0-3; }

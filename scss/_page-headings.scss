@@ -6,10 +6,10 @@ margin-top:20px;
 margin-left: -3px;
 }
 
-h1.title { font-size: 62px; line-height: 66px; font-weight: 200; letter-spacing: -0.2px; text-transform: none; padding-bottom: 45px;}
+h1.title { font-size: 62px; line-height: 66px; font-weight: $font-weight-light; letter-spacing: -0.2px; text-transform: none; padding-bottom: 45px;}
 
 #front-content-box h2
-{ font-size: 2.6rem;     line-height: 2.6rem; font-family: $font-heading; font-weight: 300; letter-spacing: -2px; margin-left:0; padding: 0 5px 30px 0; margin-top:2px}
+{ font-size: 2.6rem;     line-height: 2.6rem; font-family: $font-family; font-weight: $font-weight-light; letter-spacing: -2px; margin-left:0; padding: 0 5px 30px 0; margin-top:2px}
 
 .block--blog h2 a, .category-blog h1 {color: $color-blog}
 .block--features h2 a, .category-features h1 {color: $color-features;}
@@ -19,7 +19,7 @@ h1.title { font-size: 62px; line-height: 66px; font-weight: 200; letter-spacing:
 .category-events h1 { color: $color-events;}
 
 /* .skt-section a h3,  .skt-section h3 a
-{ font-family: $font-heading; font-size: 1.3em; line-height: 1.4em; font-weight: 500; background:none; letter-spacing: 0px; -webkit-transition: all 0.3s linear 0s; padding: 10px 20px 20px 20px; -moz-transition: all 0.3s linear 0s; -o-transition: all 0.3s linear 0s; color: $color-copy;} */
+{ font-family: $font-family; font-size: 1.3em; line-height: 1.4em; font-weight: 500; background:none; letter-spacing: 0px; -webkit-transition: all 0.3s linear 0s; padding: 10px 20px 20px 20px; -moz-transition: all 0.3s linear 0s; -o-transition: all 0.3s linear 0s; color: $color-copy;} */
 
 
 
@@ -93,10 +93,7 @@ margin-right: 5px;
 .home a:hover .overlap-title h1.title {
 /*color: $color-copy-reverse;*/
 background-color: $color-overlay;
-     transition: all 0.5s linear 0s;
-    -webkit-transition: all 0.5s linear 0s;
-    -moz-transition: all 0.5s linear 0s;
-    -o-transition: all 0.5s linear 0s;
+    @include transition-0-5;
 }
 
 

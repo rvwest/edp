@@ -1,16 +1,16 @@
 #tribe-events-bar {padding-top:0px; margin-bottom: 0}
 #tribe-events-pg-template  {padding: 10px 20px 20px; max-width: none;}
 h2.tribe-events-page-title {
-    font-weight: 300;  }
+    font-weight: $font-weight-light;  }
 
 .single-tribe_events h1.tribe-events-single-event-title {
- font-size: 2.6rem; line-height: 66px; font-weight: 200; letter-spacing: -0.2px; text-transform: none; padding-bottom: 10px; color:$color-events}
+ font-size: 2.6rem; line-height: 66px; font-weight: $font-weight-light; letter-spacing: -0.2px; text-transform: none; padding-bottom: 10px; color:$color-events}
 .tribe-events-schedule .tribe-event-date-start, .tribe-events-schedule .tribe-event-date-end, .tribe-events-schedule .tribe-event-time
   {font-size: 1.7rem;
     line-height: 1.3em;
-  font-weight: 300}
+  font-weight: $font-weight-light}
 
-.tribe-events-schedule h2 {margin-top: 0px; font-weight: 300; display:block; margin-bottom:20px;}
+.tribe-events-schedule h2 {margin-top: 0px; font-weight: $font-weight-light; display:block; margin-bottom:20px;}
 
 .tribe-events-button, #tribe-bar-form .tribe-bar-submit input[type=submit] {background-color: $color-events}
 
@@ -28,6 +28,6 @@ h2.tribe-events-page-title {
 
 .tribe-events-meta-group .tribe-events-single-section-title {
   font-size: 1.17em;
-  font-weight: 600;
+  font-weight: $font-weight-bold;
   margin-bottom: 20px
 }
