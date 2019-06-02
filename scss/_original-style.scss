@@ -2,8 +2,8 @@
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {background: transparent;border: 0;margin: 0;padding: 0;vertical-align: baseline;}
 body { color: #353535;  font-family: "Open Sans", Arial, sans-serif;  font-size: 18px;  line-height: 26px; font-weight:300;}
 p, dl, hr, h1, h4, h5, h6, ol, ul, pre, table, address, fieldset, figure {font-weight: $font-weight-light;  margin-bottom: 20px;  line-height: 28px;}
-h1, h2, h3, h4, h5, h6{ color: #555555; font-weight: $font-weight-bold; letter-spacing: -0.5px;}
-h2 {margin-top: 40px; margin-bottom: 20px;}
+h1, h2, h3, h4, h5, h6{ color: #555555; letter-spacing: -0.5px;}
+h2 {margin-top: 40px; margin-bottom: 20px; font-weight:bold;}
 h3 {margin-top: 30px; margin-bottom: 20px;}
 pre {  overflow: auto;  width: 98%;}
 embed {max-width: 100%;}
@@ -74,7 +74,7 @@ body.page-template-template-front-page-php #main{margin-top:0 !important;}
 .entry {  margin: 10px 0 15px;  }
 .entry-title a {  color: #000000;  text-decoration: none;  }
 .post-title{ margin-bottom: 4px;}
-.post-title a { font-weight: 500; font-size: 1.6rem; line-height: 30px; @include transition-0-3;}
+.post-title a { font-weight: $font-weight-light; font-size: 1.6rem; line-height: 30px; @include transition-0-3;}
 /*.title{ font-weight: $font-weight-bold /*undo 600*//*; font-size: 26px; line-height: 30px;}*/
 .skepost-meta {  color: #999; font-size: 0.9rem; margin-top: 15px; margin-bottom: 15px; word-spacing: 2px }
 .skepost-meta abbr {  border: none;  }
