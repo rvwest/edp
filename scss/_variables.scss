@@ -1,4 +1,4 @@
-
+/*variables.scss*/
 $color-blog: #00BCD4;
 $color-blog-highlight: #0097A7;
 $color-blog-pale: #e0f7fa;
@@ -46,29 +46,29 @@ $col3-max: 1199;
 
 
 @mixin transition-0-1 { 
-    transition: all 0.1s linear 0s;
-    -webkit-transition: all 0.1s linear 0s; 
-    -moz-transition: all 0.1s linear 0s; 
-    -o-transition: all 0.1s linear 0s; 
+    transition: all .1s linear 0;
+    -webkit-transition: all .1s linear 0; 
+    -moz-transition: all .1s linear 0; 
+    -o-transition: all .1s linear 0; 
 }
 
 @mixin transition-0-3 { 
-    transition: all 0.3s linear 0s;
-    -webkit-transition: all 0.3s linear 0s; 
-    -moz-transition: all 0.3s linear 0s; 
-    -o-transition: all 0.3s linear 0s; 
+    transition: all .3s linear 0;
+    -webkit-transition: all .3s linear 0; 
+    -moz-transition: all .3s linear 0; 
+    -o-transition: all .3s linear 0; 
 } 
 
 @mixin transition-0-5 { 
-    transition: all 0.5s linear 0s;
-    -webkit-transition: all 0.5s linear 0s; 
-    -moz-transition: all 0.5s linear 0s; 
-    -o-transition: all 0.5s linear 0s; 
+    transition: all .5s linear 0;
+    -webkit-transition: all .5s linear 0; 
+    -moz-transition: all .5s linear 0; 
+    -o-transition: all .5s linear 0; 
 }
 
 @mixin transition-0-5-ease { 
-    transition: all 0.5s ease 0s;
-    -webkit-transition: all 0.5s ease 0s; 
-    -moz-transition: all 0.5s ease 0s; 
-    -o-transition: all 0.5s ease 0s; 
+    transition: all .5s ease 0;
+    -webkit-transition: all .5s ease 0; 
+    -moz-transition: all .5s ease 0; 
+    -o-transition: all .5s ease 0; 
 }

@@ -20,6 +20,19 @@
  * see http://codex.wordpress.org/Plugin_API
  *
  */
+
+ // Async load
+function ikreativ_async_scripts($url)
+{
+    if ( strpos( $url, '#asyncload') === false )
+        return $url;
+    else if ( is_admin() )
+        return str_replace( '#asyncload', '', $url );
+    else
+	return str_replace( '#asyncload', '', $url )."' async='async"; 
+    }
+add_filter( 'clean_url', 'ikreativ_async_scripts', 11, 1 );
+
 /**
  * Registers widget areas.
  *
@@ -185,7 +198,7 @@ function modify_jquery() {
     if (!is_admin()) {
         // comment out the next two lines to load the local copy of jQuery
         wp_deregister_script('jquery');
-        wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js', false, null);
+        wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js#asyncload', false, null);
         wp_enqueue_script('jquery');
     }
 }
