@@ -15,7 +15,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
 <!--[if IE 9]>
 	<meta http-equiv="X-UA-Compatible" content="IE=9" />
 <![endif]-->
