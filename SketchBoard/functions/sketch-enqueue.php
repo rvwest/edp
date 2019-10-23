@@ -6,7 +6,7 @@
 function advertica_lite_script_enqueqe() {
 	global $advertica_shortname;
 	if(!is_admin()) {
-		wp_enqueue_script('advertica-lite-custom-js', get_template_directory_uri() .'/js/custom.js#asyncload',array('jquery'),'1.0',1 );
+		wp_enqueue_script('advertica-lite-custom-js', get_template_directory_uri() .'/js/custom.js',array('jquery'),'1.0',1 );
 		wp_enqueue_script('comment-reply');
 	}
 
