@@ -76,7 +76,7 @@ body.page-template-template-front-page-php #main{margin-top:0 !important;}
 .post-title{ margin-bottom: 4px;}
 .post-title a { font-weight: $font-weight-light; font-size: 1.6rem; line-height: 30px; @include transition-0-3;}
 /*.title{ font-weight: $font-weight-bold /*undo 600*//*; font-size: 26px; line-height: 30px;}*/
-.skepost-meta {  color: #999; font-size: 0.9rem; margin-top: 15px; margin-bottom: 15px; word-spacing: 2px }
+.skepost-meta {  color: $color-secondary; font-size: 0.9rem; margin-top: 15px; margin-bottom: 15px; word-spacing: 2px }
 .skepost-meta abbr {  border: none;  }
 .skepost-meta abbr:hover {  border-bottom: 1px dotted #666;  }
 .skepost {clear: both;  }
@@ -89,7 +89,7 @@ body.page-template-template-front-page-php #main{margin-top:0 !important;}
 .skepost blockquote.left {  float: left;  margin-left: 0;  margin-right: 24px;  text-align: right;  width: 33%;}
 .skepost blockquote.right {  float: right;  margin-left: 24px;  margin-right: 0;  text-align: left;  width: 33%;}
 body.page .edit-link {  clear: both;  display: block;  }
-.skepost-meta a {  text-decoration:none; font-weight: $font-weight-regular; color: #999999;}
+.skepost-meta a {  text-decoration:none; font-weight: $font-weight-regular; color: $color-secondary;}
 .skepost-meta span { margin-right: 1px;padding-top: 0;}
 .skepost-meta span i{margin-right: 2px;}
 .skepost-meta .category a{  display:inline-block;  }
@@ -98,7 +98,7 @@ body.page .edit-link {  clear: both;  display: block;  }
 .readmore a {  background-color: #444444;  border-radius: 5px 5px 5px 5px;  color: #FFFFFF;  display: block;  font-style: italic;  height: 24px;  overflow: hidden;  padding: 0 2px 0 10px;  text-decoration: none;  width: 91px;  }
 .readmore a:hover {  background-color: #5F5F5F;  }
 #content .continue{ text-align:right; }
-.continue a { border: 1px solid #999; cursor: pointer; color:#999;  margin-top: 4px; display: inline-block; font-weight: $font-weight-bold; font-size: 12px; letter-spacing: 1px; line-height: 20px; margin-bottom: 0; padding: 8px 9px; position: relative; text-transform: uppercase; @include transition-0-3;}
+.continue a { border: 1px solid $color-secondary; cursor: pointer; color:$color-secondary;  margin-top: 4px; display: inline-block; font-weight: $font-weight-bold; font-size: 12px; letter-spacing: 1px; line-height: 20px; margin-bottom: 0; padding: 8px 9px; position: relative; text-transform: uppercase; @include transition-0-3;}
 .continue a:hover { background: none repeat scroll 0 0 #F54336; color: #FFFFFF; @include transition-0-3;  }
 /*.sticky-post {  border-bottom: 1px solid rgba(0, 0, 0, 0); font-weight: $font-weight-bold /*undo 600*//*; font-size: 20px; padding-bottom: 10px; padding-top: 35px; text-transform: uppercase; width: 120px;}*/
 /*.sticky-post:first-child{padding-top:0; margin-top: -5px;}
@@ -142,7 +142,7 @@ body.page .edit-link {  clear: both;  display: block;  }
  a.skt-featured-icons:after {border-left: 44px solid rgba(0, 0, 0, 0); border-right: 44px solid rgba(0, 0, 0, 0); border-top: 25px solid #FFA500; bottom: -25px; content: ""; height: 0; left: 0; position: absolute; width: 0; }
 .skt-featured-images {display: block;line-height: 0;position: relative;margin: -25px 0;}
 .skt-featured-image-mask{background: url("images/Advertica-Hexagonal-Mask.png") repeat scroll 0 0 rgba(0, 0, 0, 0);display: block;height: 150px;position: absolute;width: 150px;left: 0; right: 0; margin: 0 auto;z-index: 10;}
-.skt-iconbox.iconbox-top .iconbox-content h4:after {background-color: #999999; bottom: 0; content: "";  display: block;height: 1px; left: 50%; margin-left: -25px; position: absolute; width: 50px;  }
+.skt-iconbox.iconbox-top .iconbox-content h4:after {background-color: $color-secondary; bottom: 0; content: "";  display: block;height: 1px; left: 50%; margin-left: -25px; position: absolute; width: 50px;  }
 .skt-iconbox.iconbox-top .iconbox-content h4 {margin-bottom: 20px;padding-bottom: 20px;}
 .skt-iconbox .iconbox-content h4 {font-size: 19px; position: relative; text-transform: capitalize;}
 .skt-parallax-button {border: 1px solid #F54336; cursor: pointer; display: inline-block; font-weight: $font-weight-bold; font-size: 12px; letter-spacing: 1px; line-height: 20px; margin-bottom: 0; padding: 8px 25px; position: relative; text-transform: uppercase; @include transition-0-3; }
@@ -158,7 +158,7 @@ body.page .edit-link {  clear: both;  display: block;  }
 .full-content-box .span5 > h2 {line-height: 28px;}
 .full-bg-image-fixed{background-image: url("images/PArallax_Vimeo_bg.jpg"); }
 /*.bread-title-holder h1.title {font-size: 25px;margin:0;line-height:30px;color:#222;}*/
-.bread-title-holder .cont_nav_inner a,.bread-title-holder .cont_nav_inner p{font-size:12px; font-weight: $font-weight-bold /*undo 600*/; color: #999}
+.bread-title-holder .cont_nav_inner a,.bread-title-holder .cont_nav_inner p{font-size:12px; font-weight: $font-weight-bold /*undo 600*/; color: $color-secondary}
 .bread-title-holder .skt-breadcrumbs-separator { color: #666666;font-family: 'Trebuchet MS';font-size: 10px;letter-spacing: -1px;margin: 0 3px;position: relative;}
 .full-bg-breadimage-fixed{ background-attachment: fixed; background-repeat: repeat;background-size: cover;-webkit-background-size: cover;
 -moz-background-size: cover; bottom: 0; height: 100%; left: 0;overflow: hidden;position: absolute; width: 100%;  box-shadow: 0 -2px 3px -1px rgba(0, 0, 0, 0.06) inset;}
@@ -179,7 +179,7 @@ body.page .edit-link {  clear: both;  display: block;  }
 .skt-awesome-title {color: #fff;font-weight: $font-weight-bold /*undo 600*/;font-size: 50px;line-height: 50px;}
 .skt-awesome-desp {font-size: 18px;line-height: 27px;margin-top: 10px;}
 /*.inline-border {font-size: 18px;font-weight: $font-weight-bold;letter-spacing: 1px;margin: 0 0 10px;padding-top: 0; text-transform: uppercase;}*/
-.border_left {border-bottom: 1px solid #999999; display: block;margin-bottom: 10px;width: 100px;}
+.border_left {border-bottom: 1px solid $color-secondary; display: block;margin-bottom: 10px;width: 100px;}
 #full-client-box {margin-bottom: 65px;}
 
 
@@ -400,7 +400,7 @@ div.m-style-iw{width:300px !important;height:auto !important;}
 .siteinfo .sitename a {color: #FFFFFF;font-size: 20px;text-decoration: none;}
 .siteinfo .sitedescription {color: #858585;font-size: 12px;}
 #footer .second_wrapper { }
-#footer .third_wrapper { background-color: #2D2E2F; color: #777777; font-weight: $font-weight-bold /*undo 600*/; margin: 0 auto; padding: 15px 0;}
+#footer .third_wrapper { background-color: #2D2E2F; color: $color-footer-text; font-weight: $font-weight-bold /*undo 600*/; margin: 0 auto; padding: 15px 0;}
 #footer .ske-footer-container {float: left;padding-top: 41px; margin-bottom:41px;}
 #footer li.ske-footer-container {list-style: none outside none;}
 .ske-title.ske-footer-title {color: #777777; font-weight: $font-weight-bold; font-size: 13px; letter-spacing: 2px; margin-bottom: 20px; padding-bottom: 5px; text-transform: uppercase;}
@@ -410,7 +410,7 @@ div.m-style-iw{width:300px !important;height:auto !important;}
 .ske-footer-container p, .ske-footer-container ul li a {color: #ccc;line-height: 18px;}
 #footer .third_wrapper .copyright {line-height: 20px;   min-height: inherit;font-size: 12px;}
 #footer .third_wrapper .owner {line-height: 20px;  text-align: right;  float: right;   min-height: inherit;font-size: 12px;}
-#footer .third_wrapper a {color: #969595;  text-decoration: none; }
+#footer .third_wrapper a {color: $color-footer-reverse;  text-decoration: none; }
 #footer .third_wrapper a:hover {color: #F54336;}
 a#backtop svg {margin-left: 10px; margin-top: 7px; color: #fff}
 /* a#backtop:before{color: #FFFFFF;content: "\f106"; display: block; font-family: 'FontAwesome'; font-size:14px; margin-top: 9px; text-align: center;}*/

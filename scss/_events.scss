@@ -16,7 +16,7 @@ h2.tribe-events-page-title {
 .tribe-events-button, #tribe-bar-form .tribe-bar-submit input[type=submit] {background-color: $color-events}
 
 .tribe-events-event-meta address.tribe-events-address, .tribe-events-list .tribe-events-venue-details {font-style: normal;}
-.tribe-events-loop .tribe-events-event-meta {  color: #999; font-size: 18px; margin-top: 15px; margin-bottom: 15px; word-spacing: 2px; line-height: 28px;  padding-left:10px;}
+.tribe-events-loop .tribe-events-event-meta {  color: $color-secondary; font-size: 18px; margin-top: 15px; margin-bottom: 15px; word-spacing: 2px; line-height: 28px;  padding-left:10px;}
 .tribe-events-list .tribe-events-venue-details {
   padding-left: 0;
 }

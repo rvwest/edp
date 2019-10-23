@@ -76,27 +76,27 @@ if(count($posts) >= 4)
 									<div class="span3 training-posts">
 
 							<a href="/ep-training/in-england">
-							<div class="hover-space"><img src="<?php echo get_template_directory_uri().'/images/training-england-1.jpg'; ?>" width="100%"></div>
+							<div class="hover-space"><img src="<?php echo get_template_directory_uri().'/images/training-england-1.jpg'; ?>" width="100%" alt=""></div>
 								<h3 >England</h3>
 					</a></div>
 									<div class="span3 training-posts"><a href="/ep-training/in-northern-ireland">
 
 
-									<div class="hover-space"><img src="<?php echo get_template_directory_uri().'/images/training-ni-1.jpg'; ?>" width="100%"></div>
+									<div class="hover-space"><img src="<?php echo get_template_directory_uri().'/images/training-ni-1.jpg'; ?>" width="100%" alt=""></div>
 <h3>Northern Ireland</h3>
 					</a></div>
 									<div class="span3 training-posts"><a href="/ep-training/in-scotland">
 
 
 
-									<div class="hover-space"><img src="<?php echo get_template_directory_uri().'/images/training-scotland-1.jpg'; ?>" width="100%"></div>
+									<div class="hover-space"><img src="<?php echo get_template_directory_uri().'/images/training-scotland-1.jpg'; ?>" width="100%" alt=""></div>
 <h3>Scotland</h3>
 					</a></div>
 					<div class="span3 training-posts"><a href="/ep-training/in-wales">
 
 
 
-					<div class="hover-space"><img src="<?php echo get_template_directory_uri().'/images/training-wales-1.jpg'; ?>" width="100%"></div>
+					<div class="hover-space"><img src="<?php echo get_template_directory_uri().'/images/training-wales-1.jpg'; ?>" width="100%" alt=""></div>
 <h3>Wales</h3>
 					</a>
 					</div>

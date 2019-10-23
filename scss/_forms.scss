@@ -91,6 +91,6 @@ display:flex;
 justify-content:space-between;
 }
 
-#signup input[type="submit"] {border: 1px solid #007bc7; color: #007bc7; width:inherit}
+#signup input[type="submit"] {border: 1px solid $color-link-with-background; color: $color-link-with-background; width:inherit}
 
-#signup input[type="submit"]:hover, #signup input[type="submit"]:focus {background: none repeat scroll 0 0 #007bc7; color: #FFFFFF; @include transition-0-3; }
+#signup input[type="submit"]:hover, #signup input[type="submit"]:focus {background: none repeat scroll 0 0 $color-link-with-background; color: #FFFFFF; @include transition-0-3; }
