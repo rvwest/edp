@@ -633,9 +633,11 @@ add_action( 'customize_register', 'advertica_lite_customize_register' );
  * Binds JS handlers to make the Customizer preview reload changes asynchronously.
  *
  * @since Twenty Fifteen 1.0
- */
+ *
+* changed wp_fueue_script to wp_enqueue_script()
+*/
 function advertica_lite_customize_preview_js() {
-	wp_fueue_script( 'advertica-lite-customizer-js', get_template_directory_uri() . '/js/advertica-lite-customizer.js', array( 'customize-preview' ), '20141216', true );
+	wp_enqueue_script( 'advertica-lite-customizer-js', get_template_directory_uri() . '/js/advertica-lite-customizer.js', array( 'customize-preview' ), '20141216', true );
 }
 add_action( 'customize_preview_init', 'advertica_lite_customize_preview_js' );
 
