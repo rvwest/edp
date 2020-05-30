@@ -21,32 +21,24 @@ global $post;
 <li <?php job_listing_class(); ?> data-longitude="<?php echo esc_attr( $post->geolocation_long ); ?>" data-latitude="<?php echo esc_attr( $post->geolocation_lat ); ?>">
 	<a href="<?php the_job_permalink(); ?>">
 		<?php the_company_logo(); ?>
-		
-		<div class="job-title">
-			<h2><?php wpjm_the_job_title(); ?></h2>
-				<?php do_action( 'job_listing_meta_start' ); ?>		
+		<div class="job-title"><h2><?php wpjm_the_job_title(); ?></h2></div>
+		<div class="position">
+			<div class="company">
+				<?php the_company_name(); ?>
+			</div>
+		</div>
+		<div class="location">
+			<?php the_job_location( false ); ?>
+		</div>
+		<ul class="meta">
+			<?php do_action( 'job_listing_meta_start' ); ?>
+
 			<?php if ( get_option( 'job_manager_enable_types' ) ) { ?>
 				<?php $types = wpjm_get_the_job_types(); ?>
 				<?php if ( ! empty( $types ) ) : foreach ( $types as $type ) : ?>
-					<span class="job-type <?php echo esc_attr( sanitize_title( $type->slug ) ); ?>"><?php echo esc_html( $type->name ); ?></span>
+					<li class="job-type <?php echo esc_attr( sanitize_title( $type->slug ) ); ?>"><?php echo esc_html( $type->name ); ?></li>
 				<?php endforeach; endif; ?>
 			<?php } ?>
-				
-		</div>
-		
-		<div class="position">
-		<span class="location">
-		<span class="company">
-				<?php the_company_name(); ?> 
-
-				</span>
-			
-		</div>
-		
-		<ul class="meta">
-			
-
-		
 
 			<li class="date"><?php the_job_publish_date(); ?></li>
 

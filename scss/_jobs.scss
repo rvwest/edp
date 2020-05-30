@@ -1,3 +1,13 @@
 .rp4wp-related-job_listing>ul li.job_listing a div.position .company, .rp4wp-related-job_listing>ul li.no_job_listings_found a div.position .company, ul.job_listings li.job_listing a div.position .company, ul.job_listings li.no_job_listings_found a div.position .company {color: $color-secondary;}
 .rp4wp-related-job_listing>ul li.job_listing a div.location, .rp4wp-related-job_listing>ul li.no_job_listings_found a div.location, ul.job_listings li.job_listing a div.location, ul.job_listings li.no_job_listings_found a div.location {color: $color-secondary;}
 .rp4wp-related-job_listing>ul li.job_listing a .meta, .rp4wp-related-job_listing>ul li.no_job_listings_found a .meta, ul.job_listings li.job_listing a .meta, ul.job_listings li.no_job_listings_found a .meta {color: $color-secondary;}
+//.type-job_listing .job-title {float: left; padding-left:42px; width:90%;} 
+//.type-job_listing .job-title h2 {margin-top: 0; margin-top:8px} 
+// Listing variatin
+.type-job_listing .job-title h2 {margin-bottom:8px; margin-top:0; float:left; font-size:1.2em}
+.type-job_listing .job-title {float:left; margin-left: 42px; width:94%;}
+.type-job_listing .job-type {float:right; font-weight: 600; padding-top:8px;}
+.type-job_listing ul.job_listings li.job_listings a div.location {width:inherit; padding: inherit;}
+.type-job_listing ul.type-job_listings li.job_listing a .meta {width: 25%; padding: 0;}
+ul.job_listings li.job_listing a div.position {width: 70%}
+ul.job_listings li.job_listing a .meta {width:30%;}
