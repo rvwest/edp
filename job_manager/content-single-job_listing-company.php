@@ -27,9 +27,9 @@ if ( ! get_the_company_name() ) {
 
 	<p class="name">
 		<?php if ( $website = get_the_company_website() ) : ?>
-			<a class="website" href="<?php echo esc_url( $website ); ?>" rel="nofollow"><?php the_company_name( '<strong>', '</strong>' ); ?></a>
+			<a class="company-name" href="<?php echo esc_url( $website ); ?>" rel="nofollow"><?php the_company_name( ); ?></a>
 		<?php else : ?>
-			<?php the_company_name( '<strong>', '</strong>' ); ?> 
+			<?php the_company_name( ); ?> 
 		<?php endif; ?>
 		<?php the_company_twitter(); ?>
 	</p>
