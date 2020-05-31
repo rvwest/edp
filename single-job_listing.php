@@ -40,7 +40,7 @@ get_header(); ?>
 
 
 						<!-- skepost-meta -->
-			<div id="container" class="span10">
+			<div id="container" class="span10 center-col">
 <div id="content">
 						<div class="skepost clearfix">
 							<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'advertica-lite' ) ); ?>
