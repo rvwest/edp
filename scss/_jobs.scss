@@ -14,17 +14,20 @@
 .type-job_listing ul.job_listings li.job_listing a img.company_logo {width:55px; height:55px}
 .type-job_listing ul.job_listings li.job_listing a div.position {padding-left: 52px;}
 
-.single-job_listing h1.title {font-size: 2.6rem; line-height: 3.2rem; padding-top: 45px;}
-.single-job_listing li.wpjmef-field-salary {margin-right:0}
-.single-job_listing li.wpjmef-field-important-info {padding-left: 0;}
-.single_job_listing .company {display: flex; border-width: 2px; box-shadow: none;}
-.single_job_listing .meta .job-type .job-type_item {border-radius: 15px; background-color: orange; padding: 2px 6px; margin-right:5px;}
-.single_job_listing .meta .job-type {background: none;}
+.single-job_listing h1.title {font-size: 2.6rem; line-height: 3.2rem; padding: 45px 0 10px 0;}
 
+.single-job_listing .meta {margin: 0 0 35px 0;}
+.single-job_listing .meta li {margin:0 0 0.4em 0; color: $color-secondary;}
+.single_job_listing .company {display: flex; border-width: 2px; box-shadow: none;}
+.single_job_listing .meta .job-type .job-type_item {border-radius: 15px; background-color: orange; padding: 2px 10px; margin-right:5px;}
+.single_job_listing .meta .job-type {background: none; clear:left;}
+.single_job_listing .meta .date-posted {clear:left;}
 .single_job_listing .company .company_twitter:before {display: none;}
 .single_job_listing .company .twitter {margin-bottom: 0;}
 .single_job_listing .company .company_logo {width:100px; max-height:100px; position:relative; padding-right: 20px; left:0;}
 .single_job_listing .company .name {margin:0; padding:0}
 .single_job_listing .company .name a {float: none; margin-left:0}
-.single_job_listing .meta li {color: $color-secondary;}
 .single_job_listing .company .tagline {color: $color-secondary; margin:0; padding:0;}
+.single_job_listing .meta li.wpjmef-field-soulbury {padding-left: 0}
+.single_job_listing .meta .job-type_item.fixed-term {background-color: #5f9ea0;}
+.single_job_listing .meta .job-type_item.flexible {background-color: #9074b3;}
