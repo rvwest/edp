@@ -28,7 +28,7 @@ get_header(); ?>
 	<div class="row-fluid">
 		<div id="container" class="span10 center-col">
 <div class="overlap-img-title">
-		<div class=" span11 no-gutter-l">
+		<div class=" span10 center-col no-gutter-l">
 					<h1 class="title "><?php the_title(); ?></h1>
 
 
@@ -54,8 +54,7 @@ get_header(); ?>
 						<!-- skepost -->
 
 						<div class="navigation">
-							<span class="nav-previous"><?php previous_post_link( __('&larr; %link','advertica-lite')); ?></span>
-							<span class="nav-next"><?php next_post_link( __('%link &rarr;','advertica-lite')); ?></span>
+						<a href="/jobs">See all jobs</a>
 						</div>
 						<div class="clearfix"></div>
 <br/>
