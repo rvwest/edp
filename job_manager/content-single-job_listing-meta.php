@@ -25,16 +25,23 @@ do_action( 'single_job_listing_meta_before' ); ?>
 <ul class="job-listing-meta meta">
 	<?php do_action( 'single_job_listing_meta_start' ); ?>
 
+	<li class="location"><?php the_job_location(); ?></li>
+	
+	<?php do_action( 'single_job_listing_extra_fields' ); ?>
+	
 	<?php if ( get_option( 'job_manager_enable_types' ) ) { ?>
 		<?php $types = wpjm_get_the_job_types(); ?>
+		<li class="job-type">
 		<?php if ( ! empty( $types ) ) : foreach ( $types as $type ) : ?>
 
-			<li class="job-type <?php echo esc_attr( sanitize_title( $type->slug ) ); ?>"><?php echo esc_html( $type->name ); ?></li>
+			<span class="job-type_item <?php echo esc_attr( sanitize_title( $type->slug ) ); ?>"><?php echo esc_html( $type->name ); ?></span>
 
-		<?php endforeach; endif; ?>
+		<?php endforeach; ?> 
+		</li>
+		<?php endif; ?>
 	<?php } ?>
 
-	<li class="location"><?php the_job_location(); ?></li>
+	
 
 	<li class="date-posted"><?php the_job_publish_date(); ?></li>
 

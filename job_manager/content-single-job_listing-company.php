@@ -23,16 +23,17 @@ if ( ! get_the_company_name() ) {
 }
 ?>
 <div class="company">
+<?php $logo = get_the_company_logo( $post, $size ); ?>
+<?php if ( has_post_thumbnail( $post ) ) :?>
 	<?php the_company_logo(); ?>
-
-	<p class="name">
+<?php endif; ?>
+<div class="company-meta"><p class="name">
 		<?php if ( $website = get_the_company_website() ) : ?>
-			<a class="company-name" href="<?php echo esc_url( $website ); ?>" rel="nofollow"><?php the_company_name( ); ?></a>
+			<a class="company-name" href="<?php echo esc_url( $website ); ?>"><?php the_company_name( ); ?></a>
 		<?php else : ?>
 			<?php the_company_name( ); ?> 
 		<?php endif; ?>
-		<?php the_company_twitter(); ?>
 	</p>
 	<?php the_company_tagline( '<p class="tagline">', '</p>' ); ?>
-	<?php the_company_video(); ?>
-</div>
+	<?php the_company_twitter( '<p class="twitter"><i class="fab fa-twitter"></i> ', '</p>' ); ?>
+		</div></div>

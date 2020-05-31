@@ -5,16 +5,24 @@
 //.type-job_listing .job-title h2 {margin-top: 0; margin-top:8px} 
 // Listing variatin
 .type-job_listing .job-title h2 {margin-bottom:8px; margin-top:0; float:left; font-size:1.2em}
-.type-job_listing .job-title {float:left; margin-left: 52px; width:94%;}
+.type-job_listing .job-title {float:left; padding-left: 42px; width:94%;}
 .type-job_listing .job-type {float:right; font-weight: 600; padding-top:8px;}
 .type-job_listing ul.job_listings li.job_listings a div.location {width:inherit; padding: inherit;}
-.type-job_listing ul.type-job_listings li.job_listing a .meta {width: 25%; padding: 0;}
-ul.job_listings li.job_listing a div.position {width: 70%}
-ul.job_listings li.job_listing a .meta {width:30%;}
+.type-job_listing li.job_listing a .meta {width: 25%; padding: 0;}
+.type-job_listing ul.job_listings li.job_listing a div.position {width: 70%}
+.type-job_listing ul.job_listings li.job_listing a .meta {width:30%;}
+.type-job_listing ul.job_listings li.job_listing a img.company_logo {width:55px; height:55px}
+.type-job_listing ul.job_listings li.job_listing a div.position {padding-left: 52px;}
 
-ul.job_listings li.job_listing a img.company_logo {width:55px; height:55px}
-ul.job_listings li.job_listing a div.position {padding-left: 52px;}
-h1.title {font-size: 2.6rem; line-height: 3.2rem; padding-top: 45px;}
+.single-job_listing h1.title {font-size: 2.6rem; line-height: 3.2rem; padding-top: 45px;}
 .single-job_listing li.wpjmef-field-salary {margin-right:0}
 .single-job_listing li.wpjmef-field-important-info {padding-left: 0;}
-.single_job_listing .company .name a {float: none;}
+.single_job_listing .company {display: flex; border-width: 2px; box-shadow: none;}
+
+.single_job_listing .company .company_twitter:before {display: none;}
+.single_job_listing .company .twitter {margin-bottom: 0;}
+.single_job_listing .company .company_logo {width:100px; max-height:100px; position:relative; padding-right: 20px; left:0;}
+.single_job_listing .company .name {margin:0; padding:0}
+.single_job_listing .company .name a {float: none; margin-left:0}
+.single_job_listing .meta li {color: $color-secondary;}
+.single_job_listing .company .tagline {color: $color-secondary; margin:0; padding:0;}
