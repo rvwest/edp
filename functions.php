@@ -298,6 +298,30 @@ function tribe_breadcrumbs() {
 }
 
 /**
+ * Changing Job Manager fields
+ *
+ */
+// Add your own function to filter the fields
+add_filter( 'submit_job_form_fields', 'custom_submit_job_form_fields' );
+
+// This is your function which takes the fields, modifies them, and returns them
+// You can see the fields which can be changed here: https://github.com/mikejolley/WP-Job-Manager/blob/master/includes/forms/class-wp-job-manager-form-submit-job.php
+function custom_submit_job_form_fields( $fields ) {
+
+    // Here we target one of the job fields (job_title) and change it's label
+	$fields['job']['job_location']['description'] = "";
+	$fields['company']['company_name']['label'] = "Organisation name";
+	$fields['company']['company_tagline']['placeholder'] = "Briefly describe your organisation";
+	$fields['company']['company_twitter']['placeholder'] = "@YourOrganisation";
+	
+	unset($fields['company']['company_video']);
+
+    // And return the modified fields
+    return $fields;
+}
+
+
+/**
  * Register our sidebars and widgetized areas.
  *
  */
