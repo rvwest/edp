@@ -310,9 +310,16 @@ function custom_submit_job_form_fields( $fields ) {
 
     // Here we target one of the job fields (job_title) and change it's label
 	$fields['job']['job_location']['description'] = "";
+	$fields['job']['job_location']['description'] = "";
+	$fields['job']['job_location']['placeholder'] = "";
+	$fields['job']['application']['label'] = "Where to apply";
+	$fields['job']['application']['placeholder'] = "https://yourorg.gov.uk/apply";
+	$fields['company']['company_name']['placeholder'] = "";
 	$fields['company']['company_name']['label'] = "Organisation name";
+	$fields['company']['company_name']['placeholder'] = "";
 	$fields['company']['company_tagline']['placeholder'] = "Briefly describe your organisation";
 	$fields['company']['company_twitter']['placeholder'] = "@YourOrganisation";
+	
 	
 	unset($fields['company']['company_video']);
 
