@@ -17,9 +17,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $job_manager;
 ?>
-<p>We’ll list your job for 30 days to let others in the EP community know you have a position to fill. For just £450, you’ll reach an audience of educational psychology professionals.</p>
 <form action="<?php echo esc_url( $action ); ?>" method="post" id="submit-job-form" class="job-manager-form" enctype="multipart/form-data">
-
+<h2>Your account</h2>
 	<?php
 	if ( isset( $resume_edit ) && $resume_edit ) {
 		printf( '<p><strong>' . esc_html__( "You are editing an existing job. %s", 'wp-job-manager' ) . '</strong></p>', '<a href="?new=1&key=' . esc_attr( $resume_edit ) . '">' . esc_html__( 'Create A New Job', 'wp-job-manager' ) . '</a>' );
