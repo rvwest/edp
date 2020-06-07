@@ -34,13 +34,14 @@
 
 /* Job form */
 .job-manager-form fieldset {border-bottom:none; padding-bottom:0}
-.job-manager-form fieldset label {float:none; font-weight: 400;}
+.job-manager-form fieldset label {float:none; font-weight: 400; line-height: 1rem; margin-top:1rem;}
+.job-manager-form fieldset small.description { margin: 0.4rem 0 0.7rem 0;}
 .job-manager-form fieldset div.field {float:none}
 .slice {padding: 1px 0 10px 0; outline: 3px solid $color-tile ;}
 .slice-tint {background-color: $color-tile;}
-.job-manager-form fieldset input.input-date, .job-manager-form fieldset input.input-text, .job-manager-form fieldset select, .job-manager-form fieldset textarea {margin-bottom:0; padding:0.4rem; border: 1px solid $color-copy;}
+.job-manager-form fieldset input.input-date, .job-manager-form fieldset input.input-text, .job-manager-form fieldset select, .job-manager-form fieldset textarea {margin-bottom:0; padding:0.4rem; border: 1px solid $color-outline;}
 //.job-manager-form fieldset input.input-date, .job-manager-form fieldset input.input-text, .job-manager-form fieldset select {width:70%;}
 //.job-manager-form fieldset textarea {width:100%;}
-.job-manager-form fieldset input.input-date:focus, .job-manager-form fieldset input.input-text:focus, .job-manager-form fieldset select:focus, .job-manager-form fieldset textarea:focus {outline: 3px solid $color-features;  outline-offset: 0;}
+.job-manager-form fieldset input.input-date:focus, .job-manager-form fieldset input.input-text:focus, .job-manager-form fieldset select:focus, .job-manager-form fieldset textarea:focus {outline: 3px solid $color-highlight;  outline-offset: 0;}
 .job-manager-form fieldset input[type=file].input-text {border:none;}
 .job-manager-form fieldset div.field {width:inherit;}
