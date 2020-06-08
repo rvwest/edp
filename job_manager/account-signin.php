@@ -22,8 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<div class="field account-sign-in">
 			<?php
 				$user = wp_get_current_user();
-				printf( wp_kses_post( __( '<p>You are currently signed in as <strong>%s</strong>.</p>
-				<p>To view your drafts go to your <a href="/job-dashboard">job dashboard</a>.</p>
+				printf( wp_kses_post( __( '<p class="signin-text">You are currently signed in as <strong>%s</strong>. To view your drafts go to your <a href="/job-dashboard">job dashboard</a>.</p>
 				', 'wp-job-manager' ) ), esc_html( $user->user_login ) );
 			?>
 

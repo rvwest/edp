@@ -17,9 +17,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $job_manager;
 ?>
+<div class="form-block">
+	<div class="progressbar-container">
+<ul class="progressbar">
+<li class="active">Post job</li>
+<li>Preview job</li>
+<li>Pay</li>
+</ul>
+</div>
+<p class=wpjm-offer-text>£450 for a 30-day posting plus mailout and tweet</p>
+</div>
 <form action="<?php echo esc_url( $action ); ?>" method="post" id="submit-job-form" class="job-manager-form" enctype="multipart/form-data">
-
-<p>We’ll list your job for 30 days to let others in the EP community know you have a position to fill. For just £450, you’ll reach an audience of educational psychology professionals.</p>
 <div class="form-block">
 
 	<?php
