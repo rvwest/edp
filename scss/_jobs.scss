@@ -42,10 +42,12 @@
 .job-manager-form fieldset input.input-date, .job-manager-form fieldset input.input-text, .job-manager-form fieldset select, .job-manager-form fieldset textarea, .select2-container--default .select2-selection--multiple, .job-manager-form fieldset .wp-editor-container {margin-bottom:0; padding:0.4rem; border: 1px solid $color-outline;}
 //.job-manager-form fieldset input.input-date, .job-manager-form fieldset input.input-text, .job-manager-form fieldset select {width:70%;}
 //.job-manager-form fieldset textarea {width:100%;}
-.job-manager-form fieldset input.input-date:focus, .job-manager-form fieldset input.input-text:focus, .job-manager-form fieldset select:focus, .job-manager-form fieldset textarea:focus, .select2-container--default.select2-container--focus .select2-selection--multiple {outline: 3px solid $color-highlight;  outline-offset: 0;}
+.job-manager-form fieldset input.input-date:focus, .job-manager-form fieldset input.input-text:focus, .job-manager-form fieldset select:focus, .job-manager-form fieldset textarea:focus, .select2-container--default.select2-container--focus .select2-selection--multiple, .job-manager-form input.button:focus {outline: 3px solid $color-highlight;  outline-offset: 0;}
 .job-manager-form fieldset input[type=file].input-text {border:none;}
 .job-manager-form fieldset div.field {width:inherit;}
 .select2-container {margin-top:0.7rem;}
 #wp-job_description-wrap {margin-top:0.7rem;}
 .select2-container--default .select2-selection--multiple {border-radius:0; line-height: 1.5rem;}
 .job-manager-form fieldset .wp-editor-container {border-radius:0}
+.job-manager-form input.button {background-color: $color-features; color:$color-heading-reverse; border:none;padding:0.7rem 2rem; text-transform: uppercase; font-size:0.8125rem; font-weight:bold; cursor: pointer; }
+.job-manager-form input.button:hover {background-color: $color-features-highlight}
