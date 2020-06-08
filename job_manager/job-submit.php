@@ -18,6 +18,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $job_manager;
 ?>
 <form action="<?php echo esc_url( $action ); ?>" method="post" id="submit-job-form" class="job-manager-form" enctype="multipart/form-data">
+
+<p>We’ll list your job for 30 days to let others in the EP community know you have a position to fill. For just £450, you’ll reach an audience of educational psychology professionals.</p>
 <div class="form-block">
 
 	<?php

@@ -33,21 +33,23 @@
 .single_job_listing .meta .job-type_item.flexible {background-color: #9074b3;}
 
 /* Job form */
+.form-block {margin-bottom:3rem; padding-bottom:1.8rem; border-bottom: solid 5px $color-outline;}
+
 .job-manager-form fieldset {border-bottom:none; padding-bottom:0}
 .job-manager-form fieldset label {float:none; font-weight: 400; line-height: 1rem; margin-top:1rem;}
 .job-manager-form fieldset small.description { margin: 0.4rem 0 0.7rem 0;}
 .job-manager-form fieldset div.field {float:none}
-.form-block {margin-bottom:3rem; padding-bottom:1.8rem; border-bottom: solid 5px $color-outline;}
+/* Fields */
 .job-manager-form fieldset input.input-date, .job-manager-form fieldset input.input-text, .job-manager-form fieldset select, .job-manager-form fieldset textarea, .select2-container--default .select2-selection--multiple, .job-manager-form fieldset .wp-editor-container {margin-bottom:0; padding:0.4rem; border: 1px solid $color-outline;}
-//.job-manager-form fieldset input.input-date, .job-manager-form fieldset input.input-text, .job-manager-form fieldset select {width:70%;}
-//.job-manager-form fieldset textarea {width:100%;}
+.job-manager-form fieldset input[type=file].input-text {display:flex; align-items: baseline; line-height: 2rem;}
 .job-manager-form fieldset input.input-date:focus, .job-manager-form fieldset input.input-text:focus, .job-manager-form fieldset select:focus, .job-manager-form fieldset textarea:focus, .select2-container--default.select2-container--focus .select2-selection--multiple, .job-manager-form input.button:focus {outline: 3px solid $color-highlight;  outline-offset: 0;}
-.job-manager-form fieldset input[type=file].input-text {border:none;}
 .job-manager-form fieldset div.field {width:inherit;}
 .select2-container {margin-top:0.7rem;}
 #wp-job_description-wrap {margin-top:0.7rem;}
+body#tinymce.wp-editor {font-family: $font-family;}
 .select2-container--default .select2-selection--multiple {border-radius:0; line-height: 1.5rem;}
 .job-manager-form fieldset .wp-editor-container {border-radius:0}
+
 .job-manager-form input.button, .job-manager-form a.button {background-color: $color-features; color:$color-heading-reverse; border:$color-features 1px solid;padding:0.7rem 2rem; text-transform: uppercase; font-size:0.8125rem; font-weight:bold; cursor: pointer; margin: 1rem 2rem 0rem 0; display:inline-block; line-height:1.3rem}
 .job-manager-form input.button.secondary, .job-manager-form a.button.secondary {background-color: $color-heading-reverse; color:$color-features; border:$color-features 1px solid;padding:0.7rem 2rem; }
 li.select2-results__option {margin-left:0}
@@ -60,6 +62,7 @@ li.select2-results__option {margin-left:0}
 .wpjm-page .primary-sidebar.widget-area {margin-bottom:3rem}
 .wpjm-page.wpjm-sumbit #widget-area {display:none;}
 p.wpjm-submit-block {margin-bottom:3rem; text-align:right;}
-.job-manager-info.job-manager-info, .job-manager-message.job-manager-info {margin-top: 2rem!important; color: $color-alert-success-text; border: solid 3px $color-alert-success-border; background-color: $color-alert-success-background; padding-left:2em!important; box-shadow: none; border-width: 3px;}
-.job-manager-error, .job-manager-error.job-manager-error {margin-top: 2rem!important; color: $color-alert-warning-text ; border: solid 3px $color-alert-warning-border; background-color: $color-alert-warning-background; padding-left:2em!important; box-shadow: none;}
+/* Alert boxes */
+.job-manager-info.job-manager-info, .job-manager-message.job-manager-info {color: $color-alert-success-text; border: solid 3px $color-alert-success-border; background-color: $color-alert-success-background; padding-left:2em!important; box-shadow: none; border-width: 3px;}
+.job-manager-error, .job-manager-error.job-manager-error {color: $color-alert-warning-text ; border: solid 3px $color-alert-warning-border; background-color: $color-alert-warning-background; padding-left:2em!important; box-shadow: none;}
 .skepost .job-manager-info.job-manager-info:before, .skepost .job-manager-message.job-manager-info:before,  .skepost .job-manager-error:before {display:none;} 

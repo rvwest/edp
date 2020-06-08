@@ -313,7 +313,8 @@ function custom_submit_job_form_fields( $fields ) {
 	$fields['job']['job_location']['description'] = "";
 	$fields['job']['job_location']['placeholder'] = "";
 	$fields['job']['application']['label'] = "Where to apply";
-	$fields['job']['application']['placeholder'] = "https://yourorg.gov.uk/apply";
+	$fields['job']['application']['description'] = "eg https://yourorg.gov.uk/apply";
+	$fields['job']['application']['placeholder'] = "";
 	$fields['company']['company_name']['placeholder'] = "";
 	$fields['company']['company_name']['label'] = "Organisation name";
 	$fields['company']['company_name']['placeholder'] = "";
@@ -321,6 +322,13 @@ function custom_submit_job_form_fields( $fields ) {
 	$fields['company']['company_twitter']['placeholder'] = "@YourOrganisation";
 	$fields['company']['company_twitter']['placeholder'] = "@YourOrganisation";
 	$fields['company']['company_logo']['description'] = "Will be displayed in a square. Maximum file size 32 MB";
+	$fields['company']['company_logo']['allowed_mime_types'] = [
+		'jpg'  => 'image/jpeg',
+		'jpeg' => 'image/jpeg',
+		'gif'  => 'image/gif',
+		'png'  => 'image/png',
+		'svg'  => 'image/svg',
+	];
 	unset($fields['company']['company_video']);
 
     // And return the modified fields
