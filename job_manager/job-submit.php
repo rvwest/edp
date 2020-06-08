@@ -18,6 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $job_manager;
 ?>
 <form action="<?php echo esc_url( $action ); ?>" method="post" id="submit-job-form" class="job-manager-form" enctype="multipart/form-data">
+<div class="form-block">
 <h2>Your details</h2>
 	<?php
 	if ( isset( $resume_edit ) && $resume_edit ) {
@@ -32,12 +33,14 @@ global $job_manager;
 		<?php get_job_manager_template( 'account-signin.php' ); ?>
 
 	<?php endif; ?>
-
+	</div>
 	<?php if ( job_manager_user_can_post_job() || job_manager_user_can_edit_job( $job_id ) ) : ?>
 
 		<!-- Job Information Fields -->
+		<div class="form-block">
 		<?php do_action( 'submit_job_form_job_fields_start' ); ?>
-<h2>Job details</h2>
+
+		<h2>Job details</h2>
 		<?php foreach ( $job_fields as $key => $field ) : ?>
 			<fieldset class="fieldset-<?php echo esc_attr( $key ); ?> fieldset-type-<?php echo esc_attr( $field['type'] ); ?>">
 				<label for="<?php echo esc_attr( $key ); ?>"><?php echo wp_kses_post( $field['label'] ) . wp_kses_post( apply_filters( 'submit_job_form_required_label', $field['required'] ? '' : ' <small>' . __( '(optional)', 'wp-job-manager' ) . '</small>', $field ) ); ?></label>
@@ -46,11 +49,11 @@ global $job_manager;
 				</div>
 			</fieldset>
 		<?php endforeach; ?>
-
 		<?php do_action( 'submit_job_form_job_fields_end' ); ?>
-
+		</div>
 		<!-- Company Information Fields -->
 		<?php if ( $company_fields ) : ?>
+			<div class="form-block">
 			<h2><?php esc_html_e( 'Company Details', 'wp-job-manager' ); ?></h2>
 
 			<?php do_action( 'submit_job_form_company_fields_start' ); ?>
@@ -65,23 +68,22 @@ global $job_manager;
 			<?php endforeach; ?>
 
 			<?php do_action( 'submit_job_form_company_fields_end' ); ?>
+			</div>
 		<?php endif; ?>
 
 		<?php do_action( 'submit_job_form_end' ); ?>
-
 		<p>
 			<input type="hidden" name="job_manager_form" value="<?php echo esc_attr( $form ); ?>" />
 			<input type="hidden" name="job_id" value="<?php echo esc_attr( $job_id ); ?>" />
 			<input type="hidden" name="step" value="<?php echo esc_attr( $step ); ?>" />
-			<input type="submit" name="submit_job" class="button" value="<?php echo esc_attr( $submit_button_text ); ?>" />
 			<?php
 			if ( isset( $can_continue_later ) && $can_continue_later ) {
 				echo '<input type="submit" name="save_draft" class="button secondary save_draft" value="' . esc_attr__( 'Save Draft', 'wp-job-manager' ) . '" formnovalidate />';
 			}
 			?>
+			<input type="submit" name="submit_job" class="button" value="<?php echo esc_attr( 'Preview and continue' ); ?>" />
 			<span class="spinner" style="background-image: url(<?php echo esc_url( includes_url( 'images/spinner.gif' ) ); ?>);"></span>
 		</p>
-
 	<?php else : ?>
 
 		<?php do_action( 'submit_job_form_disabled' ); ?>

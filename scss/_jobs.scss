@@ -37,8 +37,7 @@
 .job-manager-form fieldset label {float:none; font-weight: 400; line-height: 1rem; margin-top:1rem;}
 .job-manager-form fieldset small.description { margin: 0.4rem 0 0.7rem 0;}
 .job-manager-form fieldset div.field {float:none}
-.slice {padding: 1px 0 10px 0; outline: 3px solid $color-tile ;}
-.slice-tint {background-color: $color-tile;}
+.form-block {margin-bottom:3rem; padding-bottom:1.8rem; border-bottom: solid 5px $color-outline;}
 .job-manager-form fieldset input.input-date, .job-manager-form fieldset input.input-text, .job-manager-form fieldset select, .job-manager-form fieldset textarea, .select2-container--default .select2-selection--multiple, .job-manager-form fieldset .wp-editor-container {margin-bottom:0; padding:0.4rem; border: 1px solid $color-outline;}
 //.job-manager-form fieldset input.input-date, .job-manager-form fieldset input.input-text, .job-manager-form fieldset select {width:70%;}
 //.job-manager-form fieldset textarea {width:100%;}
