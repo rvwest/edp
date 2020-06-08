@@ -49,5 +49,7 @@
 #wp-job_description-wrap {margin-top:0.7rem;}
 .select2-container--default .select2-selection--multiple {border-radius:0; line-height: 1.5rem;}
 .job-manager-form fieldset .wp-editor-container {border-radius:0}
-.job-manager-form input.button {background-color: $color-features; color:$color-heading-reverse; border:none;padding:0.7rem 2rem; text-transform: uppercase; font-size:0.8125rem; font-weight:bold; cursor: pointer; }
+.job-manager-form input.button {background-color: $color-features; color:$color-heading-reverse; border:$color-features 1px solid;padding:0.7rem 2rem; text-transform: uppercase; font-size:0.8125rem; font-weight:bold; cursor: pointer; }
+.job-manager-form input.button.secondary {background-color: $color-heading-reverse; color:$color-features; border:$color-features 1px solid;padding:0.7rem 2rem; text-transform: uppercase; font-size:0.8125rem; font-weight:bold; cursor: pointer; }
 .job-manager-form input.button:hover {background-color: $color-features-highlight}
+.job-manager-form input.button:hover.secondary {background-color: $color-features-pale}
