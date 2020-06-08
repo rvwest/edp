@@ -1,11 +1,13 @@
 <?php
-/**
- * The Template for displaying all single posts.
- */
+/*
+Template Name: Job list template
+*/
+?>
 
+<?php 
 get_header(); ?>
 
-<div class="wpjm-page wpjm-single-job-post main-wrapper-item category-<?php foreach( get_the_category() as $cat ) { echo $cat->slug . '  '; } ?>">
+<div class="wpjm-page wpjm-listing-page main-wrapper-item category-<?php foreach( get_the_category() as $cat ) { echo $cat->slug . '  '; } ?>">
 <?php if(have_posts()) : ?>
 <?php while(have_posts()) : the_post(); ?>
 	<div class="bread-title-holder">
@@ -24,11 +26,11 @@ get_header(); ?>
 
 		<div class="post" id="post-<?php the_ID(); ?>">
 
-		<div class="container post-wrap">
+<div class="container post-wrap">
 	<div class="row-fluid">
 		<div id="container" class="span10 center-col">
 <div class="overlap-img-title">
-		<div class=" span10 center-col no-gutter-l">
+		<div class=" span11 no-gutter-l">
 					<h1 class="title "><?php the_title(); ?></h1>
 
 
@@ -37,6 +39,7 @@ get_header(); ?>
 
 					</div>
 
+						
 
 
 						<!-- skepost-meta -->
@@ -47,15 +50,13 @@ get_header(); ?>
 							<?php wp_link_pages(array('before' => '<p><strong>'.__('Pages :','advertica-lite').'</strong>','after' => '</p>', __('number','advertica-lite'),));	?>
 
 
-								
+							
 
 
 						</div>
 						<!-- skepost -->
 
-						<div class="navigation">
-						<a href="/jobs">See all jobs</a>
-						</div>
+						
 						<div class="clearfix"></div>
 <br/>
 						<?php if ( is_active_sidebar( 'post_cta_2' ) ) : ?>
@@ -63,7 +64,7 @@ get_header(); ?>
 								<?php dynamic_sidebar( 'post_cta_2' ); ?>
 							</div><!-- #primary-sidebar -->
 						<?php endif; ?>
-						
+					
 					</div>
 				<!-- post -->
 				<?php endwhile; ?>

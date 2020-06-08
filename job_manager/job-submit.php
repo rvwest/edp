@@ -19,7 +19,7 @@ global $job_manager;
 ?>
 <form action="<?php echo esc_url( $action ); ?>" method="post" id="submit-job-form" class="job-manager-form" enctype="multipart/form-data">
 <div class="form-block">
-<h2>Your details</h2>
+
 	<?php
 	if ( isset( $resume_edit ) && $resume_edit ) {
 		printf( '<p><strong>' . esc_html__( "You are editing an existing job. %s", 'wp-job-manager' ) . '</strong></p>', '<a href="?new=1&key=' . esc_attr( $resume_edit ) . '">' . esc_html__( 'Create A New Job', 'wp-job-manager' ) . '</a>' );
@@ -54,7 +54,7 @@ global $job_manager;
 		<!-- Company Information Fields -->
 		<?php if ( $company_fields ) : ?>
 			<div class="form-block">
-			<h2><?php esc_html_e( 'Company Details', 'wp-job-manager' ); ?></h2>
+			<h2><?php esc_html_e( 'Organisation details', 'wp-job-manager' ); ?></h2>
 
 			<?php do_action( 'submit_job_form_company_fields_start' ); ?>
 
@@ -72,7 +72,7 @@ global $job_manager;
 		<?php endif; ?>
 
 		<?php do_action( 'submit_job_form_end' ); ?>
-		<p>
+		<p class="wpjm-submit-block">
 			<input type="hidden" name="job_manager_form" value="<?php echo esc_attr( $form ); ?>" />
 			<input type="hidden" name="job_id" value="<?php echo esc_attr( $job_id ); ?>" />
 			<input type="hidden" name="step" value="<?php echo esc_attr( $step ); ?>" />

@@ -1,13 +1,13 @@
 <?php
 /*
-Template Name: Job list template
+Template Name: Job admin template
 */
 ?>
 
 <?php 
 get_header(); ?>
 
-<div class="main-wrapper-item category-<?php foreach( get_the_category() as $cat ) { echo $cat->slug . '  '; } ?>">
+<div class="wpjm-page wpjm-listing-page main-wrapper-item category-<?php foreach( get_the_category() as $cat ) { echo $cat->slug . '  '; } ?>">
 <?php if(have_posts()) : ?>
 <?php while(have_posts()) : the_post(); ?>
 	<div class="bread-title-holder">
@@ -59,9 +59,9 @@ get_header(); ?>
 						
 						<div class="clearfix"></div>
 <br/>
-						<?php if ( is_active_sidebar( 'post_cta_1' ) ) : ?>
+						<?php if ( is_active_sidebar( 'post_cta_3' ) ) : ?>
 							<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
-								<?php dynamic_sidebar( 'post_cta_1' ); ?>
+								<?php dynamic_sidebar( 'post_cta_3' ); ?>
 							</div><!-- #primary-sidebar -->
 						<?php endif; ?>
 					

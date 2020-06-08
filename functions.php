@@ -326,6 +326,17 @@ function custom_submit_job_form_fields( $fields ) {
     // And return the modified fields
     return $fields;
 }
+ 
+add_filter( 'wpjm_get_registration_fields', 'custom_registration_fields' );
+
+function custom_registration_fields( $fields ) {
+    // Here we target one of the job fields (job_title) and change it's label
+	$fields['create_account_email']['label'] = "Your email";
+	$fields['create_account_email']['placeholder'] = "";
+	$fields['create_account_email']['description'] = "";
+    // And return the modified fields
+    return $fields;
+} 
 
 
 /**
@@ -337,6 +348,24 @@ function arphabet_widgets_init() {
 	register_sidebar( array(
 		'name'          => 'Post call to action area',
 		'id'            => 'post_cta_1',
+		'before_widget' => '<div class="post_cta" id="signup">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => 'Jobs call to action area',
+		'id'            => 'post_cta_2',
+		'before_widget' => '<div class="post_cta" id="signup">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => 'Jobs admin call to action area',
+		'id'            => 'post_cta_3',
 		'before_widget' => '<div class="post_cta" id="signup">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h2>',
