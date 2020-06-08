@@ -25,7 +25,7 @@ global $job_manager;
 <li>Pay</li>
 </ul>
 </div>
-<p class=wpjm-offer-text>£450 for a 30-day posting plus mailout and tweet</p>
+<p class=wpjm-offer-text>£450 for a 30-day posting + mailout and tweet</p>
 </div>
 <form action="<?php echo esc_url( $action ); ?>" method="post" id="submit-job-form" class="job-manager-form" enctype="multipart/form-data">
 <div class="form-block">

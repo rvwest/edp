@@ -321,7 +321,7 @@ function custom_submit_job_form_fields( $fields ) {
 	$fields['company']['company_tagline']['placeholder'] = "Briefly describe your organisation";
 	$fields['company']['company_twitter']['placeholder'] = "@YourOrganisation";
 	$fields['company']['company_twitter']['placeholder'] = "@YourOrganisation";
-	$fields['company']['company_logo']['description'] = "Will be displayed in a square. Maximum file size 32 MB";
+	$fields['company']['company_logo']['description'] = "Will be cropped into a square. Maximum file size 32 MB";
 	$fields['company']['company_logo']['allowed_mime_types'] = [
 		'jpg'  => 'image/jpeg',
 		'jpeg' => 'image/jpeg',
