@@ -3,8 +3,24 @@
 .rp4wp-related-job_listing>ul li.job_listing a .meta, .rp4wp-related-job_listing>ul li.no_job_listings_found a .meta, ul.job_listings li.job_listing a .meta, ul.job_listings li.no_job_listings_found a .meta {color: $color-secondary;}
 //.type-job_listing .job-title {float: left; padding-left:42px; width:90%;} 
 //.type-job_listing .job-title h2 {margin-top: 0; margin-top:8px} 
-// Listing variatin
-.type-job_listing .job-title h2 {margin-bottom:8px; margin-top:0; float:left; font-size:1.2em}
+
+// Listing variations
+.rp4wp-related-job_listing>ul li.job_listing a, .rp4wp-related-job_listing>ul li.no_job_listings_found a, ul.job_listings li.job_listing a, ul.job_listings li.no_job_listings_found a {padding-left:1em; display:flex;}
+.wpjm-listing-page #content img {height:inherit;}
+.rp4wp-related-job_listing>ul li.job_listing a img.company_logo, .rp4wp-related-job_listing>ul li.no_job_listings_found a img.company_logo, #content ul.job_listings li.job_listing a img.company_logo, ul.job_listings li.no_job_listings_found a img.company_logo {width:75px; height:75px;position:relative; float:none;left:0;}
+.job-list-details {display: flex; flex-wrap: wrap;}
+.type-job_listing .job-title h2 {margin-bottom:8px; margin-top:0; font-size:1.2em}
+.type-job_listing .job-title {width:94%;}
+.type-job_listing .job-type {font-weight: 600;}
+.type-job_listing ul.job_listings li.job_listings a div.location {width:inherit; padding: inherit;}
+.type-job_listing li.job_listing a .meta {width: 25%; padding: 0;}
+.type-job_listing ul.job_listings li.job_listing a div.position {width: 70%}
+.type-job_listing ul.job_listings li.job_listing a .meta {width:30%;}
+.type-job_listing ul.job_listings li.job_listing a img.company_logo {width:55px; height:55px}
+.type-job_listing ul.job_listings li.job_listing a div.position {padding-left: 52px;}
+
+
+/* .type-job_listing .job-title h2 {margin-bottom:8px; margin-top:0; float:left; font-size:1.2em}
 .type-job_listing .job-title {float:left; padding-left: 42px; width:94%;}
 .type-job_listing .job-type {float:right; font-weight: 600;}
 .type-job_listing ul.job_listings li.job_listings a div.location {width:inherit; padding: inherit;}
@@ -13,7 +29,8 @@
 .type-job_listing ul.job_listings li.job_listing a .meta {width:30%;}
 .type-job_listing ul.job_listings li.job_listing a img.company_logo {width:55px; height:55px}
 .type-job_listing ul.job_listings li.job_listing a div.position {padding-left: 52px;}
-.single-job_listing h1.title {font-size: 2.6rem; line-height: 3.2rem; padding: 45px 0 10px 0;}
+ */
+ .single-job_listing h1.title {font-size: 2.6rem; line-height: 3.2rem; padding: 45px 0 10px 0;}
 
 .single-job_listing .meta {margin: 0 0 35px 0;}
 .single-job_listing .meta li {margin:0 0 0.4em 0; color: $color-secondary;}

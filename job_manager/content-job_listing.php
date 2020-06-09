@@ -21,19 +21,11 @@ global $post;
 <li <?php job_listing_class(); ?> data-longitude="<?php echo esc_attr( $post->geolocation_long ); ?>" data-latitude="<?php echo esc_attr( $post->geolocation_lat ); ?>">
 	<a href="<?php the_job_permalink(); ?>">
 		<?php the_company_logo(); ?>
-		
+		<div class="job-list-details">
 		<div class="job-title">
 			<h2><?php wpjm_the_job_title(); ?></h2>
-				<?php do_action( 'job_listing_meta_start' ); ?>		
-			<?php if ( get_option( 'job_manager_enable_types' ) ) { ?>
-				<?php $types = wpjm_get_the_job_types(); ?>
-				<?php if ( ! empty( $types ) ) : foreach ( $types as $type ) : ?>
-					<span class="job-type <?php echo esc_attr( sanitize_title( $type->slug ) ); ?>"><?php echo esc_html( $type->name ); ?></span>
-				<?php endforeach; endif; ?>
-			<?php } ?>
-				
 		</div>
-		
+			
 		<div class="position">
 		<span class="location">
 		<span class="company">
@@ -42,7 +34,13 @@ global $post;
 				</span>
 			
 		</div>
-		
+		<?php do_action( 'job_listing_meta_start' ); ?>		
+			<?php if ( get_option( 'job_manager_enable_types' ) ) { ?>
+				<?php $types = wpjm_get_the_job_types(); ?>
+				<?php if ( ! empty( $types ) ) : foreach ( $types as $type ) : ?>
+					<span class="job-type <?php echo esc_attr( sanitize_title( $type->slug ) ); ?>"><?php echo esc_html( $type->name ); ?></span>
+				<?php endforeach; endif; ?>
+			<?php } ?>
 		<ul class="meta">
 			
 
@@ -52,5 +50,6 @@ global $post;
 
 			<?php do_action( 'job_listing_meta_end' ); ?>
 		</ul>
+				</div>
 	</a>
 </li>

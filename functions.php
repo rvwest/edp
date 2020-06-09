@@ -347,6 +347,7 @@ function custom_registration_fields( $fields ) {
 } 
 
 
+
 /**
  * Register our sidebars and widgetized areas.
  *

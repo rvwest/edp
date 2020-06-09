@@ -2,3 +2,4 @@
 05/31/20 10:02:06: edpsy-style.scss - parse error: failed at `.` /Users/richard.west/Sites/edpsy/wp-content/themes/edpsy/scss/_jobs.scss on line 17
 05/31/20 11:05:25: edpsy-style.scss - parse error: failed at `padding-left:}` /Users/richard.west/Sites/edpsy/wp-content/themes/edpsy/scss/_jobs.scss on line 19
 06/08/20 9:24:46: edpsy-style.scss - parse error: failed at `border-bottom: ;}` /Users/richard.west/Sites/edpsy/wp-content/themes/edpsy/scss/_jobs.scss on line 40
+06/09/20 9:04:30: edpsy-style.scss - parse error: failed at `border-top: border-bottom: solid 5px $color-outline;}` /Users/richard.west/Sites/edpsy/wp-content/themes/edpsy/scss/_jobs.scss on line 1
