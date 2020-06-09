@@ -43,7 +43,7 @@ get_header(); ?>
 
 						<div class="skepost-meta span10 clearfix">
 							<span class="date"><?php the_time('F j Y') ?></span><span class="author-name"><?php _e(', by ','advertica-lite'); 							if ( function_exists( 'coauthors_posts_links' ) ) {
-    coauthors_posts_links(first_name);} else {
+    coauthors_posts_links();} else {
     the_author_posts_link(first_name, last_name);} ?></span><?php
 if ( comments_open() ) :
   echo '<span class="comments">, ';
