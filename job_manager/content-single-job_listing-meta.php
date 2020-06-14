@@ -27,7 +27,7 @@ do_action( 'single_job_listing_meta_before' ); ?>
 
 	<li class="location"><i class="fas fa-map-marker-alt"></i> <?php the_job_location(); ?></li>
 	
-	<?php do_action( 'single_job_listing_extra_fields' ); ?>
+	<?php do_action( 'single_job_listing_extra_fields_combined' ); ?>
 	
 	<li class="date-posted"><i class="fas fa-clock"></i> <?php the_job_publish_date(); ?></li>	
 
