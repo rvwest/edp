@@ -1,10 +1,11 @@
 <?php
 /*
-Template Name: Job list template
+Template Name: Job admin template
 */
 ?>
 
-<?php get_header(); ?>
+<?php 
+get_header(); ?>
 
 <div class="wpjm-page wpjm-listing-page main-wrapper-item category-<?php foreach( get_the_category() as $cat ) { echo $cat->slug . '  '; } ?>">
 <?php if(have_posts()) : ?>
@@ -18,11 +19,7 @@ Template Name: Job list template
 						if ((class_exists('advertica_lite_breadcrumb_class'))) {$advertica_breadcumb->advertica_lite_custom_breadcrumb();}
 					}
 					?>
-		<div class="container_inner clearfix">
-		<h1 class="title "><?php the_title(); ?></h1>
-					
-				</div>	
-		</div>
+			</div>
 		</div>
 	</div>
 
@@ -31,9 +28,23 @@ Template Name: Job list template
 
 <div class="container post-wrap">
 	<div class="row-fluid">
-		<div id="container" class="span8 center-col">
+		<div id="container" class="span10 center-col">
+<div class="overlap-img-title">
+		<div class=" span11 no-gutter-l">
+					<h1 class="title "><?php the_title(); ?></h1>
 
-	<div id="content">
+
+				</div>
+						
+
+					</div>
+
+						
+
+
+						<!-- skepost-meta -->
+			<div id="container" class="span10 center-col">
+<div id="content">
 						<div class="skepost clearfix">
 							<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'advertica-lite' ) ); ?>
 							<?php wp_link_pages(array('before' => '<p><strong>'.__('Pages :','advertica-lite').'</strong>','after' => '</p>', __('number','advertica-lite'),));	?>
@@ -48,9 +59,9 @@ Template Name: Job list template
 						
 						<div class="clearfix"></div>
 <br/>
-						<?php if ( is_active_sidebar( 'post_cta_2' ) ) : ?>
+						<?php if ( is_active_sidebar( 'post_cta_3' ) ) : ?>
 							<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
-								<?php dynamic_sidebar( 'post_cta_2' ); ?>
+								<?php dynamic_sidebar( 'post_cta_3' ); ?>
 							</div><!-- #primary-sidebar -->
 						<?php endif; ?>
 					

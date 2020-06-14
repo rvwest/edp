@@ -5,12 +5,16 @@
 //.type-job_listing .job-title h2 {margin-top: 0; margin-top:8px} 
 
 // Listing variations
-.rp4wp-related-job_listing>ul li.job_listing a, .rp4wp-related-job_listing>ul li.no_job_listings_found a, ul.job_listings li.job_listing a, ul.job_listings li.no_job_listings_found a {padding-left:1em; display:flex;}
+.rp4wp-related-job_listing>ul li.job_listing a, .rp4wp-related-job_listing>ul li.no_job_listings_found a, ul.job_listings li.job_listing a, ul.job_listings li.no_job_listings_found a {padding-left:1em; display:flex; }
+
+.rp4wp-related-job_listing>ul li.job_listing a div.position, .rp4wp-related-job_listing>ul li.no_job_listings_found a div.position, ul.job_listings li.job_listing a div.position, ul.job_listings li.no_job_listings_found a div.position {float:none; padding:0; width:100%; line-height: 1.5rem; display:flex; justify-content: space-between;}
+
 .wpjm-listing-page #content img {height:inherit;}
 .rp4wp-related-job_listing>ul li.job_listing a img.company_logo, .rp4wp-related-job_listing>ul li.no_job_listings_found a img.company_logo, #content ul.job_listings li.job_listing a img.company_logo, ul.job_listings li.no_job_listings_found a img.company_logo {width:75px; height:75px;position:relative; float:none;left:0;}
-.job-list-details {display: flex; flex-wrap: wrap;}
+.job-list-details {display: flex; flex-wrap: wrap; justify-content: space-between;}
 .type-job_listing .job-title h2 {margin-bottom:8px; margin-top:0; font-size:1.2em}
-.type-job_listing .job-title {width:94%;}
+
+//.type-job_listing .job-title {width:94%;}
 .type-job_listing .job-type {font-weight: 600;}
 .type-job_listing ul.job_listings li.job_listings a div.location {width:inherit; padding: inherit;}
 .type-job_listing li.job_listing a .meta {width: 25%; padding: 0;}
