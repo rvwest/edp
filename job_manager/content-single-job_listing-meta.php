@@ -25,10 +25,12 @@ do_action( 'single_job_listing_meta_before' ); ?>
 <ul class="job-listing-meta meta">
 	<?php do_action( 'single_job_listing_meta_start' ); ?>
 
-	<li class="location"><?php the_job_location(); ?></li>
+	<li class="location"><i class="fas fa-map-marker-alt"></i> <?php the_job_location(); ?></li>
 	
 	<?php do_action( 'single_job_listing_extra_fields' ); ?>
 	
+	<li class="date-posted"><i class="fas fa-clock"></i> <?php the_job_publish_date(); ?></li>	
+
 	<?php if ( get_option( 'job_manager_enable_types' ) ) { ?>
 		<?php $types = wpjm_get_the_job_types(); ?>
 		<li class="job-type">
@@ -41,9 +43,8 @@ do_action( 'single_job_listing_meta_before' ); ?>
 		<?php endif; ?>
 	<?php } ?>
 
-	
 
-	<li class="date-posted"><?php the_job_publish_date(); ?></li>
+
 
 	<?php if ( is_position_filled() ) : ?>
 		<li class="position-filled"><?php _e( 'This position has been filled', 'wp-job-manager' ); ?></li>

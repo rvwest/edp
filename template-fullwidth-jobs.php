@@ -31,7 +31,7 @@ Template Name: Job list template
 
 <div class="container post-wrap">
 	<div class="row-fluid">
-		<div id="container" class="span8 center-col">
+		<div id="container" class="span10 center-col">
 
 	<div id="content">
 						<div class="skepost clearfix">

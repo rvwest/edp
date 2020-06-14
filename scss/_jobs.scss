@@ -1,64 +1,103 @@
-.rp4wp-related-job_listing>ul li.job_listing a div.position .company, .rp4wp-related-job_listing>ul li.no_job_listings_found a div.position .company, ul.job_listings li.job_listing a div.position .company, ul.job_listings li.no_job_listings_found a div.position .company {color: $color-secondary;}
-.rp4wp-related-job_listing>ul li.job_listing a div.location, .rp4wp-related-job_listing>ul li.no_job_listings_found a div.location, ul.job_listings li.job_listing a div.location, ul.job_listings li.no_job_listings_found a div.location {color: $color-secondary;}
-.rp4wp-related-job_listing>ul li.job_listing a .meta, .rp4wp-related-job_listing>ul li.no_job_listings_found a .meta, ul.job_listings li.job_listing a .meta, ul.job_listings li.no_job_listings_found a .meta {color: $color-secondary;}
-//.type-job_listing .job-title {float: left; padding-left:42px; width:90%;} 
-//.type-job_listing .job-title h2 {margin-top: 0; margin-top:8px} 
+// -- LISTINGS PAGE -- //
 
-// Listing variations
-.rp4wp-related-job_listing>ul li.job_listing a, .rp4wp-related-job_listing>ul li.no_job_listings_found a, ul.job_listings li.job_listing a, ul.job_listings li.no_job_listings_found a {padding-left:1em; display:flex; }
+.wpjm-listing-page h1.title {padding-bottom: 16px;}
+p.job-post-promo {text-align:center;margin-bottom: 3rem; font-weight:400; line-height: 1.75rem;;}
+
+.rp4wp-related-job_listing>ul li.job_listing a, .rp4wp-related-job_listing>ul li.no_job_listings_found a, ul.job_listings li.job_listing a, ul.job_listings li.no_job_listings_found a {padding-left:1em; display:flex;}
+
+#content li.job_listing a:link, #content li.job_listing a:visited {text-decoration: none;}
 
 .rp4wp-related-job_listing>ul li.job_listing a div.position, .rp4wp-related-job_listing>ul li.no_job_listings_found a div.position, ul.job_listings li.job_listing a div.position, ul.job_listings li.no_job_listings_found a div.position {float:none; padding:0; width:100%; line-height: 1.5rem; display:flex; justify-content: space-between;}
 
+a .job-list-details {text-decoration: none; text-decoration-line: none;}
+
+// --- Logo --- //
+
 .wpjm-listing-page #content img {height:inherit;}
+
 .rp4wp-related-job_listing>ul li.job_listing a img.company_logo, .rp4wp-related-job_listing>ul li.no_job_listings_found a img.company_logo, #content ul.job_listings li.job_listing a img.company_logo, ul.job_listings li.no_job_listings_found a img.company_logo {width:75px; height:75px;position:relative; float:none;left:0;}
-.job-list-details {display: flex; flex-wrap: wrap; justify-content: space-between;}
+
+// --- Job details (title and organisation) --- //
+
+.job-list-details {display: flex; flex-wrap: no-wrap; justify-content: space-between; width:100%; }
+.job-list-details .position-main {padding-left:1.5rem; margin-bottom:0.5rem;}
 .type-job_listing .job-title h2 {margin-bottom:8px; margin-top:0; font-size:1.2em}
 
-//.type-job_listing .job-title {width:94%;}
-.type-job_listing .job-type {font-weight: 600;}
-.type-job_listing ul.job_listings li.job_listings a div.location {width:inherit; padding: inherit;}
-.type-job_listing li.job_listing a .meta {width: 25%; padding: 0;}
-.type-job_listing ul.job_listings li.job_listing a div.position {width: 70%}
-.type-job_listing ul.job_listings li.job_listing a .meta {width:30%;}
-.type-job_listing ul.job_listings li.job_listing a img.company_logo {width:55px; height:55px}
-.type-job_listing ul.job_listings li.job_listing a div.position {padding-left: 52px;}
+
+// --- Job meta (type and post date) --- //
+
+.job-list-details .position-meta {text-align: right; min-width:200px; margin-left:1rem}
+#content a .job-list-details .company, #content a .job-list-details .position-meta .date {color: $color-secondary}
+.type-job_listing .job-type {display:inline-block; margin-bottom:0.5rem; font-weight: 400;}
+.job_listing .job-type.fixed-term {color: $color-job-type-fixed-term}
+.job_listing .job-type.full-time {color: $color-job-type-full-time}
+.job_listing .job-type.flexible {color: $color-job-type-flexible}
+.job_listing .job-type.part-time {color: $color-job-type-part-time}
+.job_listing .job-type.fixed-term:after {content: ", "}
+
+// --- Small viewports --- //
+
+@media only screen and (max-width: 767px) {
+
+    .job-list-details {flex-wrap: wrap;}
+
+    ul.job_listings li.job_listing a img.company_logo, ul.job_listings li.no_job_listings_found a img.company_logo {
+    display: none;}
+
+    .job-list-details .position-main {
+        padding-left:0;
+        width:100%
+    }
+
+    .job-list-details .position-meta {
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        margin-left:0;
+        font-size: 0.9rem;
+
+    }
+
+    .type-job_listing .job-type {
+        font-weight: 600;
+    }
+}
 
 
-/* .type-job_listing .job-title h2 {margin-bottom:8px; margin-top:0; float:left; font-size:1.2em}
-.type-job_listing .job-title {float:left; padding-left: 42px; width:94%;}
-.type-job_listing .job-type {float:right; font-weight: 600;}
-.type-job_listing ul.job_listings li.job_listings a div.location {width:inherit; padding: inherit;}
-.type-job_listing li.job_listing a .meta {width: 25%; padding: 0;}
-.type-job_listing ul.job_listings li.job_listing a div.position {width: 70%}
-.type-job_listing ul.job_listings li.job_listing a .meta {width:30%;}
-.type-job_listing ul.job_listings li.job_listing a img.company_logo {width:55px; height:55px}
-.type-job_listing ul.job_listings li.job_listing a div.position {padding-left: 52px;}
- */
- .single-job_listing h1.title {font-size: 2.6rem; line-height: 3.2rem; padding: 45px 0 10px 0;}
+
+// -- JOB PAGE -- //
+
+.single-job_listing h1.title {font-size: 2.6rem; line-height: 3.2rem; padding: 45px 0 10px 0; width:85%;}
+
 
 .single-job_listing .meta {margin: 0 0 35px 0;}
-.single-job_listing .meta li {margin:0 0 0.4em 0; color: $color-secondary;}
+.single-job_listing .meta li {margin:0 0 0.4em 0; padding: .5em 2rem .5rem .5rem; color: $color-secondary;}
+.single-job_listing .meta  svg.svg-inline--fa {color: $color-jobs-pale;}
 .single_job_listing .company {display: flex; border-width: 2px; box-shadow: none;}
-.single_job_listing .meta .job-type .job-type_item {border-radius: 15px; background-color: orange; padding: 2px 10px; margin-right:5px;}
-.single_job_listing .meta .job-type {background: none; clear:left;}
-.single_job_listing .meta .date-posted {clear:left;}
 .single_job_listing .company .company_twitter:before {display: none;}
 .single_job_listing .company .twitter {margin-bottom: 0;}
 .single_job_listing .company .company_logo {width:100px; max-height:100px; position:relative; padding-right: 20px; left:0;}
 .single_job_listing .company .name {margin:0; padding:0}
 .single_job_listing .company .name a {float: none; margin-left:0}
 .single_job_listing .company .tagline {color: $color-secondary; margin:0; padding:0;}
+.single_job_listing .meta .location:before, .single_job_listing .meta .date-posted:before { display: none;}
 .single_job_listing .meta li.wpjmef-field-soulbury {padding-left: 0}
+.single_job_listing .meta li.location {padding-left:0.5rem;}
+// --- Job types --- //
+.single_job_listing .meta .job-type .job-type_item {border-radius: 15px; background-color: orange; padding: 2px 10px; margin-right:5px;}
+.single_job_listing .meta .job-type {background: none; clear:left;}
 .single_job_listing .meta .job-type_item.fixed-term {background-color: $color-job-type-fixed-term;}
-.job_listing .job-type.fixed-term {color: $color-job-type-fixed-term}
 .single_job_listing .meta .job-type_item.flexible {background-color: $color-job-type-flexible;}
-.job_listing .job-type.flexible {color: $color-job-type-flexible}
 .single_job_listing .meta .job-type_item.full-time {background-color: $color-job-type-full-time;}
-.job_listing .job-type.full-time {color: $color-job-type-full-time}
 .single_job_listing .meta .job-type_item.part-time {background-color: $color-job-type-part-time;}
-.job_listing .job-type.part-time {color: $color-job-type-part-time}
 
-/* Job form */
+// -- POST JOB FORM -- //
+
+.wpjm-listing-page h1.title {padding-bottom: 0px;}
+.wpjm-listing-page.category-job-admin h1.title {padding-bottom: 0px; margin-bottom: 3px;}
+.post #content .skepost > p:first-child {
+line-height: 1.75rem;
+}
 .form-block {margin-bottom:3rem; padding-bottom:1.8rem; border-bottom: solid 5px $color-outline;}
 p.signin-text {margin-bottom:0;}
 .wpjm-page #content .skepost > p:first-child {font-size: 1.125rem;}
@@ -94,3 +133,35 @@ p.wpjm-submit-block {margin-bottom:3rem; text-align:right;}
 .job-manager-info.job-manager-info, .job-manager-message.job-manager-info {color: $color-alert-success-text; border: solid 3px $color-alert-success-border; background-color: $color-alert-success-background; padding-left:2em!important; box-shadow: none; border-width: 3px;}
 .job-manager-error, .job-manager-error.job-manager-error {color: $color-alert-warning-text ; border: solid 3px $color-alert-warning-border; background-color: $color-alert-warning-background; padding-left:2em!important; box-shadow: none;}
 .skepost .job-manager-info.job-manager-info:before, .skepost .job-manager-message.job-manager-info:before,  .skepost .job-manager-error:before {display:none;} 
+
+
+// Listings page old code //
+
+/* .rp4wp-related-job_listing>ul li.job_listing a div.position .company, .rp4wp-related-job_listing>ul li.no_job_listings_found a div.position .company, ul.job_listings li.job_listing a div.position .company, ul.job_listings li.no_job_listings_found a div.position .company {color: $color-secondary;}
+.rp4wp-related-job_listing>ul li.job_listing a div.location, .rp4wp-related-job_listing>ul li.no_job_listings_found a div.location, ul.job_listings li.job_listing a div.location, ul.job_listings li.no_job_listings_found a div.location {color: $color-secondary;}
+.rp4wp-related-job_listing>ul li.job_listing a .meta, .rp4wp-related-job_listing>ul li.no_job_listings_found a .meta, ul.job_listings li.job_listing a .meta, ul.job_listings li.no_job_listings_found a .meta {color: $color-secondary;}
+*/
+//.type-job_listing .job-title {float: left; padding-left:42px; width:90%;} 
+//.type-job_listing .job-title h2 {margin-top: 0; margin-top:8px} 
+
+//.type-job_listing .job-title {width:94%;}
+
+/* .type-job_listing ul.job_listings li.job_listings a div.location {width:inherit; padding: inherit;}
+.type-job_listing li.job_listing a .position-meta {width: 25%; padding: 0;}
+.type-job_listing li.job_listing a .meta {width: 25%; padding: 0;}
+.type-job_listing ul.job_listings li.job_listing a div.position {width: 70%}
+.type-job_listing ul.job_listings li.job_listing a .meta {width:30%;}
+.type-job_listing ul.job_listings li.job_listing a img.company_logo {width:55px; height:55px}
+.type-job_listing ul.job_listings li.job_listing a div.position {padding-left: 52px;}
+*/
+
+/* .type-job_listing .job-title h2 {margin-bottom:8px; margin-top:0; float:left; font-size:1.2em}
+.type-job_listing .job-title {float:left; padding-left: 42px; width:94%;}
+.type-job_listing .job-type {float:right; font-weight: 600;}
+.type-job_listing ul.job_listings li.job_listings a div.location {width:inherit; padding: inherit;}
+.type-job_listing li.job_listing a .meta {width: 25%; padding: 0;}
+.type-job_listing ul.job_listings li.job_listing a div.position {width: 70%}
+.type-job_listing ul.job_listings li.job_listing a .meta {width:30%;}
+.type-job_listing ul.job_listings li.job_listing a img.company_logo {width:55px; height:55px}
+.type-job_listing ul.job_listings li.job_listing a div.position {padding-left: 52px;}
+ */
