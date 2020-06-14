@@ -22,7 +22,7 @@ if ( ! get_the_company_name() ) {
 	return;
 }
 ?>
-<div class="company">
+<!-- <div class="company">
 <?php $logo = get_the_company_logo( $post, $size ); ?>
 <?php if ( has_post_thumbnail( $post ) ) :?>
 	<?php the_company_logo(); ?>
@@ -36,4 +36,4 @@ if ( ! get_the_company_name() ) {
 	</p>
 	<?php the_company_tagline( '<p class="tagline">', '</p>' ); ?>
 	<?php the_company_twitter( '<p class="twitter"><i class="fab fa-twitter"></i> ', '</p>' ); ?>
-		</div></div>
+		</div></div> -->

@@ -68,11 +68,16 @@ a .job-list-details {text-decoration: none; text-decoration-line: none;}
 // -- JOB PAGE -- //
 
 .single-job_listing h1.title {font-size: 2.6rem; line-height: 3.2rem; padding: 45px 0 10px 0; width:85%;}
+.single-job_listing h2.name {margin:0 0 2.5rem 0;}
+.single-job_listing .company_logo {max-width:150px;float:right; padding:45px 0 25px 0;}
 
-
-.single-job_listing .meta {margin: 0 0 35px 0;}
+.single-job_listing .meta {margin: 0 0 35px 0;
+    border: 2px solid #eee;
+    padding: 1em;
+    display: block;
+    clear: both;}
 .single-job_listing .meta li {margin:0 0 0.4em 0; padding: .5em 2rem .5rem .5rem; color: $color-secondary;}
-.single-job_listing .meta  svg.svg-inline--fa {color: $color-jobs-pale;}
+.single-job_listing .meta  svg.svg-inline--fa {color: $color-jobs-pale; padding-right:0.2rem;}
 .single_job_listing .company {display: flex; border-width: 2px; box-shadow: none;}
 .single_job_listing .company .company_twitter:before {display: none;}
 .single_job_listing .company .twitter {margin-bottom: 0;}

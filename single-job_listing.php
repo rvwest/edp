@@ -29,8 +29,18 @@ get_header(); ?>
 		<div id="container" class="span10 center-col">
 <div class="overlap-img-title">
 		<div class=" span10 center-col no-gutter-l">
-					<h1 class="title "><?php the_title(); ?></h1>
-
+		<?php $logo = get_the_company_logo( $post, $size ); ?>
+<?php if ( has_post_thumbnail( $post ) ) :?>
+	<?php the_company_logo(); ?>
+<?php endif; ?>
+<h1 class="title "><?php the_title(); ?></h1>
+<h2 class="name">
+		<?php if ( $website = get_the_company_website() ) : ?>
+			<a class="company-name" href="<?php echo esc_url( $website ); ?>"><?php the_company_name( ); ?></a>
+		<?php else : ?>
+			<?php the_company_name( ); ?> 
+		<?php endif; ?>
+		</h2>
 
 				</div>
 						
