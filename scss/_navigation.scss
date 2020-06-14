@@ -81,6 +81,10 @@ background-color: $color-training;
 background-color: $color-about;
 }
 
+#skenav li a[href*="jobs/"]:hover, #skenav li a[href*="jobs/"]:active, #skenav ul li.current-menu-item > a[href*="jobs/"], #skenav ul li.current-menu-parent > a[href*="jobs/"] {
+	background-color: $color-jobs;
+	}
+
 #skenav ul li.current-menu-parent > a {
 background-color: $color-tile;
 }

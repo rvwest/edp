@@ -29,6 +29,9 @@ padding-top:0;}
 .tribe-theme-edpsy .bread-title-holder .container
 { @include wash-line($color-events) }
 
+.category-jobs .bread-title-holder .container
+{ @include wash-line($color-jobs) }
+
 .tribe-theme-edpsy .skehead-headernav-shrink #skehead > .container
 {border-bottom: none;}
 
