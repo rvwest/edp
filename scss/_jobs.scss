@@ -88,6 +88,14 @@ a .job-list-details {text-decoration: none; text-decoration-line: none;}
 .single_job_listing .meta .location:before, .single_job_listing .meta .date-posted:before { display: none;}
 .single_job_listing .meta li.wpjmef-field-soulbury {padding-left: 0}
 .single_job_listing .meta li.location {padding-left:0.5rem;}
+.single_job_listing .job-application {margin:0 0 3rem 0;}
+.single_job_listing .apply-block {
+    margin-bottom: 1.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: solid 5px #ddd;
+}
+.wpjm-single-job-post a.button.see-all-jobs {margin-bottom:1.1rem;}
+
 // --- Job types --- //
 .single_job_listing .meta .job-type .job-type_item {border-radius: 15px; background-color: orange; padding: 2px 10px; margin-right:5px;}
 .single_job_listing .meta .job-type {background: none; clear:left;}
@@ -111,26 +119,10 @@ p.signin-text {margin-bottom:0;}
 .job-manager-form fieldset label {float:none; font-weight: 400; line-height: 1rem; margin-top:1rem;}
 .job-manager-form fieldset small.description { margin: 0.4rem 0 0.7rem 0;}
 .job-manager-form fieldset div.field {float:none}
-/* Fields */
-.job-manager-form fieldset input.input-date, .job-manager-form fieldset input.input-text, .job-manager-form fieldset select, .job-manager-form fieldset textarea, .select2-container--default .select2-selection--multiple, .job-manager-form fieldset .wp-editor-container {margin-bottom:0; padding:0.4rem; border: 1px solid $color-outline;}
-.job-manager-form fieldset input[type=file].input-text {display:flex; align-items: baseline; line-height: 2rem;}
-.job-manager-form fieldset input.input-date:focus, .job-manager-form fieldset input.input-text:focus, .job-manager-form fieldset select:focus, .job-manager-form fieldset textarea:focus, .select2-container--default.select2-container--focus .select2-selection--multiple, .job-manager-form input.button:focus {outline: 3px solid $color-highlight;  outline-offset: 0;}
-.job-manager-form fieldset div.field {width:inherit;}
-.select2-container {margin-top:0.7rem;}
-#wp-job_description-wrap {margin-top:0.7rem;}
-body#tinymce.wp-editor {font-family: $font-family;}
-.select2-container--default .select2-selection--multiple {border-radius:0; line-height: 1.5rem;}
-.job-manager-form fieldset .wp-editor-container {border-radius:0}
 
-.job-manager-form input.button, .job-manager-form a.button {background-color: $color-features; color:$color-heading-reverse; border:$color-features 1px solid;padding:0.7rem 2rem; text-transform: uppercase; font-size:0.8125rem; font-weight:bold; cursor: pointer; margin: 1rem 2rem 0rem 0; display:inline-block; line-height:1.3rem}
-.job-manager-form input.button.secondary, .job-manager-form a.button.secondary {background-color: $color-heading-reverse; color:$color-features; border:$color-features 1px solid;padding:0.7rem 2rem; }
-li.select2-results__option {margin-left:0}
-.select2-dropdown.select2-dropdown--below {margin-top: -12px;}
-.job-manager-form input.button[name=submit_job] {margin-right:0;}
-#content .job-manager-form a.button:link, #content .job-manager-form a.button:visited {text-decoration: none;}
-.job-manager-form input.button:hover, .job-manager-form a.button:hover {background-color: $color-features-highlight}
-.job-manager-form input.button:hover.secondary, .job-manager-form a.button:hover.secondary {background-color: $color-features-pale}
-.job-manager-form fieldset .account-sign-in .button:before {display:none;}
+
+.job-manager-application-wrapper .application, .single_job_listing .application {padding: 0 0 4px 3px;}
+
 .wpjm-page .primary-sidebar.widget-area {margin-bottom:3rem}
 .wpjm-page.wpjm-sumbit #widget-area {display:none;}
 p.wpjm-submit-block {margin-bottom:3rem; text-align:right;}

@@ -63,8 +63,8 @@ get_header(); ?>
 						</div>
 						<!-- skepost -->
 
-						<div class="navigation">
-						<a href="/jobs">See all jobs</a>
+						<div class="wpjm-submit-block ">
+						<a href="/jobs" class="button secondary see-all-jobs">See all jobs</a>
 						</div>
 						<div class="clearfix"></div>
 <br/>
