@@ -30,7 +30,7 @@
 
 <p class="foot-message"><a href="https://twitter.com/edpsyuk"><i class="fab fa-twitter"></i> @edpsyuk</a> | <a href="mailto:hello@edpsy.org.uk"><i class="fal fa-envelope"></i> hello@edpsy.org.uk</a></p>
 <p class="foot-message"><a href="/about/">Find out more about us</a><br/>Spotted something wrong? <a href="mailto:hello@edpsy.org.uk">let us know</a></p>
-
+<p class="foot-message"><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Reusing our content</a> | <a href="/cookies">Cookies and privacy</a></p>
 
 				<div class="clearfix"></div>
 			</div>
@@ -42,6 +42,7 @@
 		<div class="row-fluid">
 			<div class="second_wrapper">
 				<?php dynamic_sidebar( 'Footer Sidebar' ); ?>
+
 				<div class="clearfix"></div>
 			</div><!-- second_wrapper -->
 		</div>
@@ -53,7 +54,8 @@
 
 
 
-<p class="foot-message"><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Reusing our content</a> | <a href="/cookies">Cookies and privacy</a></p>
+
+<p class="legal-message"><span>edpsy ltd </span><span>20-22 Wenlock Road, London, England, N1 7GU </span><span>Company number: 12669513 (registered in England and Wales)</span></p>
 
 
 				<div class="clearfix"></div>

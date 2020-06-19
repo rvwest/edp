@@ -191,3 +191,12 @@ padding: 15px 0 15px 0px; }
 		.cta-header-block a:link, .cta-header-block a:visited {color: #fff; text-decoration: underline;}
 		.cta-header-block a:hover, .cta-header-block a:focus {color: #fff; text-decoration: none;}
 .cta-header-block .row-fluid:before, .cta-header-block .row-fluid:after {display:none !important;}
+
+
+/* Footer */
+
+
+.third_wrapper .foot-message {font-size: 1.4rem; line-height: 2.2rem; padding-top: 15px;}
+
+.legal-message {margin-top: 1.25rem; color: $color-footer-text; display:flex; flex-wrap: wrap;}
+.legal-message span {padding-right: 1.5rem; padding-bottom:0.5rem;}
