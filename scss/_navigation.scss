@@ -47,7 +47,7 @@
 
 #skenav ul li:hover{  z-index:999999999999;  }
 
-* html #skenav ul li.current_page_item a, * html #skenav ul li.current-menu-ancestor a, * html #skenav ul li.current-menu-item a, * html #skenav ul li.current-menu-parent a, * html #skenav ul li a:hover {  color: #fff;  }
+* html #skenav ul li.current_page_item a, * html #skenav ul li.current-menu-ancestor a, * html #skenav ul li.current-menu-item a, * html #skenav ul li.current-menu-parent a, * html #skenav ul li a:hover, #skenav ul li.current-page-ancestor a[href$="/interest-groups/"], #skenav ul li.current-page-ancestor a[href$="/events/"], #skenav ul li.current-page-ancestor a[href$="/jobs/"] {  color: #fff;  }
 
 
 /* --- menu link colours --- */
@@ -65,7 +65,7 @@ background-color: $color-blog;
 background-color: $color-features;
 }
 
-#skenav li a[href*="interest-groups/"]:hover, #skenav li a[href*="interest-groups/"]:hover, #skenav li a[href*="interest-groups/"]:active, #skenav ul li.current-menu-item > a[href*="interest-groups/"], #skenav ul li.current-menu-parent > a[href*="interest-groups/"] {
+#skenav li a[href*="interest-groups/"]:hover, #skenav li a[href*="interest-groups/"]:hover, #skenav li a[href*="interest-groups/"]:active, #skenav ul li.current-menu-item > a[href*="interest-groups/"], #skenav ul li.current-menu-parent > a[href*="interest-groups/"], #skenav ul li.current-page-ancestor a[href$="/interest-groups/"] {
 background-color: $color-groups;
 }
 
@@ -81,7 +81,7 @@ background-color: $color-training;
 background-color: $color-about;
 }
 
-#skenav li a[href*="/jobs/"]:hover, #skenav li a[href*="/jobs/"]:active, #skenav ul li.current-menu-item > a[href*="/jobs/"], #skenav ul li.current-menu-parent > a[href$="/jobs/"] {
+#skenav li a[href*="/jobs/"]:hover, #skenav li a[href*="/jobs/"]:active, #skenav ul li.current-menu-item > a[href*="/jobs/"], #skenav ul li.current-menu-parent > a[href$="/jobs/"], #skenav ul li.current-page-ancestor a[href$="/jobs/"] {
 	background-color: $color-jobs;
 	}
 
