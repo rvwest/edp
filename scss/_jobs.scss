@@ -70,8 +70,9 @@ a .job-list-details {text-decoration: none; text-decoration-line: none;}
 .single-job_listing h1.title {font-size: 2.6rem; line-height: 3.2rem; padding: 45px 0 10px 0; width:85%;}
 .single-job_listing h2.name {margin:0 0 2.5rem 0;}
 .single-job_listing .company_logo {max-width:150px;float:right; padding:45px 0 25px 0;}
+#job_preview .company_logo {max-width:150px;float:right; padding:25px 0 25px 0;}
 
-.single-job_listing .meta {margin: 0 0 35px 0;
+.single-job_listing .meta, .single_job_listing .meta {margin: 0 0 35px 0;
     border: 2px solid #eee;
     padding: 1em;
     display: block;
@@ -93,6 +94,9 @@ a .job-list-details {text-decoration: none; text-decoration-line: none;}
     margin-bottom: 1.5rem;
     padding-bottom: 2.5rem;
     border-bottom: solid 5px #ddd;
+}
+#job_preview .apply-block {
+    margin-bottom: 1.5rem;
 }
 .wpjm-single-job-post a.button.see-all-jobs {margin-bottom:1.1rem;}
 
@@ -132,6 +136,17 @@ p.wpjm-submit-block {margin-bottom:3rem; text-align:right;}
 .skepost .job-manager-info.job-manager-info:before, .skepost .job-manager-message.job-manager-info:before,  .skepost .job-manager-error:before {display:none;} 
 
 
+// Preview //
+
+#content #job_preview a.company-name {text-decoration: none;}
+
+#job_preview .single-job_listing h1.title {padding-top:10px;}
+.job_listing_preview_title input.button {margin:0.2rem 0 0 0;}
+.job_listing_preview_title input.button.secondary {margin-right:1rem;}
+.job_listing_preview_title h2 {margin-top:0.4rem;}
+.job_listing_preview_title {margin-top:3.5rem;}
+.job_listing_preview {
+    padding: 0 1.5em 1em; }
 // Listings page old code //
 
 /* .rp4wp-related-job_listing>ul li.job_listing a div.position .company, .rp4wp-related-job_listing>ul li.no_job_listings_found a div.position .company, ul.job_listings li.job_listing a div.position .company, ul.job_listings li.no_job_listings_found a div.position .company {color: $color-secondary;}
