@@ -3,3 +3,9 @@
 05/31/20 11:05:25: edpsy-style.scss - parse error: failed at `padding-left:}` /Users/richard.west/Sites/edpsy/wp-content/themes/edpsy/scss/_jobs.scss on line 19
 06/08/20 9:24:46: edpsy-style.scss - parse error: failed at `border-bottom: ;}` /Users/richard.west/Sites/edpsy/wp-content/themes/edpsy/scss/_jobs.scss on line 40
 06/09/20 9:04:30: edpsy-style.scss - parse error: failed at `border-top: border-bottom: solid 5px $color-outline;}` /Users/richard.west/Sites/edpsy/wp-content/themes/edpsy/scss/_jobs.scss on line 1
+06/20/20 5:03:32: edpsy-style.scss - parse error: failed at `img: }` /Users/richard.west/Sites/edpsy/wp-content/themes/edpsy/scss/_navigation.scss on line 98
+06/20/20 5:03:34: edpsy-style.scss - parse error: failed at `img: }` /Users/richard.west/Sites/edpsy/wp-content/themes/edpsy/scss/_navigation.scss on line 98
+06/20/20 5:05:44: edpsy-style.scss - parse error: failed at `img: ` /Users/richard.west/Sites/edpsy/wp-content/themes/edpsy/scss/_navigation.scss on line 98
+06/20/20 5:05:48: edpsy-style.scss - parse error: failed at `img: ` /Users/richard.west/Sites/edpsy/wp-content/themes/edpsy/scss/_navigation.scss on line 98
+06/20/20 5:08:08: edpsy-style.scss - parse error: failed at `img: ` /Users/richard.west/Sites/edpsy/wp-content/themes/edpsy/scss/_navigation.scss on line 98
+06/20/20 5:08:17: edpsy-style.scss - parse error: failed at `img: ` /Users/richard.west/Sites/edpsy/wp-content/themes/edpsy/scss/_navigation.scss on line 98

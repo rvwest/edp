@@ -47,7 +47,7 @@
 
 #skenav ul li:hover{  z-index:999999999999;  }
 
-* html #skenav ul li.current_page_item a, * html #skenav ul li.current-menu-ancestor a, * html #skenav ul li.current-menu-item a, * html #skenav ul li.current-menu-parent a, * html #skenav ul li a:hover, #skenav ul li.current-page-ancestor a[href$="/interest-groups/"], #skenav ul li.current-page-ancestor a[href$="/events/"], #skenav ul li.current-page-ancestor a[href$="/jobs/"] {  color: #fff;  }
+* html #skenav ul li.current_page_item a, * html #skenav ul li.current-menu-ancestor a, * html #skenav ul li.current-menu-item a, * html #skenav ul li.current-menu-parent a, * html #skenav ul li a:hover, #skenav ul li.current-page-ancestor a[href$="/interest-groups/"], #skenav ul li.current-page-ancestor a[href$="/events/"], #skenav ul li.current-page-ancestor a.sf-with-ul[href$="/jobs/"] {  color: #fff;  }
 
 
 /* --- menu link colours --- */
@@ -81,7 +81,7 @@ background-color: $color-training;
 background-color: $color-about;
 }
 
-#skenav li a[href*="/jobs/"]:hover, #skenav li a[href*="/jobs/"]:active, #skenav ul li.current-menu-item > a[href*="/jobs/"], #skenav ul li.current-menu-parent > a[href$="/jobs/"], #skenav ul li.current-page-ancestor a[href$="/jobs/"] {
+#skenav li a[href*="/jobs/"]:hover, #skenav li a[href*="/jobs/"]:active, #skenav ul li.current-menu-item > a[href*="/jobs/"], #skenav ul li.current-menu-parent > a[href$="/jobs/"], #skenav ul li.current-page-ancestor a.sf-with-ul[href$="/jobs/"] {
 	background-color: $color-jobs;
 	}
 
@@ -92,8 +92,22 @@ background-color: $color-tile;
 
 /* --- #skenav ul li.current_page_item > a, #skenav ul li.current-menu-ancestor > a, #skenav ul li.current-menu-item > a, #skenav ul li.current-menu-parent > a --*/
 
+/* -- Promo menu item --*/
+
+/*.menu-item-2821 {
+	background-repeat: no-repeat;
+    background-color: #f08d3c;
+    background-size: 10px;
+    -webkit-mask-image: url(../images/star-solid.svg);
+    -webkit-mask-size: 10px;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: right;
+}*/
+
 
 /* --- scroll menu --- */
+
+
 
 
 #header.skehead-headernav-shrink #skenav a { line-height: 68px;}
