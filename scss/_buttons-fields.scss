@@ -2,9 +2,13 @@
 
 .job-manager-form fieldset input.input-date, .job-manager-form fieldset input.input-text, .job-manager-form fieldset select, .job-manager-form fieldset textarea, .select2-container--default .select2-selection--multiple, .job-manager-form fieldset .wp-editor-container {margin-bottom:0; padding:0.4rem; border: 1px solid $color-outline;}
 
+.select2-container--default .select2-selection--multiple .select2-selection__choice, .select2-search.select2-search--inline {margin: 5px 5px 0 0 }
+
+.select2-container .select2-search--inline .select2-search__field {margin-bottom:0;}
+
 .job-manager-form fieldset input[type=file].input-text {display:flex; align-items: baseline; line-height: 2rem;}
 
-.job-manager-form fieldset input.input-date:focus, .job-manager-form fieldset input.input-text:focus, .job-manager-form fieldset select:focus, .job-manager-form fieldset textarea:focus, .select2-container--default.select2-container--focus .select2-selection--multiple, .job-manager-form input.button:focus, .job-manager-application-wrapper .application .application_button:focus, .single_job_listing .application .application_button:focus, .wpjm-single-job-post a.button:focus, #job_preview a.button:focus, .mc4wp-form-fields input:focus {outline: 3px solid $color-highlight;  outline-offset: 0;}
+.job-manager-form fieldset input.input-date:focus, .job-manager-form fieldset input.input-text:focus, .job-manager-form fieldset select:focus, .job-manager-form fieldset textarea:focus, .select2-container--default.select2-container--focus .select2-selection--multiple, .job-manager-form input.button:focus, .job-manager-application-wrapper .application .application_button:focus, .single_job_listing .application .application_button:focus, .wpjm-single-job-post a.button:focus, #job_preview a.button:focus, .mc4wp-form-fields input:focus, .StripeElement--focus {outline: 3px solid $color-highlight;  outline-offset: 0;}
 
 .job-manager-form fieldset div.field {width:inherit;}
 

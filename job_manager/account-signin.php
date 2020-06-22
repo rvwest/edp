@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<?php
 				$user = wp_get_current_user();
 				printf( wp_kses_post( __( '<p class="signin-text">You are currently signed in as <strong>%s</strong>. To view your drafts go to your <a href="/job-dashboard">job dashboard</a>.</p>
-				', 'wp-job-manager' ) ), esc_html( $user->user_login ) );
+				', 'wp-job-manager' ) ), esc_html( $user->user_email ) );
 			?>
 
 			<p><a class="button secondary" href="<?php echo esc_url( apply_filters( 'submit_job_form_logout_url', wp_logout_url( get_permalink() ) ) ); ?>"><?php esc_html_e( 'Sign out', 'wp-job-manager' ); ?></a></p>
