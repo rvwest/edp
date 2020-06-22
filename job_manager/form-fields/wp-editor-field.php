@@ -28,7 +28,7 @@ $editor = apply_filters( 'submit_job_form_wp_editor_args', [
 		'paste_remove_styles'           => true,
 		'paste_remove_styles_if_webkit' => true,
 		'paste_strip_class_attributes'  => true,
-		'block_formats'					=> "Paragraph=p; Heading=h2; Sub-heading=h3",
+		'block_formats'					=> "Paragraph=p; Heading=h3",
 		'toolbar1'                      => 'formatselect,bold,italic,|,bullist,numlist,|,link,unlink,|,undo,redo',
 		'toolbar2'                      => '',
 		'toolbar3'                      => '',

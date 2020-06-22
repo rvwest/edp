@@ -33,6 +33,7 @@ global $post;
 		?>
 
 		<div class="job_description">
+			<h2>About the role</h2>
 			<?php wpjm_the_job_description(); ?>
 		</div>
 

@@ -301,6 +301,8 @@ function tribe_breadcrumbs() {
  * Changing Job Manager fields
  *
  */
+
+
 // Add your own function to filter the fields
 add_filter( 'submit_job_form_fields', 'custom_submit_job_form_fields' );
 
@@ -313,8 +315,9 @@ function custom_submit_job_form_fields( $fields ) {
 	$fields['job']['job_location']['placeholder'] = "";
 	$fields['job']['application']['label'] = "Where to apply";
 	$fields['job']['application']['description'] = "eg https://yourorg.gov.uk/apply";
-	$fields['job']['application']['value'] = "https://";
+	$fields['job']['application']['value'] = "http://";
 	$fields['job']['application']['placeholder'] = "";
+	$fields['job']['job_type']['description'] = "You can select more than one";
 	$fields['company']['company_name']['placeholder'] = "";
 	$fields['company']['company_name']['label'] = "Organisation name";
 	$fields['company']['company_logo']['description'] = "Square images will work best. Maximum file size 32 MB";
@@ -323,7 +326,6 @@ function custom_submit_job_form_fields( $fields ) {
 		'jpeg' => 'image/jpeg',
 		'gif'  => 'image/gif',
 		'png'  => 'image/png',
-		'svg'  => 'image/svg',
 	];
 	unset($fields['company']['company_video']);
 	unset($fields['company']['company_tagline']);

@@ -14,8 +14,8 @@
 ?>
 <div class="progressbar-container">
 <ul class="progressbar">
-<li>Post job</li>
-<li >Preview job</li>
+<li>Write</li>
+<li >Preview</li>
 <li class="active">Pay</li>
 </ul>
 </div>
