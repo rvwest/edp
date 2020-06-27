@@ -75,6 +75,7 @@ get_header(); ?>
 						<?php endif; ?>
 						
 					</div>
+					<p class="body-footnote"><i class="fad fa-check"></i> We follow the <a href="https://www.asa.org.uk/type/non_broadcast/code_section/20.html">CAP Code for employment ads</a>.</p>
 				<!-- post -->
 				<?php endwhile; ?>
 				<?php else :  ?>
