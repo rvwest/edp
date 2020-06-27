@@ -82,6 +82,7 @@ global $job_manager;
 		<?php endforeach; ?>
 		<?php do_action( 'submit_job_form_job_fields_end' ); ?>
 		</div>
+		
 
 		<?php do_action( 'submit_job_form_end' ); ?>
 		<p class="wpjm-submit-block">

@@ -8,7 +8,7 @@
 
 .job-manager-form fieldset input[type=file].input-text {display:flex; align-items: baseline; line-height: 2rem;}
 
-.job-manager-form fieldset input.input-date:focus, .job-manager-form fieldset input.input-text:focus, .job-manager-form fieldset select:focus, .job-manager-form fieldset textarea:focus, .select2-container--default.select2-container--focus .select2-selection--multiple, .job-manager-form input.button:focus, .job-manager-application-wrapper .application .application_button:focus, .single_job_listing .application .application_button:focus, .wpjm-single-job-post a.button:focus, #job_preview a.button:focus, .mc4wp-form-fields input:focus, .StripeElement--focus {outline: 3px solid $color-highlight;  outline-offset: 0;}
+.job-manager-form fieldset input.input-date:focus, .job-manager-form fieldset input.input-text:focus, .job-manager-form fieldset select:focus, .job-manager-form fieldset textarea:focus, .select2-container--default.select2-container--focus .select2-selection--multiple, .job-manager-form input.button:focus, .job-manager-application-wrapper .application .application_button:focus, .single_job_listing .application .application_button:focus, .wpjm-single-job-post a.button:focus, #job_preview a.button:focus, .mc4wp-form-fields input:focus, .StripeElement--focus, input[type=checkbox]:focus {outline: 3px solid $color-highlight;  outline-offset: 0;}
 
 .job-manager-form fieldset div.field {width:inherit;}
 
@@ -39,5 +39,4 @@ li.select2-results__option {margin-left:0}
 .job-manager-form input.button:hover, .job-manager-form a.button:hover, .wpjm-single-job-post a.button:hover, .application input.application_button:hover, #job_preview input.button:hover, #job_preview a.button:hover    {background-color: $color-features-highlight}
 
 .job-manager-form input.button:hover.secondary, .job-manager-form a.button:hover.secondary, .wpjm-single-job-post a.button.secondary:hover, #job_preview input.button.secondary:hover {background-color: $color-features-pale}
-
 .job-manager-form fieldset .account-sign-in .button:before {display:none;}
