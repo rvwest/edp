@@ -194,6 +194,15 @@ p.wpjm-submit-block {margin-bottom:3rem; text-align:right;}
    } 
 }
 
+ul.fa-features li i, ul.fa-features li svg {    
+    color: $color-outline;
+    padding-top: 0.3rem;
+}
+
+ul.fa-features li {margin-bottom:2rem;}
+ul.fa-features li ul li {margin-bottom:0;}
+
+ul.fa-features {margin-left:3rem; margin-top:3rem;}
 
     // Listings page old code //
 

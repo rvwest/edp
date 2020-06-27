@@ -342,7 +342,21 @@ function custom_submit_job_form_fields( $fields ) {
     // And return the modified fields
     return $fields;
 }
- 
+
+add_filter( 'job_manager_job_listing_data_fields', 'admin_add_custom_admin_fields' );
+
+function admin_add_custom_admin_fields( $fields ) {
+	$fields['job']['cap_declaration'] = array(
+		'label'       => __( 'Declaration', 'job_manager' ),
+		'type'        => 'checkbox',
+		'required'    => true,
+		'placeholder' => 'I confirm this to be true',
+		'priority'    => 9,
+	  );
+	return $fields;
+  }
+
+
 add_filter( 'wpjm_get_registration_fields', 'custom_registration_fields' );
 
 function custom_registration_fields( $fields ) {
