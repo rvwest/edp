@@ -6,6 +6,8 @@
 
 #logo #site-title a { color: $color-site-title ;display: inline-block;font-size: 30px;font-weight: $font-weight-bold; line-height: 30px; margin-top: 10px; text-decoration: none; text-transform: none;}
 
+#skenav li a:focus {outline: 3px solid $color-highlight;  outline-offset: 0;}
+
 /*#logo #site-title { display: block;font-size: 30px;margin: 8px 0 11px;}*/
 
 #skenav .ske-menu, ul.menu {  font-size: 18px;  margin: 0px;  display:inline-block;  width:auto;  float:right; list-style: none;}
