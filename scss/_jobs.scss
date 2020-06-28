@@ -9,6 +9,12 @@ p.job-post-promo {text-align:center;margin-bottom: 3rem; font-weight:400; line-h
 
 .rp4wp-related-job_listing>ul li.job_listing a div.position, .rp4wp-related-job_listing>ul li.no_job_listings_found a div.position, ul.job_listings li.job_listing a div.position, ul.job_listings li.no_job_listings_found a div.position {float:none; padding:0; width:100%; line-height: 1.5rem; display:flex; justify-content: space-between;}
 
+.rp4wp-related-job_listing>ul li.job_listing a:hover,  .rp4wp-related-job_listing>ul li.no_job_listings_found a:hover, ul.job_listings li.job_listing a:hover, ul.job_listings li.no_job_listings_found a:hover {
+  outline: rgb(224, 224, 224) solid 1px;  
+}
+
+.rp4wp-related-job_listing>ul li.job_listing a:focus, .rp4wp-related-job_listing>ul li.no_job_listings_found a:focus, ul.job_listings li.job_listing a:focus, ul.job_listings li.no_job_listings_found a:focus {outline: 3px solid $color-highlight;  outline-offset: 0;}
+
 a .job-list-details {text-decoration: none; text-decoration-line: none;}
 
 .body-footnote {text-align: center; margin-bottom: 3rem; }
@@ -110,6 +116,13 @@ a .job-list-details {text-decoration: none; text-decoration-line: none;}
 .single_job_listing .meta .job-type_item.full-time {background-color: $color-job-type-full-time;}
 .single_job_listing .meta .job-type_item.part-time {background-color: $color-job-type-part-time;}
 
+// -- ADMIN PAGES --//
+
+.category-jobs-admin #primary-sidebar {
+    display:none;
+}
+
+
 // -- POST JOB FORM -- //
 
 .wpjm-listing-page h1.title {padding-bottom: 0px;}
@@ -165,7 +178,7 @@ p.wpjm-submit-block {margin-bottom:3rem; text-align:right;}
 .option-col2 {padding-left: 3rem; width:40%}
 .job-manager-form .job_listing_stripe_checkout_form  fieldset label {padding-bottom:0.55rem;margin-top:0;}
 .StripeElement {border: 1px solid $color-outline; border-radius:0; margin:0; box-shadow:none;}
-#content .stripe-badge {margin-left:1rem; position: absolute;}
+#content .stripe-badge {margin-left:1rem; margin-top:0.2rem;position: absolute;}
 .option-block-top-text {padding-top:0.75rem;}
 .job-manager-form fieldset.job-details-block {display:flex; justify-content: center; padding: 1.6rem 2rem 1rem 2rem; margin:3rem 0; background: rgba(221, 221, 221, 0.24); align-items: center;}
 .job-manager-form fieldset label.job-listing {width:100%; text-align:right;}
