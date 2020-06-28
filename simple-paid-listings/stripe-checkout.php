@@ -77,11 +77,11 @@
 <div class="option-col2">	
 <h2>Pay by purchase order</h2>
 <p class="option-block-top-text">Email <a href="mailto:payments@edpsy.org.uk">payments@edpsy.org.uk</a> with your:</p>
-<ul><li>Purchase order number</li>
+<ul><li>Your purchase order number</li>
 <li>Job reference: <strong><?php echo esc_html( $job_id ); ?></strong>
 </li>
 </ul> 
-<p>Once we've received this we will issue an invoice and publish your job listing.</p>
+<p>Once we've received this we will issue an invoice and publish your job listing.</p><p>When you've jotted these details down you can close this window, your job has been saved.</p>
 </div>
 </form>
 

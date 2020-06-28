@@ -369,6 +369,12 @@ function custom_registration_fields( $fields ) {
 } 
 
 
+add_filter( 'submit_job_step_preview_submit_text', 'custom_submit_button_text' );
+
+function custom_submit_button_text( $button_text ) {
+	return __( 'Confirm and pay', 'wp-job-manager-simple-paid-listings' );
+}
+
 
 /**
  * Register our sidebars and widgetized areas.
