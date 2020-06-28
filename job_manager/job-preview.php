@@ -34,11 +34,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 </ul>
 
 </div>
-<div class="job_listing_preview_title">
-		<input type="submit" name="continue" id="job_preview_submit_button" class="button button_small job-manager-button-submit-listing" value="<?php echo esc_attr( apply_filters( 'submit_job_step_preview_submit_text', __( 'Pay and post job', 'wp-job-manager' ) ) ); ?>" />
-		<input type="submit" name="edit_job" class="button secondary button_small job-manager-button-edit-listing" value="<?php esc_attr_e( 'Edit Job', 'wp-job-manager' ); ?>" />
-		<div class="clear"></div>
-	</div>
+
 	<div class="job_listing_preview single-job_listing">
 	<div class="clear"></div>
 	<?php $logo = get_the_company_logo( $post, $size ); ?>
@@ -57,16 +53,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<?php get_job_manager_template_part( 'content-single', 'job_listing' ); ?>
 		
+			<?php get_job_manager_template( 'job-application.php' ); ?>
+		
 		<input type="hidden" name="job_id" value="<?php echo esc_attr( $form->get_job_id() ); ?>" />
 		<input type="hidden" name="step" value="<?php echo esc_attr( $form->get_step() ); ?>" />
 		<input type="hidden" name="job_manager_form" value="<?php echo esc_attr( $form->get_form_name() ); ?>" />
 	</div>
-	<div class="job_listing_preview_title">
-		<input type="submit" name="continue" id="job_preview_submit_button" class="button button_small job-manager-button-submit-listing" value="<?php echo esc_attr( apply_filters( 'submit_job_step_preview_submit_text', __( 'Pay and post job', 'wp-job-manager' ) ) ); ?>" />
-		<input type="submit" name="edit_job" class="button secondary button_small job-manager-button-edit-listing" value="<?php esc_attr_e( 'Edit Job', 'wp-job-manager' ); ?>" />
-		<div class="clear"></div>
-	</div>
-	
+<div class="preview-actions">
+		<input type="submit" name="edit_job" class="button secondary job-manager-button-edit-listing" value="<?php esc_attr_e( 'Edit Job', 'wp-job-manager' ); ?>" />
+		<input type="submit" name="continue" id="job_preview_submit_button" class="button job-manager-button-submit-listing" value="<?php echo esc_attr( apply_filters( 'submit_job_step_preview_submit_text', __( 'Pay and post job', 'wp-job-manager' ) ) ); ?>" />
+		</div>
 	<?php
 	/**
 	 * Fires at the bottom of the preview job form.

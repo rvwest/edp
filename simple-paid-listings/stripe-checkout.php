@@ -69,19 +69,21 @@
 	<input type="hidden" name="job_id" value="<?php echo esc_attr( $job_id ); ?>" />
 	<input type="hidden" name="step" value="<?php echo esc_attr( $step ); ?>" />
 	<input type="hidden" name="job_manager_form" value="<?php echo esc_attr( $form_name ); ?>" />
-
-	<input type="submit" name="submit_payment" class="button" value="<?php esc_attr_e( 'Submit Payment', 'wp-job-manager-simple-paid-listings' ); ?>" />
+<!--	<?php esc_attr_e( 'Pay <?php echo esc_html( $item_cost ); ?>', 'wp-job-manager-simple-paid-listings' ); ?>-->
+	<input type="submit" name="submit_payment" class="button" value="Pay <?php echo esc_html( $item_cost ); ?>" />
 	<span class="spinner" style="background-image: url(<?php echo esc_url( includes_url( 'images/spinner.gif' ) ); ?>);"></span>
 	<div class="option-block-or">OR</div>	
 </div>
 <div class="option-col2">	
 <h2>Pay by purchase order</h2>
-<p class="option-block-top-text">Email <a href="mailto:payments@edpsy.org.uk">payments@edpsy.org.uk</a> with your:</p>
-<ul><li>Your purchase order number</li>
-<li>Job reference: <strong><?php echo esc_html( $job_id ); ?></strong>
+<p class="option-block-top-text">We've saved your listing.</p>
+<p >Email <a href="mailto:payments@edpsy.org.uk">payments@edpsy.org.uk</a> with:</p>
+<ul><li>a purchase order</li>
+<li>quoting job reference <strong><?php echo esc_html( $job_id ); ?></strong>
 </li>
 </ul> 
-<p>Once we've received this we will issue an invoice and publish your job listing.</p><p>When you've jotted these details down you can close this window, your job has been saved.</p>
+<p>Once we have this we will issue an invoice and publish your job listing.</p>
+<p>It's OK to close this page.</p>
 </div>
 </form>
 

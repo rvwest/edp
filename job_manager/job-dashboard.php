@@ -52,9 +52,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 														$actions[ 'edit' ] = [ 'label' => __( 'Edit', 'wp-job-manager' ), 'nonce' => false ];
 													}
 													if ( is_position_filled( $job ) ) {
-														$actions['mark_not_filled'] = [ 'label' => __( 'Mark not filled', 'wp-job-manager' ), 'nonce' => true ];
+														$actions['mark_not_filled'] = [ 'label' => __( 'Mark as open', 'wp-job-manager' ), 'nonce' => true ];
 													} else {
-														$actions['mark_filled'] = [ 'label' => __( 'Mark filled', 'wp-job-manager' ), 'nonce' => true ];
+														$actions['mark_filled'] = [ 'label' => __( 'Mark as closed', 'wp-job-manager' ), 'nonce' => true ];
 													}
 
 													$actions['duplicate'] = [ 'label' => __( 'Duplicate', 'wp-job-manager' ), 'nonce' => true ];
@@ -72,7 +72,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 												break;
 												case 'draft' :
 												case 'preview' :
-													$actions['continue'] = [ 'label' => __( 'Continue Submission', 'wp-job-manager' ), 'nonce' => true ];
+													$actions['continue'] = [ 'label' => __( 'Continue editing', 'wp-job-manager' ), 'nonce' => true ];
 													break;
 											}
 
