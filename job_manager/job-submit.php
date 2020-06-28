@@ -94,7 +94,9 @@ global $job_manager;
 				echo '<input type="submit" name="save_draft" class="button secondary save_draft" value="' . esc_attr__( 'Save Draft', 'wp-job-manager' ) . '" formnovalidate />';
 			}
 			?>
-			<input type="submit" name="submit_job" class="button" value="<?php echo esc_attr( 'Preview and continue' ); ?>" />
+			<input type="submit" name="submit_job" class="button" value="<?php echo esc_attr( $submit_button_text ); ?>" />
+			
+		<!-- 	<input type="submit" name="submit_job" class="button" value="<?php echo esc_attr( 'Preview and continue' ); ?>" /> -->
 			<span class="spinner" style="background-image: url(<?php echo esc_url( includes_url( 'images/spinner.gif' ) ); ?>);"></span>
 		</p>
 	<?php else : ?>

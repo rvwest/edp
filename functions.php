@@ -369,11 +369,26 @@ function custom_registration_fields( $fields ) {
 } 
 
 
+add_filter( 'submit_job_form_submit_button_text', 'custom_submit_job_form_submit_button_text' );
+
+function custom_submit_job_form_submit_button_text( $button_text ) {
+	return __( 'Preview and continue', 'wp-job-manager-simple-paid-listings' );
+}
+
 add_filter( 'submit_job_step_preview_submit_text', 'custom_submit_button_text' );
 
 function custom_submit_button_text( $button_text ) {
 	return __( 'Confirm and pay', 'wp-job-manager-simple-paid-listings' );
 }
+
+add_filter( 'job_manager_update_job_listings_message', 'custom_job_manager_update_job_listings_message' );
+
+function custom_job_manager_update_job_listings_message( $save_message ) { 
+	return ('<i class="far fa-check-circle"></i> Your changes have been saved. <a href="' . esc_url( job_manager_get_permalink( 'job_dashboard' )) . '">Return to your dashboard</a>.');
+}
+
+
+
 
 
 /**

@@ -26,7 +26,7 @@
 
 	<div class="job_listing_stripe_checkout_form ">	
 	<fieldset class="fieldset-stripe_payment fieldset-type-text job-details-block">
-		<div>	
+		<div class="payment-details-name-description">	
 		<label class="job-listing">
 				<?php esc_html_e( 'Job listing', 'wp-job-manager-simple-paid-listings' ); ?>
 			</label>
@@ -41,7 +41,7 @@
 		<div class="option-cols">
 		<div class="option-col1">
 		
-		<h2>Pay by card <img class="stripe-badge" alt="Powered by Stripe" src="/wp-content/themes/edpsy/images/powered_by_stripe.svg" /></h2>
+		<h2>Pay by card <a href="https://stripe.com/gb"><img class="stripe-badge" alt="Powered by Stripe" src="/wp-content/themes/edpsy/images/powered_by_stripe.svg" /></a></h2>
 	
 		<fieldset class="fieldset-name fieldset-type-text">
 			<label for="stripe-cardholder-name">

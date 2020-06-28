@@ -22,7 +22,7 @@ switch ( $job->post_status ) :
 		echo '<div class="job-manager-message">' . wp_kses_post(
 			sprintf(
 				// translators: %1$s is the job listing post type name, %2$s is the job listing URL.
-				__( '%1$s listed successfully. To view your listing <a href="%2$s">click here</a>.', 'wp-job-manager' ),
+				__( '<i class="far fa-check-circle"></i> %1$s listed successfully. To view your listing <a href="%2$s">click here</a>.', 'wp-job-manager' ),
 				esc_html( $wp_post_types['job_listing']->labels->singular_name ),
 				get_permalink( $job->ID )
 			)
@@ -32,7 +32,7 @@ switch ( $job->post_status ) :
 		echo '<div class="job-manager-message">' . wp_kses_post(
 			sprintf(
 				// translators: Placeholder %s is the job listing post type name.
-				esc_html__( '%s submitted successfully. Your listing will be visible once approved.', 'wp-job-manager' ),
+				esc_html__( '<i class="far fa-check-circle"></i> %s submitted successfully. We will email you when the listing has been approved and put live. You can also access your advert <a href="' . esc_url( job_manager_get_permalink( 'job_dashboard' )) . '">via your dashboard</a>.', 'wp-job-manager' ),
 				esc_html( $wp_post_types['job_listing']->labels->singular_name )
 			)
 		) . '</div>';
