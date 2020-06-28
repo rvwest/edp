@@ -400,4 +400,12 @@ margin-right: 2rem;
 .wpjm-page  .preview-actions input.button { margin: 0.5rem 2.5px 0.5rem 2.5px;}
 .wpjm-page .preview-actions {text-align: center;}
 
+#job-manager-job-dashboard table .job_title .dashboard-job-title,  #job-manager-job-dashboard table .job_title a {
+	flex-basis:100%;
+			}
+			
+		#job-manager-job-dashboard table .job_title small {
+				margin: 0.5rem 0;
+					}
+
 }

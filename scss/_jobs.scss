@@ -251,18 +251,61 @@ display:none;
 border: 1px solid rgba(0,0,0,.12);
 }
 
+table.job-manager-jobs th.filled, table.job-manager-jobs td.filled {display:none;}
 
-table.job-manager-jobs th, #content table.job-manager-jobs tr td {
+table.job-manager-jobs th, #content table.job-manager-jobs tr td, #job-manager-job-dashboard table .applications, #job-manager-job-dashboard table .expires, #job-manager-job-dashboard table .filled {
     text-align: left;
 }
 
-#job-manager-job-dashboard table tbody tr:hover {
+#job-manager-job-dashboard table thead {
     background-color: rgba(0,0,0,.04);
 }
+
+#job-manager-job-dashboard table tbody tr:hover{
+    outline: solid 1px rgba(0,0,0,.04);
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
 #job-manager-job-dashboard table ul.job-dashboard-actions li:after {
     content: "|";
     color: $color-footer-text;
     }
+
+table.job-manager-jobs .job_title small {
+    border: #999 solid 1px;
+    color: #999;
+    padding: 0.05rem 0.3rem;
+    margin-left: 0.5rem;
+    font-weight: 400;
+    font-size: 0.8rem;
+    min-width: 20%;
+    text-align:center;
+        }
+
+        table.job-manager-jobs .job-title a, .dashboard-job-title {
+    font-weight: 300;
+}
+
+#job-manager-job-dashboard table ul.job-dashboard-actions li {
+            font-weight: 300; }
+#job-manager-job-dashboard table.job-manager-jobs .job_title small.dashboard-live {
+    background-color: $color-alert-success-background;
+    color: $color-alert-success-text;
+} 
+
+table.job-manager-jobs  .job_title {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            }
+
+table.job-manager-jobs ul.job-dashboard-actions  {
+    flex-basis:100%;
+    display: flex;
+flex-wrap: wrap;
+}
+
+#job-manager-job-dashboard table ul.job-dashboard-actions li .job-dashboard-action-delete {color: $color-alert-error-border}
 
     // Listings page old code //
 

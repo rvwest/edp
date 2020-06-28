@@ -16,6 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 <div id="job-manager-job-dashboard">
+	<h2>Your listings</h2>
 	<p><?php esc_html_e( 'Your listings are shown in the table below.', 'wp-job-manager' ); ?></p>
 	<table class="job-manager-jobs">
 		<thead>
@@ -37,9 +38,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 							<td class="<?php echo esc_attr( $key ); ?>">
 								<?php if ('job_title' === $key ) : ?>
 									<?php if ( $job->post_status == 'publish' ) : ?>
-										<a href="<?php echo esc_url( get_permalink( $job->ID ) ); ?>"><?php wpjm_the_job_title( $job ); ?></a>
+										<a href="<?php echo esc_url( get_permalink( $job->ID ) ); ?>"><?php wpjm_the_job_title( $job ); ?></a><small class="dashboard-live">Live</small>
 									<?php else : ?>
-										<?php wpjm_the_job_title( $job ); ?> <small>(<?php the_job_status( $job ); ?>)</small>
+										<span class="dashboard-job-title"><?php wpjm_the_job_title( $job ); ?></span><small><?php the_job_status( $job ); ?></small>
 									<?php endif; ?>
 									<?php echo is_position_featured( $job ) ? '<span class="featured-job-icon" title="' . esc_attr__( 'Featured Job', 'wp-job-manager' ) . '"></span>' : ''; ?>
 									<ul class="job-dashboard-actions">
@@ -72,7 +73,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 												break;
 												case 'draft' :
 												case 'preview' :
-													$actions['continue'] = [ 'label' => __( 'Continue editing', 'wp-job-manager' ), 'nonce' => true ];
+													$actions['continue'] = [ 'label' => __( 'Continue listing', 'wp-job-manager' ), 'nonce' => true ];
 													break;
 											}
 
@@ -92,8 +93,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 									<?php echo esc_html( date_i18n( get_option( 'date_format' ), strtotime( $job->post_date ) ) ); ?>
 								<?php elseif ('expires' === $key ) : ?>
 									<?php echo esc_html( $job->_job_expires ? date_i18n( get_option( 'date_format' ), strtotime( $job->_job_expires ) ) : '&ndash;' ); ?>
-								<?php elseif ('filled' === $key ) : ?>
-									<?php echo is_position_filled( $job ) ? '&#10004;' : '&ndash;'; ?>
+								
 								<?php else : ?>
 									<?php do_action( 'job_manager_job_dashboard_column_' . $key, $job ); ?>
 								<?php endif; ?>

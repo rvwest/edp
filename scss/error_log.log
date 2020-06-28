@@ -10,3 +10,4 @@
 06/20/20 5:08:08: edpsy-style.scss - parse error: failed at `img: ` /Users/richard.west/Sites/edpsy/wp-content/themes/edpsy/scss/_navigation.scss on line 98
 06/20/20 5:08:17: edpsy-style.scss - parse error: failed at `img: ` /Users/richard.west/Sites/edpsy/wp-content/themes/edpsy/scss/_navigation.scss on line 98
 06/22/20 10:49:44: edpsy-style.scss - parse error: failed at `.job-manager-form fieldset label` /Users/richard.west/Sites/edpsy/wp-content/themes/edpsy/scss/_jobs.scss on line 156
+06/28/20 6:52:48: edpsy-style.scss - parse error: failed at `color: }` /Users/richard.west/Sites/edpsy/wp-content/themes/edpsy/scss/_jobs.scss on line 299
