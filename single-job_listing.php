@@ -13,10 +13,18 @@ get_header(); ?>
 
 		<div class="container">
 			<div class="row-fluid">
-				<?php  if( get_theme_mod('breadcrumb_sec', 'on') == 'on' ) {
+
+
+<!--				<?php  if( get_theme_mod('breadcrumb_sec', 'on') == 'on' ) {
 						if ((class_exists('advertica_lite_breadcrumb_class'))) {$advertica_breadcumb->advertica_lite_custom_breadcrumb();}
 					}
-					?>
+					?>-->
+
+<section class="cont_nav"><div class="cont_nav_inner"><p><a href="/"><?php echo __('Home', 'advertica-lite');?></a>&nbsp;<span class="skt-breadcrumbs-separator"> &gt;&gt; </span>&nbsp;<?php esc_url(job_manager_get_permalink( 'jobs' )); ?>
+<a href="<?php echo esc_url( job_manager_get_permalink( 'jobs' )) ;?>"><?php echo __('EP Jobs', 'wp-job-manager');?></a>
+&nbsp;<span class="skt-breadcrumbs-separator"> &gt;&gt; </span>&nbsp;
+<?php the_title(); ?>
+</div></section>
 			</div>
 		</div>
 	</div>
