@@ -35,7 +35,8 @@ a .job-list-details {text-decoration: none; text-decoration-line: none;}
 // --- Job meta (type and post date) --- //
 
 .job-list-details .position-meta {text-align: right; min-width:200px; margin-left:1rem}
-#content a .job-list-details .company, #content a .job-list-details .position-meta .date {color: $color-secondary}
+#content a .job-list-details .company, #content a .job-list-details .position-meta .date, #content a .job-list-details .salary {color: $color-secondary}
+#content a .job-list-details .salary {margin-bottom:6px;}
 .type-job_listing .job-type {display:inline-block; margin-bottom:0.5rem; font-weight: 400;}
 .job_listing .job-type.fixed-term {color: $color-job-type-fixed-term}
 .job_listing .job-type.full-time {color: $color-job-type-full-time}

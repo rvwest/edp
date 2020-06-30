@@ -27,11 +27,13 @@ global $post;
 			<div class="job-title">
 				<h2><?php wpjm_the_job_title(); ?></h2>
 			</div>
-			<span class="company">
+			<div class="salary"><?php gma_wpjmef_display_combined_data_listings(); ?></div>
+
+			<div class="company">
 				<?php the_company_name(); ?> 
 
-				</span>
-</div>
+				</div></div>
+				
 		<div class="position-meta">
 			<!-- <span class="location"></span> -->
 			
@@ -45,9 +47,8 @@ global $post;
 					<?php endforeach; endif; ?>
 					</div>
 				<?php } ?>		
-			<span class="date"><?php the_job_publish_date(); ?></span>	
+			<span class="date"><?php the_job_publish_date(); ?></span>
 		</div>
-		
 
 			<?php do_action( 'job_listing_meta_end' ); ?>
 				</div>
