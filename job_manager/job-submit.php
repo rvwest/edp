@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $job_manager;
 ?>
-<p class="job-post-promo"><i class="far fa-briefcase"></i> £450 for a 30-day posting + mailout and tweet</p>
+<p class="job-post-promo"><i class="far fa-briefcase"></i> £450 for a 30-day posting + mailout and tweet - <a href="/jobs/edpsy-jobs/">find out more</a></p>
 <div class="form-block">
 	<div class="progressbar-container">
 <ul class="progressbar">

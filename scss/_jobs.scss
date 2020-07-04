@@ -146,6 +146,7 @@ line-height: 1.75rem;
 
 
 .form-block {margin-bottom:3rem; padding-bottom:1.8rem; border-bottom: solid 5px $color-outline;}
+
 p.signin-text {margin-bottom:0;}
 .wpjm-page #content .skepost > p:first-child {font-size: 1.125rem;}
 .wpjm-offer-text {margin-top:1rem; text-align: center;}
@@ -170,6 +171,8 @@ p.wpjm-submit-block {margin-bottom:3rem; text-align:right;}
 .skepost .job-manager-info.job-manager-info:before, .skepost .job-manager-message.job-manager-info:before, .job-manager-message.job-manager-message::before, .job-manager-error.job-manager-error:before, .job-manager-info.job-manager-error:before, .job-manager-message.job-manager-error:before {display:none;} 
 
 .job-manager-message.job-manager-message { color: $color-alert-success-text ; border: solid 3px $color-alert-success-border; background-color: $color-alert-success-background; padding-left:2em!important; box-shadow: none; }
+
+fieldset.fieldset-cap_declaration {margin-top:3rem; padding-top:1.8rem; border-top: solid 5px $color-outline;}
 
 // Preview //
 
