@@ -27,7 +27,7 @@
     text-align: center;
     margin: 0 auto 10px auto; 
     border-radius: 50%; 
-    background-color: white; 
+    background-color: #fff;
     }
     .progressbar li:after {
     /* CSS for creating horizontal line*/
@@ -48,8 +48,14 @@
     }
     .progressbar li.active:before {
     border-color:$color-jobs;
+    background-color:$color-jobs-v-pale; 
     }
     .progressbar li.active + li:after{
+        background-color:$color-jobs; 
+        background-image: linear-gradient(to right, $color-jobs , #ddd);}
+
+
+/**   .progressbar li.active + li:after{
     background-color:$color-jobs; }
 
     .progressbar li.active {
@@ -58,5 +64,5 @@
         .progressbar li.active:before {
         border-color:$color-jobs;
         }
-        .progressbar li.active + li:after{
-        background-color:$color-jobs; }
+      
+**/

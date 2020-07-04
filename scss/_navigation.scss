@@ -51,6 +51,15 @@
 
 * html #skenav ul li.current_page_item a, * html #skenav ul li.current-menu-ancestor a, * html #skenav ul li.current-menu-item a, * html #skenav ul li.current-menu-parent a, * html #skenav ul li a:hover, #skenav ul li.current-page-ancestor a[href$="/interest-groups/"], #skenav ul li.current-page-ancestor a[href$="/events/"], #skenav ul li.current-page-ancestor a.sf-with-ul[href$="/jobs/"] {  color: #fff;  }
 
+// Menu highlight //
+
+.menu-item .svg-inline--fa {
+	width: 0.6rem;
+	height: 0.6rem;
+	padding-bottom: 0.8rem;
+	color: $color-jobs-pale;
+	}
+
 
 /* --- menu link colours --- */
 

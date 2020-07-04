@@ -346,12 +346,14 @@ function custom_submit_job_form_fields( $fields ) {
 add_filter( 'job_manager_job_listing_data_fields', 'admin_add_custom_admin_fields' );
 
 function admin_add_custom_admin_fields( $fields ) {
-	$fields['job']['cap_declaration'] = array(
-		'label'       => __( 'Declaration', 'job_manager' ),
+	$fields['_cap_declaration'] = array(
+		'label'       => __( 'Declaration', 'wp-job_manager' ),
 		'type'        => 'checkbox',
-		'required'    => true,
-		'placeholder' => 'I confirm this to be true',
-		'priority'    => 9,
+		'data_type'   => 'integer',
+		'show_in_admin' => true,
+		'placeholder' => '',
+		'description' => 'I confirm the above is true',
+		'priority'    => 12,
 	  );
 	return $fields;
   }
@@ -426,5 +428,13 @@ function arphabet_widgets_init() {
 
 }
 add_action( 'widgets_init', 'arphabet_widgets_init' );
+
+add_action('after_setup_theme', 'remove_admin_bar');
+ 
+function remove_admin_bar() {
+if (!current_user_can('administrator') && !is_admin()) {
+  show_admin_bar(false);
+}
+}
 
 ?>
