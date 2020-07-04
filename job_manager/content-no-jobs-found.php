@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 <?php if ( defined( 'DOING_AJAX' ) ) : ?>
-	<li class="no_job_listings_found"><?php esc_html_e( 'There are no listings at the moment', 'wp-job-manager' ); ?></li>
+	<li class="no_job_listings_found">There are no listings at the moment.</li>
 <?php else : ?>
 	<p class="no_job_listings_found"><?php esc_html_e( 'There are currently no vacancies.', 'wp-job-manager' ); ?></p>
 <?php endif; ?>

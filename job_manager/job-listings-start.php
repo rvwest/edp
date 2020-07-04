@@ -15,5 +15,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 ?>
-<p class="job-post-promo"><i class="far fa-briefcase"></i> £450 for a 30-day posting + mailout and tweet - <a href="post/">post a job now</a></p>
+<p class="job-post-promo"><i class="far fa-briefcase"></i> £450 for a 30-day posting + mailout and tweet<br /><a href="post/">post a job now</a> or <a href="/jobs/edpsy-jobs">find out more</a></p>
 <ul class="job_listings">
