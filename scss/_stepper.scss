@@ -44,10 +44,19 @@
     content:none;
     }
     .progressbar li.active {
-    color:#27ae60;
+    color:$color-jobs;
     }
     .progressbar li.active:before {
-    border-color:#27ae60;
+    border-color:$color-jobs;
     }
     .progressbar li.active + li:after{
-    background-color:#27ae60; }
+    background-color:$color-jobs; }
+
+    .progressbar li.active {
+        color:$color-jobs;
+        }
+        .progressbar li.active:before {
+        border-color:$color-jobs;
+        }
+        .progressbar li.active + li:after{
+        background-color:$color-jobs; }
