@@ -35,7 +35,7 @@ get_header(); ?>
 		<div class="container post-wrap">
 	<div class="row-fluid">
 		<div id="container" class="span10 center-col">
-<div class="overlap-img-title">
+<div class="title-sub-logo">
 		<div class=" span10 center-col no-gutter-l">
 		<?php $logo = get_the_company_logo( $post, $size ); ?>
 <?php if ( has_post_thumbnail( $post ) ) :?>

@@ -21,7 +21,7 @@ global $post;
 
 <li <?php job_listing_class(); ?> data-longitude="<?php echo esc_attr( $post->geolocation_long ); ?>" data-latitude="<?php echo esc_attr( $post->geolocation_lat ); ?>">
 	<a href="<?php the_job_permalink(); ?>">
-		<?php the_company_logo(); ?>
+	<div class="listing-logo"><?php the_company_logo(); ?></div>
 		<div class="job-list-details">
 		<div class="position-main">
 			<div class="job-title">

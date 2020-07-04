@@ -23,7 +23,9 @@ a .job-list-details {text-decoration: none; text-decoration-line: none;}
 
 .wpjm-listing-page #content img {height:inherit;}
 
-.rp4wp-related-job_listing>ul li.job_listing a img.company_logo, .rp4wp-related-job_listing>ul li.no_job_listings_found a img.company_logo, #content ul.job_listings li.job_listing a img.company_logo, ul.job_listings li.no_job_listings_found a img.company_logo {width:75px; height:75px;position:relative; float:none;left:0;}
+.rp4wp-related-job_listing>ul li.job_listing a img.company_logo, .rp4wp-related-job_listing>ul li.no_job_listings_found a img.company_logo, #content ul.job_listings li.job_listing a img.company_logo, ul.job_listings li.no_job_listings_found a img.company_logo {max-width:75px; max-height:75px;position:relative; float:none;left:0; height:auto; width:auto;}
+
+.job_listing .listing-logo {width:75px; height:75px; text-align:center;}
 
 // --- Job details (title and organisation) --- //
 
