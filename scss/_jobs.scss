@@ -48,6 +48,7 @@ a .job-list-details {text-decoration: none; text-decoration-line: none;}
 .job_listing .job-type.part-time {color: $color-job-type-part-time}
 .job_listing .job-type.fixed-term:after {content: ", "}
 .job-list-details .wpjmef-field-combined {display: flex; flex-wrap:wrap;}
+.jobs-placeholder {text-align: center;}
 // --- Small viewports --- //
 
 @media only screen and (max-width: 767px) {
