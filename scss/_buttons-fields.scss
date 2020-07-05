@@ -24,7 +24,7 @@ body#tinymce.wp-editor {font-family: $font-family;}
 
 // Button styling //
 
-.wpjm-page input.button, .job-manager-form input.button, .job-manager-form a.button, .wpjm-single-job-post a.button, .category-jobs #content a.button, #job_preview a.button, .job-manager-application-wrapper .application .application_button, .single_job_listing .application .application_button, .job_listing_preview_title input.button {border: 1px solid;padding:0.7rem 2rem; text-transform: uppercase; font-size:0.8125rem; font-weight:bold; cursor: pointer; margin: 1rem 2rem 0rem 0; display:inline-block; line-height:1.3rem; text-decoration: none;-webkit-appearance: none;}
+.wpjm-page input.button, .job-manager-form input.button, .job-manager-form a.button, .wpjm-single-job-post a.button, .category-jobs #content a.button, #job_preview a.button, .job-manager-application-wrapper .application .application_button, .single_job_listing .application .application_button, .job_listing_preview_title input.button {border: 1px solid;padding:0.7rem 2rem; text-transform: uppercase; font-size:0.8125rem; font-weight:bold; cursor: pointer; margin: 1rem 2rem 0rem 0; display:inline-block; line-height:1.3rem; text-decoration: none;-webkit-appearance: none; border-radius: 0;}
 
 // Button colour //
 // Jobs //
