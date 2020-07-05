@@ -1,4 +1,6 @@
 /*events.scss*/
+
+
 #tribe-events-bar {padding-top:0px; margin-bottom: 0}
 #tribe-events-pg-template  {padding: 10px 20px 20px; max-width: none;}
 h2.tribe-events-page-title {
@@ -32,3 +34,5 @@ h2.tribe-events-page-title {
   font-weight: $font-weight-bold;
   margin-bottom: 20px
 }
+
+.events-list .tribe-events-loop, .single-tribe_organizer .tribe-events-loop, .single-tribe_venue .tribe-events-loop, .tribe-events-day .tribe-events-loop {max-width: none;}

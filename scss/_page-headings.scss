@@ -15,6 +15,7 @@ h1.title { font-size: 62px; line-height: 66px; font-weight: $font-weight-light; 
 .block--blog h2 a, .category-blog h1 {color: $color-blog}
 .block--features h2 a, .category-features h1 {color: $color-features;}
 .block--training h2 a, .category-training h1 {color: $color-training;}
+.block--jobs h2 a, .category-jobs h1, .block--jobs h2 a, .category-jobs-admin h1 {color: $color-jobs;}
 .category-about h1.title { color: $color-about;}
 .category-groups h1 { color: $color-groups;}
 .category-events h1 { color: $color-events;}
@@ -25,7 +26,7 @@ h1.title { font-size: 62px; line-height: 66px; font-weight: $font-weight-light; 
 
 
 /* --- site description --- */
-#logo #site-description { color: $color-secondary;  font-size: 18px; line-height: 26px;position: relative; left: 1px; width: 200px;}
+#logo #site-description { color: $color-secondary;  font-size: 18px; line-height: 26px;position: relative; left: 1px}
 
 
 

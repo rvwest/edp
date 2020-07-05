@@ -15,9 +15,17 @@
 	.home .overlap-title h1.title {
 		font-size: 1.6em;
 		line-height: 1.3em;
-		background-color: none;
+		background-color: $color-copy-background-emphasis-subtle;
+		font-size: 1.5rem;
 		}
+	
+	#front-content-box.block--promo a:hover h1, #front-content-box.block--promo a:active h1 {
+		background-color: $color-copy-background-emphasis-subtle;
+		
+	}
+	
 	.home .overlap-title h1.title {text-align: left;}
+	
 	.single-post .overlap-title h1.title {padding-left:0; font-size:1.8em; line-height:1.3em; 	margin-left: -12px;
    		padding-left: 12px; }
 	.post #content .skepost p:first-child {font-size: 1.3em; line-height: 1.6em; }
@@ -323,6 +331,84 @@
   justify-content:space-between;
   }
 
-/*#front-blog-wrap .span4 {margin-left:-7px;}*/
+  .category .bread-title-holder h1.title, .bread-title-holder h1.title, h1.title {
+	margin-left:0.75rem;
+	font-size: 2.75rem;
+	line-height: 3.5rem;
+	padding-bottom:0;
+}   
+.page-content h2, .wpjm-single-job-post h2, .job_listing_preview h2{
+	font-size: 1.5rem;
+	line-height: 2.25rem;
+	}    
+.page-content h3, .wpjm-single-job-post h3 {
+	font-size: 1.125rem;
+	font-weight:400;
+	}
 
+.post-title a {
+	font-size: 1.25rem;
+	font-weight: 400;
+}
+
+.job-post-promo {
+	margin-left: 2rem;
+margin-right: 2rem;
+}
+
+.single-job_listing h1.title {
+	font-size: 1.5rem;
+	line-height: 2.125rem;
+	padding-top:2.25rem;
+	margin-bottom: 0;
+	font-weight:400;
+	margin-left:0;
+	padding-bottom: 0.625rem;
+}
+.single-job_listing h2.name, .job_listing_preview h2.name {
+	font-size: 1.5rem;
+	}
+
+
+.single-job_listing .company_logo {
+	float:none;
+	padding: 18px 0 0 0;
+}
+
+.job-manager-form fieldset.job-details-block {
+	justify-content: flex-start;
+	margin: 0 0 3rem 0; 
+	flex-wrap: wrap;
+	}
+
+.job-manager-form fieldset label.job-listing {
+	text-align: left;
+		}
+
+.job-manager-form fieldset {line-height: 1.75rem;}
+
+.job-manager-form fieldset .item-cost {
+	margin: 1rem 0;
+	display: block;
+	}
+.payment-details-name-description {flex-basis: 100%;}
+
+.wpjm-page .post #content .skepost p:first-child {
+	font-size: 1rem;
+	line-height: 1.5rem;}
+
+.wpjm-page  .preview-actions input.button { margin: 0.5rem 2.5px 0.5rem 2.5px;}
+.wpjm-page .preview-actions {text-align: center;}
+
+#job-manager-job-dashboard table .job_title .dashboard-job-title,  #job-manager-job-dashboard table .job_title a {
+	flex-basis:100%;
+			}
+			
+		#job-manager-job-dashboard table .job_title small {
+				margin: 0.5rem 0;
+					}
+
+
+.job-manager-message {flex-wrap:wrap; }
+.success-message {margin-left:0}
 }

@@ -2,9 +2,16 @@
 
 #skenav {background:none repeat scroll 0 0 transparent;  display:block;  margin-left:auto;  margin-right:auto;  border:medium none;  }
 
+.main-menu-block {display:flex; justify-content: space-between; width:96%; margin: 0 20px;}
+
 #skehead .sub-menu { display: none; }
 
+
 #logo #site-title a { color: $color-site-title ;display: inline-block;font-size: 30px;font-weight: $font-weight-bold; line-height: 30px; margin-top: 10px; text-decoration: none; text-transform: none;}
+
+//.page-template-template-fullwidth-jobs-php #logo #site-title a {color: $color-jobs}
+
+#skenav li a:focus {outline: 3px solid $color-highlight;  outline-offset: 0;}
 
 /*#logo #site-title { display: block;font-size: 30px;margin: 8px 0 11px;}*/
 
@@ -47,7 +54,17 @@
 
 #skenav ul li:hover{  z-index:999999999999;  }
 
-* html #skenav ul li.current_page_item a, * html #skenav ul li.current-menu-ancestor a, * html #skenav ul li.current-menu-item a, * html #skenav ul li.current-menu-parent a, * html #skenav ul li a:hover {  color: #fff;  }
+* html #skenav ul li.current_page_item a, * html #skenav ul li.current-menu-ancestor a, * html #skenav ul li.current-menu-item a, * html #skenav ul li.current-menu-parent a, * html #skenav ul li a:hover, #skenav ul li.current-page-ancestor a[href$="/interest-groups/"], #skenav ul li.current-page-ancestor a[href$="/events/"], #skenav ul li.current-page-ancestor a.sf-with-ul[href$="/jobs/"] {  color: #fff;  }
+
+
+// Menu highlight //
+
+.menu-item .svg-inline--fa {
+	width: 0.6rem;
+	height: 0.6rem;
+	padding-bottom: 0.8rem;
+	color: $color-jobs-pale;
+	}
 
 
 /* --- menu link colours --- */
@@ -65,7 +82,7 @@ background-color: $color-blog;
 background-color: $color-features;
 }
 
-#skenav li a[href*="interest-groups/"]:hover, #skenav li a[href*="interest-groups/"]:hover, #skenav li a[href*="interest-groups/"]:active, #skenav ul li.current-menu-item > a[href*="interest-groups/"], #skenav ul li.current-menu-parent > a[href*="interest-groups/"] {
+#skenav li a[href*="interest-groups/"]:hover, #skenav li a[href*="interest-groups/"]:hover, #skenav li a[href*="interest-groups/"]:active, #skenav ul li.current-menu-item > a[href*="interest-groups/"], #skenav ul li.current-menu-parent > a[href*="interest-groups/"], #skenav ul li.current-page-ancestor a[href$="/interest-groups/"] {
 background-color: $color-groups;
 }
 
@@ -81,6 +98,10 @@ background-color: $color-training;
 background-color: $color-about;
 }
 
+#skenav li a[href*="/jobs/"]:hover, #skenav li a[href*="/jobs/"]:active, #skenav ul li.current-menu-item > a[href*="/jobs/"], #skenav ul li.current-menu-parent > a[href$="/jobs/"], #skenav ul li.current-page-ancestor a.sf-with-ul[href$="/jobs/"] {
+	background-color: $color-jobs;
+	}
+
 #skenav ul li.current-menu-parent > a {
 background-color: $color-tile;
 }
@@ -88,8 +109,22 @@ background-color: $color-tile;
 
 /* --- #skenav ul li.current_page_item > a, #skenav ul li.current-menu-ancestor > a, #skenav ul li.current-menu-item > a, #skenav ul li.current-menu-parent > a --*/
 
+/* -- Promo menu item --*/
+
+/*.menu-item-2821 {
+	background-repeat: no-repeat;
+    background-color: #f08d3c;
+    background-size: 10px;
+    -webkit-mask-image: url(../images/star-solid.svg);
+    -webkit-mask-size: 10px;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: right;
+}*/
+
 
 /* --- scroll menu --- */
+
+
 
 
 #header.skehead-headernav-shrink #skenav a { line-height: 68px;}
@@ -151,6 +186,8 @@ padding: 15px 0 15px 0px; }
 			width:97%;
 		}
 
+
+
 		.skehead-headernav .logo {
 		    margin-bottom: 3px;
 		    margin-top: 12px;
@@ -161,14 +198,12 @@ padding: 15px 0 15px 0px; }
             margin-top: 1px;
             top: 6px;
 		}
-
-		#header { padding: 0 0 12px 0;}
-
-		#logo #site-title a {font-size: 20px; line-height: 25px;}
-
-		#logo {margin-left:7px; margin-right:-7px;}
-
-  		#logo #site-description { font-size:15px; line-height:11px;}
+		.sktmenu-toggle {
+			margin-right:14px;
+		}
+		#header {
+			padding: 0 0 12px 0;
+			}
 
   		#skenav a { padding-left: 6.3%;}
 }

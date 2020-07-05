@@ -298,6 +298,102 @@ function tribe_breadcrumbs() {
 }
 
 /**
+ * Changing Job Manager fields
+ *
+ */
+
+
+// Add your own function to filter the fields
+add_filter( 'submit_job_form_fields', 'custom_submit_job_form_fields' );
+
+// This is your function which takes the fields, modifies them, and returns them
+// You can see the fields which can be changed here: https://github.com/mikejolley/WP-Job-Manager/blob/master/includes/forms/class-wp-job-manager-form-submit-job.php
+function custom_submit_job_form_fields( $fields ) {
+
+    // Here we target one of the job fields (job_title) and change it's label
+	$fields['job']['job_location']['description'] = "";
+	$fields['job']['job_location']['placeholder'] = "";
+	$fields['job']['application']['label'] = "Where to apply";
+	$fields['job']['application']['description'] = "eg https://yourorg.gov.uk/apply";
+	$fields['job']['application']['value'] = "http://";
+	$fields['job']['application']['placeholder'] = "";
+	$fields['job']['job_type']['description'] = "You can select more than one";
+	$fields['company']['company_name']['placeholder'] = "";
+	$fields['company']['company_name']['label'] = "Organisation name";
+	$fields['company']['company_logo']['description'] = "Square images will work best. Maximum file size 32 MB";
+	$fields['company']['company_logo']['allowed_mime_types'] = [
+		'jpg'  => 'image/jpeg',
+		'jpeg' => 'image/jpeg',
+		'gif'  => 'image/gif',
+		'png'  => 'image/png',
+	];
+	$fields['job']['cap_declaration'] = array(
+		'label'       => __( 'Declaration', 'job_manager' ),
+		'type'        => 'checkbox',
+		'required'    => true,
+		'placeholder' => 'I confirm this to be true',
+		'priority'    => 9,
+		'description'   => __( '<p>We follow the <a href="https://www.asa.org.uk/type/non_broadcast/code_section/20.html">CAP Code for employment advertisements</a>. Please confirm:</p><ul><li>This is a genuine employment opportunity</li><li>All details provided are comprehensive and accurate</li><li>You are acting directly for the employer, and not an employment agency</li></ul>', 'wp-job-manager' ),
+	  );
+	unset($fields['company']['company_video']);
+	unset($fields['company']['company_tagline']);
+	unset($fields['company']['company_twitter']);
+
+    // And return the modified fields
+    return $fields;
+}
+
+add_filter( 'job_manager_job_listing_data_fields', 'admin_add_custom_admin_fields' );
+
+function admin_add_custom_admin_fields( $fields ) {
+	$fields['_cap_declaration'] = array(
+		'label'       => __( 'Declaration', 'wp-job_manager' ),
+		'type'        => 'checkbox',
+		'data_type'   => 'integer',
+		'show_in_admin' => true,
+		'placeholder' => '',
+		'description' => 'I confirm the above is true',
+		'priority'    => 12,
+	  );
+	return $fields;
+  }
+
+
+add_filter( 'wpjm_get_registration_fields', 'custom_registration_fields' );
+
+function custom_registration_fields( $fields ) {
+    // Here we target one of the job fields (job_title) and change it's label
+	$fields['create_account_email']['label'] = "Your email";
+	$fields['create_account_email']['placeholder'] = "";
+	$fields['create_account_email']['description'] = "";
+    // And return the modified fields
+    return $fields;
+} 
+
+
+add_filter( 'submit_job_form_submit_button_text', 'custom_submit_job_form_submit_button_text' );
+
+function custom_submit_job_form_submit_button_text( $button_text ) {
+	return __( 'Preview and continue', 'wp-job-manager-simple-paid-listings' );
+}
+
+add_filter( 'submit_job_step_preview_submit_text', 'custom_submit_button_text' );
+
+function custom_submit_button_text( $button_text ) {
+	return __( 'Confirm and pay', 'wp-job-manager-simple-paid-listings' );
+}
+
+add_filter( 'job_manager_update_job_listings_message', 'custom_job_manager_update_job_listings_message' );
+
+function custom_job_manager_update_job_listings_message( $save_message ) { 
+	return ('<i class="far fa-check-circle"></i> Your changes have been saved. <a href="' . esc_url( job_manager_get_permalink( 'job_dashboard' )) . '">Return to your dashboard</a>.');
+}
+
+
+
+
+
+/**
  * Register our sidebars and widgetized areas.
  *
  */
@@ -312,7 +408,33 @@ function arphabet_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 
+	register_sidebar( array(
+		'name'          => 'Jobs call to action area',
+		'id'            => 'post_cta_2',
+		'before_widget' => '<div class="post_cta" id="signup">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => 'Jobs admin call to action area',
+		'id'            => 'post_cta_3',
+		'before_widget' => '<div class="post_cta" id="signup">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	) );
+
 }
 add_action( 'widgets_init', 'arphabet_widgets_init' );
+
+add_action('after_setup_theme', 'remove_admin_bar');
+ 
+function remove_admin_bar() {
+if (!current_user_can('administrator') && !is_admin()) {
+  show_admin_bar(false);
+}
+}
 
 ?>

@@ -10,6 +10,14 @@ $color-training-highlight: #37474F;
 $color-about: #7cb342;
 $color-events: #00838F;
 $color-events-pale: #E0F7FA;
+
+$color-jobs: #e21d60;
+$color-jobs-pale: #f48fb1;
+$color-jobs-v-pale: #fce4ec;
+
+//$color-jobs: #255d00;
+//$color-jobs-pale: #c6e6c4;
+//$color-jobs-v-pale: #e7f5e7;
 $color-tile: #EFEBE9;
 $color-site-title: #FF5722;
 $color-highlight: #FFAB40;
@@ -28,6 +36,18 @@ $color-footer-reverse: #D9D9D9;
 $color-footer-text: #9E9E9E;
 $color-link: #0072b9;
 $color-link-with-background: #0072b9;
+$color-alert-success-background: #dbefdc;
+$color-alert-success-text: #285b2a;
+$color-alert-success-border: #cde9ce;
+$color-alert-warning-background: #fcf8e3;
+$color-alert-warning-text: #8a6d3b;
+$color-alert-warning-border: #faebcc;
+$color-alert-error-border: #f44336;
+$color-job-type-flexible: #9074b3;
+$color-job-type-part-time: #5f9ea0;
+$color-job-type-full-time: #f08d3c;
+$color-job-type-fixed-term: #d81b60;
+$color-copy-background-emphasis-subtle: rgba(221, 221, 221, 0.24);
 /* $color-training: #546E7A; */
 
 /* Typography */
@@ -38,9 +58,11 @@ $font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-bold: 700;
 
+$font-size-body: 18px;
+
 $col1-max: 599;
 $col2-max: 789;
-$col-menuswitch: 1104;
+$col-menuswitch: 767;
 $col3half-max: 1000;
 $col3-max: 1199;
 

@@ -81,9 +81,9 @@ body.page-template-template-front-page-php #main{margin-top:0 !important;}
 .skepost-meta abbr:hover {  border-bottom: 1px dotted #666;  }
 .skepost {clear: both;  }
 .skepost img {margin-bottom: 10px;  }
-.skepost input {  margin: 0 0 24px 0;  }
+.skepost input {  margin: 0 0 24px 0; font-size:1rem; font-family:$font-family; font-weight:300;}
 .skepost input.file, .skepost input.button {  margin-right: 24px;  }
-.skepost label {  color: #888;  font-size: 12px;  }
+.skepost label {  color: $color-copy  }
 .skepost select {  margin: 0 0 24px 0;  }
 .skepost sup, .skepost sub {  font-size: 10px;  }
 .skepost blockquote.left {  float: left;  margin-left: 0;  margin-right: 24px;  text-align: right;  width: 33%;}
@@ -227,7 +227,7 @@ h3#comments-title {padding: 24px 0;  }
 /* =Comments form
 -------------------------------------------------------------- */
 input[type=submit] {color: #333;}
-#content #respond {border: 1px dotted #EEEEEE;  color: #000000;  font-size: 20px;  margin-bottom: 10px;  padding: 20px;  position: relative;  margin-top: 25px;}
+#content #respond {border: 1px dotted #EEEEEE;  color: #000000;  font-size: 1rem;  margin-bottom: 10px;  padding: 20px;  position: relative;  margin-top: 25px;}
 .comments-template {border-top:1px dotted #EEEEEE;  margin-bottom: 20px;  margin-top: 20px;}
 .comments-template #commentsbox { padding-top: 10px;}
 .comments-template a {text-decoration: none; }
@@ -239,7 +239,7 @@ input[type=submit] {color: #333;}
 .postmetadata {  margin:7px 0;  padding:2px 10px;  }
 .postmetadata a {  color:#404040;  text-decoration:none;  }
 #respond p {     clear: both;      height: 40px;      margin: 0;  }
-#respond .comment-notes {  font-size: 12px;  margin-bottom: 1em;   color: #666666;}
+#respond .comment-notes {margin-bottom: 1em;   color: #666666;}
 #respond .logged-in-as{  font-size: 12px;  }
 .form-allowed-tags {  line-height: 1em;  }
 .children #respond {  margin: 0 0px 0 0;  }
@@ -248,7 +248,7 @@ h3#reply-title {  margin: 18px 0;  }
 #comments-list ul #respond {  margin: 0;  }
 #cancel-comment-reply-link {  font-size: 12px;  font-weight: normal;  line-height: 18px;  color: #888;  text-decoration: none;  }
 #respond .required {  color: #ff4b33;font-size: 16px;}
-#respond label {  float: left;font-size: 13px; margin-top: 5px;color:#666;}
+#respond label {  float: left; margin-top: 5px;color:#666;}
 #signup input[type="submit"], #respond input[type="submit"] {background: none repeat scroll 0 0 rgba(0, 0, 0, 0); border: 1px solid #F54336; cursor: pointer; display: inline-block; height: auto; font-weight: $font-weight-bold;font-size: 12px !important;letter-spacing: 1px; margin-bottom: 0;padding: 8px 25px;position: relative; text-transform: uppercase;@include transition-0-3; }
 #signup input[type="submit"]:hover, #respond input[type="submit"]:hover {background: none repeat scroll 0 0 #F54336; color: #FFFFFF; @include transition-0-3;  }
 #signup input, #signup textarea, #respond input, #respond textarea { background: none repeat scroll 0 0 #F9F9F9; border: 1px solid #E1E1E1; color: #666666; float: right; font-family: 'Open Sans', sans-serif; font-size: 12px; font-weight: $font-weight-light; height: 30px; margin: 0 0 22px; padding: 4px; width: 78%;}
