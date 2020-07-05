@@ -32,8 +32,8 @@ wp_enqueue_script('advertica-lite-waypoints-js',get_template_directory_uri().'/j
 wp_enqueue_script('fa-kit-js','https://kit.fontawesome.com/82dca31c0e.js#asyncload' );
 
 /*	wp_enqueue_style('advertica-lite-style', get_stylesheet_uri());*/
-	wp_enqueue_style( 'edpsy-style', get_template_directory_uri() . '/css/edpsy-style.css',false,'all');
-/*	wp_enqueue_style('edpsy-style', get_template_directory_uri().'/css/edpsy-style.css', false, $theme->Version);*/
+//	wp_enqueue_style( 'edpsy-style', get_template_directory_uri() . '/css/edpsy-style.css',false,'all');
+	wp_enqueue_style('edpsy-style', get_template_directory_uri().'/css/edpsy-style.css', false, $theme->Version);
 /*	wp_enqueue_style('advertica-lite-animation-stylesheet', get_template_directory_uri().'/css/skt-animation.css', false, $theme->Version);*/
 
 	/*SUPERFISH*/

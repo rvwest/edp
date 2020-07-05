@@ -1,6 +1,6 @@
 /* Jobs */
 
-.job-manager-form fieldset input.input-date, .job-manager-form fieldset input.input-text, .job-manager-form fieldset select, .job-manager-form fieldset textarea, .select2-container--default .select2-selection--multiple, .job-manager-form fieldset .wp-editor-container {margin-bottom:0; padding:0.4rem; border: 1px solid $color-outline;}
+.job-manager-form fieldset input.input-date, .job-manager-form fieldset input.input-text, .job-manager-form fieldset select, .job-manager-form fieldset textarea, .select2-container--default .select2-selection--multiple, .job-manager-form fieldset .wp-editor-container {margin-bottom:0; padding:0.4rem; border: 1px solid $color-outline; -webkit-appearance: none; border-radius: 0;}
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice, .select2-search.select2-search--inline {margin: 5px 5px 0 0 }
 
