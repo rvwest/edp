@@ -1,3 +1,5 @@
+
+
 // -- LISTINGS PAGE -- //
 
 .wpjm-listing-page h1.title {padding-bottom: 16px;}
@@ -55,7 +57,7 @@ a .job-list-details {text-decoration: none; text-decoration-line: none;}
 
     .job-list-details {flex-wrap: wrap;}
 
-    ul.job_listings li.job_listing a img.company_logo, ul.job_listings li.no_job_listings_found a img.company_logo {
+    ul.job_listings li.job_listing a img.company_logo, ul.job_listings li.no_job_listings_found a img.company_logo, .listing-logo {
     display: none;}
 
     .job-list-details .position-main {
