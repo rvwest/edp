@@ -58,9 +58,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<?php endif; ?>
 		</div>
 			</div>
-	<p>If you don't have an account, please enter your email address. We will send you your account details by email</p>
-	<h2>Create account</h2>
-	<?php
+		<h2>Create account</h2>
+		<p>This will let you save drafts, manage your listings once live, and speeds up posting a job in the future. We will not spam you. </p>
+
+<?php
 	if ( ! empty( $registration_fields ) ) {
 		foreach ( $registration_fields as $key => $field ) {
 			?>
