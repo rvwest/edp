@@ -3,7 +3,8 @@
 // -- LISTINGS PAGE -- //
 
 .wpjm-listing-page h1.title {padding-bottom: 16px;}
-p.job-post-promo {text-align:center;margin-bottom: 3rem; font-weight:400; line-height: 1.75rem; color:$color-jobs;}
+p.job-post-promo {text-align:center;margin-bottom: 3rem; line-height: 1.75rem; }
+p.job-post-promo i, p.job-post-promo svg {color:$color-jobs;}
 
 .rp4wp-related-job_listing>ul li.job_listing a, .rp4wp-related-job_listing>ul li.no_job_listings_found a, ul.job_listings li.job_listing a, ul.job_listings li.no_job_listings_found a {padding-left:1em; display:flex;}
 
@@ -50,7 +51,7 @@ a .job-list-details {text-decoration: none; text-decoration-line: none;}
 .job_listing .job-type.part-time {color: $color-job-type-part-time}
 .job_listing .job-type.fixed-term:after {content: ", "}
 .job-list-details .wpjmef-field-combined {display: flex; flex-wrap:wrap;}
-.jobs-placeholder {text-align: center;}
+.jobs-placeholder {text-align: center; margin-top: 2rem;}
 // --- Small viewports --- //
 
 @media only screen and (max-width: 767px) {
