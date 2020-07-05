@@ -16,4 +16,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 <p class="job-post-promo"><i class="far fa-briefcase"></i> £450 for a 30-day listing + mailout and tweet<br /><a href="post/">post a job now</a> or <a href="/jobs/edpsy-jobs">find out more</a></p>
+<div class="jobs-placeholder"><img src="/images/jobs-plant.jpg" alt=""></div>
 <ul class="job_listings">
