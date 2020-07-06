@@ -65,7 +65,7 @@
 			</div>
 		</fieldset>
 		
-	
+	<p>Once payment is received we will review your listing and get it live.</p>
 
 	<input type="hidden" name="job_id" value="<?php echo esc_attr( $job_id ); ?>" />
 	<input type="hidden" name="step" value="<?php echo esc_attr( $step ); ?>" />
