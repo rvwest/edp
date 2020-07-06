@@ -25,7 +25,8 @@
 		
 
 	<div class="job_listing_stripe_checkout_form ">	
-	<fieldset class="fieldset-stripe_payment fieldset-type-text job-details-block">
+	<fieldset class="fieldset-stripe_payment fieldset-type-text">
+	<div class="job-details-block">
 		<div class="payment-details-name-description">	
 		<label class="job-listing">
 				<?php esc_html_e( 'Job listing', 'wp-job-manager-simple-paid-listings' ); ?>
@@ -35,7 +36,7 @@
 				
 			</div></div>
 			<div>
-			<span class="item-cost"><?php echo esc_html( $item_cost ); ?></span></div>
+			<span class="item-cost"><?php echo esc_html( $item_cost ); ?></span></div></div>
 		</fieldset>
 
 		<div class="option-cols">
