@@ -333,7 +333,7 @@ function custom_submit_job_form_fields( $fields ) {
 		'required'    => true,
 		'placeholder' => 'I confirm this to be true',
 		'priority'    => 9,
-		'description'   => __( '<p>We follow the <a href="https://www.asa.org.uk/type/non_broadcast/code_section/20.html">CAP Code for employment advertisements</a>. Please confirm:</p><ul><li>This is a genuine employment opportunity</li><li>All details provided are comprehensive and accurate</li><li>You are acting directly for the employer, and not an employment agency</li></ul>', 'wp-job-manager' ),
+		'description'   => __( '<p>We follow the <a href="https://www.asa.org.uk/type/non_broadcast/code_section/20.html">CAP Code for employment advertisements</a>. Please confirm:</p><ul><li>This is a genuine employment opportunity</li><li>All details provided are comprehensive and accurate</li><li>You are acting directly for the employer, and not an employment agency</li><li>Your organisation is not in dispute with the <abbr title="Association of Educational Psychologists">AEP</abbr></li></ul>', 'wp-job-manager' ),
 	  );
 	unset($fields['company']['company_video']);
 	unset($fields['company']['company_tagline']);
