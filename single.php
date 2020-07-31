@@ -42,15 +42,9 @@ get_header(); ?>
 					</div>
 
 						<div class="skepost-meta span10 clearfix">
-							<span class="date"><?php the_time('F j Y') ?></span><span class="author-name"><?php _e(', by ','advertica-lite'); 							if ( function_exists( 'coauthors_posts_links' ) ) {
+							<span class="date"><?php the_time('j F Y') ?></span><span class="author-name"><?php _e(' by ','advertica-lite'); 							if ( function_exists( 'coauthors_posts_links' ) ) {
     coauthors_posts_links();} else {
-    the_author_posts_link(first_name, last_name);} ?></span><?php
-if ( comments_open() ) :
-  echo '<span class="comments">, ';
-  comments_popup_link(__('','advertica-lite'), __('1 comment ','advertica-lite'), __('% comments ','advertica-lite')) ;
-  echo '</span>';
-endif;
-?>
+    the_author_posts_link(first_name, last_name);} ?></span><?php if (get_comments_number()>0) { ?><span class="comments">, <?php comments_popup_link(__('','advertica-lite'), __('1 comment ','advertica-lite'), __('% comments ','advertica-lite')) ; ?></span><?php } ?>
 	
 	
 <br/><?php the_tags('<span class="tags">Tagged: ', ', ', '</span>'); ?></div>
