@@ -17,12 +17,12 @@ if ( function_exists( 'coauthors_posts_links' ) ) {
                 </div><!-- .author-avatar -->
 
                 <div class="author-description">
-                    <h2 class="author-title">About <span class="author-heading"><a href="<?php echo get_author_posts_url( $coauthor->ID, $coauthor->user_nicename ); ?>"></a></span> <?php echo $coauthor->display_name; ?></h2>
+                    <h2 class="author-title">About <span class="author-heading"><?php echo $coauthor->display_name; ?></h2>
 
                     <p class="author-bio">
                         <?php echo $coauthor->description; ?></p>
                         <p class="author-bio">
-                        View all posts by <?php coauthors_posts_links() ?>
+                        View all posts by <a href="<?php echo get_author_posts_url( $coauthor->ID, $coauthor->user_nicename ); ?>"><?php echo $coauthor->display_name; ?></a>
                     </p><!-- .author-bio -->
                 </div><!-- .author-description -->
 
