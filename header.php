@@ -25,7 +25,9 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>  >
-	<div id="wrapper" class="skepage " >
+
+<div class="cta-header-block"><div class="container"><div class="row-fluid fixedrow"><p><i class="far fa-briefcase"></i>&nbsp; <strong>£300</strong> to <a href="../jobs/post/">post a job with us</a> and reach thousands of people</p><p class="cta-second-link"><a href="../jobs/edpsy-jobs/" >Find out more</a></p></div></div> </div>
+		<div id="wrapper" class="skepage " >
 		<div id="header" class="skehead-headernav clearfix">
 			<div class="glow">
 				<div id="skehead">
