@@ -13,7 +13,7 @@ get_header(); ?>
 				<div class="post">
 					<div class="skepost _404-page">
 						<div class="error-txt-first"><?php _e( '404', 'advertica-lite' ); ?></div>
-						<p><?php _e( 'Sorry, but the requested resource was not found on this site. Please try again or <a href="mailto:help@edpsy.org.uk">contact us</a> for assistance.', 'advertica-lite' ); ?></p>
+						<p><?php _e( 'Sorry, but the requested page is not on the site. Please try again or <a href="mailto:help@edpsy.org.uk">contact us</a> for assistance.', 'advertica-lite' ); ?></p>
 					</div>
 					<!-- post -->
 				</div>
