@@ -173,7 +173,7 @@ require_once(get_template_directory() . '/SketchBoard/functions/admin-init.php')
 /**
  * Add Sketchthemes page
  */
-/*require_once(get_template_directory() . '/includes/sketchtheme-upsell.php');
+require_once(get_template_directory() . '/includes/sketchtheme-upsell.php');
 /**
  * Add Options Migration page
  */
@@ -190,7 +190,7 @@ function wpdocs_custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
-/** Add Google library version of jQuery **/
+/** Add Google librbary version of jQuery **/
 
 //Making jQuery Google API
 
@@ -198,7 +198,7 @@ function modify_jquery() {
     if (!is_admin()) {
         // comment out the next two lines to load the local copy of jQuery
         wp_deregister_script('jquery');
-        wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false, null);
+        wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js', false, null);
         wp_enqueue_script('jquery');
     }
 }
