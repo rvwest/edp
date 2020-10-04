@@ -208,6 +208,7 @@ var currentTallest = 0,
    }
  });
 }
+/* Fixes for jQuery 3... 
 
 $j(window).load(function() {
   equalheight('#front-content-box h3');
@@ -235,7 +236,34 @@ $j(window).load(function() {
 $j(window).resize(function(){
   equalheight('.feature-posts p');
 });
+*/
 
+$j(window).on('load', function() {
+    equalheight('#front-content-box h3');
+  });
+  
+  
+  $j(window).resize(function(){
+    equalheight('#front-content-box h3');
+  });
+  
+  $j(window).on('load', function() {
+    equalheight('.blog-posts p');
+  });
+  
+  
+  $j(window).resize(function(){
+    equalheight('.blog-posts p');
+  });
+  
+  $j(window).on('load', function() {
+    equalheight('.feature-posts p');
+  });
+  
+  
+  $j(window).resize(function(){
+    equalheight('.feature-posts p');
+  });
 
 /*
  * jQuery Superfish Menu Plugin - v1.7.4
@@ -256,7 +284,7 @@ $j(window).resize(function(){
         }, n = function () {
                 var t = /iPhone|iPad|iPod/i.test(navigator.userAgent);
                 if (t) {
-                    e(window).load(function () {
+                    e(window).on('load', function() {
                         e("body").children().on("click", e.noop)
                     })
                 }

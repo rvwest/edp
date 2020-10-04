@@ -17,7 +17,8 @@
         }, n = function () {
                 var t = /iPhone|iPad|iPod/i.test(navigator.userAgent);
                 if (t) {
-                    e(window).load(function () {
+                    // jq3fix: e(window).load(function () {
+                    e(window).on('load', function () {  
                         e("body").children().on("click", e.noop)
                     })
                 }
