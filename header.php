@@ -26,7 +26,7 @@
 </head>
 <body <?php body_class(); ?>  >
 
-<div class="cta-header-block"><div class="container"><div class="row-fluid fixedrow"><p><i class="far fa-briefcase"></i>&nbsp; <s>£450</s> <strong>£300</strong> to <a href="../jobs/post/">post a job with us</a> and reach thousands of people</p><p class="cta-second-link"><a href="../jobs/choosing-edpsy-jobs/" >Find out more</a></p></div></div> </div>
+<div class="cta-header-block"><div class="container"><div class="row-fluid fixedrow"><p><i class="far fa-briefcase"></i>&nbsp; <s>£450</s> <strong>£300</strong> to <a href="https://edpsy.org.uk/jobs/post/">post a job with us</a> and reach thousands of people</p><p class="cta-second-link"><a href="https://edpsy.org.uk/jobs/choosing-edpsy-jobs/" >Find out more</a></p></div></div> </div>
 		<div id="wrapper" class="skepage " >
 		<div id="header" class="skehead-headernav clearfix">
 			<div class="glow">
