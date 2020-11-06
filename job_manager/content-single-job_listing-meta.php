@@ -28,7 +28,7 @@ do_action( 'single_job_listing_meta_before' ); ?>
 	
 	<?php do_action( 'single_job_listing_extra_fields_combined' ); ?>
 	
-	<li class="date-posted"><i class="fas fa-clock"></i> <?php the_job_publish_date(); ?></li>	
+	<li class="date-posted"><i class="fas fa-clock"></i> Posted <?php the_job_publish_date(); ?></li>	
 
 	<?php if ( get_option( 'job_manager_enable_types' ) ) { ?>
 		<?php $types = wpjm_get_the_job_types(); ?>
