@@ -59,6 +59,10 @@
 		background-color:<?php if(isset($bg_color)){ echo $bg_color; } ?>;
 		color:#fff;
 	}
+
+	
+
+
 	.continue a:hover {
 		border-color: <?php if(isset($bg_color)){ echo $bg_color; } ?>;
 	}

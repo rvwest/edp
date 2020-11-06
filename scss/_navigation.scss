@@ -21,6 +21,20 @@
 
 #skenav a {color: #333333; display: block; font-size: 18px; line-height: 85px; padding: 0 22px; text-decoration: none; @include transition-0-1 }
 
+//-- jobs highlight icon --//
+
+#skenav a i { color: $color-jobs}
+
+#skenav ul li.current_page_item > a i,
+	#skenav ul li.current-menu-ancestor > a i,
+	#skenav ul li.current-menu-item > a i,
+	#skenav ul li.current-menu-parent > a i,
+	#skenav li a:hover i {
+		color:#fff;
+	}
+
+
+
 #skenav skt-mob-menu a {padding: 0 20px 0 40px;}
 
 #skenav ul ul {
@@ -71,6 +85,8 @@
 #skenav li a:hover, #skenav .sfHover { background-color:$color-tile ;color: #FFFFFF;}
 
 #skenav .sfHover a { color: $color-copy;}
+
+
 
 
 #skenav li a[href$="/blog/"]:hover, #skenav li a[href$="/blog/"]:hover, #skenav li a[href$="/blog/"]:active, #skenav ul li.current-menu-item > a[href$="/blog/"], #skenav ul li.current-menu-parent > a[href$="/blog/"] {
