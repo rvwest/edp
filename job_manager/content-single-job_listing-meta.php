@@ -24,11 +24,11 @@ do_action( 'single_job_listing_meta_before' ); ?>
 <ul class="job-listing-meta meta">
 	<?php do_action( 'single_job_listing_meta_start' ); ?>
 
-	<li class="location"><i class="fas fa-map-marker-alt"></i> <?php the_job_location(); ?></li>
+	<li class="location"><i class="fas fa-map-marker-alt fa-fw"></i> <?php the_job_location(); ?></li>
 	
 	<?php do_action( 'single_job_listing_extra_fields_combined' ); ?>
 	
-	<li class="date-posted"><i class="fas fa-clock"></i> Posted <?php the_job_publish_date(); ?></li>	
+	<li class="date-posted"><i class="fas fa-clock fa-fw"></i> Posted <?php the_job_publish_date(); ?></li>	
 
 	<?php if ( get_option( 'job_manager_enable_types' ) ) { ?>
 		<?php $types = wpjm_get_the_job_types(); ?>

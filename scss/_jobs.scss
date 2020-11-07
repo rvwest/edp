@@ -110,6 +110,12 @@ a .job-list-details {text-decoration: none; text-decoration-line: none;}
 .single_job_listing .company .company_twitter:before {display: none;}
 .single_job_listing .company .twitter {margin-bottom: 0;}
 .single_job_listing .company .company_logo {width:100px; max-height:100px; position:relative; padding-right: 20px; left:0;}
+.single_job_listing .wpjmef-field-combined {display:flex}
+.single_job_listing .wpjmef-salary-soulbury {display:flex; flex-wrap:wrap;}
+.single_job_listing .wpjmef-field-soulbury {width:100%}
+.single_job_listing .wpjmef-field-soulbury {width:100%}
+//.single_job_listing .wpjmef-field-soulbury-detail {font-style: italic;}
+.single_job_listing .wpjmef-field-combined i {margin-right:5px; padding-top:5px; flex: 0 0 1.25em}
 .single_job_listing .company .name {margin:0; padding:0}
 .single_job_listing .company .name a {float: none; margin-left:0}
 .single_job_listing .company .tagline {color: $color-secondary; margin:0; padding:0;}
