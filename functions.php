@@ -327,6 +327,16 @@ function custom_submit_job_form_fields( $fields ) {
 		'gif'  => 'image/gif',
 		'png'  => 'image/png',
 	];
+	$fields['job']['closing_date'] = array(
+		'label'       => __( 'Closing date', 'job_manager' ),
+		'type'        => 'date',
+		'data_type' => 'string',
+		'required'    => false,
+		'classes'     => [ 'job-manager-datepicker' ],
+		'priority'    => 8,
+		'description' => "eg 12 March 2021",
+		'sanitize_callback'  => [ __CLASS__, 'sanitize_meta_field_date' ],
+	  );
 	$fields['job']['cap_declaration'] = array(
 		'label'       => __( 'Declaration', 'job_manager' ),
 		'type'        => 'checkbox',
@@ -335,6 +345,7 @@ function custom_submit_job_form_fields( $fields ) {
 		'priority'    => 9,
 		'description'   => __( '<p>We follow the <a href="https://www.asa.org.uk/type/non_broadcast/code_section/20.html">CAP Code for employment advertisements</a>. Please confirm:</p><ul><li>This is a genuine employment opportunity</li><li>All details provided are comprehensive and accurate</li><li>You are acting directly for the employer, and not an employment agency</li><li>Your organisation is not in dispute with the <abbr title="Association of Educational Psychologists">AEP</abbr></li></ul>', 'wp-job-manager' ),
 	  );
+
 	unset($fields['company']['company_video']);
 	unset($fields['company']['company_tagline']);
 	unset($fields['company']['company_twitter']);
@@ -346,7 +357,17 @@ function custom_submit_job_form_fields( $fields ) {
 add_filter( 'job_manager_job_listing_data_fields', 'admin_add_custom_admin_fields' );
 
 function admin_add_custom_admin_fields( $fields ) {
-	$fields['_cap_declaration'] = array(
+	
+	$fields['_closing_date'] = array(
+		'label'       => __( 'Job closing date', 'wp-job_manager' ),
+		'data_type'   => 'string',
+		'classes'     => [ 'job-manager-datepicker' ],
+		'show_in_admin' => true,
+		'placeholder' => '',
+		'description' => 'I confirm the above is true',
+		'priority'    => 13,
+	  );
+	  $fields['_cap_declaration'] = array(
 		'label'       => __( 'Declaration', 'wp-job_manager' ),
 		'type'        => 'checkbox',
 		'data_type'   => 'integer',
@@ -355,6 +376,10 @@ function admin_add_custom_admin_fields( $fields ) {
 		'description' => 'I confirm the above is true',
 		'priority'    => 12,
 	  );
+	  unset($fields['company']['company_video']);
+	  unset($fields['company']['company_tagline']);
+	  unset($fields['company']['company_twitter']);
+	 
 	return $fields;
   }
 
@@ -428,9 +453,38 @@ function arphabet_widgets_init() {
 
 }
 add_action( 'widgets_init', 'arphabet_widgets_init' );
-
+add_action( 'single_job_listing_meta_start', 'display_job_closing_date' );
 add_action('after_setup_theme', 'remove_admin_bar');
- 
+add_action( 'single_job_listing_date_fields_combined', 'gma_wpjmef_display_combined_dates' );
+
+function gma_wpjmef_display_combined_dates() {
+  
+   
+	global $post;
+	$closing = get_post_meta($post->ID, '_closing_date', true, get_option('date_format') );
+	
+	echo '<li class="wpjmef-field-combined"><i class="fas fa-clock fa-fw"></i><div class="wpjmef-dates"><span class="wpjmef-posted"><span>Posted:&nbsp;</span><span>';
+	the_job_publish_date();
+	echo '&nbsp;</span></span>';
+
+	if ( $closing ) {
+	  echo '<span class="wpjmef-field-closing"><span>Closing date:&nbsp;</span><span>' . date("j F Y", strtotime($closing) ) . ' </span></span>';
+	}
+      
+	echo '</div></li>';
+  
+}
+/**
+function display_job_closing_date() {
+	global $post;
+  
+	$closingdate = get_post_meta( $post->ID, '_closing_date', true );
+  
+	if ( $closingdate ) {
+	  echo '<li>' . __( 'Closing date:' ) . '' . esc_html( $closingdate ) . '</li>';
+	}
+  }
+*/
 function remove_admin_bar() {
 if (!current_user_can('administrator') && !is_admin()) {
   show_admin_bar(false);
