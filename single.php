@@ -59,10 +59,11 @@ get_header(); ?>
 
 
 								<hr/>
+								<?php if ( function_exists( 'echo_crp' ) ) { echo_crp(); } ?>
+		<hr/>
 <?php get_template_part( 'biography', get_post_format() ); ?>
 		<hr/>
-		<?php if ( function_exists( 'echo_crp' ) ) { echo_crp(); } ?>
-		<hr/>
+	
 
 						</div>
 						<!-- skepost -->
