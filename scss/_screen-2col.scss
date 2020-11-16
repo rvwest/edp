@@ -100,6 +100,11 @@
 		font-size: 1.6em;
 		line-height: 1.3em;
 		}
+
+		/* hide the third recommended post */ 
+	#content .crp_related .post:nth-child(3) {
+			display: none;
+			}
 /*	#front-blog-wrap .span4:nth-child(3n+1) { margin-left: -10px;} */
 	.single-post .overlap-title h1.title {padding-left:0; font-size:1.8em; line-height:1.3em;
    		padding-left: 12px; }
