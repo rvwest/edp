@@ -12,3 +12,4 @@
 06/22/20 10:49:44: edpsy-style.scss - parse error: failed at `.job-manager-form fieldset label` /Users/richard.west/Sites/edpsy/wp-content/themes/edpsy/scss/_jobs.scss on line 156
 06/28/20 6:52:48: edpsy-style.scss - parse error: failed at `color: }` /Users/richard.west/Sites/edpsy/wp-content/themes/edpsy/scss/_jobs.scss on line 299
 07/04/20 3:19:10: edpsy-style.scss - Undefined variable $color-jobs-vpale: line: 30
+11/16/20 10:44:22: edpsy-style.scss - parse error: failed at `.crp_related span.` /Users/richard.west/Sites/edpsy/wp-content/themes/edpsy/scss/_navigation.scss on line 266
