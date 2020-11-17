@@ -20,7 +20,7 @@ $coauthor = (get_user_by('slug', $coauthor));
 
 	<div class="author-description">
 
-		<p class="author-bio">
+		<p class="author-bio span8">
 			<?php the_author_meta( 'description' ); ?>
 		</p><!-- .author-bio -->
 	</div><!-- .author-description -->
