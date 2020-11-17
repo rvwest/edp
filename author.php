@@ -19,19 +19,18 @@ get_header(); ?>
 					<h1 class="title author-title">
 						<?php  $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author)); ?>
 						<?php _e('Articles by ','advertica-lite'); ?>
-					<?php	if ( function_exists( 'coauthors_posts_links' ) ) {
-    coauthors(first_name, last_name);
-} else {
-    the_author(first_name, last_name);
-} ?>
+					<?php
+    the_author(first_name, last_name); ?>
 					</h1>
 
 
-				<?php get_template_part( 'listing-biography', get_post_format() ); ?>
-				<!--	<p class="author-bio">
-						<?php $authorDesc = the_author_meta('description'); echo $authorDesc; ?>
+				<!--	<p class="author-bio"> -->
+						
+				
+		
+				<?php get_template_part( 'author-archive-biography', get_post_format() ); ?>
+						
 
-</p>-->
 				</div>
 			</div>
 		</div>
