@@ -2,10 +2,18 @@
 /* ----- post detail page ----- */
 
 
-.category .bread-title-holder h1.title, .single-post .bread-title-holder h1.title, .bread-title-holder h1.title, .page h1.title  {
+.category .bread-title-holder h1.title, .single-post .bread-title-holder h1.title, .bread-title-holder h1.title, .page .wpjm-listing-page h1.title {
 margin-top:20px;
 margin-left: -3px;
 }
+
+.page h1.title {
+    margin-top:0.5rem;
+    margin-left: -3px;
+    
+}
+
+
 
 h1.title { font-size: 62px; line-height: 66px; font-weight: $font-weight-light; letter-spacing: -0.2px; text-transform: none; padding-bottom: 45px;}
 
