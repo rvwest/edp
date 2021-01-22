@@ -47,7 +47,7 @@ global $post;
 					<?php endforeach; endif; ?>
 					</div>
 				<?php } ?>		
-			<span class="date"><?php the_job_publish_date(); ?></span>
+			<span class="date">Posted: <?php the_job_publish_date(); ?></span>
 		</div>
 
 			<?php do_action( 'job_listing_meta_end' ); ?>
