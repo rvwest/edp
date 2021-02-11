@@ -28,7 +28,7 @@ get_header(); ?>
 	<div class="page-content default-pagetemp">
 		<div class="container post-wrap">
 			<div class="row-fluid">
-				<div id="content" class="span8">
+				<div id="content" class="span8 center-col">
 					<div class="post clearfix" id="post-<?php the_ID(); ?>">
 						<div class="skepost">
 							<h1 class="title"><?php the_title(); ?> </h1>
