@@ -11,7 +11,7 @@
 						if ((class_exists('advertica_lite_breadcrumb_class'))) {$advertica_breadcumb->advertica_lite_custom_breadcrumb();}
 					}
 					?>
-				<div class="container_inner clearfix">
+				<div class="container_inner span8 center-col clearfix">
 					<h1 class="title">
 						<?php printf('<span>' . single_cat_title( '', false ) . '</span>' );?> 	
 					</h1>
