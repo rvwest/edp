@@ -11,12 +11,22 @@
 	}
 */
 
+
+/* Home page */
+
+#front-content-box h2 {
+	font-size: $font-size-h1-small;
+line-height: ($font-size-h1-small*1.2);
+font-weight: 400;
+}
+
 	/* Article text */
 	.home .overlap-title h1.title {
 		font-size: 1.6em;
 		line-height: 1.3em;
 		background-color: $color-copy-background-emphasis-subtle;
 		font-size: 1.5rem;
+		width: auto;
 		}
 	
 	#front-content-box.block--promo a:hover h1, #front-content-box.block--promo a:active h1 {
@@ -28,7 +38,7 @@
 	
 	.single-post .overlap-title h1.title {padding-left:0; font-size:1.8em; line-height:1.3em; 	margin-left: -12px;
    		padding-left: 12px; }
-	.post #content .skepost p:first-child {font-size: 1.3em; line-height: 1.6em; }
+	.post #content .skepost p:first-child {font-size: 1.4rem; line-height: 1.85rem; }
 
 	/* ---------------- */
 
@@ -336,11 +346,21 @@
   }
 
 .category .bread-title-holder h1.title, .bread-title-holder h1.title, h1.title {
-	margin-left:0.75rem;
 	font-size: $font-size-h1-small;
 	line-height: ($font-size-h1-small*1.2);
 	padding-bottom:0;
+	font-weight: 400;
 }   
+
+.page h1.title, .single-post .bread-title-holder h1.title {
+//	margin-left:0.75rem;
+margin-left: 0;
+}
+
+.category .bread-title-holder h1.title, .page .wpjm-listing-page h1.title {
+	margin-left: 0.75rem;
+}
+
 .page-content h2, .wpjm-single-job-post h2, .job_listing_preview h2{
 	font-size: 1.5rem;
 	line-height: 2.25rem;
@@ -354,6 +374,18 @@
 	font-size: 1.25rem;
 	font-weight: 400;
 }
+
+
+/* ---- events ----- */
+
+.single-tribe_events h1.tribe-events-single-event-title, .single-job_listing h1.title {
+font-size: $font-size-h1-small;
+line-height: ($font-size-h1-small*1.2);
+font-weight: 400;
+}
+
+
+/* -----  Jobs ----- */
 
 .job-post-promo {
 	margin-left: 2rem;

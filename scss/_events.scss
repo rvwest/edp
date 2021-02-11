@@ -6,8 +6,8 @@
 h2.tribe-events-page-title {
     font-weight: $font-weight-light;  }
 
-.single-tribe_events h1.tribe-events-single-event-title {
- font-size: 2.6rem; line-height: 66px; font-weight: $font-weight-light; letter-spacing: -0.2px; text-transform: none; padding-bottom: 10px; color:$color-events}
+// H1 handled in _page-headings.scss
+
 .tribe-events-schedule .tribe-event-date-start, .tribe-events-schedule .tribe-event-date-end, .tribe-events-schedule .tribe-event-time
   {font-size: 1.7rem;
     line-height: 1.3em;

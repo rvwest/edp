@@ -15,7 +15,7 @@ margin-left: -3px;
 
 
 
-h1.title { font-size: 62px; line-height: 66px; font-weight: $font-weight-light; letter-spacing: -0.2px; text-transform: none; padding-bottom: 45px;}
+// h1.title { font-size: 62px; line-height: 66px; font-weight: $font-weight-light; letter-spacing: -0.2px; text-transform: none; padding-bottom: 45px;}
 
 #front-content-box h2
 { font-size: 2.6rem;     line-height: 2.6rem; font-family: $font-family; font-weight: $font-weight-light; letter-spacing: -2px; margin-left:0; padding: 0 5px 30px 0; margin-top:2px}
@@ -117,3 +117,14 @@ h1.author-title {font-size: 3em;}
 
 a.subhead-link:link, a.subhead-link:visited {
 	color: $color-about;}
+
+/* --- detail pages - jobs - events --- */
+
+.single-tribe_events h1.tribe-events-single-event-title, .single-job_listing h1.title, .category .bread-title-holder h1.title, .bread-title-holder h1.title, h1.title {
+    font-size: 2rem; line-height: 2.6rem; padding: 0px 0 10px 0; width:85%;}
+
+.single-tribe_events h1.tribe-events-single-event-title{
+    color:$color-events
+    }
+.single-job_listing h1.title {
+    padding-top: 45px}
