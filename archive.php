@@ -25,7 +25,7 @@ get_header(); ?>
 						if ((class_exists('advertica_lite_breadcrumb_class'))) {$advertica_breadcumb->advertica_lite_custom_breadcrumb();}
 					}
 					?>
-				<div class="container_inner clearfix">
+				<div class="container_inner clearfix x">
 					<h1 class="title">
 						<?php
 						if ( is_day() ) :

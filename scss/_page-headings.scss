@@ -15,7 +15,7 @@ margin-left: -3px;
 
 
 
-h1.title { 
+h1.title, h1.author-title{ 
     font-size: $font-size-h1-content; 
     line-height: ($font-size-h1-content*1.2); 
     font-weight: $font-weight-light; 
@@ -114,7 +114,7 @@ background-color: $color-overlay;
 }
 
 
-h1.author-title {font-size: 3em;}
+
 
 /* --- home page --- */
 

@@ -11,7 +11,7 @@ $coauthor = (get_user_by('slug', $coauthor));
 
 ?>
 
-<div class="author-info">
+<div class="author-info clearfix">
 	<div class="author-avatar">
 		<?php
 		echo get_avatar( get_the_author_meta( 'user_email' ), '96' );

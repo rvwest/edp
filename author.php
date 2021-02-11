@@ -15,7 +15,7 @@ get_header(); ?>
 						if ((class_exists('advertica_lite_breadcrumb_class'))) {$advertica_breadcumb->advertica_lite_custom_breadcrumb();}
 					}
 					?>
-				<div class="container_inner clearfix title-w-bio">
+				<div class="container_inner clearfix title-w-bio span8 center-col">
 					<h1 class="title author-title">
 						<?php  $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author)); ?>
 						<?php _e('Articles by ','advertica-lite'); ?>
