@@ -355,6 +355,7 @@ font-weight: 400;
 .page h1.title, .single-post .bread-title-holder h1.title {
 //	margin-left:0.75rem;
 margin-left: 0;
+padding: 15px 0 0 0;
 }
 
 .category .bread-title-holder h1.title, .page .wpjm-listing-page h1.title {
@@ -376,12 +377,13 @@ margin-left: 0;
 }
 
 
-/* ---- events ----- */
+/* ---- events, jobs, groups ----- */
 
-.single-tribe_events h1.tribe-events-single-event-title, .single-job_listing h1.title {
+.single-tribe_events h1.tribe-events-single-event-title, .single-job_listing h1.title, .category-groups h1.title {
 font-size: $font-size-h1-small;
 line-height: ($font-size-h1-small*1.2);
 font-weight: 400;
+padding: 15px 0 0 0;
 }
 
 
