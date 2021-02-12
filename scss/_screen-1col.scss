@@ -15,14 +15,14 @@
 
 p, ol, ul, table, fieldset, figure {font-weight: 400;}
 
-body {font-size: 1.05rem;}
 h2 {font-weight:600;}
+h3 {font-weight:600; font-size: $font-size-body;}
 
 
 /* Home page */
 
 #front-content-box h2 {
-	font-size: $font-size-h1-small;
+font-size: $font-size-h1-small;
 line-height: ($font-size-h1-small*1.2);
 font-weight: 400;
 }
@@ -376,7 +376,13 @@ padding: 15px 0 0 0;
 .page-content h3, .wpjm-single-job-post h3 {
 	font-size: 1.125rem;
 	font-weight:400;
+	line-height: (1.125rem*1.6);
 	}
+
+.post h3 {
+	font-size: 1.17rem;
+	line-height: (1.17rem*1.6);
+}
 
 .post-title a {
 	font-size: 1.25rem;
