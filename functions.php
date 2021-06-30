@@ -334,7 +334,7 @@ function custom_submit_job_form_fields( $fields ) {
 		'required'    => false,
 		'classes'     => [ 'job-manager-datepicker' ],
 		'priority'    => 8,
-		'description' => "eg 12 March 2021",
+		'description' => "eg 12 March 2022",
 		'sanitize_callback'  => [ __CLASS__, 'sanitize_meta_field_date' ],
 	  );
 	$fields['job']['cap_declaration'] = array(
