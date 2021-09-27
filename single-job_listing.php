@@ -37,7 +37,7 @@ get_header(); ?>
 		<div id="container" class="span10 center-col">
 <div class="title-sub-logo">
 		<div class=" span10 center-col no-gutter-l">
-		<?php $logo = get_the_company_logo( $post, $size ); ?>
+		<?php $logo = get_the_company_logo( $post, 300, 300 ); ?>
 <?php if ( has_post_thumbnail( $post ) ) :?>
 	<?php the_company_logo(); ?>
 <?php endif; ?>
