@@ -178,6 +178,18 @@ text-decoration: none;
 border-radius: 0 !important;
 }
 
+.tribe_community_edit .tribe-button.submit, .tribe_community_list .tribe-button.submit {
+  background-color: #067883 !important;
+}
+
+.tribe_community_edit .tribe-button.submit:hover, .tribe_community_list .tribe-button.submit:hover{
+  background-color: #075961 !important;
+}
+
+.tribe-events-sub-nav {
+  display: none;
+}
+
 /*
 // list view
 
