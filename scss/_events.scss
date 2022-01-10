@@ -186,9 +186,23 @@ border-radius: 0 !important;
   background-color: #075961 !important;
 }
 
-.tribe-events-sub-nav {
+.tribe-events-single .tribe-events-sub-nav {
   display: none;
 }
+
+#tribe-events-content a, .tribe-events-event-meta a {
+  text-decoration: underline !important;
+}
+
+#tribe-events-content a:link, .tribe-events-event-meta a:link, #tribe-events-content a:visited, .tribe-events-event-meta a:visited {
+  color: $color-link !important; 
+}
+
+#tribe-events-content a:hover, .tribe-events-event-meta a:hover, #tribe-events-content a:active, .tribe-events-event-meta a:active {
+  color: $color-link-hover !important; 
+}
+
+
 
 /*
 // list view
