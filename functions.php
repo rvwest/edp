@@ -474,7 +474,7 @@ function gma_wpjmef_display_combined_dates() {
 	echo '</div></li>';
   
 }
-/**
+/*
 function display_job_closing_date() {
 	global $post;
   
@@ -491,4 +491,19 @@ if (!current_user_can('administrator') && !is_admin()) {
 }
 }
 
+// Tribe community events - submission form help text (to avoid changig the field php)
+
+// Taxonomy = category
+
+function tribe_add_datetime_helptext() {
+    echo '<p class="tribe-helptext"><strong>For events that span non-consecutive dates</strong> (eg 7 March and 9 April) add the start date, then put the full details in the description</p>';
+}
+ 
+add_action( 'tribe_events_community_section_after_datetime', 'tribe_add_datetime_helptext' );
+
+function tribe_add_website_helptext() {
+    echo '<p class="tribe-helptext">For more information about the event. Don\'t worry if there isn\'t one</p>';
+}
+
+add_action( 'tribe_events_community_section_after_website', 'tribe_add_website_helptext' );
 ?>
