@@ -190,15 +190,15 @@ border-radius: 0 !important;
   display: none;
 }
 
-#tribe-events-content a, .tribe-events-event-meta a {
+#tribe-events-content .tribe-events-single-event-description a, .tribe-events-event-meta a {
   text-decoration: underline !important;
 }
 
-#tribe-events-content a:link, .tribe-events-event-meta a:link, #tribe-events-content a:visited, .tribe-events-event-meta a:visited {
+#tribe-events-content .tribe-events-single-event-description a:link, .tribe-events-event-meta a:link, #tribe-events-content a:visited, .tribe-events-event-meta a:visited {
   color: $color-link !important; 
 }
 
-#tribe-events-content a:hover, .tribe-events-event-meta a:hover, #tribe-events-content a:active, .tribe-events-event-meta a:active {
+#tribe-events-content .tribe-events-single-event-description a:hover, .tribe-events-event-meta a:hover, #tribe-events-content a:active, .tribe-events-event-meta a:active {
   color: $color-link-hover !important; 
 }
 
