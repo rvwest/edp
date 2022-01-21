@@ -60,7 +60,7 @@
 
 
 
-<p class="legal-message"><span>edpsy ltd </span><span>20-22 Wenlock Road, London, England, N1 7GU </span><span>Company number: 12669513 (registered in England and Wales)</span></p>
+<p class="legal-message"><span>edpsy ltd </span><span>Piccadilly Business Centre, Aldow Enterprise Park, Manchester, England, M12 6AE</span><span>Company number: 12669513 (registered in England and Wales)</span></p>
 
 
 				<div class="clearfix"></div>
