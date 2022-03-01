@@ -26,7 +26,13 @@
 </head>
 <body <?php body_class(); ?>  >
 
-<div class="cta-header-block cta-header-block--green"><div class="container"><div class="row-fluid fixedrow"><p><i class="far fa-calendar-alt"></i>&nbsp; Another chance to join our popular webinar: <a href="https://edpsy.org.uk/event/webinar-an-introduction-to-creating-accessible-content-as-psychologists/">Creating accessible content as psychologists</a></p><p class="cta-second-link"><a href="https://edpsy.org.uk/event/webinar-an-introduction-to-creating-accessible-content-as-psychologists/" >Find out more</a></p></div></div> </div>
+<div class="cta-header-block cta-header-block--dark">
+	<div class="container">
+		<div class="row-fluid fixedrow">
+			<p>🇺🇦 &nbsp; Help <a href="https://www.justgiving.com/fundraising/edpsy-ukraine-fund">support Ukrainian children and families</a> </p><p class="cta-second-link"><a href="https://www.justgiving.com/fundraising/edpsy-ukraine-fund" >Donate now</a></p> 
+		</div>
+	</div> 
+</div>
 		<div id="wrapper" class="skepage " >
 		<div id="header" class="skehead-headernav clearfix">
 			<div class="glow">
