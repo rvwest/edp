@@ -26,13 +26,7 @@
 </head>
 <body <?php body_class(); ?>  >
 
-<div class="cta-header-block cta-header-block--dark">
-	<div class="container">
-		<div class="row-fluid fixedrow">
-			<p>🇺🇦 &nbsp; Help <a href="https://www.justgiving.com/fundraising/edpsy-ukraine-fund">support Ukrainian children and families</a> </p><p class="cta-second-link"><a href="https://www.justgiving.com/fundraising/edpsy-ukraine-fund" >Donate now</a></p> 
-		</div>
-	</div> 
-</div>
+
 		<div id="wrapper" class="skepage " >
 		<div id="header" class="skehead-headernav clearfix">
 			<div class="glow">
