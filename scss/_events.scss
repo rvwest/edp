@@ -13,20 +13,23 @@ h2.tribe-events-page-title {
 .single-tribe_events h1.tribe-events-single-event-title { 
   padding-top:45px;}
 
-  #tribe-events-content .tribe-events-cost {
-    font-size: 1.7rem;
-    font-weight: 300;
+  #tribe-events-content .tribe-events-cost, #tribe-events-content .tribe-events-city, .tribe-events-schedule .tribe-event-date-start, .tribe-events-schedule .tribe-event-date-end
+ {
+    font-size: $font-size-h2;
+    font-weight:  $font-weight-regular;
+    line-height: $line-height-h2;
     margin-left: 0;
+    margin-right: 0;
   }
   
+  .tribe-events-schedule .tribe-event-time {
+    font-size: $font-size-body;
+    font-weight:  $font-weight-regular;
+  }
+
   #tribe-events-content .tribe-events-schedule {
     display: inherit;
   }
-
-.tribe-events-schedule .tribe-event-date-start, .tribe-events-schedule .tribe-event-date-end, .tribe-events-schedule .tribe-event-time
-  {font-size: 1.7rem;
-    line-height: 1.3em;
-  font-weight: $font-weight-light}
 
 .tribe-events-schedule h2 {margin-top: 0px; font-weight: $font-weight-light; display:block; margin-bottom:20px;}
 

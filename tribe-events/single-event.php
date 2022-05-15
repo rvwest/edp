@@ -32,11 +32,17 @@ $event_id = get_the_ID();
 	<?php the_title( '<h1 class="tribe-events-single-event-title">', '</h1>' ); ?>
 
 	<div class="tribe-events-schedule tribe-clearfix">
-		<?php echo tribe_events_event_schedule_details( $event_id, '<h2>', '</h2>' ); ?>
-		<?php if ( tribe_get_cost() ) : ?>
-			<div class="tribe-events-cost"><?php echo tribe_get_cost( null, true ) ?></div>
-		<?php endif; ?>
-	</div>
+		<?php echo tribe_events_event_schedule_details( $event_id, '<div>', '</div>' ); ?>
+
+<?php if ( tribe_get_cost() ) : ?>
+			<span class="tribe-events-cost"><?php echo tribe_get_cost( null, true ) ?><?php if ( tribe_get_cost() AND tribe_get_address( $venue_id ) ) : ?>, <?php endif; ?></span>
+		<?php endif; ?>	
+		<?php if ( tribe_get_city( $venue_id ) ) :
+	if ( tribe_get_address( $venue_id ) ) : ?>
+	<?php endif; ?>
+	<span class="tribe-events-city"> <?php echo tribe_get_city( $venue_id ); ?></span>
+<?php endif; ?>
+</div>
 
 	<!-- Event header -->
 	<div id="tribe-events-header" <?php tribe_events_the_header_attributes() ?>>
