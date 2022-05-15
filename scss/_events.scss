@@ -8,6 +8,21 @@ h2.tribe-events-page-title {
 
 // H1 handled in _page-headings.scss
 
+// Single event //
+
+.single-tribe_events h1.tribe-events-single-event-title { 
+  padding-top:45px;}
+
+  #tribe-events-content .tribe-events-cost {
+    font-size: 1.7rem;
+    font-weight: 300;
+    margin-left: 0;
+  }
+  
+  #tribe-events-content .tribe-events-schedule {
+    display: inherit;
+  }
+
 .tribe-events-schedule .tribe-event-date-start, .tribe-events-schedule .tribe-event-date-end, .tribe-events-schedule .tribe-event-time
   {font-size: 1.7rem;
     line-height: 1.3em;
@@ -91,8 +106,7 @@ input[type="checkbox"] {
   padding: 0;
 }
 
-.single-tribe_events h1.tribe-events-single-event-title { 
-  padding-top:45px;}
+
 
 .tribe-community-events table, .tribe-community-events tbody, .tribe-community-events td, .tribe-community-events th, .tribe-community-events tr, .tribe-community-events label {
   font-size: 18px !important;
@@ -201,6 +215,7 @@ border-radius: 0 !important;
 #tribe-events-content .tribe-events-single-event-description a:hover, .tribe-events-event-meta a:hover, #tribe-events-content a:active, .tribe-events-event-meta a:active {
   color: $color-link-hover !important; 
 }
+
 
 
 
