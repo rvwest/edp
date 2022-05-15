@@ -60,7 +60,6 @@ $website_title = tribe_events_get_event_website_title();
 
 <div class="tribe-events-meta-group tribe-events-meta-group-details">
 	<h2 class="tribe-events-single-section-title"> <?php esc_html_e( 'Details', 'the-events-calendar' ); ?> </h2>
-	<h2>test</h2>
 	<dl>
 
 		<?php

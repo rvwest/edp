@@ -31,7 +31,23 @@ h2.tribe-events-page-title {
     display: inherit;
   }
 
+
 .tribe-events-schedule h2 {margin-top: 0px; font-weight: $font-weight-light; display:block; margin-bottom:20px;}
+
+.tribe-events-event-meta.primary, .tribe-events-event-meta.secondary {
+  width: 100%
+}
+
+.tribe-events-venue-map {
+  width: 100%;
+  order: 1;
+  margin-bottom: 60px;
+}
+
+.tribe-events-event-meta.primary h2.tribe-events-single-section-title {
+  margin-top: 30px;
+  line-height: inherit;
+}
 
 .tribe-events-button, #tribe-bar-form .tribe-bar-submit input[type=submit] {background-color: $color-events}
 
