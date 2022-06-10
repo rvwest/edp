@@ -1,8 +1,7 @@
 <?php 
 /**
+* Panjabi version
 * The template for displaying all pages.
-* 
-* Urdu version
 * 
 * This is the template that displays all pages by default.
 * Please note that this is the WordPress construct of pages and that other
@@ -32,7 +31,7 @@ get_header(); ?>
 			<div class="row-fluid">
 				<div id="content" class="span8 center-col">
 					<div class="post clearfix" id="post-<?php the_ID(); ?>">
-						<div class="skepost" dir="rtl" lang="ur">
+						<div class="skepost" lang="pa">
 							<h1 class="title"><?php the_title(); ?> </h1>
 							
 							<?php the_content(); ?>
