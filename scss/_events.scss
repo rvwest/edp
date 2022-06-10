@@ -42,6 +42,11 @@ h2.tribe-events-page-title {
   width: 100%;
   order: 1;
   margin-bottom: 60px;
+  height: 350px;
+}
+
+.tribe-events-venue-map>div, .tribe-events-venue-map>iframe {
+  max-height: 350px;
 }
 
 .tribe-events-event-meta.primary h2.tribe-events-single-section-title {
