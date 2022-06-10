@@ -15,7 +15,7 @@ margin-left: -3px;
 
 
 
-h1.title, h1.author-title, #tribe-community-events .my-events-header h2.my-events{  
+h1.title, h1.author-title, #tribe-community-events .my-events-header h2.my-events, .single-tribe_events h1.tribe-events-single-event-title {  
     font-size: $font-size-h1-content; 
     line-height: ($font-size-h1-content*1.2); 
     font-weight: $font-weight-light; 
@@ -128,7 +128,7 @@ a.subhead-link:link, a.subhead-link:visited {
 
 /* --- detail pages - jobs - events --- */
 
-.single-tribe_events h1.tribe-events-single-event-title, .single-job_listing h1.title, .category-groups h1.title {
+.single-job_listing h1.title, .category-groups h1.title {
     font-size: 2.6rem; line-height: 3.2rem; padding: 0px 0 10px 0; width:85%;}
 
 .single-tribe_events h1.tribe-events-single-event-title{

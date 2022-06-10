@@ -32,11 +32,17 @@ $event_id = get_the_ID();
 	<?php the_title( '<h1 class="tribe-events-single-event-title">', '</h1>' ); ?>
 
 	<div class="tribe-events-schedule tribe-clearfix">
-		<?php echo tribe_events_event_schedule_details( $event_id, '<h2>', '</h2>' ); ?>
-		<?php if ( tribe_get_cost() ) : ?>
-			<span class="tribe-events-cost"><?php echo tribe_get_cost( null, true ) ?></span>
-		<?php endif; ?>
-	</div>
+		<?php echo tribe_events_event_schedule_details( $event_id, '<div>', '</div>' ); ?>
+
+<?php if ( tribe_get_cost() ) : ?>
+			<span class="tribe-events-cost"><?php echo tribe_get_cost( null, true ) ?><?php if ( tribe_get_cost() AND tribe_get_address( $venue_id ) ) : ?>, <?php endif; ?></span>
+		<?php endif; ?>	
+		<?php if ( tribe_get_city( $venue_id ) ) :
+	if ( tribe_get_address( $venue_id ) ) : ?>
+	<?php endif; ?>
+	<span class="tribe-events-city"> <?php echo tribe_get_city( $venue_id ); ?></span>
+<?php endif; ?>
+</div>
 
 	<!-- Event header -->
 	<div id="tribe-events-header" <?php tribe_events_the_header_attributes() ?>>
@@ -71,17 +77,6 @@ $event_id = get_the_ID();
 		<?php if ( get_post_type() == Tribe__Events__Main::POSTTYPE && tribe_get_option( 'showComments', false ) ) comments_template() ?>
 	<?php endwhile; ?>
 
-	<!-- Event footer -->
-	<div id="tribe-events-footer">
-		<!-- Navigation -->
-		<h3 class="tribe-events-visuallyhidden"><?php printf( esc_html__( '%s Navigation', 'the-events-calendar' ), $events_label_singular ); ?></h3>
-		<ul class="tribe-events-sub-nav">
-			<li class="tribe-events-nav-previous"><?php tribe_the_prev_event_link( '<span>&laquo;</span> %title%' ) ?></li>
-			<li class="tribe-events-nav-next"><?php tribe_the_next_event_link( '%title% <span>&raquo;</span>' ) ?></li>
-		</ul>
-		<!-- .tribe-events-sub-nav -->
-
-	</div>
 	<!-- #tribe-events-footer -->
 	<?php if ( is_active_sidebar( 'post_cta_1' ) ) : ?>
 		<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">

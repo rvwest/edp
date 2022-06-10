@@ -8,12 +8,51 @@ h2.tribe-events-page-title {
 
 // H1 handled in _page-headings.scss
 
-.tribe-events-schedule .tribe-event-date-start, .tribe-events-schedule .tribe-event-date-end, .tribe-events-schedule .tribe-event-time
-  {font-size: 1.7rem;
-    line-height: 1.3em;
-  font-weight: $font-weight-light}
+// Single event //
+
+.single-tribe_events h1.tribe-events-single-event-title { 
+  padding-top:45px;}
+
+  #tribe-events-content .tribe-events-cost, #tribe-events-content .tribe-events-city, .tribe-events-schedule .tribe-event-date-start, .tribe-events-schedule .tribe-event-date-end
+ {
+    font-size: $font-size-h2;
+    font-weight:  $font-weight-regular;
+    line-height: $line-height-h2;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .tribe-events-schedule .tribe-event-time {
+    font-size: $font-size-body;
+    font-weight:  $font-weight-regular;
+  }
+
+  #tribe-events-content .tribe-events-schedule {
+    display: inherit;
+  }
+
 
 .tribe-events-schedule h2 {margin-top: 0px; font-weight: $font-weight-light; display:block; margin-bottom:20px;}
+
+.tribe-events-event-meta.primary, .tribe-events-event-meta.secondary {
+  width: 100%
+}
+
+.tribe-events-venue-map {
+  width: 100%;
+  order: 1;
+  margin-bottom: 60px;
+  height: 350px;
+}
+
+.tribe-events-venue-map>div, .tribe-events-venue-map>iframe {
+  max-height: 350px;
+}
+
+.tribe-events-event-meta.primary h2.tribe-events-single-section-title {
+  margin-top: 30px;
+  line-height: inherit;
+}
 
 .tribe-events-button, #tribe-bar-form .tribe-bar-submit input[type=submit] {background-color: $color-events}
 
@@ -91,8 +130,7 @@ input[type="checkbox"] {
   padding: 0;
 }
 
-.single-tribe_events h1.tribe-events-single-event-title { 
-  padding-top:45px;}
+
 
 .tribe-community-events table, .tribe-community-events tbody, .tribe-community-events td, .tribe-community-events th, .tribe-community-events tr, .tribe-community-events label {
   font-size: 18px !important;
@@ -201,6 +239,7 @@ border-radius: 0 !important;
 #tribe-events-content .tribe-events-single-event-description a:hover, .tribe-events-event-meta a:hover, #tribe-events-content a:active, .tribe-events-event-meta a:active {
   color: $color-link-hover !important; 
 }
+
 
 
 

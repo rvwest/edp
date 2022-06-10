@@ -17,7 +17,7 @@ $website = tribe_get_organizer_website_link();
 ?>
 
 <div class="tribe-events-meta-group tribe-events-meta-group-organizer">
-	<h3 class="tribe-events-single-section-title"><?php echo tribe_get_organizer_label( ! $multiple ); ?></h3>
+	<h2 class="tribe-events-single-section-title"><?php echo tribe_get_organizer_label( ! $multiple ); ?></h2>
 	<dl>
 		<?php
 		do_action( 'tribe_events_single_meta_organizer_section_start' );
@@ -61,7 +61,7 @@ $website = tribe_get_organizer_website_link();
 					<?php esc_html_e( 'Email:', 'the-events-calendar' ) ?>
 				</dt>
 				<dd class="tribe-organizer-email">
-					<?php echo esc_html( $email ); ?>
+					<a href="mailto:<?php echo esc_html( $email ); ?>"><?php echo esc_html( $email ); ?></a>
 				</dd>
 				<?php
 			}//end if
