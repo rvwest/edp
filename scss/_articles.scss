@@ -1,6 +1,6 @@
 /*articles.scss*/
 
-blockquote {padding:6px 5px 9px 20px; line-height: 28px;  margin-right: 10px;  margin-bottom: 10px; margin-left:10px;  quotes: none;  font-style: italic;  background-color: none; border-left: solid 2px $color-copy}
+blockquote {padding:6px 5px 9px 20px; line-height: $line-height-body;  margin-right: 10px;  margin-bottom: 10px; margin-left:10px;  quotes: none;  font-style: italic;  background-color: none; border-left: solid 2px $color-copy}
 //.post #content .skepost blockquote p {font-size: 1rem}
 .category-blog blockquote {border-left: solid 2px $color-blog;}
 .category-features blockquote {border-left: solid 2px $color-features;}

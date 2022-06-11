@@ -1,6 +1,6 @@
 /*events.scss*/
 
-
+.tribe-events-content {color: $color-copy;}
 #tribe-events-bar {padding-top:0px; margin-bottom: 0}
 #tribe-events-pg-template  {padding: 10px 20px 20px; max-width: none;}
 h2.tribe-events-page-title {
@@ -17,9 +17,15 @@ h2.tribe-events-page-title {
 .single-tribe_events h1.tribe-events-single-event-title { 
   padding-top:45px;}
 
+.tribe-events-meta-group .tribe-events-single-section-title {
+  font-size: $font-size-h3;
+  font-weight: $font-weight-normal;
+  text-transform: none;
+}
+
   #tribe-events-content .tribe-events-cost, #tribe-events-content .tribe-events-city, .tribe-events-schedule .tribe-event-date-start, .tribe-events-schedule .tribe-event-date-end
  {
-    font-size: $font-size-h2;
+    font-size: $font-size-h3;
     font-weight:  $font-weight-regular;
     line-height: $line-height-h2;
     margin-left: 0;
