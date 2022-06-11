@@ -6,6 +6,10 @@
 h2.tribe-events-page-title {
     font-weight: $font-weight-light;  }
 
+.tribe-events-single {
+  -webkit-font-smoothing: auto;
+}
+
 // H1 handled in _page-headings.scss
 
 // Single event //
@@ -57,7 +61,7 @@ h2.tribe-events-page-title {
 .tribe-events-button, #tribe-bar-form .tribe-bar-submit input[type=submit] {background-color: $color-events}
 
 .tribe-events-event-meta address.tribe-events-address, .tribe-events-list .tribe-events-venue-details {font-style: normal;}
-.tribe-events-loop .tribe-events-event-meta {  color: $color-secondary; font-size: 18px; margin-top: 15px; margin-bottom: 15px; word-spacing: 2px; line-height: 28px;  padding-left:10px;}
+.tribe-events-loop .tribe-events-event-meta {  color: $color-secondary; font-size: 18px; margin-top: 15px; margin-bottom: 15px; word-spacing: 2px; line-height: $line-height-body;  padding-left:10px;}
 .tribe-events-list .tribe-events-venue-details {
   padding-left: 0;
 }
@@ -79,6 +83,12 @@ h2.tribe-events-page-title {
 
 #tribe-events .tribe-events-content p, .tribe-events-after-html p, .tribe-events-before-html p 
 {margin-bottom:20px; line-height: inherit;}
+
+.tribe-events-content ol, .tribe-events-content p, .tribe-events-content ul, .single-tribe_events .tribe-events-event-meta {
+  font-size: $font-size-body;
+  line-height: $line-height-body;
+}
+
 
 // Submit events form
 

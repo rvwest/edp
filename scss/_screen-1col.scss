@@ -13,7 +13,7 @@
 
 /* global */
 
-p, ol, ul, table, fieldset, figure {font-weight: 400;}
+p, ol, ul, table, fieldset, figure, dd, address {font-weight: 400;}
 
 h2 {font-weight:600;}
 h3 {font-weight:600; font-size: $font-size-body;}
@@ -405,6 +405,13 @@ padding: 15px 0 0 0;
 }
 
 
+.tribe-events-meta-group {
+	flex: 1 0 300px;
+	}
+
+.tribe-events-meta-group dt {font-weight: $font-weight-bold}
+
+
 /* -----  Jobs ----- */
 
 .job-post-promo {
@@ -476,5 +483,10 @@ p.cta-second-link {display: none;}
 {font-size: 1.2rem;
 	font-weight: 600;
 	line-height: 1.8rem;}
+
+	.tribe-events-content ol, .tribe-events-content p, .tribe-events-content ul {
+		font-weight: 400;
+		
+	}
 
 }
