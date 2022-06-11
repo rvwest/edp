@@ -32,6 +32,10 @@ h2.tribe-events-page-title {
     margin-right: 0;
   }
   
+  .tribe-events-event-meta.primary, .tribe-events-event-meta.secondary {
+    padding-top: 0;
+  }
+
   .tribe-events-schedule .tribe-event-time {
     font-size: $font-size-body;
     font-weight:  $font-weight-regular;
@@ -48,10 +52,14 @@ h2.tribe-events-page-title {
   width: 100%
 }
 
+.tribe-events-event-meta.secondary {
+  margin-bottom: 40px;
+}
+
 .tribe-events-venue-map {
   width: 100%;
   order: 1;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   height: 350px;
 }
 
@@ -62,6 +70,15 @@ h2.tribe-events-page-title {
 .tribe-events-event-meta.primary h2.tribe-events-single-section-title {
   margin-top: 30px;
   line-height: inherit;
+}
+
+.tribe-events-event-meta:before,  .tribe-events-event-meta~div:not(.tribe-events-event-meta,.event-tickets){
+  border-top: 1px solid $color-outline;
+}
+
+.tribe-events-event-meta.secondary {
+  border-top: none;
+  border-bottom: 2px solid $color-events;
 }
 
 .tribe-events-button, #tribe-bar-form .tribe-bar-submit input[type=submit] {background-color: $color-events}
