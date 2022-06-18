@@ -61,11 +61,17 @@ $font-weight-bold: 700;
 
 $font-size-h1-section: 3.2rem;
 $font-size-h1-content: 2.6rem;
+$line-height-h1-content: 3.2rem;
+$font-size-h1-content-long: 2.125rem;
+$line-height-h1-content-long: 2.8rem;
+
 $font-size-h1-small: 2rem;  
 
 $font-size-h2: 1.75rem;
 //font size * 1.5
 $line-height-h2: 2.55rem;
+$font-size-h2-small: 1.5rem;
+$line-height-h2-small: ($font-size-h2-small*1.2);
 
 $font-size-h3: 1.25rem;
 

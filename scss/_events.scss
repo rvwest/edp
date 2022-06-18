@@ -14,8 +14,9 @@ h2.tribe-events-page-title {
 
 // Single event //
 
-.single-tribe_events h1.tribe-events-single-event-title { 
-  padding-top:45px;}
+.tribe-events-back {
+  display:none
+}
 
 .tribe-events-meta-group .tribe-events-single-section-title {
   font-size: $font-size-h3;
@@ -23,11 +24,15 @@ h2.tribe-events-page-title {
   text-transform: none;
 }
 
-  #tribe-events-content .tribe-events-cost, #tribe-events-content .tribe-events-city, .tribe-events-schedule .tribe-event-date-start, .tribe-events-schedule .tribe-event-date-end
+.tribe-events-schedule h2 {
+  font-size: $font-size-h2-small;
+  }
+
+ #tribe-events-content .tribe-events-cost, #tribe-events-content .tribe-events-city, .tribe-events-schedule .tribe-event-date-start, .tribe-events-schedule .tribe-event-date-end
  {
-    font-size: $font-size-h3;
+    font-size: $font-size-h2-small;
     font-weight:  $font-weight-regular;
-    line-height: $line-height-h2;
+    line-height: $line-height-h2-small;
     margin-left: 0;
     margin-right: 0;
   }
@@ -46,7 +51,7 @@ h2.tribe-events-page-title {
   }
 
 
-.tribe-events-schedule h2 {margin-top: 0px; font-weight: $font-weight-light; display:block; margin-bottom:20px;}
+.tribe-events-schedule h2 {margin-top: 0px; font-weight: $font-weight-light; display:block}
 
 .tribe-events-event-meta.primary, .tribe-events-event-meta.secondary {
   width: 100%
