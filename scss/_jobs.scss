@@ -129,7 +129,7 @@ a .job-list-details {text-decoration: none; text-decoration-line: none;}
 .single_job_listing .apply-block {
     margin-bottom: 1.5rem;
     padding-bottom: 2.5rem;
-    border-bottom: solid 5px #ddd;
+    border-bottom: $divider-thick-neutral
 }
 #job_preview .apply-block {
     margin-bottom: 1.5rem;
@@ -162,7 +162,7 @@ line-height: 1.75rem;
 
 
 
-.form-block {margin-bottom:3rem; padding-bottom:1.8rem; border-bottom: solid 5px $color-outline;}
+.form-block {margin-bottom:3rem; padding-bottom:1.8rem; border-bottom: $divider-thick-neutral;}
 
 p.signin-text {margin-bottom:0;}
 .wpjm-page #content .skepost > p:first-child {font-size: 1.125rem;}
@@ -189,7 +189,7 @@ p.wpjm-submit-block {margin-bottom:3rem; text-align:right;}
 
 .job-manager-message.job-manager-message { color: $color-alert-success-text ; border: solid 3px $color-alert-success-border; background-color: $color-alert-success-background; padding-left:2em!important; box-shadow: none; }
 
-fieldset.fieldset-cap_declaration {margin-top:3rem; padding-top:1.8rem; border-top: solid 5px $color-outline;}
+fieldset.fieldset-cap_declaration {margin-top:3rem; padding-top:1.8rem; border-top: $divider-thick-neutral}
 
 // Preview //
 

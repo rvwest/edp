@@ -86,6 +86,10 @@ $col3half-max: 1000;
 $col3-max: 1199;
 
 
+$divider-thick-neutral: solid 5px $color-outline;
+
+$divider-thin-neutral: solid 1px $color-outline;
+
 @mixin transition-0-1 { 
     transition: all .1s linear 0;
     -webkit-transition: all .1s linear 0; 

@@ -415,15 +415,18 @@ padding: 15px 0 0 0;
 	margin-top: 20px;
 }
 
-.tribe-events-event-meta:before, .tribe-events-event-meta.secondary,  .tribe-events-event-meta~div:not(.tribe-events-event-meta,.event-tickets){
+.tribe-events-event-meta:before,  .tribe-events-event-meta~div:not(.tribe-events-event-meta,.event-tickets){
 	border-top: none;
   }
 
-.tribe-events-meta-group-details, .tribe-events-meta-group-venue{
-	border-top: 1px solid $color-outline;
-	border-bottom: 1px solid $color-outline;
-  }
+.tribe-events-meta-group.tribe-events-meta-group-details {
+	border-bottom: 1px solid $color-outline; 
+}
 
+.primary .tribe-events-meta-group-venue {
+	border-top: $divider-thin-neutral;
+	border-bottom: none;
+}
 
 /* -----  Jobs ----- */
 

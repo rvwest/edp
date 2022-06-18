@@ -13,3 +13,6 @@
 06/28/20 6:52:48: edpsy-style.scss - parse error: failed at `color: }` /Users/richard.west/Sites/edpsy/wp-content/themes/edpsy/scss/_jobs.scss on line 299
 07/04/20 3:19:10: edpsy-style.scss - Undefined variable $color-jobs-vpale: line: 30
 11/16/20 10:44:22: edpsy-style.scss - parse error: failed at `.crp_related span.` /Users/richard.west/Sites/edpsy/wp-content/themes/edpsy/scss/_navigation.scss on line 266
+06/18/22 4:27:25: edpsy-style.scss - Undefined mixin border-top-thick: _jobs.scss on line 192, at column 73
+Call Stack:
+#0 import _jobs.scss edpsy-style.scss on line 17

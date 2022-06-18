@@ -59,12 +59,13 @@ h2.tribe-events-page-title {
 
 .tribe-events-event-meta.secondary {
   margin-bottom: 40px;
+  border-top: $divider-thin-neutral;
 }
 
 .tribe-events-venue-map {
   width: 100%;
   order: 1;
-  margin-bottom: 40px;
+  margin: 0;
   height: 350px;
 }
 
@@ -77,13 +78,14 @@ h2.tribe-events-page-title {
   line-height: inherit;
 }
 
-.tribe-events-event-meta:before,  .tribe-events-event-meta~div:not(.tribe-events-event-meta,.event-tickets){
-  border-top: 1px solid $color-outline;
+
+#tribe-events-content #tribe-events-footer {
+  border-top: none;
+  display: none;
 }
 
-.tribe-events-event-meta.secondary {
-  border-top: none;
-  border-bottom: 2px solid $color-events;
+#tribe-events-content {
+  border-bottom: $divider-thick-neutral;
 }
 
 .tribe-events-button, #tribe-bar-form .tribe-bar-submit input[type=submit] {background-color: $color-events}
@@ -103,7 +105,8 @@ h2.tribe-events-page-title {
 .tribe-events-meta-group .tribe-events-single-section-title {
   font-size: 1.17em;
   font-weight: $font-weight-bold;
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  color: $color-events;
 }
 
 .events-list .tribe-events-loop, .single-tribe_organizer .tribe-events-loop, .single-tribe_venue .tribe-events-loop, .tribe-events-day .tribe-events-loop 
@@ -117,6 +120,13 @@ h2.tribe-events-page-title {
   line-height: $line-height-body;
 }
 
+.tribe-event-tags-label, .tribe-event-tags {
+  display: none;
+}
+
+.primary .tribe-events-meta-group.tribe-events-meta-group-venue {
+  order: inherit;
+}
 
 // Submit events form
 
@@ -278,7 +288,14 @@ border-radius: 0 !important;
   color: $color-link-hover !important; 
 }
 
+#tribe-events-content .tribe-events-event-meta.primary {
+  border-bottom: none;
+  border-top: $divider-thin-neutral; 
+}
 
+.tribe-events-event-meta:before, .tribe-events-event-meta~div:not(.tribe-events-event-meta,.event-tickets) {
+  border-top: none;
+}
 
 
 /*
@@ -314,10 +331,6 @@ border-radius: 0 !important;
 .tribe-events-meta-group .tribe-events-single-section-title {
   margin-top: 0;
 }
-
-.tribe-events-event-meta:before, .tribe-events-event-meta~div:not(.tribe-events-event-meta,.event-tickets) {
-    border-top: none;
-  }
 
 .tribe-events-single-event-title {
     font-weight: $font-weight-regular;
