@@ -4,7 +4,7 @@
 font-family: 'Open Sans', sans-serif;
 }
 
-.post_cta {
+.post_cta, .tribe-common .post_cta {
 border: solid 2px;
 padding:
    10px 20px;
@@ -69,8 +69,12 @@ background:$color-events;
 
 }
 
-.post_cta h2 {
-margin-top:10px;
+.tribe-common .tribe-events-after-html {
+   margin-top:32px;
+}
+
+.post_cta h2, .tribe-common .event-disclaimer .post_cta h2 {
+   margin-top: 10px;
 }
 
 .post_cta .mc4wp-fields input {
