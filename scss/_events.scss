@@ -26,11 +26,127 @@
 
 // ------ List page ------ 
 
-.tribe-common--breakpoint-medium.tribe-common .tribe-common-b2 {
-  font-size: $font-size-body;
-  line-height: $line-height-body;
+.tribe-common--breakpoint-medium.tribe-common .tribe-common-h4--min-medium {
+  font-size: $font-size-h3;
+  line-height: $line-height-h3;
+  font-weight: $font-weight-regular;
 }
 
+.tribe-common--breakpoint-medium.tribe-common .tribe-common-form-control-text__input {
+  font-size: $font-size-body;
+}
+
+// Month title
+.tribe-common--breakpoint-medium.tribe-common .tribe-common-h6--min-medium {
+  font-size: $font-size-h2;
+  font-weight: $font-weight-regular;
+}
+
+// Month - compressed view
+.tribe-common .tribe-common-h6--min-medium {
+  font-size: $font-size-h3;
+  font-weight: $font-weight-regular;
+  color: $color-link-hover;
+}
+
+.tribe-common .tribe-common-h6 {
+  font-size: $font-size-body;
+  font-weight: $font-weight-medium;
+}
+
+// Month divider
+.tribe-events .tribe-events-calendar-list__month-separator:after {
+  background-color: $color-outline;
+  height: 5px;
+}
+
+// Calendar icon
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event-date-tag-weekday {
+  font-size: $font-size-body;
+}
+
+.tribe-events-calendar-list__event-date-tag-weekday {
+  font-size: $font-size-body;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event-date-tag-daynum.tribe-common-h5.tribe-common-h4--min-medium {
+  font-size: $font-size-h2-small;
+}
+
+.tribe-events-calendar-list__event-date-tag-daynum.tribe-common-h5.tribe-common-h4--min-medium {
+  font-size: $font-size-body;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event-date-tag.tribe-common-g-col {
+  display: block;
+}
+
+.tribe-events-calendar-list__event-date-tag.tribe-common-g-col {
+  display: none;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event-row>.tribe-common-g-col {
+  padding-right: 0;
+}
+
+.tribe-common--breakpoint-medium.tribe-common .tribe-common-b2, .tribe-common .tribe-common-b2 {
+  font-size: $font-size-body;
+  line-height: $line-height-body;
+  color: $color-link-hover;
+}
+
+.tribe-common .tribe-common-b2--bold {
+  font-weight: $font-weight-regular;
+}
+
+.tribe-events .tribe-events-calendar-list__event-title-link:visited, .tribe-events .tribe-events-calendar-list__event-title-link:link {
+  color: $color-link;
+}
+
+.tribe-events .tribe-events-calendar-list__event-title-link:hover, .tribe-events .tribe-events-calendar-list__event-title-link:active {
+  color: $color-link-hover;
+  text-decoration: underline;
+  border-bottom: none;
+}
+
+.tribe-common .tribe-common-anchor-thin {
+  border-bottom: none;
+}
+
+// price
+.tribe-common--breakpoint-medium.tribe-common .tribe-common-b3, .tribe-common .tribe-common-b3 {
+  font-size: $font-size-body;
+  line-height: $line-height-body;
+  color: $color-link-hover;
+}
+
+.tribe-common p {
+  font-weight: $font-weight-light;
+}
+
+.tribe-common--breakpoint-medium.tribe-common .tribe-events-calendar-list__event-datetime-wrapper {
+  display: none;
+}
+
+.tribe-events .tribe-events-calendar-list-nav {
+  border-top: $divider-thick-neutral;
+}
+
+// Event in loop
+.tribe-common .tribe-events-calendar-list__event-wrapper {
+  padding-bottom: 30px;
+  border-bottom: $divider-thin-neutral;
+  padding-right:20px;
+}
+
+/*.tribe-events-calendar-list__event-wrapper:last-of-type {
+  border-bottom:none;
+}*/
+
+.tribe-common--breakpoint-medium.tribe-common .tribe-events-calendar-list__event-wrapper {
+  border-bottom: none;
+  padding-bottom: 0;
+}
 
 // ------ Single event ------- //
 
@@ -53,6 +169,7 @@
   font-size: $font-size-h2-small;
   font-weight: $font-weight-regular;
   line-height: $line-height-h2-small;
+  color: $color-link-hover;
   margin-left: 0;
   margin-right: 0;
 }
