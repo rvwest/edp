@@ -14,11 +14,23 @@
   max-width: none;
 }
 
+.tribe-common {
+  -webkit-font-smoothing: auto;
+}
+
 .tribe-events-single {
   -webkit-font-smoothing: auto;
 }
 
 // H1 handled in _page-headings.scss
+
+// ------ List page ------ 
+
+.tribe-common--breakpoint-medium.tribe-common .tribe-common-b2 {
+  font-size: $font-size-body;
+  line-height: $line-height-body;
+}
+
 
 // ------ Single event ------- //
 
@@ -228,8 +240,8 @@ dd.tribe-venue {
 .tribe-community-events .events-community-post-title label,
 .tribe-community-events .tribe-section .tribe-section-header h3 {
   text-transform: none !important;
-  font-weight: 400 !important;
-  font-size: 1.125rem !important;
+  font-weight: $font-weight-regular !important;
+  font-size: $font-size-body !important;
 }
 
 .tribe-community-events label[for="allDayCheckbox"] {
