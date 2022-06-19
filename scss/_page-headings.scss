@@ -14,27 +14,68 @@ margin-left: -3px;
 }*/
 
 
-
-h1.title, h1.author-title, #tribe-community-events .my-events-header h2.my-events, .single-tribe_events h1.tribe-events-single-event-title {  
-    font-size: $font-size-h1-content; 
-    line-height: ($font-size-h1-content*1.2); 
-    font-weight: $font-weight-light; 
-    letter-spacing: -0.2px; 
-    text-transform: none; 
+h1.title,
+h1.author-title,
+#tribe-community-events .my-events-header h2.my-events,
+.single-tribe_events h1.tribe-events-single-event-title {
+    font-size: $font-size-h1-content;
+    line-height: ($font-size-h1-content*1.2);
+    font-weight: $font-weight-light;
+    letter-spacing: -0.2px;
+    text-transform: none;
     padding: 12px 0 10px 0;
-    margin-left:0}
+    margin-left: 0
+}
 
-#front-content-box h2
-{ font-size: 2.6rem;     line-height: 2.6rem; font-family: $font-family; font-weight: $font-weight-light; letter-spacing: -2px; margin-left:0; padding: 0 5px 30px 0; margin-top:2px}
+#front-content-box h2 {
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+    font-family: $font-family;
+    font-weight: $font-weight-light;
+    letter-spacing: -2px;
+    margin-left: 0;
+    padding: 0 5px 30px 0;
+    margin-top: 2px
+}
 
-.block--blog h2 a, .category-blog h1 {color: $color-blog}
-.block--features h2 a, .category-features h1 {color: $color-features;}
-.block--training h2 a, .category-training h1 {color: $color-training;}
-.block--jobs h2 a, .category-jobs h1, .block--jobs h2 a, .category-jobs-admin h1 {color: $color-jobs;}
-.category-about h1.title { color: $color-about;}
-.category-groups h1 { color: $color-groups;}
-.category-events h1 { color: $color-events;}
-.category-events h1, #tribe-community-events h2 { color: $color-events;}
+.block--blog h2 a,
+.category-blog h1 {
+    color: $color-blog
+}
+
+.block--features h2 a,
+.category-features h1 {
+    color: $color-features;
+}
+
+.block--training h2 a,
+.category-training h1 {
+    color: $color-training;
+}
+
+.block--jobs h2 a,
+.category-jobs h1,
+.block--jobs h2 a,
+.category-jobs-admin h1 {
+    color: $color-jobs;
+}
+
+.category-about h1.title {
+    color: $color-about;
+}
+
+.category-groups h1 {
+    color: $color-groups;
+}
+
+.category-events h1 {
+    color: $color-events;
+}
+
+.category-events h1,
+#tribe-community-events h2 {
+    color: $color-events;
+}
 
 /* .skt-section a h3,  .skt-section h3 a
 { font-family: $font-family; font-size: 1.3em; line-height: 1.4em; font-weight: 500; background:none; letter-spacing: 0px; -webkit-transition: all 0.3s linear 0s; padding: 10px 20px 20px 20px; -moz-transition: all 0.3s linear 0s; -o-transition: all 0.3s linear 0s; color: $color-copy;} */
@@ -42,64 +83,81 @@ h1.title, h1.author-title, #tribe-community-events .my-events-header h2.my-event
 
 /* Pages, events, jobs */
 
-.single-job_listing h1.title, 
-.page-content h1.title, 
+.single-job_listing h1.title,
+.page-content h1.title,
 .single-tribe_events h1.tribe-events-single-event-title {
     padding-top: 21px
 }
 
 /* --- site description --- */
-#logo #site-description { color: $color-secondary;  font-size: 18px; line-height: 26px;position: relative; left: 1px}
-
+#logo #site-description {
+    color: $color-secondary;
+    font-size: 18px;
+    line-height: 26px;
+    position: relative;
+    left: 1px
+}
 
 
 /* --- overlapping title --- */
-.single-post .container_inner.overlap, .home .container_inner.overlap  {
-display:block;
-position: absolute;
-bottom:1px;
+.single-post .container_inner.overlap,
+.home .container_inner.overlap {
+    display: block;
+    position: absolute;
+    bottom: 1px;
 }
 
-.overlap-img-title img
-{ width: 100%; height: auto;}
-
-.overlap-img-title
-{
-display:block;
-position: relative;
-min-height: 100px;
+.overlap-img-title img {
+    width: 100%;
+    height: auto;
 }
 
-.overlap-title {bottom:0px; position: absolute; }
+.overlap-img-title {
+    display: block;
+    position: relative;
+    min-height: 100px;
+}
+
+.overlap-title {
+    bottom: 0px;
+    position: absolute;
+}
 
 .size-large.wp-post-image {
-width:100%;
-height:auto;
+    width: 100%;
+    height: auto;
 }
 
-.overlap-title h1.title{ color: $color-copy;}
+.overlap-title h1.title {
+    color: $color-copy;
+}
 
-.home .overlap-title h1.title{ text-align: right;}
+.home .overlap-title h1.title {
+    text-align: right;
+}
 
-.single-post .overlap-title h1.title, .home .overlap-title h1.title {
-background-color: $color-overlay;
-display: inline-block;
-font-size: $font-size-h1-content; 
-line-height: $line-height-h1-content;
-margin-right: 5px;
-vertical-align: center;
-padding: 4px 20px 13px 20px;
+.single-post .overlap-title h1.title,
+.home .overlap-title h1.title {
+    background-color: $color-overlay;
+    display: inline-block;
+    font-size: $font-size-h1-content;
+    line-height: $line-height-h1-content;
+    margin-right: 5px;
+    vertical-align: center;
+    padding: 4px 20px 13px 20px;
 }
 
 
-.skt-section .overlap-img-title a:hover, .skt-section .overlap-img-title a:active, .featured-image-shadow-box a:hover {
+.skt-section .overlap-img-title a:hover,
+.skt-section .overlap-img-title a:active,
+.featured-image-shadow-box a:hover {
     box-shadow: 0px 0px 12px #8c8a8a;
     background: none;
 }
 
 .skt-section .overlap-img-title a {
-  display: block;
-  line-height: 0;
+    display: block;
+    line-height: 0;
 }
 
 /* .home .promo {
@@ -108,43 +166,63 @@ padding: 4px 20px 13px 20px;
 } */
 
 .row-fluid .promo {
-	width:auto;
-	 }
+    width: auto;
+}
 
 .home .overlap-title h1.title .fa-angle-right {
-margin-left: 20px;
-margin-right: 5px;
+    margin-left: 20px;
+    margin-right: 5px;
 }
 
 .home a:hover .overlap-title h1.title {
-/*color: $color-copy-reverse;*/
-background-color: $color-overlay;
+    /*color: $color-copy-reverse;*/
+    background-color: $color-overlay;
     @include transition-0-5;
 }
 
 
-
-
-/* --- home page --- */
+// --- home page --- 
 
 .home-subhead {
     line-height: 1.2em;
 }
 
-a.subhead-link:link, a.subhead-link:visited {
-	color: $color-about;}
-
-/* --- detail pages - jobs - events --- */
-
-.wpjm-listing-page h1.title {
-    font-size: $font-size-h1-content;    
+a.subhead-link:link,
+a.subhead-link:visited {
+    color: $color-about;
 }
 
-.single-job_listing h1.title, .category-groups h1.title {
-    font-size: $font-size-h1-content; 
-    line-height: $line-height-h1-content; 
-    width:85%;}
 
-.single-tribe_events h1.tribe-events-single-event-title{
-    color:$color-events
-    }
+// --- detail pages - jobs - events ---
+
+.wpjm-listing-page h1.title {
+    font-size: $font-size-h1-content;
+}
+
+.single-job_listing h1.title,
+.category-groups h1.title {
+    font-size: $font-size-h1-content;
+    line-height: $line-height-h1-content;
+    width: 85%;
+}
+
+
+// --- events ---
+
+.single-tribe_events h1.tribe-events-single-event-title {
+    color: $color-events
+}
+
+h2.tribe-events-page-title {
+    font-weight: $font-weight-light;
+}
+
+
+.tribe-events-schedule h2 {
+    margin-top: 0px;
+    font-weight: $font-weight-light;
+    display: block;
+    font-size: $font-size-h2-small;
+    line-height: $line-height-h2-small;
+    letter-spacing: normal;
+  }
