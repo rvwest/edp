@@ -117,7 +117,8 @@
         .tribe-events-content ol, .tribe-events-content p, .tribe-events-content ul {
           margin-bottom: 20px;
           }
-         
+      
+    
 .tribe-events-calendar-month__calendar-event-tooltip-description.tribe-common-b3 {
   display: none;
 }
@@ -588,6 +589,14 @@ input[type="checkbox"] {
   width: 30%;
   min-width: 30%;
   padding-right: 10px;
+}
+
+.tribe-community-events .tribe-section, .tribe-community-events .wp-editor-container {
+  border: none;
+}
+
+#content #tribe-community-events table, #content  #tribe-community-events tr td {
+  border: none;
 }
 
 .tribe-events-community-details.eventForm {
