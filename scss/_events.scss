@@ -68,6 +68,11 @@
   height: 50px;
 }
 
+.tribe-events-content a {
+  border-bottom: none;
+  transition: none;
+}
+
 .tribe-events-calendar-month__calendar-event-tooltip-description.tribe-common-b3 {
   display: none;
 }
