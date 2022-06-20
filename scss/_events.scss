@@ -73,6 +73,38 @@
   transition: none;
 }
 
+.tribe-events-content h2, .tribe-events-content h3, .tribe-events-content h4, .tribe-events-content h5, .tribe-events-content h6 {
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  }
+
+  .tribe-events-content h2, .tribe-events-content h3, .tribe-events-content h4, .tribe-events-content h5, .tribe-events-content h6 {
+    margin-bottom: inherit;
+    }
+
+    .tribe-events-content ol, .tribe-events-content p, .tribe-events-content ul, .single-tribe_events .tribe-events-event-meta {
+      font-size: inherit;
+      line-height: inherit;
+    }
+
+    .tribe-events-content ul {
+      list-style-type: inherit;
+      }
+  
+      .tribe-events-content ol, .tribe-events-content ul {
+      list-style-position: inherit;
+      }
+
+      .tribe-events-content ol, .tribe-events-content ul {
+        padding: inherit;
+        }
+        .tribe-events-content ol, .tribe-events-content p, .tribe-events-content ul {
+        margin-bottom: inherit;
+        }
+
 .tribe-events-calendar-month__calendar-event-tooltip-description.tribe-common-b3 {
   display: none;
 }
