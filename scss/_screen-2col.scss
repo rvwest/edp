@@ -125,8 +125,24 @@
 	.tribe-events-meta-group {
 		padding: 0;
 	}
+	.tribe-common .tribe-events-c-top-bar.tribe-events-header__top-bar {
+		width: inherit;
+		padding-left: 15px;
+		margin-top: 20px;
+		
+	}
+	.tribe-events .tribe-events-header__events-bar {
+		padding-right: 15px;
+		margin-top:20px;
+		
+	}
 
 	.tribe-community-events {
 		padding:none; 
 	}
+
+	.tribe-common .tribe-common-g-row--gutters>.tribe-common-g-col {
+		padding-left: var(--tec-grid-gutter-small);
+		padding-right: var(--tec-grid-gutter-small);
+		}
 }

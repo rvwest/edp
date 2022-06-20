@@ -26,6 +26,32 @@
 		width: 1170px !important;
 		margin-left: auto !important;
 	}
+
+	.tribe-common.tribe-events-view--month .bread-title-holder {
+		width: 1170px !important;
+		margin-left: auto !important;
+		margin-right: auto;
+	}
+
+	.tribe-common--breakpoint-medium.tribe-events .tribe-events-header--has-event-search .tribe-events-header__events-bar,
+.tribe-common .tribe-events-c-top-bar.tribe-events-header__top-bar,
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-header--has-event-search .tribe-events-header__top-bar,
+.tribe-common .tribe-events-calendar-list,
+.tribe-common .tribe-events-calendar-list-nav.tribe-events-c-nav,
+.tribe-common .tribe-events-c-subscribe-dropdown__container,
+.tribe-common .tribe-events-after-html,
+.tribe-common.tribe-events-view--month .tribe-events-header__messages,
+.tribe-common.tribe-events-view--month .tribe-events-calendar-month
+ {
+  width:1123px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tribe-events .tribe-events-header__top-bar {
+	flex: inherit;
+}
+
 	.span12 {
 		width: 1170px;
 	}
