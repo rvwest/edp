@@ -105,6 +105,19 @@
         margin-bottom: inherit;
         }
 
+        .tribe-events-content a:active, .tribe-events-content a:focus, .tribe-events-content a:hover {
+          border-bottom: none;
+        }
+
+        .tribe-events-content ol, .tribe-events-content p, .tribe-events-content ul {
+          font-size: inherit;
+          line-height: inherit;
+        }
+
+        .tribe-events-content ol, .tribe-events-content p, .tribe-events-content ul {
+          margin-bottom: 20px;
+          }
+         
 .tribe-events-calendar-month__calendar-event-tooltip-description.tribe-common-b3 {
   display: none;
 }
