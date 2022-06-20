@@ -740,6 +740,10 @@ background: var(--tec-color-background-primary-multiday-hover);
   overflow: hidden;
 }
 
+.tribe-events-calendar-month__calendar-event.tribe_events.type-tribe_events a:hover, .tribe-events-calendar-month__calendar-event.tribe_events.type-tribe_events a:active {
+  border-bottom: none;
+}
+
 #tribe-events-content .tribe-events-single-event-description a,
 .tribe-events-event-meta a {
   text-decoration: underline !important;
