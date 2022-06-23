@@ -26,6 +26,13 @@
 </head>
 <body <?php body_class(); ?>  >
 
+<div class="cta-header-block cta-header-block--green-bright">
+	<div class="container">
+		<div class="row-fluid fixedrow">
+		<p><i class="far fa-calendar-alt"></i>&nbsp; <strong>edpsy hosts:</strong> <a href="https://edpsy.org.uk/event/its-not-home-schooling-what-every-psychologist-should-know-about-elective-home-education-07-22/">It’s not home schooling: what every psychologist should know about elective home education</a></p><p class="cta-second-link"><a href="https://edpsy.org.uk/event/its-not-home-schooling-what-every-psychologist-should-know-about-elective-home-education-07-22/" >Find out more</a></p> 
+		</div>
+	</div> 
+</div>
 
 		<div id="wrapper" class="skepage " >
 		<div id="header" class="skehead-headernav clearfix">
