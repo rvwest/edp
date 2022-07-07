@@ -245,6 +245,13 @@ padding: 15px 0 15px 0px; }
 		background: -webkit-linear-gradient(-45deg, #2b7583 0%,#20b0bd 100%); 
 		background: linear-gradient(135deg, #2b7583 0%,#20b0bd 100%)}
 
+.cta-header-block--green-light {
+			background: $color-about;
+			background: -moz-linear-gradient(-45deg, $color-about 0%, #5f8929 100%);
+			background: -webkit-linear-gradient(-45deg, $color-about 0%, #5f8929 100%); 
+			background: linear-gradient(135deg, $color-about 0%, #5f8929 100%)}
+	
+
 .cta-header-block--dark { 
 			background: #181c1d;
 			background: -moz-linear-gradient(-45deg, rgb(28, 28, 34) 0%, #555b5c 100%);
