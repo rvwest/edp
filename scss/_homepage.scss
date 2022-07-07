@@ -26,7 +26,7 @@ padding-top:0;}
 {border-bottom-width: 3px; border-bottom-style: solid; border-color: $color-events}
 */
 
-.tribe-theme-edpsy .bread-title-holder .container
+.tribe-events-header .bread-title-holder .container, .single-tribe_events .bread-title-holder .container
 { @include wash-line($color-events);
 	margin-right:auto;
  }
