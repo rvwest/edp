@@ -29,7 +29,7 @@
 <div class="cta-header-block cta-header-block--green-light">
 	<div class="container">
 		<div class="row-fluid fixedrow">
-			<p><i class="far fa-language"></i>&nbsp; View out <a href="https://edpsy.org.uk/about/educational-psychology/">translated resources</a> for EPs working with Urdu, Panjabi and Polish speakers</p><p class="cta-second-link"><a href="https://edpsy.org.uk/about/educational-psychology/" >Find out more</a></p> 
+			<p><i class="far fa-language"></i>&nbsp; View our <a href="https://edpsy.org.uk/about/educational-psychology/">translated resources</a> for EPs working with Urdu, Panjabi and Polish speakers</p><p class="cta-second-link"><a href="https://edpsy.org.uk/about/educational-psychology/" >Find out more</a></p> 
 		</div>
 	</div>
 </div>
