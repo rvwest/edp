@@ -414,14 +414,7 @@ function custom_job_manager_update_job_listings_message( $save_message ) {
 	return ('<i class="far fa-check-circle"></i> Your changes have been saved. <a href="' . esc_url( job_manager_get_permalink( 'job_dashboard' )) . '">Return to your dashboard</a>.');
 }
 
-add_filter( 'submit_job_form_fields', 'remove_remote_option' );
 
-function remove_remote_option( $fields ) {
-    //remove the remote_position field
-    unset($fields['job']['remote_position']);
-
-    return $fields;
-}
 
 
 
