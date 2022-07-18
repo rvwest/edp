@@ -167,11 +167,27 @@ line-height: 1.75rem;
 p.signin-text {margin-bottom:0;}
 .wpjm-page #content .skepost > p:first-child {font-size: 1.125rem;}
 .wpjm-offer-text {margin-top:1rem; text-align: center;}
-.job-manager-form fieldset {border-bottom:none; padding-bottom:0}
-.job-manager-form fieldset label {float:none; font-weight: 400; line-height: 1rem; margin-top:1rem; width:80%}
+.job-manager-form fieldset {border-bottom:none; padding-bottom:0; display: flex}
+.job-manager-form fieldset label {font-weight: 400; width:80%}
 .job-manager-form fieldset small.description { margin: 0.4rem 0 0.7rem 0;}
 .job-manager-form fieldset div.field {float:none}
 
+.job-manager-form fieldset div.field:not(.full-line-checkbox-field){
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.job-manager-form fieldset.fieldset-closing_date  div.field:not(.full-line-checkbox-field){
+    flex-direction: column;
+}
+
+.job-manager-form fieldset.fieldset-cap_declaration  div.field:not(.full-line-checkbox-field){
+    display: block;
+}
+
+.job-manager-form fieldset::before {
+    display:none;
+}
 
 .job-manager-application-wrapper .application, .single_job_listing .application {padding: 0 0 4px 3px;}
 

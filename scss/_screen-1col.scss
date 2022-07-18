@@ -791,12 +791,23 @@
 
 	.job-manager-form fieldset {
 		line-height: 1.75rem;
+		flex-direction: column;
+	}
+
+	.job-manager-form fieldset label:not(.full-line-checkbox-field label){
+		width: 80%;
+		padding-bottom:5px;
+	}
+
+	.job-manager-form fieldset div.field:not(.full-line-checkbox-field) {
+		width:95%
 	}
 
 	.job-manager-form fieldset .item-cost {
 		margin: 1rem 0;
 		display: block;
 	}
+
 
 	.payment-details-name-description {
 		flex-basis: 100%;
