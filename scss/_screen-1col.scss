@@ -1,5 +1,5 @@
 /*screen-1col.scss*/
-@media only screen and (max-width : $col1-max + px) {
+@media only screen and (max-width : #{$col1-max}px) {
 
 	.row-fluid {
 		margin-left: 12px;
