@@ -74,10 +74,10 @@ $font-size-h2: 1.75rem;
 //font size * 1.5
 $line-height-h2: 2.55rem;
 $font-size-h2-small: 1.5rem;
-$line-height-h2-small: ($font-size-h2-small*1.5);
+$line-height-h2-small: calc($font-size-h2-small*1.5);
 
 $font-size-h3: 1.35rem;
-$line-height-h3: (1.35rem*1.5);
+$line-height-h3: calc(1.35rem*1.5);
 
 $font-size-body: 1.125rem;
 $line-height-body: 1.75rem;

@@ -682,6 +682,29 @@
 		font-weight: $font-weight-regular;
 	}
 
+	ul.job_listings li.job_listing a {
+		flex-direction: column;
+	}
+	
+	ul.job_listings li.job_listing a img.company_logo {
+		visibility: visible;
+		display: block;
+	}
+
+	#content ul.job_listings li.job_listing a img.company_logo {
+		max-width:none;
+		max-height: 45px;
+	}
+
+	.job_listing .listing-logo {
+		width: auto;
+		text-align:left;
+		max-height: 45px;
+		max-width: 130px;
+		height: auto;
+		margin-left: 0;
+		margin-bottom: 20px;
+	}
 
 	/* ---- events, jobs, groups ----- */
 
@@ -835,6 +858,9 @@
 		margin: 0.5rem 0;
 	}
 
+.job-list-details {
+	width:100%;
+}
 
 	.job-manager-message {
 		flex-wrap: wrap;
