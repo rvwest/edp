@@ -320,7 +320,7 @@ function custom_submit_job_form_fields( $fields ) {
 	$fields['job']['job_type']['description'] = "You can select more than one";
 	$fields['company']['company_name']['placeholder'] = "";
 	$fields['company']['company_name']['label'] = "Organisation name";
-	$fields['company']['company_logo']['description'] = "Square images will work best. Maximum file size 32 MB";
+	$fields['company']['company_logo']['description'] = "Maximum file size 32 MB";
 	$fields['company']['company_logo']['allowed_mime_types'] = [
 		'jpg'  => 'image/jpeg',
 		'jpeg' => 'image/jpeg',
