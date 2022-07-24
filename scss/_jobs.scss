@@ -96,7 +96,11 @@ ul.job_listings li.no_job_listings_found a img.company_logo {
     width: 105px;
     height: 65px;
     text-align: center;
-    margin: 10px 0;
+    margin: 10px 10px 10px 0;
+}
+
+.job_listing .listing-logo {
+    padding-right: 20px;
 }
 
 #content ul.job_listings li.job_listing a img.company_logo {
@@ -213,9 +217,7 @@ ul.job_listings li.no_job_listings_found a img.company_logo {
 
     }
 
-    .job_listing .listing-logo {
-        padding-right: 20px;
-    }
+  
 
     ul.job_listings li.job_listing a img.company_logo {
         visibility: visible;
