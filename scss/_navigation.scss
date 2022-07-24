@@ -25,6 +25,11 @@
 
 #skenav a i { color: $color-jobs}
 
+#skenav a[href^="https://hopin"]:link, #skenav a[href^="https://hopin"]:visited {color: $color-events}
+#skenav a[href^="https://hopin"]:active, #skenav a[href^="https://hopin"]:hover {color: $color-heading-reverse}
+
+#skenav a i.fa_eventicon { color: $color-events}
+
 #skenav ul li.current_page_item > a i,
 	#skenav ul li.current-menu-ancestor > a i,
 	#skenav ul li.current-menu-item > a i,
