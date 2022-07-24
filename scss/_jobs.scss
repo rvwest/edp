@@ -253,12 +253,13 @@ ul.job_listings li.no_job_listings_found a img.company_logo {
 }
 
 #job_preview .company_logo {
-    max-width: 150px;
+    max-width: 200px;
+    max-height: 55px;
     float: right;
-    padding: 25px 0 25px 0;
+    padding: 35px 0 25px 0;
 }
 
-#job_preview .category-jobs-admin h1 {
+#job_preview .single-job_listing h1.title {
     color: $color-copy
 }
 
