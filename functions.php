@@ -423,6 +423,96 @@ function remove_remote_option( $fields ) {
     return $fields;
 }
 
+// URL-slug Remove job type
+add_filter( 'submit_job_form_prefix_post_name_with_job_type', '__return_false' );
+
+// Add Job ID to slug
+function custom_job_post_type_link( $post_id, $post ) {
+
+	// don't add the id if it's already part of the slug
+	$permalink = $post->post_name;
+	if ( strpos( $permalink, strval( $post_id ) ) ) {
+		return;
+	}
+	
+	// unhook this function to prevent infinite looping
+	remove_action( 'save_post_job_listing', 'custom_job_post_type_link', 10, 2 );
+
+ // add the id to the slug
+	$permalink .= '-' . $post_id;
+
+	// update the post slug
+	wp_update_post( array(
+		'ID' => $post_id,
+		'post_name' => $permalink
+	));
+
+	// re-hook this function
+	add_action( 'save_post_job_listing', 'custom_job_post_type_link', 10, 2 );
+}
+add_action( 'save_post_job_listing', 'custom_job_post_type_link', 10, 2 );
+
+// Change jobs shortcode output
+ 
+add_action("init", function () {
+
+
+    remove_shortcode("job_summary");
+
+    add_shortcode("job_summary", function ($atts) {
+
+		$atts = shortcode_atts(
+			[
+				'id'       => '',
+				'width'    => '250px',
+				'align'    => 'left',
+				'featured' => null, // True to show only featured, false to hide featured, leave null to show both (when leaving out id).
+				'limit'    => 1,
+			],
+			$atts
+		);
+
+		ob_start();
+
+		$args = [
+			'post_type'   => 'job_listing',
+			'post_status' => 'publish',
+		];
+
+		if ( ! $atts['id'] ) {
+			$args['posts_per_page'] = $atts['limit'];
+			$args['orderby']        = 'rand';
+			if ( ! is_null( $atts['featured'] ) ) {
+				$args['meta_query'] = [
+					[
+						'key'     => '_featured',
+						'value'   => '1',
+						'compare' => $atts['featured'] ? '=' : '!=',
+					],
+				];
+			}
+		} else {
+			$args['p'] = absint( $atts['id'] );
+		}
+
+		$jobs = new WP_Query( $args );
+
+		if ( $jobs->have_posts() ) {
+			while ( $jobs->have_posts() ) {
+				$jobs->the_post();
+				$width = $atts['width'] ? $atts['width'] : 'auto';
+				echo '<div class="span4 post type-post has-post-thumbnail hentry category-blog category-features job_summary_shortcode">';
+				get_job_manager_template_part( 'content-summary', 'job_listing' );
+				echo '</div>';
+			}
+		}
+
+		wp_reset_postdata();
+
+		return ob_get_clean();
+    });
+
+});
 
 
 /**
@@ -513,4 +603,7 @@ function tribe_add_website_helptext() {
 }
 
 add_action( 'tribe_events_community_section_after_website', 'tribe_add_website_helptext' );
+
+
+
 ?>

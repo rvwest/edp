@@ -313,3 +313,18 @@ padding: 15px 0 15px 0px; }
 		margin-inline-end: 0;
 		}
 	
+#content .crp_thumb.crp_featured.crp_job_logo {
+	max-width: 200px;
+	background: white;
+	//margin: 10px 0 0 10px;
+	padding: 5px;
+	z-index: 3;
+	display: block;
+	margin-left: -100px;
+	margin-right: -100px;
+	left: 100px;
+	}
+
+	#content .crp_related a:hover img.crp_job_logo, #content .crp_related a:active img.crp_job_logo {
+		opacity: 1;
+		}
