@@ -515,7 +515,22 @@ add_action("init", function () {
 });
 
 
+// Jobs in CRP 
+
+function crp_after_list_2() {
+
+	$after_list = do_shortcode( '[job_summary width="" align=""]');
+
+	return apply_filters( 'crp_after_list_2', $after_list );
+
+}
+
+add_filter('crp_after_list', 'crp_after_list_2');
+
+
+
 /**
+
  * Register our sidebars and widgetized areas.
  *
  */
