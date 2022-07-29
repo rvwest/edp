@@ -504,7 +504,7 @@ add_action("init", function () {
 				echo '<div class="span4 post type-post has-post-thumbnail hentry category-blog category-features job_summary_shortcode">';
 				get_job_manager_template_part( 'content-summary', 'job_listing' );
 				echo '</div>';
-			}
+				}
 		}
 
 		wp_reset_postdata();
@@ -517,16 +517,15 @@ add_action("init", function () {
 
 // Jobs in CRP 
 
-function crp_after_list_2() {
+function crp_after_list_show_jobs() {
 
 	$after_list = do_shortcode( '[job_summary width="" align=""]');
 
-	return apply_filters( 'crp_after_list_2', $after_list );
+	return apply_filters( 'crp_after_list_show_jobs', $after_list );
 
 }
 
-add_filter('crp_after_list', 'crp_after_list_2');
-
+add_filter('crp_after_list', 'crp_after_list_show_jobs');
 
 
 /**

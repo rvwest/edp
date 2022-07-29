@@ -24,6 +24,7 @@
 			<!-- pagination here -->
 
 				<!-- the loop -->
+				
 				<?php while ( $advertica_lite_latest_loop->have_posts() ) : $advertica_lite_latest_loop->the_post(); ?>
 					<div  <?php post_class('span4'); ?>><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 					<div class="hover-space">
