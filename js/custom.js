@@ -247,6 +247,16 @@ $j(window).resize(function(){
     equalheight('#front-content-box h3');
   });
   */
+
+$j(window).on('load', function () {
+    equalheight('#front-content-box .span4 .hover-space');
+});
+
+
+$j(window).resize(function () {
+    equalheight('#front-content-box .span4 .hover-space');
+});
+
 $j(window).on('load', function () {
     equalheight('.blog-posts p');
 });
