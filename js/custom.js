@@ -5,208 +5,208 @@ var $j = jQuery.noConflict();
 /* ---------------------------------------------------- */
 /* jQuery.fn.parallax = function(xpos, speedFactor) {
 
-	'use strict';
+    'use strict';
 
-	var firstTop, methods = {};
+    var firstTop, methods = {};
 
-	return this.each(function(idx, value) {
+    return this.each(function(idx, value) {
 
-		var $this = jQuery(value), firstTop = $this.offset().top;
+        var $this = jQuery(value), firstTop = $this.offset().top;
 
-		if (arguments.length < 1 || xpos === null)
+        if (arguments.length < 1 || xpos === null)
 
-			xpos = "50%";
+            xpos = "50%";
 
-		if (arguments.length < 2 || speedFactor === null)
+        if (arguments.length < 2 || speedFactor === null)
 
-			speedFactor = 0.1;
+            speedFactor = 0.1;
 
-		methods = {
+        methods = {
 
-			update: function() {
+            update: function() {
 
-				var pos = jQuery(window).scrollTop();
+                var pos = jQuery(window).scrollTop();
 
-				$this.each(function() {
+                $this.each(function() {
 
-					$this.css('backgroundPosition', xpos + " " + Math.round((firstTop - pos) * speedFactor) + "px");
+                    $this.css('backgroundPosition', xpos + " " + Math.round((firstTop - pos) * speedFactor) + "px");
 
-				});
+                });
 
-			},
+            },
 
-			init: function() {
+            init: function() {
 
-				this.update();
+                this.update();
 
-				jQuery(window).on('scroll', methods.update);
+                jQuery(window).on('scroll', methods.update);
 
-			}
+            }
 
-		}
+        }
 
-		return methods.init();
+        return methods.init();
 
-	});
+    });
 
 };*/
 
 //MOBILE MENU -----------------------------------------
 //-----------------------------------------------------
-jQuery(document).ready(function(){
-'use strict';
-jQuery('#menu-main').superfish();
-jQuery('#menu-main li:has(ul)').each(function(){
-jQuery(this).addClass('has_child').prepend('<span class="this_child"></span>');
+jQuery(document).ready(function () {
+    'use strict';
+    jQuery('#menu-main').superfish();
+    jQuery('#menu-main li:has(ul)').each(function () {
+        jQuery(this).addClass('has_child').prepend('<span class="this_child"></span>');
+    });
+    jQuery('#menu-main.skt-mob-menu li.has_child > a').click(function () {
+        if (jQuery(this).hasClass('active')) {
+            jQuery(this).removeClass('active');
+            jQuery(this).next('ul:first').stop(true, true).slideUp();
+        }
+        else {
+            jQuery(this).addClass('active');
+            jQuery(this).next('ul:first').stop(true, true).slideDown();
+        }
+    });
 });
-jQuery('#menu-main.skt-mob-menu li.has_child > a').click(function(){
-if(jQuery(this).hasClass('active')){
-jQuery(this).removeClass('active');
-jQuery(this).next('ul:first').stop(true,true).slideUp();
-}
-else{
-jQuery(this).addClass('active');
-jQuery(this).next('ul:first').stop(true,true).slideDown();
-}
-});
-});
-(function( $ ) {
-'use strict';
-$.fn.sktmobilemenu = function( options ) {
-var defaults = {
-'fwidth': 768
-};
-//call in the default otions
-var options = $.extend(defaults, options);
-var obj = $(this);
-return this.each(function() {
-if($(window).width() < options.fwidth) {
-sktMobileRes();
-}
-$(window).resize(function() {
-if($(window).width() < options.fwidth) {
-sktMobileRes();
-}else{
-sktDeskRes();
-}
-});
-function sktMobileRes() {
-jQuery('#menu-main').superfish('destroy');
-// test 1
-//obj.addClass('skt-mob-menu').hide();
-obj.addClass('skt-mob-menu');
-obj.parent().css('position','relative');
-if(obj.prev('.sktmenu-toggle').length === 0) {
-obj.before('<div class="sktmenu-toggle" id="responsive-nav-button">Menu <i class="far fa-bars"></i></div>');
-}
-obj.parent().find('.sktmenu-toggle').removeClass('active');
-}
-function sktDeskRes() {
-jQuery('#menu-main').superfish('init');
-obj.removeClass('skt-mob-menu').show();
-if(obj.prev('.sktmenu-toggle').length) {
-obj.prev('.sktmenu-toggle').remove();
-}
-}
-obj.parent().on('click','.sktmenu-toggle',function() {
-if(!$(this).hasClass('active')){
-$(this).addClass('active');
-$(this).next('ul').stop(true,true).slideDown();
-}
-else{
-$(this).removeClass('active');
-$(this).next('ul').stop(true,true).slideUp();
-}
-});
-});
-};
-})( jQuery );
+(function ($) {
+    'use strict';
+    $.fn.sktmobilemenu = function (options) {
+        var defaults = {
+            'fwidth': 768
+        };
+        //call in the default otions
+        var options = $.extend(defaults, options);
+        var obj = $(this);
+        return this.each(function () {
+            if ($(window).width() < options.fwidth) {
+                sktMobileRes();
+            }
+            $(window).resize(function () {
+                if ($(window).width() < options.fwidth) {
+                    sktMobileRes();
+                } else {
+                    sktDeskRes();
+                }
+            });
+            function sktMobileRes() {
+                jQuery('#menu-main').superfish('destroy');
+                // test 1
+                //obj.addClass('skt-mob-menu').hide();
+                obj.addClass('skt-mob-menu');
+                obj.parent().css('position', 'relative');
+                if (obj.prev('.sktmenu-toggle').length === 0) {
+                    obj.before('<div class="sktmenu-toggle" id="responsive-nav-button">Menu <i class="far fa-bars"></i></div>');
+                }
+                obj.parent().find('.sktmenu-toggle').removeClass('active');
+            }
+            function sktDeskRes() {
+                jQuery('#menu-main').superfish('init');
+                obj.removeClass('skt-mob-menu').show();
+                if (obj.prev('.sktmenu-toggle').length) {
+                    obj.prev('.sktmenu-toggle').remove();
+                }
+            }
+            obj.parent().on('click', '.sktmenu-toggle', function () {
+                if (!$(this).hasClass('active')) {
+                    $(this).addClass('active');
+                    $(this).next('ul').stop(true, true).slideDown();
+                }
+                else {
+                    $(this).removeClass('active');
+                    $(this).next('ul').stop(true, true).slideUp();
+                }
+            });
+        });
+    };
+})(jQuery);
 
 /*
 jQuery(window).load(function(){
-	'use strict';
-	jQuery('#full-division-box').parallax("center", 0.2);
+    'use strict';
+    jQuery('#full-division-box').parallax("center", 0.2);
 });
 */
 
 jQuery(document).ready(function ($) {
-'use strict';
-document.getElementById('s') && document.getElementById('s').focus();
+    'use strict';
+    document.getElementById('s') && document.getElementById('s').focus();
 });
-jQuery(document).ready(function(){
-	'use strict';
-	jQuery('#menu-main').sktmobilemenu();
+jQuery(document).ready(function () {
+    'use strict';
+    jQuery('#menu-main').sktmobilemenu();
 });
 
 //BACK TO TOP -----------------------------------------
 //-----------------------------------------------------
-jQuery(document).ready( function() {
-'use strict';
-jQuery('#back-to-top,#backtop').hide();
-jQuery(window).scroll(function() {
-if (jQuery(this).scrollTop() > 100) {
-jQuery('#back-to-top,#backtop').fadeIn();
-} else {
-jQuery('#back-to-top,#backtop').fadeOut();
-}
-});
-jQuery('#back-to-top,#backtop').click(function(){
-jQuery('html, body').animate({scrollTop:0}, 'slow');
-});
+jQuery(document).ready(function () {
+    'use strict';
+    jQuery('#back-to-top,#backtop').hide();
+    jQuery(window).scroll(function () {
+        if (jQuery(this).scrollTop() > 100) {
+            jQuery('#back-to-top,#backtop').fadeIn();
+        } else {
+            jQuery('#back-to-top,#backtop').fadeOut();
+        }
+    });
+    jQuery('#back-to-top,#backtop').click(function () {
+        jQuery('html, body').animate({ scrollTop: 0 }, 'slow');
+    });
 });
 
 //WAYPOINTS MAGIC -----------------------------------------
 //---------------------------------------------------------
-if ( typeof window['vc_waypoints'] !== 'function' ) {
-function vc_waypoints() {
-if (typeof jQuery.fn.waypoint !== 'undefined') {
-$j('.fade_in_hide').waypoint(function() {
-$j(this).addClass('skt_start_animation');
-}, { offset: '90%' });
-$j('.skt_animate_when_almost_visible').waypoint(function() {
-$j(this).addClass('skt_start_animation');
-}, { offset: '90%' });
+if (typeof window['vc_waypoints'] !== 'function') {
+    function vc_waypoints() {
+        if (typeof jQuery.fn.waypoint !== 'undefined') {
+            $j('.fade_in_hide').waypoint(function () {
+                $j(this).addClass('skt_start_animation');
+            }, { offset: '90%' });
+            $j('.skt_animate_when_almost_visible').waypoint(function () {
+                $j(this).addClass('skt_start_animation');
+            }, { offset: '90%' });
+        }
+    }
 }
-}
-}
-jQuery(document).ready(function($) {
-'use strict';
-vc_waypoints();
+jQuery(document).ready(function ($) {
+    'use strict';
+    vc_waypoints();
 });
 
 //EQUAL HEIGHT  ----------------------------------------------
 //------------------------------------------------------------
 
 
-equalheight = function(container){
+equalheight = function (container) {
 
-var currentTallest = 0,
-     currentRowStart = 0,
-     rowDivs = new Array(),
-     $el,
-     topPosition = 0;
- $j(container).each(function() {
+    var currentTallest = 0,
+        currentRowStart = 0,
+        rowDivs = new Array(),
+        $el,
+        topPosition = 0;
+    $j(container).each(function () {
 
-   $el = $j(this);
-   $j($el).height('auto')
-   topPostion = $el.position().top;
+        $el = $j(this);
+        $j($el).height('auto')
+        topPostion = $el.position().top;
 
-   if (currentRowStart != topPostion) {
-     for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
-       rowDivs[currentDiv].height(currentTallest);
-     }
-     rowDivs.length = 0; // empty the array
-     currentRowStart = topPostion;
-     currentTallest = $el.height();
-     rowDivs.push($el);
-   } else {
-     rowDivs.push($el);
-     currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
-  }
-   for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
-     rowDivs[currentDiv].height(currentTallest);
-   }
- });
+        if (currentRowStart != topPostion) {
+            for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
+                rowDivs[currentDiv].height(currentTallest);
+            }
+            rowDivs.length = 0; // empty the array
+            currentRowStart = topPostion;
+            currentTallest = $el.height();
+            rowDivs.push($el);
+        } else {
+            rowDivs.push($el);
+            currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+        }
+        for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
+            rowDivs[currentDiv].height(currentTallest);
+        }
+    });
 }
 /* Fixes for jQuery 3... 
 
@@ -238,7 +238,7 @@ $j(window).resize(function(){
 });
 */
 
-$j(window).on('load', function() {
+/*$j(window).on('load', function() {
     equalheight('#front-content-box h3');
   });
   
@@ -246,24 +246,24 @@ $j(window).on('load', function() {
   $j(window).resize(function(){
     equalheight('#front-content-box h3');
   });
-  
-  $j(window).on('load', function() {
+  */
+$j(window).on('load', function () {
     equalheight('.blog-posts p');
-  });
-  
-  
-  $j(window).resize(function(){
+});
+
+
+$j(window).resize(function () {
     equalheight('.blog-posts p');
-  });
-  
-  $j(window).on('load', function() {
+});
+
+$j(window).on('load', function () {
     equalheight('.feature-posts p');
-  });
-  
-  
-  $j(window).resize(function(){
+});
+
+
+$j(window).resize(function () {
     equalheight('.feature-posts p');
-  });
+});
 
 /*
  * jQuery Superfish Menu Plugin - v1.7.4
@@ -282,14 +282,14 @@ $j(window).on('load', function() {
             anchorClass: "sf-with-ul",
             menuArrowClass: "sf-arrows"
         }, n = function () {
-                var t = /iPhone|iPad|iPod/i.test(navigator.userAgent);
-                if (t) {
-                    e(window).on('load', function() {
-                        e("body").children().on("click", e.noop)
-                    })
-                }
-                return t
-            }(),
+            var t = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+            if (t) {
+                e(window).on('load', function () {
+                    e("body").children().on("click", e.noop)
+                })
+            }
+            return t
+        }(),
             r = function () {
                 var e = document.documentElement.style;
                 return "behavior" in e && "fill" in e && /iemobile/i.test(navigator.userAgent)
@@ -303,7 +303,7 @@ $j(window).on('load', function() {
             }, s = function (n, r) {
                 return n.find("li." + r.pathClass).slice(0, r.pathLevels).addClass(r.hoverClass + " " + t.bcClass).filter(function () {
                     //test2
-										return e(this).children(r.popUpSelector).hide().show().length
+                    return e(this).children(r.popUpSelector).hide().show().length
                 }).removeClass(r.pathClass)
             }, o = function (e) {
                 e.children("a").toggleClass(t.anchorClass)

@@ -568,7 +568,7 @@ ul.menu li {
 	margin-inline-end: 0;
 }
 
-#content .crp_thumb.crp_featured.crp_job_logo {
+#content .crp_related .job_summary_shortcode .hover-space img {
 	background: white;
 	//margin: 10px 0 0 10px;
 	padding: 5px;
@@ -578,17 +578,23 @@ ul.menu li {
 	margin-right: auto;
 }
 
-#content .crp_related .crp_job figure {
+#content .crp_related .job_summary_shortcode .hover-space {
 	aspect-ratio: 122 / 71;
 	border: solid 1px $color-jobs-v-pale;
 	display: flex;
 	align-items: center;
 	max-width: 480px;
+	background: none;
 }
 
-#content .crp_related .crp_job .crp_title {
-	padding-top: 7px
+#content .crp_related .crp_job h3.crp_title {
+	padding-top: 13px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-right: 0;
 }
+
+
 
 /*	#content .crp_related a:hover img.crp_job_logo, #content .crp_related a:active img.crp_job_logo {
 		opacity: 1;

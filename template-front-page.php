@@ -13,8 +13,14 @@
 
 		</div>
 		<div id="front-blog-wrap" class="row-fluid">
-		<?php $advertica_blogno = esc_attr( get_theme_mod('home_blog_num', '6') );
-		if( !empty($advertica_blogno) && ($advertica_blogno > 0) ) {
+		<?php 
+			$advertica_blogno = esc_attr( get_theme_mod('home_blog_num', '6') );
+			// checks for jobs, removes a blog 
+			$jobs = get_job_listings();
+			if ( $jobs->have_posts() ) {
+				$advertica_blogno--;
+			}
+			if( !empty($advertica_blogno) && ($advertica_blogno > 0) ) {
 				$advertica_lite_latest_loop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => $advertica_blogno,'ignore_sticky_posts' => true, 'category_name' => 'blog' ) );
 		}else{
 			   $advertica_lite_latest_loop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => -1,'ignore_sticky_posts' => true, 'category_name' => 'blog' ) );
@@ -33,10 +39,18 @@
 <?php if ( has_post_thumbnail() ) {the_post_thumbnail('edpsy_loop_img');} ?>
 	</div>
 
-<?php endif; ?><h3><?php if (in_category( 'features' )) { ?>
+<?php endif; ?><h3>
+	<?php if (in_category( 'features' )) { ?>
 		<span class="title-tag">Longer read: </span>
-		<?php } ?><?php the_title(); ?></h3>
-					</a></div>
+		<?php } ?>
+		<?php the_title(); ?></h3>
+
+		</a></div>
+		<?php if ($advertica_lite_latest_loop->current_post == 1) {
+			echo '<div class="span4 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-features tag-ep-work homepage-job-promo">';
+			echo do_shortcode( '[job_summary width="" align=""]');
+			echo '</div>';
+			 } ?>
 				<?php endwhile; ?>
 				<!-- end of the loop -->
 

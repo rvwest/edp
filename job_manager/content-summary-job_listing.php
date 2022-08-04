@@ -19,14 +19,14 @@ global $job_manager;
 ?>
 <a href="<?php the_permalink(); ?>" class="crp_link post-3212 crp_job">
 	<?php if ( $logo = get_the_company_logo() ) : ?>
-		<figure>
+		<div class="hover-space">
 			<img src="<?php echo esc_url( $logo ); ?>" alt="<?php the_company_name(); ?>" title="<?php the_company_name(); ?>" class="crp_thumb crp_featured crp_job_logo" />
-		</figure>
+	</div>
 	<?php endif; ?>
-	<div class="crp_title">
+	<h3 class="crp_title">
 		<span class="title-tag"><i class="far fa-bell-on"></i> New job: </span>
 		<?php wpjm_the_job_title(); ?>
 		- <?php the_job_location( false ); ?>
-	</div>
+	</h3>
 </a>
 
