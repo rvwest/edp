@@ -35,7 +35,7 @@
 		
 
 		<!-- skepost-meta -->
-        <div class="skepost clearfix">
+        <div class="skepost clearfix listing-post-summary">
 			<?php the_excerpt(); ?>
 			<!-- <div class="continue"><a href="<?php the_permalink(); ?>"><?php _e('Read More','advertica-lite');?></a></div>-->
         </div>
