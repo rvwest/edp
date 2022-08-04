@@ -249,6 +249,15 @@ $j(window).resize(function(){
   */
 
 $j(window).on('load', function () {
+    equalheight('.crp_related figure');
+});
+
+
+$j(window).resize(function () {
+    equalheight('.crp_related figure');
+});
+
+$j(window).on('load', function () {
     equalheight('#front-content-box .span4 .hover-space');
 });
 

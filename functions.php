@@ -513,11 +513,67 @@ add_action("init", function () {
 });
 
 
+add_action("init", function () {
+
+   add_shortcode("job_summary_crp", function ($atts) {
+
+		$atts = shortcode_atts(
+			[
+				'id'       => '',
+				'width'    => '250px',
+				'align'    => 'left',
+				'featured' => null, // True to show only featured, false to hide featured, leave null to show both (when leaving out id).
+				'limit'    => 1,
+			],
+			$atts
+		);
+
+		ob_start();
+
+		$args = [
+			'post_type'   => 'job_listing',
+			'post_status' => 'publish',
+		];
+
+		if ( ! $atts['id'] ) {
+			$args['posts_per_page'] = $atts['limit'];
+			$args['orderby']        = 'rand';
+			if ( ! is_null( $atts['featured'] ) ) {
+				$args['meta_query'] = [
+					[
+						'key'     => '_featured',
+						'value'   => '1',
+						'compare' => $atts['featured'] ? '=' : '!=',
+					],
+				];
+			}
+		} else {
+			$args['p'] = absint( $atts['id'] );
+		}
+
+		$jobs = new WP_Query( $args );
+
+		if ( $jobs->have_posts() ) {
+			while ( $jobs->have_posts() ) {
+				$jobs->the_post();
+				$width = $atts['width'] ? $atts['width'] : 'auto';
+				get_job_manager_template_part( 'content-summary-crp', 'job_listing' );
+				}
+		}
+
+		wp_reset_postdata();
+
+		return ob_get_clean();
+    });
+
+});
+
+
 // Jobs in CRP 
 
 function crp_after_list_show_jobs() {
 
-	$after_list = '<div class="span4 post type-post has-post-thumbnail hentry category-blog category-features job_summary_shortcode">'. do_shortcode( '[job_summary width="" align=""]') . '</div>';
+	$after_list = '<div class="span4 post type-post has-post-thumbnail hentry category-blog category-features job_summary_shortcode">'. do_shortcode( '[job_summary_crp width="" align=""]') . '</div>';
 
 	return apply_filters( 'crp_after_list_show_jobs', $after_list );
 
