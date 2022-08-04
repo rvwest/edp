@@ -602,3 +602,13 @@ ul.menu li {
 /*	#content .crp_related a:hover img.crp_job_logo, #content .crp_related a:active img.crp_job_logo {
 		opacity: 1;
 		}*/
+
+#backtop i {
+	color: $color-heading-reverse;
+}
+
+a#backtop {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
