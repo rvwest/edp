@@ -26,10 +26,10 @@
 </head>
 <body <?php body_class(); ?>  >
 
-<div class="cta-header-block cta-header-block--green-light">
+<div class="cta-header-block">
 	<div class="container">
 		<div class="row-fluid fixedrow">
-			<p><i class="far fa-language"></i>&nbsp; View our <a href="https://edpsy.org.uk/about/educational-psychology/">translated resources</a> for EPs working with Urdu, Panjabi and Polish speakers</p><p class="cta-second-link"><a href="https://edpsy.org.uk/about/educational-psychology/" >Find out more</a></p> 
+		<p><i class="far fa-campground fa_eventicon"></i>&nbsp; Come be supported, challenged and inspired at our <a href="https://hopin.com/events/edpsy-festival/registration">Festival of Educational Psychology</a></p><p class="cta-second-link"><a href="https://hopin.com/events/edpsy-festival/registration" >Find out more</a></p>  
 		</div>
 	</div>
 </div>
