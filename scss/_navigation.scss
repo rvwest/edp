@@ -429,6 +429,12 @@ ul.menu li {
 	background: linear-gradient(135deg, #2b7583 0%, #20b0bd 100%)
 }
 
+.cta-header-block--festival {
+	background: #0c1729 url("../images/banner-festival-2.jpg") right no-repeat;
+	background-size: 1000px;
+}
+
+
 .cta-header-block--green-light {
 	background: $color-about;
 	background: -moz-linear-gradient(-45deg, $color-about 0%, #5f8929 100%);
