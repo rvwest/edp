@@ -26,6 +26,7 @@
 </head>
 <body <?php body_class(); ?>  >
 
+<!--
 <div class="cta-header-block cta-header-block--festival">
 	<div class="container">
 		<div class="row-fluid fixedrow">
@@ -33,7 +34,7 @@
 		</div>
 	</div>
 </div>
-
+-->
 		<div id="wrapper" class="skepage " >
 		<div id="header" class="skehead-headernav clearfix">
 			<div class="glow">
