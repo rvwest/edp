@@ -46,7 +46,7 @@
 		<?php the_title(); ?></h3>
 
 		</a></div>
-		<?php if ($advertica_lite_latest_loop->current_post == 1) {
+		<?php if ($jobs->have_posts() && $advertica_lite_latest_loop->current_post == 1) {
 			echo '<div class="span4 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-features tag-ep-work homepage-job-promo">';
 			echo do_shortcode( '[job_summary width="" align=""]');
 			echo '</div>';
