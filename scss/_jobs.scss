@@ -218,11 +218,11 @@ ul.job_listings li.no_job_listings_found a img.company_logo {
 
     }
 
-  
+
 
     ul.job_listings li.job_listing a img.company_logo {
         visibility: visible;
-        }
+    }
 
     .type-job_listing .job-type {
         font-weight: 600;
@@ -248,7 +248,7 @@ ul.job_listings li.no_job_listings_found a img.company_logo {
 
 .single-job_listing .company_logo {
     max-width: 230px;
-    max-height: 65px;
+    max-height: 100px;
     float: right;
     padding: 27px 0 25px 40px;
 }
