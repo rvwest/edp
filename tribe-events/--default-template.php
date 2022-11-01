@@ -32,6 +32,10 @@ get_header();
 	<?php tribe_events_before_html(); ?>
 	<?php tribe_get_view(); ?>
 	<?php tribe_events_after_html(); ?>
-</div></div></div></div> <!-- #tribe-events-pg-template -->
+
+				</div>
+			</div>
+		</div>
+	</div> <!-- #tribe-events-pg-template -->
 <?php
 get_footer();
