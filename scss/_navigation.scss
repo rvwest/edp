@@ -241,7 +241,12 @@ ul.menu li {
 #skenav li a[href*="/jobs/"]:active,
 #skenav ul li.current-menu-item>a[href*="/jobs/"],
 #skenav ul li.current-menu-parent>a[href$="/jobs/"],
-#skenav ul li.current-page-ancestor a.sf-with-ul[href$="/jobs/"] {
+#skenav ul li.current-page-ancestor a.sf-with-ul[href$="/jobs/"],
+#skenav li a[href*="/job/"]:hover,
+#skenav li a[href*="/job/"]:active,
+#skenav ul li.current-menu-item>a[href*="/job/"],
+#skenav ul li.current-menu-parent>a[href$="/job/"],
+#skenav ul li.current-page-ancestor a.sf-with-ul[href$="/job/"] {
 	background-color: $color-jobs;
 }
 
