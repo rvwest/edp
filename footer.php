@@ -30,7 +30,7 @@
 <div class="span8">
 <p class="foot-message"><a href="https://twitter.com/edpsyuk"><i class="fab fa-twitter"></i> @edpsyuk</a> | <a href="mailto:hello@edpsy.org.uk"><i class="fal fa-envelope"></i> hello@edpsy.org.uk</a></p>
 <p class="foot-message"><a href="/about/">Find out more about us</a><br/>Spotted something wrong? <a href="mailto:hello@edpsy.org.uk">let us know</a></p>
-<p class="foot-message"><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Reusing our content</a> | <a href="/cookies">Cookies and privacy</a></p>
+<p class="foot-message"><a href="/community-guidelines">Community guidelines</a> | <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Reusing our content</a> | <a href="/cookies">Cookies and privacy</a></p>
 </div>
 <div class="span4 foot-message footer-accreditation">
 <a href="https://ecologi.com/edpsyltd" target="_blank" rel="noopener noreferrer" title="View our Ecologi profile" style="width:200px;display:inline-block;">
