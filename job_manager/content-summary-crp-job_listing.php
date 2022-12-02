@@ -24,7 +24,7 @@ global $job_manager;
 	</figure>
 	<?php endif; ?>
 	<h3 class="crp_title">
-		<span class="title-tag"><i class="far fa-bell-on"></i> New job: </span>
+		<span class="title-tag"><i class="far fa-bell-on"></i> Job: </span>
 		<?php wpjm_the_job_title(); ?>
 		- <?php the_job_location( false ); ?>
 	</h3>
