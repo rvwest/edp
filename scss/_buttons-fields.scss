@@ -85,7 +85,8 @@ body#tinymce.wp-editor {
 .job-manager-application-wrapper .application .application_button,
 .single_job_listing .application .application_button,
 .job_listing_preview_title input.button,
-#content .wp-block-buttons>.wp-block-button.has-custom-font-size .wp-block-button__link {
+#content .wp-block-buttons>.wp-block-button.has-custom-font-size .wp-block-button__link,
+#content a.wp-block-button__link.has-background {
     border: 1px solid;
     padding: 0.7rem 2rem;
     text-transform: uppercase;
@@ -177,10 +178,11 @@ a.wp-block-button__link.has-background:hover {
     color: $color-heading-reverse;
     border-color: $color-groups-highlight;
     -webkit-appearance: none;
+    text-decoration: none;
 }
 
-a.wp-block-button__link.has-background:link,
-a.wp-block-button__link.has-background:visited {
+#content a.wp-block-button__link.has-background:link,
+#content a.wp-block-button__link.has-background:visited {
     text-decoration: none;
 }
 
