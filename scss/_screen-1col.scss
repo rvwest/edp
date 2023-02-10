@@ -682,8 +682,15 @@
 
 	h2.post-title {
 		line-height: $font-size-h2;
+		letter-spacing: -0.5px;
 	}
 
+	#front-content-box.skt-section a h3 {
+		line-height: 30px;
+		letter-spacing: -0.5px;
+	}
+
+	#front-content-box.skt-section a h3,
 	.post-title a {
 		font-size: 1.25rem;
 		font-weight: $font-weight-medium;
