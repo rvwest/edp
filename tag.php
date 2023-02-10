@@ -7,19 +7,20 @@
 
 get_header(); ?>
 
-<div class="main-wrapper-item">
+<div class="main-wrapper-item category-blog">
 	<div class="bread-title-holder">
-		<div class="bread-title-bg-image full-bg-breadimage-fixed"></div>
+		<!--<div class="bread-title-bg-image full-bg-breadimage-fixed"></div>-->
 		<div class="container">
 			<div class="row-fluid">
-				<div class="container_inner clearfix">
-					<h1 class="title">
-						<?php printf( __( 'Tag Archives : %s', 'advertica-lite' ), '<span>' . single_tag_title( '', false ) . '</span>' ); ?> 
-					</h1>
-					<?php  if( get_theme_mod('breadcrumb_sec', 'on') == 'on' ) {
+			<?php  if( get_theme_mod('breadcrumb_sec', 'on') == 'on' ) {
 						if ((class_exists('advertica_lite_breadcrumb_class'))) {$advertica_breadcumb->advertica_lite_custom_breadcrumb();}
 					}
-					?>
+					?>	
+			<div class="container_inner clearfix span8 center-col">
+					<h1 class="title">
+						<?php printf( __( 'Tag : %s', 'advertica-lite' ), '<span>' . single_tag_title( '', false ) . '</span>' ); ?> 
+					</h1>
+					
 				</div>
 			</div>
 		</div>
@@ -27,7 +28,7 @@ get_header(); ?>
 
 	<div class="container post-wrap"> 
 		<div class="row-fluid">
-			<div id="container" class="span8">
+			<div id="container" class="span8 center-col">
 				<div id="content" role="main">
 					<?php if(have_posts()) : ?>
 					<?php while(have_posts()) : the_post(); ?>
