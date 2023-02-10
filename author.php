@@ -5,7 +5,7 @@
 */
 get_header(); ?>
 
-<div class="main-wrapper-item">
+<div class="main-wrapper-item category-blog">
 	<div class="bread-title-holder">
 		<!--<div class="bread-title-bg-image full-bg-breadimage-fixed"></div>-->
 

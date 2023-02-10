@@ -11,6 +11,10 @@
 	@include wash-line($color-blog)
 }
 
+.category-blog .bread-title-holder .container.post-wrap {
+	border: none;
+}
+
 #front-content-box.block--features .container,
 .category-features .bread-title-holder .container {
 	@include wash-line($color-features)
