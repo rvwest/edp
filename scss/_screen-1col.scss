@@ -587,9 +587,10 @@
 		margin-bottom: 15px;
 	}
 
+	/*10-2-23
 	.bread-title-holder .cont_nav {
 		margin-left: 15px;
-	}
+	}*/
 
 	.row-fluid #logo.span3 {
 		width: 31.62393%;
@@ -653,10 +654,12 @@
 		padding: 15px 0 0 0;
 	}
 
+	/*
 	.category .bread-title-holder h1.title,
-	.page .wpjm-listing-page h1.title {
+	.page .wpjm-listing-page h1.title,
+	.bread-title-holder .title.author-title {
 		margin-left: 0.75rem;
-	}
+	}*/
 
 	.page-content h2,
 	.wpjm-single-job-post h2,
@@ -677,9 +680,13 @@
 		line-height: (1.17rem*1.6);
 	}
 
+	h2.post-title {
+		line-height: $font-size-h2;
+	}
+
 	.post-title a {
 		font-size: 1.25rem;
-		font-weight: $font-weight-regular;
+		font-weight: $font-weight-medium;
 	}
 
 	ul.job_listings li.job_listing a {
