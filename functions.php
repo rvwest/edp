@@ -673,5 +673,67 @@ function tribe_add_website_helptext() {
 add_action( 'tribe_events_community_section_after_website', 'tribe_add_website_helptext' );
 
 
+// Tribe events 
+
+// Add the custom event cost column to the admin list view
+function tribe_events_add_column_headers( $columns ) {
+	$events_label_singular = tribe_get_event_label_singular();
+
+	foreach ( (array) $columns as $key => $value ) {
+		$mycolumns[ $key ] = $value;
+		if ( $key == 'author' ) {
+			$mycolumns['events-cats'] = sprintf( esc_html__( '%s Categories', 'the-events-calendar' ), $events_label_singular );
+		}
+	}
+	$columns = $mycolumns;
+
+	unset( $columns['date'] );
+	$columns['start-date'] = esc_html__( 'Start Date', 'the-events-calendar' );
+	$columns['end-date']   = esc_html__( 'End Date', 'the-events-calendar' );
+	// Cost addition
+	$columns['cost']   = esc_html__( 'Cost', 'the-events-calendar' );
+	return $columns;
+}
+add_filter('manage_tribe_events_posts_columns', 'tribe_events_add_column_headers', 10, 1);
+
+// Display the event cost in the custom column
+function tribe_events_show_event_cost_column($column, $post_id) {
+    if ($column === 'cost') {
+        $event_cost = get_post_meta($post_id, '_EventCost', true);
+        if (!empty($event_cost)) {
+            echo $event_cost;
+        } else {
+            echo '-';
+        }
+    }
+}
+add_action('manage_tribe_events_posts_custom_column', 'tribe_events_show_event_cost_column', 10, 2);
+
+
+// Register the tribe events cost custom column as sortable
+function tribe_events_custom_sortable_columns($columns) {
+    $columns['cost'] = 'cost';
+    return $columns;
+}
+add_filter('manage_edit-tribe_events_sortable_columns', 'tribe_events_custom_sortable_columns');
+
+// Modify the sorting query
+function tribe_events_custom_orderby($query) {
+    if (!is_admin() || !$query->is_main_query()) {
+        return;
+    }
+
+    $orderby = $query->get('orderby');
+
+    if ('cost' == $orderby) {
+        // Set the meta key for the event cost
+        $query->set('meta_key', '_EventCost');
+        // Order by meta value as an integer
+        $query->set('orderby', 'meta_value_num');
+    }
+}
+add_action('pre_get_posts', 'tribe_events_custom_orderby');
+
+
 
 ?>
