@@ -26,15 +26,7 @@
 </head>
 <body <?php body_class(); ?>  >
 
-<!--
-<div class="cta-header-block cta-header-block--festival">
-	<div class="container">
-		<div class="row-fluid fixedrow">
-		<p><i class="far fa-campground fa_eventicon"></i>&nbsp; Come be supported, challenged and inspired at our <a href="https://hopin.com/events/edpsy-festival/registration">Festival of Educational Psychology</a></p><p class="cta-second-link"><a href="https://hopin.com/events/edpsy-festival/registration" >Find out more</a></p>  
-		</div>
-	</div>
-</div>
--->
+<div class="cta-header-block cta-header-block--green"><div class="container"><div class="row-fluid fixedrow"><p><i class="far fa-calendar-alt"></i>&nbsp; Sign up to our webinar: <a href="https://edpsy.org.uk/event/webinar-an-introduction-to-making-psychology-accessible-on-web-06-23/">Making psychology accessible on the web - 20 June</a></p><p class="cta-second-link"><a href="https://edpsy.org.uk/event/webinar-an-introduction-to-making-psychology-accessible-on-web-06-23/" >Find out more</a></p></div></div> </div>
 		<div id="wrapper" class="skepage " >
 		<div id="header" class="skehead-headernav clearfix">
 			<div class="glow">
