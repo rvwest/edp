@@ -222,6 +222,13 @@ ul.menu li {
 	background-color: $color-events;
 }
 
+#skenav li a[href*="boost/"]:hover,
+#skenav li a[href*="boost/"]:active,
+#skenav ul li.current-menu-item>a[href*="boost/"],
+#skenav ul li.current-menu-parent>a[href*="boost/"] {
+	background-color: $color-boost;
+}
+
 #skenav li sfhover.a[href*="training/"],
 #skenav li a[href*="training/"]:hover,
 #skenav li a[href*="training/"]:active,
