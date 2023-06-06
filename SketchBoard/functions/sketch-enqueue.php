@@ -45,6 +45,7 @@ wp_enqueue_script('advertica-lite-waypoints-js',get_template_directory_uri().'/j
 
 	// Google Fonts
 	wp_enqueue_style('advertica-lite-googlefont-opensans', '//fonts.googleapis.com/css?family=Open+Sans:700,600,400,300&subset=latin,latin-ext');
+	wp_enqueue_style('advertica-lite-googlefont-bigshouldersinlinetext', '//fonts.googleapis.com/css?family=Big+Shoulders+Inline+Text:400,600');
 /*	wp_enqueue_style('advertica-lite-googlefont-raleway', '//fonts.googleapis.com/css?family=Raleway:900,700,400');*/
 }
 add_action('wp_enqueue_scripts', 'advertica_lite_theme_stylesheet');
