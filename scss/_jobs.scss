@@ -462,7 +462,8 @@ p.signin-text {
 .job-manager-form fieldset {
     border-bottom: none;
     padding-bottom: 0;
-    display: flex
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .job-manager-form fieldset label {
@@ -630,6 +631,11 @@ fieldset.fieldset-cap_declaration {
     margin-top: 0;
 }
 
+.fieldset-stripe_payment.fieldset-type-text .item-cost {
+    margin-left: 1rem
+}
+
+
 .StripeElement {
     border: 1px solid $color-outline;
     border-radius: 0;
@@ -649,6 +655,7 @@ fieldset.fieldset-cap_declaration {
 
 .job-manager-form fieldset .job-details-block {
     display: flex;
+    width: 100%;
     justify-content: center;
     padding: 1.6rem 2rem 1rem 2rem;
     margin: 1rem 0;
@@ -656,10 +663,44 @@ fieldset.fieldset-cap_declaration {
     align-items: center;
 }
 
+.job-manager-form fieldset .job-manager-uploaded-files .job-manager-uploaded-file {
+    margin-top: 1em;
+}
+
+.payment-details-name-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 60%;
+}
+
+.job-details-block div:nth-child(2) {
+    width: 40%
+}
+
+.job-manager-form fieldset .job-details-block label:not(.full-line-checkbox-field label),
+.job-manager-form fieldset .job-details-block .field {
+
+    width: 50%;
+    text-align: right;
+    padding-right: 30px;
+}
+
 .job-manager-form fieldset label.job-listing {
     width: 100%;
     text-align: right;
 }
+
+.job-manager-form fieldset label:not(.full-line-checkbox-field label) {
+    width: 70%;
+    padding-bottom: 0;
+}
+
+.job-manager-form fieldset div.field:not(.full-line-checkbox-field) {
+    width: 90%;
+}
+
+
 
 .option-block-or {
     float: right;

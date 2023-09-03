@@ -818,10 +818,15 @@
 		max-height: 49px;
 	}
 
-	.job-manager-form fieldset.job-details-block {
+	.job-manager-form fieldset .job-details-block {
 		justify-content: flex-start;
 		margin: 0 0 3rem 0;
 		flex-wrap: wrap;
+		width: 87%;
+	}
+
+	.job-manager-form fieldset .job-details-block .field {
+		text-align: left;
 	}
 
 	.job-manager-form fieldset label.job-listing {
@@ -833,13 +838,16 @@
 		flex-direction: column;
 	}
 
-	.job-manager-form fieldset label:not(.full-line-checkbox-field label) {
+	.job-manager-form fieldset label:not(.full-line-checkbox-field label),
+	.job-manager-form fieldset .job-details-block label:not(.full-line-checkbox-field label) {
 		width: 80%;
 		padding-bottom: 5px;
+		text-align: left;
 	}
 
+
 	.job-manager-form fieldset div.field:not(.full-line-checkbox-field) {
-		width: 95%
+		width: 95%;
 	}
 
 	.job-manager-form fieldset .item-cost {
@@ -850,6 +858,11 @@
 
 	.payment-details-name-description {
 		flex-basis: 100%;
+		justify-content: flex-start;
+	}
+
+	.fieldset-stripe_payment.fieldset-type-text .item-cost {
+		margin-left: 0;
 	}
 
 	.wpjm-page .post #content .skepost p:first-child {
