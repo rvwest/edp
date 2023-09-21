@@ -62,6 +62,9 @@ $google_maps_enabled = tribe_get_option( 'embedGoogleMaps', true )
 
 
 
+
+
+
 <div class="venue">
 
 <label for="VenueName">
@@ -75,9 +78,8 @@ $google_maps_enabled = tribe_get_option( 'embedGoogleMaps', true )
 	value="<?php echo esc_attr( tribe_get_venue() ); ?>"
 />
 </div>
-<p>-- or --</p>
-			
-			<div class="venue">
+<p><strong>-- or --</strong></p>
+<div class="venue">
 		
 						<label for="VenueName">
 							<?php esc_html_e( 'This is an online event', 'tribe-events-community' ); ?>:
@@ -90,6 +92,7 @@ $google_maps_enabled = tribe_get_option( 'embedGoogleMaps', true )
 						/>
 		
 					</div>
+			
 
 					<h4>Venue details (if you have them)</h4>
 		<div class="venue">
@@ -145,7 +148,7 @@ $google_maps_enabled = tribe_get_option( 'embedGoogleMaps', true )
 				size="25"
 				value="<?php echo esc_attr( tribe_get_province() ); ?>"
 			/>
-			<select
+			<!--<select
 				id="StateProvinceSelect"
 				name="venue[State]"
 				class="tribe-dropdown"
@@ -157,7 +160,7 @@ $google_maps_enabled = tribe_get_option( 'embedGoogleMaps', true )
 						<?php selected( tribe_get_state() == $abbr ); ?>
 					><?php echo esc_html( $fullname ) ?></option>
 				<?php endforeach; ?>
-			</select>
+			</select>-->
 
 		</div><!-- .venue -->
 	<?php endif; ?>
@@ -191,7 +194,7 @@ $google_maps_enabled = tribe_get_option( 'embedGoogleMaps', true )
 		/>
 	</div><!-- .venue -->
 
-	<div class="venue">
+	<!--<div class="venue">
 
 		<label for="EventWebsite">
 			<?php esc_html_e( 'Website', 'tribe-events-community' ); ?>:
@@ -207,7 +210,7 @@ $google_maps_enabled = tribe_get_option( 'embedGoogleMaps', true )
 
 	</div>
 	<p class="helptext">eg https://www.venuehotels.co.uk</p>
-
+				-->
 <!-- .venue -->
 
 	<?php

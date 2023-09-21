@@ -427,6 +427,30 @@ ul.menu li {
 	background: linear-gradient(135deg, #331a99 0%, #b85abd 100%)
 }
 
+.cta-header-block--refugee-pale {
+	background: #AC8CF5;
+	background: -moz-linear-gradient(-45deg, #AC8CF5 0%, #CDFCF3 100%);
+	background: -webkit-linear-gradient(-45deg, #AC8CF5 0%, #CDFCF3 100%);
+	background: linear-gradient(135deg, #AC8CF5 0%, #CDFCF3 100%);
+	color: $color-copy;
+}
+
+.cta-header-block--refugee {
+	background: #1D3A76;
+	background: -moz-linear-gradient(-45deg, #1D3A76 0%, #2B65F5 100%);
+	background: -webkit-linear-gradient(-45deg, #1D3A76 0%, #2B65F5 100%);
+	background: linear-gradient(135deg, #1D3A76 0%, #2B65F5 100%);
+	//color: $color-copy;
+}
+
+/*
+.cta-header-block.cta-header-block--refugee a:link,
+.cta-header-block.cta-header-block--refugee a:visited,
+.cta-header-block.cta-header-block--refugee a:hover,
+.cta-header-block.cta-header-block--refugee a:active {
+	color: $color-copy
+}*/
+
 .cta-header-block--green {
 	background: #008791;
 	background: -moz-linear-gradient(-45deg, #337 0%, #008791 100%);
