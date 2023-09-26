@@ -31,6 +31,15 @@
 <body <?php body_class(); ?>>
 
 	<!--promospace-->
+	<div class="cta-header-block cta-header-block--refugee">
+		<div class="container">
+			<div class="row-fluid fixedrow">
+				<p><img height="20px" src="<?php echo get_template_directory_uri(); ?>/images/reuk_logo_only.png" />&nbsp;<a href="https://edpsy.org.uk/event/webinar-an-introduction-to-making-psychology-accessible-on-web-06-23/">Support refugee children</a> to access and thrive in education</p>
+				<p class="cta-second-link"><a href="https://edpsy.org.uk/event/webinar-an-introduction-to-making-psychology-accessible-on-web-06-23/">Donate to Refugee Education UK</a></p>
+			</div>
+		</div>
+	</div>
+	<!--/promospace-->
 	<div id="wrapper" class="skepage ">
 		<div id="header" class="skehead-headernav clearfix">
 			<div class="glow">

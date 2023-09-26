@@ -71,8 +71,13 @@
 	}
 
 	.post #content .skepost p:first-child {
-		font-size: 1.4rem;
-		line-height: 1.85rem;
+		font-size: $font-size-body;
+		line-height: $line-height-body;
+	}
+
+	.post #content .skepost .cta-body-block p {
+		font-size: $font-size-body;
+		line-height: ($font-size-body*1.2);
 	}
 
 	/* ---------------- */
