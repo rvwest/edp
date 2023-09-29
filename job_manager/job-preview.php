@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	 */
 	do_action( 'preview_job_form_start' );
 	?>
-	<p class="job-post-promo"><i class="far fa-briefcase"></i> <s>£450</s> £300 for a 30-day listing + mailout and tweet</p>
+	<p class="job-post-promo"><i class="far fa-briefcase"></i> £400 for a 30-day listing + mailout and tweet</p>
 
 	<div class="progressbar-container job-preview">
 <ul class="progressbar">
