@@ -30,7 +30,7 @@
 
 <body <?php body_class(); ?>>
 
-	<!--promospace-->
+	<!--promospace
 	<div class="cta-header-block cta-header-block--refugee">
 		<div class="container">
 			<div class="row-fluid fixedrow">
@@ -39,7 +39,7 @@
 			</div>
 		</div>
 	</div>
-	<!--/promospace-->
+	/promospace-->
 	<div id="wrapper" class="skepage ">
 		<div id="header" class="skehead-headernav clearfix">
 			<div class="glow">
