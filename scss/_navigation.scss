@@ -623,6 +623,11 @@ div.post#post-XXXX {
 	padding-bottom: 0.5rem;
 }
 
+a:hover img.footer-img-svg,
+a:active img.footer-img-svg {
+	filter: invert(29%) sepia(63%) saturate(4863%) hue-rotate(187deg) brightness(89%) contrast(101%);
+}
+
 /* Recommendations */
 
 .crp_clear {
