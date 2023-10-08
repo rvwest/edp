@@ -536,12 +536,18 @@ ul.menu li {
 
 /* Refugee Education UK promo */
 
-div.post#post-XXXX .container.post-wrap .row-fluid {
+div.post#post-7821 .container.post-wrap .row-fluid,
+div.post#post-7817 .container.post-wrap .row-fluid,
+div.post#post-7819 .container.post-wrap .row-fluid,
+div.post#post-9346 .container.post-wrap .row-fluid {
 	background: white;
 	box-shadow: 35px 0 31px #fff, -41px 0 35px #fff
 }
 
-div.post#post-XXXX {
+div.post#post-7817,
+div.post#post-7819,
+div.post#post-7821,
+div.post#post-9346 {
 	background-image: url("../images/reuk-background--3.png");
 	background-repeat: repeat-y;
 	background-size: contain;
