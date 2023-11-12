@@ -6,11 +6,7 @@
 .job-manager-form fieldset textarea,
 .select2-container--default .select2-selection--multiple,
 .job-manager-form fieldset .wp-editor-container {
-    margin-bottom: 0;
-    padding: 0.4rem;
-    border: 1px solid $color-outline;
-    -webkit-appearance: none;
-    border-radius: 0;
+    @include reg-textfield;
 }
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice,
@@ -87,18 +83,8 @@ body#tinymce.wp-editor {
 .job_listing_preview_title input.button,
 #content .wp-block-buttons>.wp-block-button.has-custom-font-size .wp-block-button__link,
 #content a.wp-block-button__link.has-background {
-    border: 1px solid;
-    padding: 0.7rem 2rem;
-    text-transform: uppercase;
-    font-size: 0.8125rem;
-    font-weight: bold;
-    cursor: pointer;
+    @include button-primary;
     margin: 1rem 2rem 0rem 0;
-    display: inline-block;
-    line-height: 1.3rem;
-    text-decoration: none;
-    -webkit-appearance: none;
-    border-radius: 0;
 }
 
 // Button colour //
@@ -129,6 +115,8 @@ body#tinymce.wp-editor {
     padding: 0.7rem 2rem;
     -webkit-appearance: none;
 }
+
+
 
 .job_listing_preview_title input.button.button_small {
     padding: 0.4rem 1rem;
@@ -188,4 +176,19 @@ a.wp-block-button__link.has-background:hover {
 
 .job-manager-form fieldset .account-sign-in .button:before {
     display: none;
+}
+
+
+// events
+
+.tribe-common .tribe-common-c-btn,
+.tribe-common .tribe-common-c-btn:focus,
+.tribe-common .tribe-common-c-btn:hover,
+.tribe-common a.tribe-common-c-btn,
+.tribe-common a.tribe-common-c-btn:focus,
+.tribe-common a.tribe-common-c-btn:hover,
+.tribe-common button.tribe-common-c-btn,
+.tribe-common button.tribe-common-c-btn:focus,
+.tribe-common button.tribe-common-c-btn:hover {
+    border-radius: 0;
 }

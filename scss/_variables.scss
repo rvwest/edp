@@ -86,6 +86,7 @@ $line-height-h3: calc(1.35rem*1.5);
 $font-size-body: 1.125rem;
 $line-height-body: 1.75rem;
 
+$font-size-buttons: 1rem;
 
 $col1-max: 599;
 $col2-max: 789;
@@ -124,6 +125,37 @@ $divider-thin-neutral: solid 1px $color-outline;
     -webkit-transition: all .5s ease 0;
     -moz-transition: all .5s ease 0;
     -o-transition: all .5s ease 0;
+}
+
+@mixin listingblock-title {
+    margin-bottom: 11px;
+    margin-top: 0;
+    font-size: 1.35rem;
+    line-height: 1.75rem;
+}
+
+@mixin button-primary {
+    border: 1px solid;
+    //padding: 0.7rem 2rem;
+    padding: 11px 20px;
+    text-transform: none;
+    //font-size: 0.8125rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1.3rem;
+    text-decoration: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+@mixin reg-textfield {
+    margin-bottom: 0;
+    padding: 0.4rem;
+    border: 1px solid $color-outline;
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 
 $fa-font-path: "../webfonts";

@@ -1,12 +1,15 @@
-@mixin wash-line($wash-color)
-{border-top-width: 3px; border-top-style: solid; border-color: $wash-color}
+@mixin wash-line($wash-color) {
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-color: $wash-color
+}
 
 @import 'variables';
 @import 'original-style';
 @import 'skt-animation';
 @import 'buttons-fields';
 @import 'superfish';
-@import 'extraplugins' ;
+@import 'extraplugins';
 @import 'homepage';
 @import 'page-headings';
 @import 'listing';
@@ -15,6 +18,7 @@
 @import 'articles';
 @import 'events';
 @import 'jobs';
+@import 'directory';
 @import 'forms';
 @import 'grid';
 @import 'global';
