@@ -1,10 +1,34 @@
 .wpbdp-wp-theme-edpsy .wpbdp-listing.wpbdp-listing-excerpt {
     border-bottom: $divider-thin-neutral;
-    padding: 1em;
+    padding: 0;
 }
 
 .wpbdp-wp-theme-edpsy .wpbdp-listing .listing-details {
     margin-left: 0;
+}
+
+.wpbdp-wp-theme-edpsy .wpbdp-listing .listing-title {
+    margin-bottom: 10px;
+}
+
+.wpbdp-wp-theme-edpsy .wpbdp-listing .listing-title h3 {
+    margin-bottom: 0;
+}
+
+.excerpt-name-year {
+    display: flex;
+}
+
+.wpbdp-wp-theme-edpsy .wpbdp-listing .listing-details .field-value {
+    width: inherit;
+}
+
+.wpbdp-wp-theme-edpsy .wpbdp-listings-list .listing-details .field-value {
+    margin-bottom: 0;
+}
+
+.wpbdp-wp-theme-edpsy .wpbdp-listings-list .listing-title .wpbdp-subtitle {
+    margin-top: -20px;
 }
 
 .wpbdp-page-main_page .field-value .value {
@@ -20,6 +44,7 @@
 
 .wpbdp-listing.wpbdp-listing-excerpt .listing-details {
     display: flex;
+    justify-content: space-between;
 }
 
 .wpbdp-listing.wpbdp-listing-excerpt .wpbdp-field-year {
@@ -34,14 +59,25 @@
     margin-top: 0;
 }
 
-.wpbdp-wp-theme-edpsy #content .wpbdp-listing a {
+.wpbdp-wp-theme-edpsy #content .wpbdp-listings-list a {
     text-decoration: none;
     cursor: pointer;
+    padding: 1em;
+    display: block;
 }
 
-.wpbdp-wp-theme-edpsy #content .wpbdp-listing a:hover,
-.wpbdp-wp-theme-edpsy #content .wpbdp-listing a:active {
-    background-color: $color-copy-reverse;
+.wpbdp-wp-theme-edpsy #content .wpbdp-listings-list a:hover,
+.wpbdp-wp-theme-edpsy #content .wpbdp-listings-list a:active {
+    background-color: $color-listing-block-hover;
+    outline: #e0e0e0 solid 1px;
+}
+
+.wpbdp-wp-theme-edpsy #wpbdp-listings-list {
+    padding-top: 0;
+}
+
+.wpbdp-wp-theme-edpsy .wpbdp-listings-list.wpbdp-grid {
+    grid-gap: 0;
 }
 
 .wpbdp-wp-theme-edpsy .wpbdp-listing .listing-title {
@@ -138,7 +174,7 @@
 }
 
 .wpbdp-wp-theme-edpsy .search__input-control-icon-svg {
-    color: $color-features;
+    fill: $color-features;
     display: block;
     position: relative;
     right: 0;
@@ -174,7 +210,7 @@
 //}
 
 #wpbdp-listings-list {
-    border-top: solid 5px #ddd;
+    border-top: solid 1px #eee;
     padding-top: 10px;
     margin-top: 10px;
 }
@@ -200,14 +236,6 @@
     padding-bottom: 30px;
     margin-top: 2.5rem;
 }
-
-.wpbdp-view-show_listing.wpbdp-wp-theme-edpsy .wpbdp-listing .listing-details .wpbdp-field-name {
-    font-size: $font-size-h2;
-    line-height: $line-height-h2;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 
 .wpbdp-view-show_listing.wpbdp-wp-theme-edpsy .wpbdp-listing .wpbdp-field-year,
 .wpbdp-view-show_listing.wpbdp-wp-theme-edpsy .wpbdp-listing .wpbdp-field-institution,
@@ -237,4 +265,53 @@
 
 .wpbdp-wp-theme-edpsy .wpbdp-listing .field-value.wpbdp-field-abstract .field-label:after {
     content: none;
+}
+
+// single page
+
+.single-wpbdp_listing.wpbdp-wp-theme-edpsy .wpbdp-field-subtitle {
+    font-size: $font-size-h2-small;
+    line-height: $line-height-h2-small;
+    margin-bottom: 20px;
+}
+
+.single-wpbdp_listing.wpbdp-wp-theme-edpsy .wpbdp-field-name {
+    font-size: $font-size-h2;
+    line-height: $line-height-h2;
+    margin-bottom: 20px;
+}
+
+.wpbdp-year-inst-block {
+    margin-bottom: 20px;
+}
+
+.single-wpbdp_listing.wpbdp-wp-theme-edpsy .wpbdp-field-name {
+    margin-bottom: 0;
+}
+
+
+.wpbdp-metadata-block {
+    margin: 0 0 35px 0;
+    border: 2px solid #eee;
+    padding: 1em;
+    display: block;
+    clear: both;
+}
+
+
+// Fix template
+
+@media screen and (max-width:560px) {
+
+    .wpbdp-wp-theme-edpsy .wpbdp-listing.wpbdp-listing-excerpt .listing-details,
+    .wpbdp-listing.wpbdp-listing-single .listing-details {
+        display: block;
+        margin: 0;
+        float: none;
+    }
+
+    .wpbdp-wp-theme-edpsy .wpbdp-main-box .search-fields .box-row,
+    .wpbdp-wp-theme-edpsy .wpbdp-main-box .main-fields.box-row form {
+        display: flex;
+    }
 }

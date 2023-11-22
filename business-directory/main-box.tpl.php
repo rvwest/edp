@@ -7,7 +7,7 @@
 
 ?>
 <!--main-box.tpl.php-->
-<div id="wpbdp-main-box" class="wpbdp-main-box" data-breakpoints='{"tiny": [0,360], "small": [360,560], "medium": [560,710], "large": [710,999999]}' data-breakpoints-class-prefix="wpbdp-main-box">
+<div id="wpbdp-main-box" class="wpbdp-main-box" data-breakpoints-class-prefix="wpbdp-main-box">
 
 <?php if ( wpbdp_get_option( 'show-search-listings' ) || $in_shortcode ) : ?>
 <div class="main-fields search-block box-row cols-2">
