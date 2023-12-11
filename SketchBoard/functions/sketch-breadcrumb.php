@@ -22,6 +22,10 @@ class advertica_lite_breadcrumb_class {
 
         echo '<section class="cont_nav"><div class="cont_nav_inner"><p><a href="' . esc_url(home_url('/')) . '">' . __('Home', 'advertica-lite') . '</a>';
 
+        if (wpbdp_current_view() && ! is_page( 'thesis-directory' ) ) {
+            echo $markup . '<a href="' . esc_url('/thesis-directory/') . '">' . __('Thesis directory', 'advertica-lite') . '</a>';
+        }
+
        
 
         if (!is_front_page()) {
@@ -40,7 +44,7 @@ class advertica_lite_breadcrumb_class {
 
         if (is_page() || is_single()) {
 
-            the_title('<span>', '</span>');
+            the_title('<span class="crumb-current-page">',  '</span>');
 
         } else {
 
@@ -58,6 +62,8 @@ class advertica_lite_breadcrumb_class {
 
         $markup = $this->opts['before'] . $this->opts['delimiter'] . $this->opts['after'];
 
+        
+
         if (is_page()) {
 
             if ($der_post->post_parent) {
@@ -65,9 +71,7 @@ class advertica_lite_breadcrumb_class {
                 $my_query = get_post($der_post->post_parent);
 
                 $this->advertica_lite_simple_breadcrumb_case($my_query);
-
-                
-
+               
                 $link = '<a href="';
 
                 $link .= esc_url( get_permalink($my_query->ID) );
@@ -153,6 +157,8 @@ class advertica_lite_breadcrumb_class {
             return __('Author', 'advertica-lite') . ' : ' . $curauth->display_name;
 
         }
+
+        
 
 
 

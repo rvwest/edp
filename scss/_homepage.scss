@@ -21,11 +21,12 @@
 }
 
 .business-directory .bread-title-holder .container {
-	@include wash-line($color-features)
+	@include wash-line($color-groups)
 }
 
 #front-content-box.block--groups .container,
-.category-groups .bread-title-holder .container {
+.category-groups .bread-title-holder .container,
+.business-directory .bread-title-holder .container {
 	@include wash-line($color-groups)
 }
 

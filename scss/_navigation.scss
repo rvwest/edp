@@ -263,16 +263,17 @@ ul.menu li {
 	background-color: $color-jobs;
 }
 
-#skenav li a[href*="/thesis-directory/"]:hover,
-#skenav li a[href*="/thesis-directory/"]:active,
-#skenav ul li.current-menu-item>a[href*="/thesis-directory/"],
-#skenav ul li.current-menu-parent>a[href$="/thesis-directory/"],
-#skenav ul li.current-page-ancestor a.sf-with-ul[href$="/thesis-directory/"],
-#skenav li a[href*="/thesis-directory/"]:hover,
-#skenav li a[href*="/thesis-directory/"]:active,
-#skenav ul li.current-menu-item>a[href*="/thesis-directory/"],
-#skenav ul li.current-menu-parent>a[href$="/thesis-directory/"],
-#skenav ul li.current-page-ancestor a.sf-with-ul[href$="/thesis-directory/"] {
+#skenav li a[href*="thesis-directory/"]:hover,
+#skenav li a[href*="thesis-directory/"]:active,
+#skenav ul li.current-menu-item>a[href*="thesis-directory/"],
+#skenav ul li.current-menu-parent>a[href$="thesis-directory/"],
+#skenav ul li.current-page-ancestor a.sf-with-ul[href$="thesis-directory/"],
+#skenav li a[href*="thesis-directory/"]:hover,
+#skenav li a[href*="thesis-directory/"]:active,
+#skenav ul li.current-menu-item>a[href*="thesis-directory/"],
+#skenav ul li.current-menu-parent>a[href$="thesis-directory/"],
+#skenav ul li.current-page-ancestor a.sf-with-ul[href$="thesis-directory/"],
+#skenav ul li.current-page-ancestor a[href$="thesis-directory/"] {
 	background-color: $color-groups;
 }
 
