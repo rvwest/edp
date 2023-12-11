@@ -20,6 +20,15 @@
 	@include wash-line($color-features)
 }
 
+.business-directory .bread-title-holder .container {
+	@include wash-line($color-features)
+}
+
+#front-content-box.block--groups .container,
+.category-groups .bread-title-holder .container {
+	@include wash-line($color-groups)
+}
+
 #front-content-box.block--groups .container,
 .category-groups .bread-title-holder .container {
 	@include wash-line($color-groups)
@@ -30,9 +39,12 @@
 	@include wash-line($color-about)
 }
 
-#front-content-box.block--training .container,
-.category-training .bread-title-holder .container {
+#front-content-box.block--training .container {
 	@include wash-line($color-training)
+}
+
+.category-training .bread-title-holder .container {
+	@include wash-line($color-about)
 }
 
 .category-events .bread-title-holder .container {

@@ -12,7 +12,9 @@ $color-about-pale: #9dbd73;
 $color-events: #00838F;
 $color-events-pale: #E0F7FA;
 $color-boost: #EF6C00;
-
+$color-thesis: #286f8f;
+$color-thesis-highlight: #225a74;
+$color-thesis-pale: #3b8fb6;
 $color-jobs: #e21d60;
 $color-jobs-pale: #f48fb1;
 $color-jobs-v-pale: #fce4ec;
@@ -74,6 +76,7 @@ $font-size-h1-content-long: 2.125rem;
 $line-height-h1-content-long: 2.8rem;
 
 $font-size-h1-small: 2rem;
+$line-height-h1-small: calc($font-size-h1-small*1.4);
 
 $font-size-h2: 1.75rem;
 //font size * 1.5
@@ -82,11 +85,11 @@ $font-size-h2-small: 1.5rem;
 $line-height-h2-small: calc($font-size-h2-small*1.5);
 
 $font-size-h3: 1.35rem;
-$line-height-h3: calc(1.35rem*1.5);
+$line-height-h3: calc($font-size-h3*1.5);
 
 $font-size-body: 1.125rem;
 $line-height-body: 1.75rem;
-
+$unordered-list-spacing: 0.3rem;
 $font-size-buttons: 1rem;
 
 $col1-max: 599;
@@ -97,7 +100,7 @@ $col3-max: 1199;
 
 
 $divider-thick-neutral: solid 5px $color-outline;
-
+$divider-medium-neutral: solid 2px $color-outline;
 $divider-thin-neutral: solid 1px $color-outline;
 
 @mixin transition-0-1 {

@@ -36,11 +36,33 @@
 }
 
 .wpbdp-wp-theme-edpsy .field-value label,
-.wpbdp-wp-theme-edpsy .field-value .field-label,
 .wpbdp-wp-theme-edpsy .wpbdp-listing .wpbdp-field-link_type {
     font-weight: $font-weight-medium;
     color: $color-secondary;
 }
+
+.wpbdp-wp-theme-edpsy .field-value .field-label,
+.wpbdp-further-reading-block h2,
+.wpbdp-contact h2 {
+    font-weight: $font-weight-regular;
+    color: $color-thesis;
+}
+
+.wpbdp-further-reading-block {
+    display: flex;
+    border-bottom: $divider-medium-neutral;
+    padding-bottom: 15px;
+}
+
+.wpbdp-further-reading-block ul {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.wpbdp-further-reading-block li {
+    margin-bottom: $unordered-list-spacing;
+}
+
 
 .wpbdp-listing.wpbdp-listing-excerpt .listing-details {
     display: flex;
@@ -97,32 +119,32 @@
 
 // Directory //
 .wpbdp-wp-theme-edpsy .wpbdp-main-box .submit-btn input[type="submit"] {
-    background-color: $color-features;
+    background-color: $color-thesis;
     color: $color-heading-reverse;
-    border-color: $color-features;
+    border-color: $color-thesis;
     -webkit-appearance: none;
 }
 
 .wpbdp-wp-theme-edpsy .wpbdp-main-box .submit-btn.secondary input[type="submit"] {
     background-color: $color-heading-reverse;
-    color: $color-features;
-    border: $color-features 1px solid;
+    color: $color-thesis;
+    border: $color-thesis 1px solid;
     padding: 0.7rem 2rem;
     -webkit-appearance: none;
 }
 
 .wpbdp-wp-theme-edpsy .wpbdp-main-box .submit-btn input[type="submit"]:hover {
-    background-color: $color-features-highlight
+    background-color: $color-thesis-highlight
 }
 
 .wpbdp-wp-theme-edpsy .wpbdp-main-box .submit-btn.secondary input[type="submit"]:hover {
-    background-color: $color-features-pale
+    background-color: $color-thesis-pale
 }
 
 // Search block
 
 .wpbdp-wp-theme-edpsy .wpbdp-main-box .search-block {
-    border: 1px solid $color-features;
+    border: 1px solid $color-thesis;
     margin-top: 30px;
     margin-bottom: 30px;
     padding-right: 20px;
@@ -174,7 +196,7 @@
 }
 
 .wpbdp-wp-theme-edpsy .search__input-control-icon-svg {
-    fill: $color-features;
+    fill: $color-thesis;
     display: block;
     position: relative;
     right: 0;
@@ -205,12 +227,16 @@
     font-size: $font-size-buttons;
 }
 
+.wpbdp-wp-theme-edpsy .wpbdp-listings-list .field-value .field-label {
+    display: none;
+}
+
 //.wpbdp-wp-theme-edpsy .wpbdp-main-box .advanced-search-link {
 //    display: none;
 //}
 
 #wpbdp-listings-list {
-    border-top: solid 1px #eee;
+    border-top: $divider-thin-neutral;
     padding-top: 10px;
     margin-top: 10px;
 }
@@ -245,20 +271,16 @@
     width: inherit;
 }
 
-.wpbdp-view-show_listing.wpbdp-wp-theme-edpsy .wpbdp-listing .wpbdp-field-year:after {
-    content: " | "
-}
-
-.wpbdp-view-show_listing.wpbdp-wp-theme-edpsy .wpbdp-listing .wpbdp-field-website {
+/**.wpbdp-view-show_listing.wpbdp-wp-theme-edpsy .wpbdp-listing .wpbdp-field-website {
     width: 50%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     vertical-align: top;
     display: inline-block;
-}
+}**/
 
-.wpbdp-wp-theme-edpsy .wpbdp-listing .field-value .field-label:after,
+//.wpbdp-wp-theme-edpsy .wpbdp-listing .field-value .field-label:after,
 .wpbdp-view-show_listing.wpbdp-wp-theme-edpsy .wpbdp-listing .wpbdp-field-link_type:after {
     content: ": ";
 }
@@ -269,20 +291,31 @@
 
 // single page
 
+.single-wpbdp_listing.wpbdp-wp-theme-edpsy h1.title {
+    font-size: $font-size-h1-small;
+    line-height: $line-height-h1-small;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: $color-thesis;
+}
+
 .single-wpbdp_listing.wpbdp-wp-theme-edpsy .wpbdp-field-subtitle {
+    font-size: $font-size-h2-small;
+    line-height: $line-height-h2-small;
+    margin-bottom: 30px;
+    padding-bottom: 35px;
+    color: $color-thesis;
+    border-bottom: $divider-medium-neutral;
+}
+
+.single-wpbdp_listing.wpbdp-wp-theme-edpsy .wpbdp-field-name {
     font-size: $font-size-h2-small;
     line-height: $line-height-h2-small;
     margin-bottom: 20px;
 }
 
-.single-wpbdp_listing.wpbdp-wp-theme-edpsy .wpbdp-field-name {
-    font-size: $font-size-h2;
-    line-height: $line-height-h2;
-    margin-bottom: 20px;
-}
-
 .wpbdp-year-inst-block {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .single-wpbdp_listing.wpbdp-wp-theme-edpsy .wpbdp-field-name {
@@ -292,12 +325,41 @@
 
 .wpbdp-metadata-block {
     margin: 0 0 35px 0;
-    border: 2px solid #eee;
-    padding: 1em;
+    border-top: $divider-medium-neutral;
+    border-bottom: $divider-medium-neutral;
     display: block;
     clear: both;
+    padding-top: 40px;
+    padding-bottom: 35px;
 }
 
+
+
+.wpbdp-metadata-block .wpbdp-field-value {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.wpbdp-metadata-block .wpbdp-field-value .field-label,
+.wpbdp-further-reading-block h2 {
+    min-width: 140px;
+    margin-right: 5px;
+}
+
+.wpbdp-further-reading-block h2 {
+    margin: 0;
+    font-size: $font-size-body;
+}
+
+.wpbdp-wp-theme-edpsy.single-wpbdp_listing h2 {
+    color: $color-thesis;
+}
+
+.wpbdp-contact {
+    border-top: $divider-medium-neutral;
+    margin-top: 40px;
+    padding-top: 40px;
+}
 
 // Fix template
 
