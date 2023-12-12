@@ -7,8 +7,17 @@
     margin-left: 0;
 }
 
+.wpbdp-wp-theme-edpsy.wpbdp-view-main h1 {
+    color: $color-thesis;
+}
+
 .wpbdp-wp-theme-edpsy .wpbdp-listing .listing-title {
     margin-bottom: 10px;
+    text-transform: lowercase;
+}
+
+.wpbdp-wp-theme-edpsy .wpbdp-listing .listing-title:first-letter {
+    text-transform: uppercase;
 }
 
 .wpbdp-wp-theme-edpsy .wpbdp-listing .listing-title h3 {
@@ -255,6 +264,7 @@
 }
 
 // Thesis detail page
+
 
 .wpbdp-view-show_listing.wpbdp-wp-theme-edpsy .wpbdp-listing .listing-details .wpbdp-field-abstract {
     border-bottom: $divider-thick-neutral;

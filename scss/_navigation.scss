@@ -160,7 +160,9 @@ ul.menu li {
 * html #skenav ul li a:hover,
 #skenav ul li.current-page-ancestor a[href$="/interest-groups/"],
 #skenav ul li.current-page-ancestor a[href$="/events/"],
-#skenav ul li.current-page-ancestor a.sf-with-ul[href$="/jobs/"] {
+#skenav ul li.current-page-ancestor a.sf-with-ul[href$="/jobs/"],
+.business-directory #skenav li a.sf-with-ul[href$="community/"],
+.single-job_listing #skenav li a.sf-with-ul[href$="jobs/"] {
 	color: #fff;
 }
 
@@ -206,11 +208,16 @@ ul.menu li {
 }
 
 #skenav li a[href*="interest-groups/"]:hover,
-#skenav li a[href*="interest-groups/"]:hover,
 #skenav li a[href*="interest-groups/"]:active,
 #skenav ul li.current-menu-item>a[href*="interest-groups/"],
 #skenav ul li.current-menu-parent>a[href*="interest-groups/"],
-#skenav ul li.current-page-ancestor a[href$="/interest-groups/"] {
+#skenav ul li.current-page-ancestor a[href$="/interest-groups/"],
+#skenav li a[href*="community/"]:hover,
+#skenav li a[href*="community/"]:active,
+#skenav ul li.current-menu-item>a[href*="community/"],
+#skenav ul li.current-menu-parent>a[href*="community/"],
+#skenav ul li.current-page-ancestor a[href$="/community/"],
+.business-directory #skenav li a.sf-with-ul[href$="community/"] {
 	background-color: $color-groups;
 }
 
@@ -246,7 +253,8 @@ ul.menu li {
 #skenav li a[href*="ep-training/"]:active,
 #skenav ul li.current-menu-item>a[href*="ep-training/"],
 #skenav ul li.current-menu-parent>a[href*="ep-training/"],
-#skenav ul li.current-page-ancestor a.sf-with-ul[href$="ep-training/"] {
+#skenav ul li.current-page-ancestor a.sf-with-ul[href$="about/"],
+#skenav ul li.current_page_ancestor a.sf-with-ul[href$="about/"] {
 	background-color: $color-about;
 }
 
@@ -259,7 +267,8 @@ ul.menu li {
 #skenav li a[href*="/job/"]:active,
 #skenav ul li.current-menu-item>a[href*="/job/"],
 #skenav ul li.current-menu-parent>a[href$="/job/"],
-#skenav ul li.current-page-ancestor a.sf-with-ul[href$="/job/"] {
+#skenav ul li.current-page-ancestor a.sf-with-ul[href$="/job/"],
+.single-job_listing #skenav li a.sf-with-ul[href$="/jobs/"] {
 	background-color: $color-jobs;
 }
 
