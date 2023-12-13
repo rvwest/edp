@@ -385,6 +385,15 @@
         float: none;
     }
 
+    .wpbdp-wp-theme-edpsy .page-content h1.title {
+        padding-bottom: 10px;
+    }
+
+    .page-content .wpbdp-further-reading-block h2 {
+        margin: 0;
+        font-size: $font-size-body;
+    }
+
     .wpbdp-wp-theme-edpsy .wpbdp-main-box .search-fields .box-row,
     .wpbdp-wp-theme-edpsy .wpbdp-main-box .main-fields.box-row form {
         display: flex;
