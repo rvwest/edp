@@ -22,9 +22,9 @@ class advertica_lite_breadcrumb_class {
 
         echo '<section class="cont_nav"><div class="cont_nav_inner"><p><a href="' . esc_url(home_url('/')) . '">' . __('Home', 'advertica-lite') . '</a>';
 
-//        if (wpbdp_current_view() && ! is_page( 'thesis-directory' ) ) {
-  //          echo $markup . '<a href="' . esc_url('/thesis-directory/') . '">' . __('Thesis directory', 'advertica-lite') . '</a>';
-    //    }
+       if (wpbdp_current_view() && ! is_page( 'thesis-directory' ) ) {
+          echo $markup . '<a href="' . esc_url('/thesis-directory/') . '">' . __('Thesis directory', 'advertica-lite') . '</a>';
+        }
 
        
 
