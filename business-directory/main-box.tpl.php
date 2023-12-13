@@ -31,9 +31,10 @@
 		<div class="box-col submit-btn">
 			<input type="submit" value="<?php echo esc_attr_x( 'Find Listings', 'main box', 'business-directory-plugin' ); ?>" /><br />
 		</div>
+
 	</form>
 </div>
-<a class="advanced-search-link" href="<?php echo esc_url( $search_url ); ?>"><?php echo esc_attr_x( 'Advanced Search', 'main box', 'business-directory-plugin' ); ?></a>
+<!--<a class="advanced-search-link" href="<?php echo esc_url( $search_url ); ?>"><?php echo esc_attr_x( 'Advanced filters', 'main box', 'business-directory-plugin' ); ?></a>-->
 
 
 

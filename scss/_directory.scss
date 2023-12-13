@@ -40,7 +40,8 @@
     margin-top: -20px;
 }
 
-.wpbdp-page-main_page .field-value .value {
+.wpbdp-page-main_page .field-value .value,
+.wpbdp-view-search .field-value .value {
     color: $color-secondary;
 }
 
@@ -88,6 +89,8 @@
     font-weight: $font-weight-regular;
     line-height: $line-height-body;
     margin-top: 0;
+    color: $color-groups;
+    max-width: 700px;
 }
 
 .wpbdp-wp-theme-edpsy #content .wpbdp-listings-list a {
@@ -321,7 +324,7 @@
 .single-wpbdp_listing.wpbdp-wp-theme-edpsy .wpbdp-field-name {
     font-size: $font-size-h2-small;
     line-height: $line-height-h2-small;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
 }
 
 .wpbdp-year-inst-block {
