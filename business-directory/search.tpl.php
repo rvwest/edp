@@ -1,11 +1,10 @@
 <!--search.tpl.php-->
 <div id="wpbdp-search-page" class="wpbdp-search-page businessdirectory-search businessdirectory wpbdp-page <?php echo $_class; ?>">
 	<?php if ( ! $form_only ) : ?>
-		<div class="wpbdp-bar cf"><?php wpbdp_the_main_links(); ?></div>
+		<!--<div class="wpbdp-bar cf"><?php wpbdp_the_main_links(); ?></div>-->
 	<?php endif; ?>
-	<h2 class="title"><?php esc_html_e( 'Search', 'business-directory-plugin' ); ?></h2>
-
-	<div class="main-fields search-block box-row cols-2">
+	<div class="wpbdp-main-box">
+		<div class="main-fields search-block box-row cols-2">
 	<form action="<?php echo esc_url( $search_url ); ?>" method="get">
 		<input type="hidden" name="wpbdp_view" value="search" />
 		<?php echo $hidden_fields; ?>
@@ -24,18 +23,20 @@
 			</div>
 		</div>
 		<div class="box-col submit-btn">
-			<input type="submit" value="<?php echo esc_attr_x( 'Find Listings', 'main box', 'business-directory-plugin' ); ?>" /><br />
+			<input type="submit" value="<?php echo esc_attr_x( 'Search', 'main box', 'business-directory-plugin' ); ?>" /><br />
 		</div>
 	</form>
+		</div>
 </div>
-
+<div class="wpbdp-add-your-own"><i class="far fa-book"></i> <a href="https://docs.google.com/forms/d/e/1FAIpQLSeeHm-OYkTotMzt99GuAbgP-j1rZBl3n54kPz4e-BWZDtz-Lg/viewform?usp=sf_link">Add your own thesis</a></div>
 	<?php if ( 'none' === $search_form_position || 'above' === $search_form_position ) : ?>
 		<?php echo $search_form; ?>
 	<?php endif; ?>
 
+
 	<?php if ( $searching ) : ?>
-		<h3><?php echo esc_html__( 'Search Results', 'business-directory-plugin' ) . ' (' . esc_html( $count ) . ')'; ?>
-		<?php if ( 'none' === $search_form_position ) : ?>
+		<h3><?php echo esc_html__( 'Results', 'business-directory-plugin' ) . ' (' . esc_html( $count ) . ')'; ?>
+		<!--<?php if ( 'none' === $search_form_position ) : ?>
 			<?php
 			$return_url = wpbdp_get_var( array( 'param' => 'return_url' ), 'request' );
 			if ( empty( $return_url ) ) :
@@ -45,7 +46,8 @@
 			<a class="wpbdp-no-bold wpbdp-smaller" href="<?php echo esc_url( $return_url ); ?>">
 				<?php esc_html_e( 'Search Again', 'business-directory-plugin' ); ?>
 			</a>
-		<?php endif; ?>
+		<?php endif; ?>-->
+		<a href="<?php echo esc_url( wpbdp_get_page_link( 'main' ) ); ?>"><i class="far fa-times"></i></a>
 		</h3>
 		<?php if ( $results ) : ?>
 			<div class="search-results">

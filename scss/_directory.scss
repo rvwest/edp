@@ -7,7 +7,8 @@
     margin-left: 0;
 }
 
-.wpbdp-wp-theme-edpsy.wpbdp-view-main h1 {
+.wpbdp-wp-theme-edpsy.wpbdp-view-main h1,
+.wpbdp-wp-theme-edpsy.wpbdp-view-search h1 {
     color: $color-thesis;
 }
 
@@ -130,14 +131,16 @@
 }
 
 // Directory //
-.wpbdp-wp-theme-edpsy .wpbdp-main-box .submit-btn input[type="submit"] {
+.wpbdp-wp-theme-edpsy .wpbdp-main-box .submit-btn input[type="submit"],
+.wpbdp-wp-theme-edpsy .wpbdp-search-page .submit-btn input[type="submit"] {
     background-color: $color-thesis;
     color: $color-heading-reverse;
     border-color: $color-thesis;
     -webkit-appearance: none;
 }
 
-.wpbdp-wp-theme-edpsy .wpbdp-main-box .submit-btn.secondary input[type="submit"] {
+.wpbdp-wp-theme-edpsy .wpbdp-main-box .submit-btn.secondary input[type="submit"],
+.wpbdp-wp-theme-edpsy .wpbdp-search-page .submit-btn.secondary input[type="submit"] {
     background-color: $color-heading-reverse;
     color: $color-thesis;
     border: $color-thesis 1px solid;
@@ -145,17 +148,20 @@
     -webkit-appearance: none;
 }
 
-.wpbdp-wp-theme-edpsy .wpbdp-main-box .submit-btn input[type="submit"]:hover {
+.wpbdp-wp-theme-edpsy .wpbdp-main-box .submit-btn input[type="submit"]:hover,
+.wpbdp-wp-theme-edpsy .wpbdp-search-page .submit-btn input[type="submit"]:hover {
     background-color: $color-thesis-highlight
 }
 
-.wpbdp-wp-theme-edpsy .wpbdp-main-box .submit-btn.secondary input[type="submit"]:hover {
+.wpbdp-wp-theme-edpsy .wpbdp-main-box .submit-btn.secondary input[type="submit"]:hover,
+.wpbdp-wp-theme-edpsy .wpbdp-search-page .submit-btn.secondary input[type="submit"]:hover {
     background-color: $color-thesis-pale
 }
 
 // Search block
 
-.wpbdp-wp-theme-edpsy .wpbdp-main-box .search-block {
+.wpbdp-wp-theme-edpsy .wpbdp-main-box .search-block,
+.wpbdp-wp-theme-edpsy .wpbdp-search-page .search-block {
     border: 1px solid $color-thesis;
     margin-top: 30px;
     margin-bottom: 10px;
@@ -163,33 +169,39 @@
 
 }
 
-.wpbdp-wp-theme-edpsy .wpbdp-main-box .search-block form {
+.wpbdp-wp-theme-edpsy .wpbdp-main-box .search-block form,
+.wpbdp-wp-theme-edpsy .wpbdp-search-page .search-block form {
     align-items: center;
 }
 
-.wpbdp-wp-theme-edpsy .wpbdp-main-box .search-block input[type=text]#wpbdp-main-box-keyword-field {
+.wpbdp-wp-theme-edpsy .wpbdp-main-box .search-block input[type=text]#wpbdp-main-box-keyword-field,
+.wpbdp-wp-theme-edpsy .wpbdp-search-page .search-block input[type=text]#wpbdp-main-box-keyword-field {
 
     font-size: 1.125rem;
     margin-bottom: 0
 }
 
-.wpbdp-wp-theme-edpsy .wpbdp-main-box .search-block .box-col {
+.wpbdp-wp-theme-edpsy .wpbdp-main-box .search-block .box-col,
+.wpbdp-wp-theme-edpsy .wpbdp-search-page .search-block .box-col {
     margin-bottom: 0;
 }
 
 
-.wpbdp-wp-theme-edpsy .wpbdp-main-box .search-block ::placeholder {
+.wpbdp-wp-theme-edpsy .wpbdp-main-box .search-block ::placeholder,
+.wpbdp-wp-theme-edpsy .wpbdp-search-page .search-block ::placeholder {
     -webkit-text-security: none;
     color: rgb(93, 93, 93);
     opacity: 1;
 }
 
-.wpbdp-wp-theme-edpsy .wpbdp-main-box .submit-btn {
+.wpbdp-wp-theme-edpsy .wpbdp-main-box .submit-btn,
+.wpbdp-wp-theme-edpsy .wpbdp-search-page .submit-btn {
     width: auto;
     min-width: auto;
 }
 
-.wpbdp-wp-theme-edpsy .wpbdp-main-box .submit-btn input[type="submit"] {
+.wpbdp-wp-theme-edpsy .wpbdp-main-box .submit-btn input[type="submit"],
+.wpbdp-wp-theme-edpsy .wpbdp-search-page .submit-btn input[type="submit"] {
     @include button-primary;
     margin: 0;
     width: auto;
@@ -361,6 +373,11 @@
     margin-right: 5px;
 }
 
+.wpbdp-wp-theme-edpsy .wpbdp-search-page .search-fields .box-row,
+.wpbdp-wp-theme-edpsy .wpbdp-search-page .main-fields.box-row form {
+    display: flex;
+}
+
 .wpbdp-further-reading-block h2 {
     margin: 0;
     font-size: $font-size-body;
@@ -374,6 +391,12 @@
     border-top: $divider-medium-neutral;
     margin-top: 40px;
     padding-top: 40px;
+}
+
+.wpbdp-main-box .box-col input {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 150px;
 }
 
 // Fix template
@@ -404,7 +427,9 @@
 
 
     .wpbdp-wp-theme-edpsy .wpbdp-main-box .search-fields .box-row,
-    .wpbdp-wp-theme-edpsy .wpbdp-main-box .main-fields.box-row form {
+    .wpbdp-wp-theme-edpsy .wpbdp-main-box .main-fields.box-row form,
+    .wpbdp-wp-theme-edpsy .wpbdp-search-page .search-fields .box-row,
+    .wpbdp-wp-theme-edpsy .wpbdp-search-page .main-fields.box-row form {
         display: flex;
     }
 

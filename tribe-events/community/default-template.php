@@ -26,7 +26,7 @@ get_header();
 
 ?>
 <div class="main-wrapper-item category-events  ">
-
+	<h1>test</h1>
 <div class="bread-title-holder">
 		<div class="container">
 			<div class="row-fluid">
@@ -35,8 +35,8 @@ get_header();
 	</div>
 	<div class="page-content default-pagetemp">
 		<div class="container post-wrap">
-			<div class="row-fluid">
-				<div id="content" class="span8 center-col">
+		<div class="row-fluid">
+			<div id="content" class="span8 center-col">
 	<main
 		id="tribe-events-pg-template"
 		<?php tribe_classes( $classes ); ?>
