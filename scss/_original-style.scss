@@ -820,7 +820,8 @@ a.skt-featured-icons:after {
 /*.bread-title-holder h1.title {font-size: 25px;margin:0;line-height:30px;color:#222;}*/
 .bread-title-holder .cont_nav_inner a,
 .bread-title-holder .cont_nav_inner p {
-    font-size: 12px;
+    font-size: $font-size-mini;
+    line-height: $line-height-mini;
     font-weight: $font-weight-bold
         /*undo 600*/
     ;

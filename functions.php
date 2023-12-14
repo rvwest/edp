@@ -734,6 +734,6 @@ function tribe_events_custom_orderby($query) {
 }
 add_action('pre_get_posts', 'tribe_events_custom_orderby');
 
-
+// Directory
 
 ?>

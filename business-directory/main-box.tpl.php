@@ -29,7 +29,7 @@
 			</div>
 		</div>
 		<div class="box-col submit-btn">
-			<input type="submit" value="<?php echo esc_attr_x( 'Find Listings', 'main box', 'business-directory-plugin' ); ?>" /><br />
+			<input type="submit" value="<?php echo esc_attr_x( 'Search', 'main box', 'business-directory-plugin' ); ?>" /><br />
 		</div>
 
 	</form>
@@ -48,3 +48,4 @@
 <?php endif; ?> -->
 
 </div>
+<div class="wpbdp-add-your-own"><i class="far fa-book"></i> <a href="https://docs.google.com/forms/d/e/1FAIpQLSeeHm-OYkTotMzt99GuAbgP-j1rZBl3n54kPz4e-BWZDtz-Lg/viewform?usp=sf_link">Add your own thesis</a></div>
