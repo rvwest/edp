@@ -736,4 +736,12 @@ add_action('pre_get_posts', 'tribe_events_custom_orderby');
 
 // Directory
 
+add_shortcode( 'get_search_term_used', function () {
+    /* translators: %s: Search query/keyword. */
+    return sprintf(
+        __( 'Search Results for "%s"', 'business-directory-plugin' ),
+        esc_attr( get_search_query() )
+    );
+} );
+
 ?>

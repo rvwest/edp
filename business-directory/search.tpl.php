@@ -47,7 +47,10 @@
 				<?php esc_html_e( 'Search Again', 'business-directory-plugin' ); ?>
 			</a>
 		<?php endif; ?>-->
-		<a href="<?php echo esc_url( wpbdp_get_page_link( 'main' ) ); ?>"><i class="far fa-times"></i></a>
+		<a class="wpbdp-no-bold wpbdp-smaller" href="<?php echo esc_url( wpbdp_get_page_link( 'main' ) ); ?>">
+				<?php esc_html_e( 'Clear search', 'business-directory-plugin' ); ?> <i class="far fa-times"></i>
+			</a>
+			
 		</h3>
 		<?php if ( $results ) : ?>
 			<div class="search-results">

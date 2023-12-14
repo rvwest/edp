@@ -158,11 +158,12 @@ ul.menu li {
 * html #skenav ul li.current-menu-item a,
 * html #skenav ul li.current-menu-parent a,
 * html #skenav ul li a:hover,
-#skenav ul li.current-page-ancestor a[href$="/interest-groups/"],
+//#skenav ul li.current-page-ancestor a[href$="/interest-groups/"],
 #skenav ul li.current-page-ancestor a[href$="/events/"],
 #skenav ul li.current-page-ancestor a.sf-with-ul[href$="/jobs/"],
 .business-directory #skenav li a.sf-with-ul[href$="community/"],
-.single-job_listing #skenav li a.sf-with-ul[href$="jobs/"] {
+.single-job_listing #skenav li a.sf-with-ul[href$="jobs/"],
+.business-directory #skenav li a[href$="thesis-directory/"] {
 	color: #fff;
 }
 
@@ -211,12 +212,10 @@ ul.menu li {
 #skenav li a[href*="interest-groups/"]:active,
 #skenav ul li.current-menu-item>a[href*="interest-groups/"],
 #skenav ul li.current-menu-parent>a[href*="interest-groups/"],
-#skenav ul li.current-page-ancestor a[href$="/interest-groups/"],
 #skenav li a[href*="community/"]:hover,
 #skenav li a[href*="community/"]:active,
 #skenav ul li.current-menu-item>a[href*="community/"],
 #skenav ul li.current-menu-parent>a[href*="community/"],
-#skenav ul li.current-page-ancestor a[href$="/community/"],
 .business-directory #skenav li a.sf-with-ul[href$="community/"] {
 	background-color: $color-groups;
 }
@@ -276,13 +275,17 @@ ul.menu li {
 #skenav li a[href*="thesis-directory/"]:active,
 #skenav ul li.current-menu-item>a[href*="thesis-directory/"],
 #skenav ul li.current-menu-parent>a[href$="thesis-directory/"],
+#skenav li a[href*="mentoring/"]:hover,
+#skenav li a[href*="mentoring/"]:active,
+#skenav ul li.current-menu-item>a[href*="mentoring/"],
+#skenav ul li.current-menu-parent>a[href$="mentoring/"],
 #skenav ul li.current-page-ancestor a.sf-with-ul[href$="thesis-directory/"],
 #skenav li a[href*="thesis-directory/"]:hover,
 #skenav li a[href*="thesis-directory/"]:active,
 #skenav ul li.current-menu-item>a[href*="thesis-directory/"],
 #skenav ul li.current-menu-parent>a[href$="thesis-directory/"],
 #skenav ul li.current-page-ancestor a.sf-with-ul[href$="thesis-directory/"],
-#skenav ul li.current-page-ancestor a[href$="thesis-directory/"] {
+.business-directory #skenav li a[href$="thesis-directory/"] {
 	background-color: $color-groups;
 }
 
