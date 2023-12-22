@@ -55,6 +55,6 @@
 </div>
 
 <h2>Abstract</h2>
-<?php echo $fields->abstract->html; ?>
+<?php echo wpautop($fields->abstract->raw); ?>
 <h2 class="wpbdp-contact">Contact <?php echo $fields->name->raw; ?></h2>
 <?php echo $fields->email->html; ?>
