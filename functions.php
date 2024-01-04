@@ -234,7 +234,8 @@ function tribe_breadcrumbs() {
 	$separator = '&nbsp;<span class="skt-breadcrumbs-separator"> &gt;&gt; </span>&nbsp;';
 
 	echo '<div class="tribe-breadcrumbs"><p>';
-	echo '<a href="' . get_option('home') . '">' . Home . '</a>';
+	echo '<a href="' . get_option('home') . '">Home</a>';
+//	echo '<a href="' . get_option('home') . '">' . Home . '</a>';
 
 	if( tribe_is_month() && !is_tax() ) { // The Main Calendar Page
 		echo $separator;
@@ -618,7 +619,8 @@ function arphabet_widgets_init() {
 
 }
 add_action( 'widgets_init', 'arphabet_widgets_init' );
-add_action( 'single_job_listing_meta_start', 'display_job_closing_date' );
+//Quick fix - WP 6.4.2 issue
+//add_action( 'single_job_listing_meta_start', 'display_job_closing_date' );
 add_action('after_setup_theme', 'remove_admin_bar');
 add_action( 'single_job_listing_date_fields_combined', 'gma_wpjmef_display_combined_dates' );
 
