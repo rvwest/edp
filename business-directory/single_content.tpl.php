@@ -56,5 +56,11 @@
 
 <h2>Abstract</h2>
 <?php echo wpautop($fields->abstract->raw); ?>
-<h2 class="wpbdp-contact">Contact <?php echo $fields->name->raw; ?></h2>
-<?php echo $fields->email->html; ?>
+
+
+
+<?php // echo $fields->html; ?>
+<?php if ( $fields->share_email->value == 'Yes' ) : ?>
+    <h2 class="wpbdp-contact">Contact <?php echo $fields->name->raw; ?></h2>
+    <?php echo $fields->email->html; ?>
+<?php endif; ?>
