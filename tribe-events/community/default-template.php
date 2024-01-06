@@ -26,7 +26,6 @@ get_header();
 
 ?>
 <div class="main-wrapper-item category-events  ">
-	<h1>test</h1>
 <div class="bread-title-holder">
 		<div class="container">
 			<div class="row-fluid">
