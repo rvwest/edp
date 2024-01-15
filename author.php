@@ -16,13 +16,16 @@ get_header(); ?>
 					}
 					?>
 				<div class="container_inner clearfix title-w-bio span8 center-col">
-					<h1 class="title author-title">
-						<?php  $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author)); ?>
-						<?php _e('Articles by ','advertica-lite'); ?>
-					<?php
-    the_author(first_name, last_name); ?>
-					</h1>
+				<h1 class="title author-title">
+    <?php  
+        $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));
 
+        if ($curauth) {
+            echo __('Articles by ', 'advertica-lite');
+            echo $curauth->first_name . ' ' . $curauth->last_name;
+        }
+    ?>
+</h1>
 
 				<!--	<p class="author-bio"> -->
 						
