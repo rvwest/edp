@@ -19,7 +19,6 @@
 	display: none;
 }
 
-
 #logo #site-title a {
 	color: $color-site-title ;
 	display: inline-block;
@@ -92,7 +91,8 @@ ul.menu li {
 #skenav ul li.current-menu-ancestor>a i,
 #skenav ul li.current-menu-item>a i,
 #skenav ul li.current-menu-parent>a i,
-#skenav li a:hover i {
+#skenav li a:hover i,
+.single-job_listing #skenav li a.sf-with-ul[href$="/jobs/"] i {
 	color: #fff;
 }
 
