@@ -30,8 +30,15 @@
 
 <body <?php body_class(); ?>>
 
-	<!--promospace -->
-	
+<!--promospace -->
+<div class="cta-header-block cta-header-block--black">
+		<div class="container">
+			<div class="row-fluid fixedrow">
+				<p>Urgent appeal: <a href="https://www.justgiving.com/page/edpsy-pcrf-fundraiser">Support Palestinian children</a></p>
+				<p class="cta-second-link"><a href="https://www.justgiving.com/page/edpsy-pcrf-fundraiser">Donate to Palestine Childrens Relief Fund</a></p>
+			</div>
+		</div>
+	</div>
 <!--/promospace-->
 	<div id="wrapper" class="skepage ">
 		<div id="header" class="skehead-headernav clearfix">
