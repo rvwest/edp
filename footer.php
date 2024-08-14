@@ -29,10 +29,12 @@
 
 <div class="span8">
 <p class="foot-message">
-	<a href="https://twitter.com/edpsyuk"><i class="fab fa-twitter"></i></a> | 
-	<a href="https://threads.net/edpsyuk" style="vertical-align: middle;" ><img height="22px"  src="<?php echo get_template_directory_uri(); ?>/images/threads.svg" class="footer-img-svg"></i></a> | 
-	<a href="https://www.linkedin.com/company/edpsy/about/"><i class="fab fa-linkedin"></i></a> |	
-	<a href="https://www.facebook.com/edpsy.org.uk/"><i class="fab fa-facebook"></i></a> |
+<a href="https://bsky.app/profile/edpsy.bsky.social" style="vertical-align: middle;"><img height="22px"  src="<?php echo get_template_directory_uri(); ?>/images/bluesky.svg" class="footer-img-svg"></i></a> | 	
+<a href="https://www.facebook.com/edpsy.org.uk/"><i class="fab fa-facebook"></i></a> |
+<a href="https://twitter.com/edpsyuk"><i class="fab fa-twitter"></i></a> | 
+<a href="https://www.linkedin.com/company/edpsy/about/"><i class="fab fa-linkedin"></i></a> |	
+		
+<a href="https://threads.net/edpsyuk" style="vertical-align: middle;" ><img height="22px"  src="<?php echo get_template_directory_uri(); ?>/images/threads.svg" class="footer-img-svg"></a> | 
 	<a href="mailto:hello@edpsy.org.uk"><i class="fal fa-envelope"></i> hello@edpsy.org.uk</a></p>
 <p class="foot-message"><a href="/about/">Find out more about us</a><br/>Spotted something wrong? <a href="mailto:hello@edpsy.org.uk">let us know</a></p>
 <p class="foot-message"><a href="/community-guidelines">Community guidelines</a> | <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Reusing our content</a> | <a href="/cookies">Cookies and privacy</a></p>
