@@ -792,6 +792,23 @@ ul.fa-features {
 
 // Dashboard //
 
+#job-manager-job-dashboard td.company {
+    vertical-align: middle;
+
+    img {
+        max-width: 150px;
+        max-height: 120px;
+    }
+
+}
+
+#job-manager-job-dashboard th.stats,
+#job-manager-job-dashboard td.stats {
+    display: none;
+}
+
+
+
 .wpjm-dashboard .job-post-promo,
 .wpjm-dashboard .progressbar-container {
     display: none;
