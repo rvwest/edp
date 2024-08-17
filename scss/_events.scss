@@ -263,6 +263,7 @@
 }
 
 .tribe-events .tribe-events-calendar-list__event-title-link:visited,
+.tribe-common a:not(.tribe-common-anchor--unstyle):visited,
 .tribe-events .tribe-events-calendar-list__event-title-link:link {
   color: $color-link;
 }
