@@ -49,10 +49,15 @@ blockquote p:last-child {
 .author-avatar {
     float: left;
     margin-right: 20px;
+    width: 96px;
+    height: 96px;
 }
 
 img.avatar {
     border-radius: 50%;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
 }
 
 h2.author-title {

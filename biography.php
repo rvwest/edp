@@ -13,7 +13,7 @@ if ( function_exists( 'coauthors_posts_links' ) ) {
         foreach( get_coauthors() as $coauthor ): ?>
             <div class="author-info">
                 <div class="author-avatar">
-                    <?php echo get_avatar( $coauthor->user_email, '96' ); ?>
+                <?php echo get_avatar( $coauthor->user_email, '300', '', '', array( 'style' => '' ) ); ?>
                 </div><!-- .author-avatar -->
 
                 <div class="author-description">

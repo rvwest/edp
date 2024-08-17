@@ -10,11 +10,14 @@
 $coauthor = (get_user_by('slug', $coauthor));
 
 ?>
-
+<h1 class="title">Posts by <?php
+echo get_the_author_meta('display_name', $coauthor);
+		?></h1>
 <div class="author-info clearfix">
+
 	<div class="author-avatar">
 		<?php
-		echo get_avatar( get_the_author_meta( 'user_email' ), '96' );
+		echo get_avatar( get_the_author_meta( 'user_email' ), '300' , '', '', array( 'style' => '' ) );
 		?>
 	</div><!-- .author-avatar -->
 
