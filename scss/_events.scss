@@ -185,6 +185,10 @@
   width: calc(var(--tec-grid-width-1-of-8)*2.8);
 }
 
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event-details {
+  width: 80%;
+}
+
 // Month title
 .tribe-common--breakpoint-medium.tribe-common .tribe-common-h6--min-medium {
   font-size: $font-size-h2;
