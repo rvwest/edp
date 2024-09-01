@@ -789,6 +789,20 @@ a#backtop {
 	background: color(srgb 0.4888 0.705 0.2608 / 0.14);
 }
 
+.translation-options h2 {
+	color: $color-about;
+	margin-bottom: 30px;
+}
+
 .body-emphasis {
 	font-weight: 500;
+}
+
+.page-id-5008 h1.title,
+.page-id-5006 h1.title,
+.page-id-5010 h1.title,
+.page-id-13601 h1.title,
+.page-id-13702 h1.title,
+.page-id-13632 h1.title {
+	margin-bottom: 0;
 }
