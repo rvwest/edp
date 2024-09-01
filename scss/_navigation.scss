@@ -780,3 +780,11 @@ a#backtop {
 	align-items: center;
 	justify-content: center;
 }
+
+// Translations
+
+.translation-options p {
+	outline: solid 2px $color-about;
+	padding: 5px 10px;
+	background: color($color-about / 0.14);
+}
