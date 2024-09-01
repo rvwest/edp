@@ -786,5 +786,9 @@ a#backtop {
 .translation-options p {
 	outline: solid 2px $color-about;
 	padding: 5px 10px;
-	background: color($color-about / 0.14);
+	background: color(srgb 0.4888 0.705 0.2608 / 0.14);
+}
+
+.body-emphasis {
+	font-weight: 500;
 }
