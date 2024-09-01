@@ -257,6 +257,12 @@ ul.menu li {
 	background-color: $color-about;
 }
 
+#skenav ul li.current-page-ancestor a.sf-with-ul[href$="about/"],
+#skenav ul li.current-page-ancestor a.sf-with-ul[href$="about/"] {
+	color: white;
+}
+
+
 #skenav li a[href*="/jobs/"]:hover,
 #skenav li a[href*="/jobs/"]:active,
 #skenav ul li.current-menu-item>a[href*="/jobs/"],
