@@ -787,6 +787,7 @@ a#backtop {
 	outline: solid 2px $color-about;
 	padding: 5px 10px;
 	background: color(srgb 0.4888 0.705 0.2608 / 0.14);
+	margin-top: 30px;
 }
 
 .translation-options h2 {
@@ -798,10 +799,9 @@ a#backtop {
 	font-weight: 500;
 }
 
-.translation-options .reuse {
+.translation-options .body-emphasis {
 	display: block;
 	margin-top: 5px;
-	text-align: right;
 }
 
 .page-id-5008 h1.title,
