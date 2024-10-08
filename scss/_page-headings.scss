@@ -112,7 +112,8 @@ h1.author-title {
 }
 
 
-h3 {
+h3,
+.tribe-events-single-event-description.tribe-events-content h3 {
     margin-top: 30px;
     margin-bottom: 20px;
     font-weight: $font-weight-regular;

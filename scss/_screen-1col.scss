@@ -25,11 +25,13 @@
 		font-weight: 400;
 	}
 
-	h2 {
+	h2,
+	.tribe-events-single-event-description.tribe-events-content h2 {
 		font-weight: 600;
 	}
 
-	h3 {
+	h3,
+	.tribe-events-single-event-description.tribe-events-content h3 {
 		font-weight: 600;
 		font-size: $font-size-body;
 	}
@@ -769,7 +771,8 @@
 	#tribe-events-content .tribe-events-schedule h2,
 	#tribe-events-content .tribe-events-city,
 	.tribe-events-schedule .tribe-event-date-start,
-	.tribe-events-schedule .tribe-event-date-end {
+	.tribe-events-schedule .tribe-event-date-end,
+	.tribe-events-schedule .tribe-event-time {
 		font-size: $font-size-body;
 		line-height: $line-height-body;
 		letter-spacing: normal;
@@ -783,7 +786,8 @@
 	#tribe-events-content .tribe-events-cost,
 	#tribe-events-content .tribe-events-city,
 	.tribe-events-schedule .tribe-event-date-start,
-	.tribe-events-schedule .tribe-event-date-end {
+	.tribe-events-schedule .tribe-event-date-end,
+	.tribe-events-schedule .tribe-event-time {
 		font-weight: $font-weight-medium;
 	}
 
