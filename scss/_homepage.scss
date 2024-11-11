@@ -315,7 +315,7 @@ p.front-section-extra {
 
 .homepage-job-promo .hover-space {
 	aspect-ratio: 480 / 280;
-	outline: solid 1px $color-jobs-v-pale;
+	outline: solid 1px $color-jobs;
 	outline-offset: -1px;
 	display: flex;
 	align-items: center;
@@ -325,6 +325,7 @@ p.front-section-extra {
 	margin-block: 0;
 	background: none;
 	min-height: 135px;
+	box-shadow: 0 0 30px #fff, -2px 1px 35px #fff inset, 8px 6px 35px #fce4ec, -5px 0px 10px #fce4ec, 25px 5px 30px #fff;
 }
 
 
