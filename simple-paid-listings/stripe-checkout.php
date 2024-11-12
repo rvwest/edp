@@ -55,6 +55,8 @@
 			</div>
 		</fieldset>
 		
+		<p><i class="fas fa-badge-percent" style="color:#bbb"></i> <a href="https://buy.stripe.com/00g6qAePPcvA4fKfZa?prefilled_email=<?php echo esc_html( wp_get_current_user()->user_email ); ?>&client_reference_id=<?php echo esc_attr( $job_id ); ?>">Use a promotion code</a></p>
+
 		<fieldset class="fieldset-stripe_payment fieldset-type-text">
 			<label for="card-element">
 				<?php esc_html_e( 'Payment Details', 'wp-job-manager-simple-paid-listings' ); ?>
