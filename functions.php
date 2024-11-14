@@ -746,4 +746,15 @@ add_shortcode( 'get_search_term_used', function () {
     );
 } );
 
+// Admin css
+add_action('admin_head', 'custom_css'); // admin_head is a hook my_custom_fonts is a function we are adding it to the hook
+
+function custom_css() {
+  echo '<style>
+    .post-type-tribe_events #post-body #postbox-container-2 {
+    clear: left;
+}
+  </style>';
+}
+
 ?>

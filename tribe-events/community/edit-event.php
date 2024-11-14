@@ -40,7 +40,7 @@ $datepicker_format = Tribe__Date_Utils::get_datepicker_format_index();
 
 	<?php tribe_get_template_part( 'community/modules/description' ); ?>
 
-	<?php tribe_get_template_part( 'community/modules/datepickers' ); ?>
+	<?php tribe_get_template_part( 'integrations/the-events-calendar/modules/datepickers' ); ?>
 
 	<?php tribe_get_template_part( 'community/modules/image' ); ?>
 
