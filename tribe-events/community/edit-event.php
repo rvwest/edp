@@ -32,6 +32,8 @@ $datepicker_format = Tribe__Date_Utils::get_datepicker_format_index();
 
 <?php do_action( 'tribe_events_community_form_before_template', $tribe_event_id ); ?>
 
+<div class="events-promo"><p><b>From January 2025</b></p> <ul><li>Free and low-cost events (tickets under £100) - free to add an event</li><li>For other events - £49 per event</li></ul> <p>No time limits, and all events will be shared on the site and in our events mailouts.</p></div>
+
 <form method="post" enctype="multipart/form-data" data-datepicker_format="<?php echo esc_attr( $datepicker_format ); ?>">
 	<input type="hidden" name="post_ID" id="post_ID" value="<?php echo absint( $tribe_event_id ); ?>"/>
 	<?php wp_nonce_field( 'ecp_event_submission' ); ?>

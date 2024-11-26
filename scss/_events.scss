@@ -596,8 +596,29 @@ input[type="checkbox"] {
   font-size: 15px !important;
 }
 
-.my-events-header {
+.tribe-community-events .my-events-header {
   border-bottom: none !important;
+  padding: 12px 0 0 0 !important;
+  margin: 0 0 20px 0 !important;
+}
+
+.tribe-community-events .events-promo,
+.tribe-community-events .events-promo p,
+.tribe-community-events .events-promo b,
+.tribe-community-events .events-promo ul,
+.tribe-community-events .events-promo li {
+  font-size: 18px !important;
+  line-height: 28px !important;
+}
+
+.tribe-community-events .events-promo {
+  margin-bottom: 30px;
+}
+
+.tribe-community-events .events-promo p,
+.tribe-community-events .events-promo li,
+.tribe-community-events .events-promo ul {
+  margin-bottom: 5px;
 }
 
 #event_tribe_event_status {
