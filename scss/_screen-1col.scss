@@ -1,7 +1,8 @@
 /*screen-1col.scss*/
 @media only screen and (max-width : #{$col1-max}px) {
 
-	.row-fluid {
+	.row-fluid,
+	.tribe-common .row-fluid {
 		margin-left: 12px;
 		margin-right: 12px;
 	}
