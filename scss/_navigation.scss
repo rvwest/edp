@@ -660,6 +660,17 @@ div.post#post-9346 {
 	text-decoration: none;
 }
 
+.single-wpbdp_listing .cont_nav_inner p :nth-last-child(1),
+.single-post .cont_nav_inner p :nth-last-child(1),
+.page-child .cont_nav_inner p :nth-last-child(1),
+.single-job_listing .cont_nav_inner p :nth-last-child(1),
+.single-job_listing .cont_nav_inner p :nth-last-child(2),
+.single-tribe_events .cont_nav_inner p :nth-last-child(1),
+.single-tribe_events .cont_nav_inner p :nth-last-child(2) {
+	display: none;
+}
+
+
 /* Footer */
 
 
@@ -685,6 +696,10 @@ a:hover img.footer-img-svg,
 a:active img.footer-img-svg {
 	filter: invert(29%) sepia(63%) saturate(4863%) hue-rotate(187deg) brightness(89%) contrast(101%);
 
+}
+
+.tribe-common .bread-title-holder .cont_nav_inner a:not(.tribe-common-anchor--unstyle):visited {
+	color: #767676;
 }
 
 img.footer-img-svg {

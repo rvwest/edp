@@ -258,7 +258,7 @@ function tribe_breadcrumbs() {
 		echo $separator;
 		echo '<a href="'.tribe_get_events_link().'">Events</a>';
 		echo $separator;
-		the_title();
+		echo '<span class="current-page">'.get_the_title().'</span>';
 	} elseif( tribe_is_day() ) { // Single Event Days
 		global $wp_query;
 
@@ -277,7 +277,7 @@ function tribe_breadcrumbs() {
 
 		if ( is_single() ) {
 			echo ' '.$separator.' ';
-			the_title();
+			echo '<span class="current-page">'.get_the_title().'</span>';
 		}
 	} elseif ( is_page() ) {
 		if( is_child(get_the_ID()) ) {
@@ -287,7 +287,7 @@ function tribe_breadcrumbs() {
 			echo the_title();
 		} else {
 			echo $separator;
-			echo the_title();
+			echo '<span class="current-page">'.get_the_title().'</span>';
 		}
 	} elseif (is_search()) {
 		echo $separator.'Search Results for... ';

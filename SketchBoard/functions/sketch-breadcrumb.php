@@ -42,11 +42,20 @@ class advertica_lite_breadcrumb_class {
 
         $output = $this->advertica_lite_simple_breadcrumb_case($post);
 
+                 
+        if (is_page( 'thesis-directory' ) || is_page( 'jobs' ) || is_page( 'community') || is_page( 'boost') || is_page ( 'about') ) {
+            echo get_the_title();
+        }
+
+        if (is_page('interest-groups')) {
+            echo '<a href="' . esc_url('/community/') . '">' . 'Community' . '</a>';
+        }
+
         if (is_page() || is_single()) {
+            
+        }
 
-            the_title('<span class="crumb-current-page">',  '</span>');
-
-        } else {
+        else {
 
             echo $output;
 

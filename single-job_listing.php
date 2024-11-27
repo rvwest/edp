@@ -23,7 +23,7 @@ get_header(); ?>
 <section class="cont_nav"><div class="cont_nav_inner"><p><a href="/"><?php echo __('Home', 'advertica-lite');?></a>&nbsp;<span class="skt-breadcrumbs-separator"> &gt;&gt; </span>&nbsp;<?php esc_url(job_manager_get_permalink( 'jobs' )); ?>
 <a href="<?php echo esc_url( job_manager_get_permalink( 'jobs' )) ;?>"><?php echo __('EP Jobs', 'wp-job-manager');?></a>
 &nbsp;<span class="skt-breadcrumbs-separator"> &gt;&gt; </span>&nbsp;
-<?php the_title(); ?>
+<span class="current-page"><?php the_title(); ?></span>
 </div></section>
 			</div>
 		</div>

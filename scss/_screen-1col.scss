@@ -64,9 +64,23 @@
 		text-align: left;
 	}
 
+	.cont_nav_inner p :nth-last-child(2),
+	.cont_nav_inner p :nth-last-child(1) {
+		display: none;
+	}
+
+	.single-wpbdp_listing .cont_nav_inner p :nth-last-child(2) {
+		display: inline;
+	}
+
+	.skepost-meta .tags {
+		margin-top: 10px;
+		display: inline-block;
+	}
+
 	.single-post .overlap-title h1.title {
 		padding-left: 0;
-		font-size: 1.8em;
+		font-size: 1.6rem;
 		line-height: 1.3em;
 		margin-left: -12px;
 		padding-left: 12px;
@@ -646,6 +660,27 @@
 	#content .navigation.blog-navigation a,
 	#tribe-events .tribe-events-nav-pagination ul.tribe-events-sub-nav a {
 		font-size: inherit;
+	}
+
+	.tribe-events .tribe-events-calendar-list__month-separator:before {
+		background-color: #ddd;
+		height: 5px;
+	}
+
+	.tribe-events-calendar-list .tribe-events-calendar-list__month-separator {
+		margin: 0 auto;
+	}
+
+	.tribe-events .tribe-events-calendar-list__month-separator:after {
+		margin-left: 10px;
+	}
+
+	.tribe-events .tribe-events-calendar-list__month-separator:before {
+
+		content: "";
+		display: block;
+		flex: auto;
+		margin-right: 10px;
 	}
 
 	.category .bread-title-holder h1.title,
