@@ -17,7 +17,7 @@
 
 #front-content-box.block--features .container,
 .category-features .bread-title-holder .container {
-	@include wash-line($color-features)
+	@include wash-line($color-blog)
 }
 
 .business-directory .bread-title-holder .container {
@@ -155,7 +155,8 @@ a:visited p {
 	border-top: $color-features 4px solid;
 }
 
-#front-blog-wrap .span4 {
+#front-blog-wrap .span4,
+#front-blog-wrap .span8 {
 	padding-bottom: 35px;
 }
 
@@ -171,20 +172,23 @@ a:visited p {
 }
 
 #front-blog-wrap .span4:hover,
-#front-blog-wrap .span4:active {
+#front-blog-wrap .span4:active,
+#front-blog-wrap .span8:hover,
+#front-blog-wrap .span8:active {
 	border-bottom-color: $color-training
 }
 
-#front-blog-wrap .span4:hover,
-#front-blog-wrap .span4:active {
-	border-bottom-color: $color-training
-}
 
 /*#front-blog-wrap .span4.feature-posts a:link, #front-blog-wrap .span4.feature-posts a:visited {background-color:$color-features;}*/
 
 #front-blog-wrap .span4.category-features:hover,
 #front-blog-wrap .span4.category-features:active {
-	border-bottom-color: $color-features-highlight;
+	border-bottom-color: $color-blog-highlight;
+}
+
+#front-blog-wrap .span4.category-features.homepage-job-promo:hover,
+#front-blog-wrap .span4.category-features.homepage-job-promo:active {
+	border-bottom-color: $color-jobs-highlight;
 }
 
 /*#front-blog-wrap .span3.training-posts a:link, #front-blog-wrap .span3.training-posts a:visited {background-color:$color-training;}*/
@@ -215,6 +219,28 @@ a:visited p {
 	margin-top: 0 !important;
 }
 
+.promo-tag {
+	color: $color-blog;
+}
+
+.promo-tag i {}
+
+.promo-tag,
+.title-tag,
+.longerread-tag {
+	font-weight: 400;
+}
+
+
+#front-blog-wrap a:hover .promo-tag,
+#front-blog-wrap a:hover .title-tag,
+#front-blog-wrap a:hover .longerread-tag {
+	text-decoration: underline;
+	text-decoration-color: white;
+}
+
+
+
 .block--promo {
 	margin-top: -10px;
 	margin-bottom: 70px;
@@ -232,16 +258,29 @@ a:visited p {
 	margin-bottom: 40px;
 }
 
+.skt-section.block--blog {
+	margin-top: 0px;
+}
+
 #front-blog-wrap.row-fluid {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: stretch;
 }
 
-#front-blog-wrap .span4 {
+#front-blog-wrap .span4,
+#front-blog-wrap .span8 {
 	border-bottom: 3px solid $color-outline;
 	margin-bottom: 55px;
 	padding-bottom: 0;
+}
+
+#front-blog-wrap .span8.promo {
+	border-bottom: 3px solid $color-blog;
+}
+
+#front-blog-wrap .span8.promo:hover {
+	border-bottom: 3px solid $color-blog-highlight;
 }
 
 .skt-section #front-blog-wrap a h3 {
@@ -265,13 +304,19 @@ a:visited p {
 
 
 .skt-section #front-blog-wrap .category-features {
-	border-bottom-color: $color-features;
+	border-bottom-color: $color-blog;
 }
+
+.skt-section #front-blog-wrap .category-features.homepage-job-promo {
+	border-bottom-color: $color-jobs;
+}
+
 
 p.front-section-extra {
 	margin-bottom: 45px;
 	text-align: right;
 	clear: left;
+	margin-left: auto;
 }
 
 #front-content-box.block--training a:hover img,
@@ -280,6 +325,7 @@ p.front-section-extra {
 #front-content-box.block--blog a:active img {
 	opacity: 0.8;
 }
+
 
 
 
@@ -307,8 +353,10 @@ p.front-section-extra {
 	align-items: center;
 }
 
-.overlap-img .hover-space {
+.overlap-img .hover-space,
+.promo .hover-space {
 	aspect-ratio: auto;
+
 }
 
 // Job promo styling
