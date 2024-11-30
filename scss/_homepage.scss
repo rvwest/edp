@@ -6,9 +6,13 @@
 	padding-top: 0;
 }
 
-#front-content-box.block--blog .container,
+
 .category-blog .bread-title-holder .container {
 	@include wash-line($color-blog)
+}
+
+#front-content-box.block--blog .container {
+	@include wash-line($color-training)
 }
 
 .category-blog .bread-title-holder .container.post-wrap {
