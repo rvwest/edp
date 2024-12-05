@@ -37,6 +37,12 @@ ul.job_listings li.no_job_listings_found a {
     text-decoration: none;
 }
 
+.new-job-warning {
+    background-color: color(srgb 0.9881 0.8942 0.9249);
+    text-align: center;
+    padding: 10px 0;
+}
+
 .rp4wp-related-job_listing>ul li.job_listing a div.position,
 .rp4wp-related-job_listing>ul li.no_job_listings_found a div.position,
 ul.job_listings li.job_listing a div.position,

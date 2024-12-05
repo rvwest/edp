@@ -97,8 +97,6 @@
 					</li>
 				</ul>
 				<p>Once we have this we will issue an invoice and publish your job listing.</p>
-				<p><i class="far fa-files-medical"></i> If you want to post another job, please wait until we've
-					published this one.</p>
 				<p>It's OK to close this page.</p>
 			</div>
 </form>
