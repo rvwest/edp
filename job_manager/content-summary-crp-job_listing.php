@@ -11,22 +11,22 @@
  * @version     1.31.1
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
 	exit; // Exit if accessed directly.
 }
 
 global $job_manager;
 ?>
 <a href="<?php the_permalink(); ?>" class="crp_link post-3212 crp_job">
-	<?php if ( $logo = get_the_company_logo() ) : ?>
+	<?php if ($logo = get_the_company_logo()): ?>
 		<figure>
-			<img src="<?php echo esc_url( $logo ); ?>" alt="<?php the_company_name(); ?>" title="<?php the_company_name(); ?>" class="crp_thumb crp_featured crp_job_logo" />
-	</figure>
+			<img src="<?php echo esc_url($logo); ?>" alt="<?php the_company_name(); ?>" title="<?php the_company_name(); ?>"
+				class="crp_thumb crp_featured crp_job_logo" />
+		</figure>
 	<?php endif; ?>
 	<h3 class="crp_title">
 		<span class="title-tag"><i class="far fa-bell-on"></i> Job: </span>
 		<?php wpjm_the_job_title(); ?>
-		- <?php the_job_location( false ); ?>
+		- <?php the_company_name(false); ?>
 	</h3>
 </a>
-
