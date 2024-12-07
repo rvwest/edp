@@ -7,7 +7,7 @@
         <div class="job-list-details">
             <div class="position-main">
                 <div class="job-title">
-                    <h2><?php wpjm_the_job_title(); ?> - <?php the_job_location(false); ?></h2>
+                    <h2><?php wpjm_the_job_title(); ?></h2>
                 </div>
                 <div class="salary"><?php gma_wpjmef_display_combined_data_listings(); ?></div>
 
