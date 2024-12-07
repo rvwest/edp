@@ -1,5 +1,8 @@
 // -- LISTINGS PAGE -- //
 
+
+// Standard //
+
 .job_filters {
     display: none;
 }
@@ -83,6 +86,59 @@ a .job-list-details {
 .job_listing.type-job_listing.job_position_filled {
     display: none;
 }
+
+// Compact //
+
+.job-listing-compact.job_listing {
+
+    .job-list-details .wpjmef-field-combined {
+        justify-content: flex-end;
+    }
+
+    .listing-logo {
+        margin: 0 10px 0 0;
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    .job-list-details .position-main {
+        margin-bottom: 0;
+    }
+
+
+    .job-list-details .position-meta {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+#content .job-listing-compact.job_listing a .job-list-details .salary {
+    margin-bottom: 0;
+}
+
+#content ul.job_listings li.job-listing-compact.job_listing a img.company_logo {
+    align-self: center;
+}
+
+.job-listing-compact.type-job_listing {
+
+    .job-title h2 {
+        margin-bottom: 2px;
+    }
+
+    .job-type {
+        margin-bottom: 0;
+    }
+}
+
+ul.job_listings li.job_listing.job-listing-compact a {
+    align-items: center;
+    padding: 12px 18px;
+}
+
+
 
 // --- Logo --- //
 
@@ -222,17 +278,57 @@ ul.job_listings li.no_job_listings_found a img.company_logo {
         justify-content: space-between;
         margin-left: 0;
         font-size: 0.9rem;
+        flex-wrap: wrap;
 
     }
 
+    // compact
+
+    .job-listing-compact.type-job_listing {
+        .job-list-details .position-meta {
+            flex-direction: row;
+            font-size: 1.125rem;
+            font-weight: 300;
+        }
+
+        .job-type {
+            font-weight: 300;
+        }
+
+        .meta-types {
+            margin-right: 10px;
+        }
+
+
+    }
 
 
     ul.job_listings li.job_listing a img.company_logo {
         visibility: visible;
     }
 
-    .type-job_listing .job-type {
-        font-weight: 600;
+
+}
+
+@media only screen and (max-width: 782px) {
+    // compact
+
+    .job-listing-compact.job_listing.type-job_listing {
+
+        .job-list-details .position-meta,
+        .job-list-details .company {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .job-type {
+            font-weight: 400;
+        }
+
+        .job-title h2 {
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
     }
 }
 
@@ -242,6 +338,24 @@ ul.job_listings li.no_job_listings_found a img.company_logo {
         font-size: 1.125rem;
         line-height: 1.75rem;
     }
+
+    ul.job_listings li.job_listing.job-listing-compact a {
+        align-items: flex-start;
+    }
+
+    .job-listing-compact.job_listing.type-job_listing {
+
+        .listing-logo {
+            justify-content: flex-start;
+            margin: 10px 0;
+        }
+
+        .job-title h2 {
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+    }
+
 }
 
 
