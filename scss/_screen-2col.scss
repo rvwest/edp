@@ -91,9 +91,9 @@
 		width: 65.81197%;
 	}
 
-	.row-fluid .span4:nth-child(2),
-	.span4:nth-child(even),
-	.row-fluid .span3:nth-child(2) {
+	#front-blog-wrap.row-fluid .span4:nth-child(2),
+	#front-blog-wrap.row-fluid .span4:nth-child(even),
+	.row-fluid .training-posts.span3:nth-child(odd) {
 		margin-left: 0px;
 	}
 

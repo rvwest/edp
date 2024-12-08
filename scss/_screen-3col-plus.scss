@@ -186,6 +186,9 @@
 	}
 
 
+	.row-fluid [class*="span"]:first-child {
+		margin-left: 0;
+	}
 
 	#front-blog-wrap.row-fluid [class*="span"]:first-child,
 	#front-blog-wrap.row-fluid .span4:nth-child(3),
