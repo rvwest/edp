@@ -30,16 +30,16 @@
 
 <body <?php body_class(); ?>>
 
-<!--promospace -->
-<div class="cta-header-block cta-header-block--black">
+	<!--promospace -->
+	<!--<div class="cta-header-block cta-header-block--black">
 		<div class="container">
 			<div class="row-fluid fixedrow">
 				<p>Urgent appeal: <a href="https://www.justgiving.com/page/edpsy-pcrf-fundraiser">Support Palestinian children</a></p>
 				<p class="cta-second-link"><a href="https://www.justgiving.com/page/edpsy-pcrf-fundraiser">Donate to Palestine Childrens Relief Fund</a></p>
 			</div>
 		</div>
-	</div>
-<!--/promospace-->
+	</div>-->
+	<!--/promospace-->
 	<div id="wrapper" class="skepage ">
 		<div id="header" class="skehead-headernav clearfix">
 			<div class="glow">
@@ -49,11 +49,15 @@
 							<!-- #logo -->
 							<div id="logo">
 								<?php if (get_theme_mod('advertica_lite_logo_img', '') != '') { ?>
-									<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php bloginfo('name'); ?>"><img class="logo" src="<?php echo esc_url(get_theme_mod('advertica_lite_logo_img')); ?>" alt="<?php bloginfo('name') ?>" /></a>
+									<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php bloginfo('name'); ?>"><img
+											class="logo"
+											src="<?php echo esc_url(get_theme_mod('advertica_lite_logo_img')); ?>"
+											alt="<?php bloginfo('name') ?>" /></a>
 								<?php } elseif (display_header_text()) { ?>
 									<!-- #description -->
 									<div id="site-title" class="logo_desp">
-										<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php bloginfo('name') ?>"><?php bloginfo('name'); ?></a>
+										<a href="<?php echo esc_url(home_url('/')); ?>"
+											title="<?php bloginfo('name') ?>"><?php bloginfo('name'); ?></a>
 										<div id="site-description"><?php bloginfo('description'); ?></div>
 									</div>
 									<!-- #description -->
@@ -66,7 +70,7 @@
 								if (function_exists('has_nav_menu') && has_nav_menu('Header')) {
 									wp_nav_menu(array('container_class' => 'ske-menu', 'container_id' => 'skenav', 'menu_id' => 'menu-main', 'theme_location' => 'Header'));
 								} else {
-								?>
+									?>
 									<div class="ske-menu" id="skenav">
 										<ul id="menu-main" class="menu">
 											<?php wp_list_pages('title_li=&depth=0'); ?>
