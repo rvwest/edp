@@ -21,23 +21,24 @@
  *
  */
 
- // Async load
+// Async load
 function ikreativ_async_scripts($url)
 {
-    if ( strpos( $url, '#asyncload') === false )
-        return $url;
-    else if ( is_admin() )
-        return str_replace( '#asyncload', '', $url );
-    else
-	return str_replace( '#asyncload', '', $url )."' async='async"; 
-    }
-add_filter( 'clean_url', 'ikreativ_async_scripts', 11, 1 );
+	if (strpos($url, '#asyncload') === false)
+		return $url;
+	else if (is_admin())
+		return str_replace('#asyncload', '', $url);
+	else
+		return str_replace('#asyncload', '', $url) . "' async='async";
+}
+add_filter('clean_url', 'ikreativ_async_scripts', 11, 1);
 
 /**
  * Registers widget areas.
  *
  */
-function advertica_lite_widgets_init() {
+function advertica_lite_widgets_init()
+{
 	register_sidebar(array(
 		'name' => 'Page Sidebar',
 		'id' => 'page-sidebar',
@@ -63,7 +64,7 @@ function advertica_lite_widgets_init() {
 		'after_title' => '</h3>',
 	));
 }
-add_action( 'widgets_init', 'advertica_lite_widgets_init' );
+add_action('widgets_init', 'advertica_lite_widgets_init');
 
 /**
  * Sets up theme defaults and registers the various WordPress features that
@@ -76,8 +77,9 @@ add_action( 'widgets_init', 'advertica_lite_widgets_init' );
  * @uses register_nav_menu() To add support for a navigation menu.
  * @uses set_post_thumbnail_size() To set a custom post thumbnail size.
  *
-*/
-function advertica_lite_theme_setup() {
+ */
+function advertica_lite_theme_setup()
+{
 	/*
 	 * Makes Advertica available for translation.
 	 *
@@ -86,67 +88,68 @@ function advertica_lite_theme_setup() {
 	 * replace to change 'advertica-lite' to the name of your theme in all
 	 * template files.
 	 */
-	load_theme_textdomain( 'advertica-lite', get_template_directory() . '/languages' );
+	load_theme_textdomain('advertica-lite', get_template_directory() . '/languages');
 
 	// This theme styles the visual editor with editor-style.css to match the theme style.
 	add_editor_style();
 
-	add_theme_support( 'title-tag' );
+	add_theme_support('title-tag');
 
-	if ( get_option('advertica_lite') != '' ) {
+	if (get_option('advertica_lite') != '') {
 		$advertica_lite_pre_options = get_option('advertica_lite');
-		$header_image =	$advertica_lite_pre_options['advertica_frontslider_stype'];
+		$header_image = $advertica_lite_pre_options['advertica_frontslider_stype'];
 	} else {
 		$header_image = get_template_directory_uri() . '/images/advertica-header.jpg';
 	}
-	add_theme_support( 'custom-header', array( 'flex-width' => true, 'width' => 1600, 'flex-height' => true, 'height' => 500, 'default-image' => $header_image ) );
+	add_theme_support('custom-header', array('flex-width' => true, 'width' => 1600, 'flex-height' => true, 'height' => 500, 'default-image' => $header_image));
 
 	// This theme allows users to set a custom background.
-	add_theme_support( 'custom-background', apply_filters( 'advertica_lite_custom_background_args', array('default-color' => 'ffffff') ) );
+	add_theme_support('custom-background', apply_filters('advertica_lite_custom_background_args', array('default-color' => 'ffffff')));
 
 	// Adds RSS feed links to <head> for posts and comments.
-	add_theme_support( 'automatic-feed-links' );
+	add_theme_support('automatic-feed-links');
 
 	/*
 	 * This theme uses a custom image size for featured images, displayed on
 	 * "standard" posts and pages....
 	 */
-	add_theme_support('post-thumbnails'); 
+	add_theme_support('post-thumbnails');
 
 	/**
 	 * Enable support for Post Formats
 	 */
-	set_post_thumbnail_size( 600, 220, true );
-	add_image_size( 'advertica_standard_img',770,365,true); //standard size
-	add_image_size( 'edpsy_loop_img',480,280,true); //homepage
+	set_post_thumbnail_size(600, 220, true);
+	add_image_size('advertica_standard_img', 770, 365, true); //standard size
+	add_image_size('edpsy_loop_img', 480, 280, true); //homepage
 
 	/**
-	* SETS UP THE CONTENT WIDTH VALUE BASED ON THE THEME'S DESIGN.
-	*/
+	 * SETS UP THE CONTENT WIDTH VALUE BASED ON THE THEME'S DESIGN.
+	 */
 	global $content_width;
-	if ( ! isset( $content_width ) ){
-	      $content_width = 900;
+	if (!isset($content_width)) {
+		$content_width = 900;
 	}
 
 	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus( array(
-		'Header' => __( 'Main Navigation', 'advertica-lite' ),
+	register_nav_menus(array(
+		'Header' => __('Main Navigation', 'advertica-lite'),
 	));
 }
-add_action( 'after_setup_theme', 'advertica_lite_theme_setup' );
+add_action('after_setup_theme', 'advertica_lite_theme_setup');
 
 /**
-* Funtion to add CSS class to body
-*/
-function advertica_lite_add_class( $classes ) {
+ * Funtion to add CSS class to body
+ */
+function advertica_lite_add_class($classes)
+{
 
-	if ( 'page' == get_option( 'show_on_front' ) && ( '' != get_option( 'page_for_posts' ) ) && is_front_page() ) {
+	if ('page' == get_option('show_on_front') && ('' != get_option('page_for_posts')) && is_front_page()) {
 		$classes[] = 'front-page';
 	}
 
 	return $classes;
 }
-add_filter( 'body_class','advertica_lite_add_class' );
+add_filter('body_class', 'advertica_lite_add_class');
 
 /**
  * Filter content with empty post title
@@ -154,9 +157,10 @@ add_filter( 'body_class','advertica_lite_add_class' );
  */
 
 add_filter('the_title', 'advertica_lite_untitled');
-function advertica_lite_untitled($title) {
+function advertica_lite_untitled($title)
+{
 	if ($title == '') {
-		return __('Untitled','advertica-lite');
+		return __('Untitled', 'advertica-lite');
 	} else {
 		return $title;
 	}
@@ -177,38 +181,41 @@ require_once(get_template_directory() . '/SketchBoard/functions/admin-init.php')
 /**
  * Add Options Migration page
  */
-$advertica_lite_pre_options = ( get_option('advertica_lite') != '' ) ? get_option( 'advertica_lite' ) : false ;
+$advertica_lite_pre_options = (get_option('advertica_lite') != '') ? get_option('advertica_lite') : false;
 
-if ( $advertica_lite_pre_options) {
+if ($advertica_lite_pre_options) {
 
 	require_once(get_template_directory() . '/includes/advertica-options-migrate.php');
 
 }
 
-function wpdocs_custom_excerpt_length( $length ) {
-    return 20;
+function wpdocs_custom_excerpt_length($length)
+{
+	return 20;
 }
-add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+add_filter('excerpt_length', 'wpdocs_custom_excerpt_length', 999);
 
 /** Add Google library version of jQuery **/
 
 //Making jQuery Google API
 
-function modify_jquery() {
-    if (!is_admin()) {
-        // comment out the next two lines to load the local copy of jQuery
-        wp_deregister_script('jquery');
-        wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false, null);
-        wp_enqueue_script('jquery');
-    }
+function modify_jquery()
+{
+	if (!is_admin()) {
+		// comment out the next two lines to load the local copy of jQuery
+		wp_deregister_script('jquery');
+		wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false, null);
+		wp_enqueue_script('jquery');
+	}
 }
 add_action('init', 'modify_jquery');
 
 add_filter('wpseo_title', 'my_co_author_wseo_title');
-function my_co_author_wseo_title( $title ) {
+function my_co_author_wseo_title($title)
+{
 
 	// Only filter title output for author pages
-	if ( is_author() && function_exists( 'get_coauthors' ) ) {
+	if (is_author() && function_exists('get_coauthors')) {
 		$qo = get_queried_object();
 		$author_name = $qo->display_name;
 		return $author_name . '&#39;s articles on ' . get_bloginfo('name');
@@ -218,9 +225,10 @@ function my_co_author_wseo_title( $title ) {
 }
 
 // Check if page is direct child
-function is_child( $page_id ) {
+function is_child($page_id)
+{
 	global $post;
-	if( is_page() && ($post->post_parent != '') ) {
+	if (is_page() && ($post->post_parent != '')) {
 		return true;
 	} else {
 		return false;
@@ -228,69 +236,70 @@ function is_child( $page_id ) {
 }
 
 // Breadcrumb Logic
-function tribe_breadcrumbs() {
+function tribe_breadcrumbs()
+{
 	global $post;
 
 	$separator = '&nbsp;<span class="skt-breadcrumbs-separator"> &gt;&gt; </span>&nbsp;';
 
 	echo '<div class="tribe-breadcrumbs"><p>';
 	echo '<a href="' . get_option('home') . '">Home</a>';
-//	echo '<a href="' . get_option('home') . '">' . Home . '</a>';
+	//	echo '<a href="' . get_option('home') . '">' . Home . '</a>';
 
-	if( tribe_is_month() && !is_tax() ) { // The Main Calendar Page
+	if (tribe_is_month() && !is_tax()) { // The Main Calendar Page
 		echo $separator;
 		echo 'Events';
-	} elseif( tribe_is_month() && is_tax() ) { // Calendar Category Pages
+	} elseif (tribe_is_month() && is_tax()) { // Calendar Category Pages
 		global $wp_query;
 
 		$term_slug = $wp_query->query_vars['tribe_events_cat'];
 		$term = get_term_by('slug', $term_slug, 'tribe_events_cat');
-		get_term( $term_id, 'tribe_events_cat' );
+		get_term($term_id, 'tribe_events_cat');
 		$name = $term->name;
 		echo $separator;
-		echo '<a href="'.tribe_get_events_link().'">Events</a>';
+		echo '<a href="' . tribe_get_events_link() . '">Events</a>';
 		echo $separator;
 		echo $name;
-	} elseif( tribe_is_event() && !tribe_is_day() && !is_single() ) { // The Main Events List
+	} elseif (tribe_is_event() && !tribe_is_day() && !is_single()) { // The Main Events List
 		echo $separator;
 		echo 'Events List';
-	} elseif( tribe_is_event() && is_single() ) { // Single Events
+	} elseif (tribe_is_event() && is_single()) { // Single Events
 		echo $separator;
-		echo '<a href="'.tribe_get_events_link().'">Events</a>';
+		echo '<a href="' . tribe_get_events_link() . '">Events</a>';
 		echo $separator;
-		echo '<span class="current-page">'.get_the_title().'</span>';
-	} elseif( tribe_is_day() ) { // Single Event Days
+		echo '<span class="current-page">' . get_the_title() . '</span>';
+	} elseif (tribe_is_day()) { // Single Event Days
 		global $wp_query;
 
 		echo $separator;
-		echo '<a href="'.tribe_get_events_link().'">Events</a>';
+		echo '<a href="' . tribe_get_events_link() . '">Events</a>';
 		echo $separator;
-		echo 'Events on: ' . date('F j, Y', strtotime( $wp_query->query_vars['eventDate']) );
-	} elseif( tribe_is_venue() ) { // Single Venues
+		echo 'Events on: ' . date('F j, Y', strtotime($wp_query->query_vars['eventDate']));
+	} elseif (tribe_is_venue()) { // Single Venues
 		echo $separator;
-		echo '<a href="'.tribe_get_events_link().'">Events</a>';
+		echo '<a href="' . tribe_get_events_link() . '">Events</a>';
 		echo $separator;
 		the_title();
-	} elseif ( is_category() || is_single() ) {
+	} elseif (is_category() || is_single()) {
 		echo $separator;
 		the_category(' &bull; ');
 
-		if ( is_single() ) {
-			echo ' '.$separator.' ';
-			echo '<span class="current-page">'.get_the_title().'</span>';
+		if (is_single()) {
+			echo ' ' . $separator . ' ';
+			echo '<span class="current-page">' . get_the_title() . '</span>';
 		}
-	} elseif ( is_page() ) {
-		if( is_child(get_the_ID()) ) {
+	} elseif (is_page()) {
+		if (is_child(get_the_ID())) {
 			echo $separator;
-			echo '<a href="' . get_permalink( $post->post_parent ) . '">' . get_the_title( $post->post_parent ) . '</a>';
+			echo '<a href="' . get_permalink($post->post_parent) . '">' . get_the_title($post->post_parent) . '</a>';
 			echo $separator;
 			echo the_title();
 		} else {
 			echo $separator;
-			echo '<span class="current-page">'.get_the_title().'</span>';
+			echo '<span class="current-page">' . get_the_title() . '</span>';
 		}
 	} elseif (is_search()) {
-		echo $separator.'Search Results for... ';
+		echo $separator . 'Search Results for... ';
 		echo '"<em>';
 		echo the_search_query();
 		echo '</em>"';
@@ -305,13 +314,14 @@ function tribe_breadcrumbs() {
 
 
 // Add your own function to filter the fields
-add_filter( 'submit_job_form_fields', 'custom_submit_job_form_fields' );
+add_filter('submit_job_form_fields', 'custom_submit_job_form_fields');
 
 // This is your function which takes the fields, modifies them, and returns them
 // You can see the fields which can be changed here: https://github.com/mikejolley/WP-Job-Manager/blob/master/includes/forms/class-wp-job-manager-form-submit-job.php
-function custom_submit_job_form_fields( $fields ) {
+function custom_submit_job_form_fields($fields)
+{
 
-    // Here we target one of the job fields (job_title) and change it's label
+	// Here we target one of the job fields (job_title) and change it's label
 	$fields['job']['job_location']['description'] = "";
 	$fields['job']['job_location']['placeholder'] = "";
 	$fields['job']['application']['label'] = "Where to apply";
@@ -323,152 +333,159 @@ function custom_submit_job_form_fields( $fields ) {
 	$fields['company']['company_name']['label'] = "Organisation name";
 	$fields['company']['company_logo']['description'] = "Maximum file size 32 MB";
 	$fields['company']['company_logo']['allowed_mime_types'] = [
-		'jpg'  => 'image/jpeg',
+		'jpg' => 'image/jpeg',
 		'jpeg' => 'image/jpeg',
-		'gif'  => 'image/gif',
-		'png'  => 'image/png',
+		'gif' => 'image/gif',
+		'png' => 'image/png',
 	];
 	$fields['job']['closing_date'] = array(
-		'label'       => __( 'Closing date', 'job_manager' ),
-		'type'        => 'date',
+		'label' => __('Closing date', 'job_manager'),
+		'type' => 'date',
 		'data_type' => 'string',
-		'required'    => false,
-		'classes'     => [ 'job-manager-datepicker' ],
-		'priority'    => 8,
+		'required' => false,
+		'classes' => ['job-manager-datepicker'],
+		'priority' => 8,
 		'description' => "eg 12 March 2022",
-		'sanitize_callback'  => [ __CLASS__, 'sanitize_meta_field_date' ],
-	  );
+		'sanitize_callback' => [__CLASS__, 'sanitize_meta_field_date'],
+	);
 	$fields['job']['cap_declaration'] = array(
-		'label'       => __( 'Declaration', 'job_manager' ),
-		'type'        => 'checkbox',
-		'required'    => true,
+		'label' => __('Declaration', 'job_manager'),
+		'type' => 'checkbox',
+		'required' => true,
 		'placeholder' => 'I confirm this to be true',
-		'priority'    => 9,
-		'description'   => __( '<p>We follow the <a href="https://www.asa.org.uk/type/non_broadcast/code_section/20.html">CAP Code for employment advertisements</a>. Please confirm:</p><ul><li>This is a genuine employment opportunity</li><li>All details provided are comprehensive and accurate</li><li>You are acting directly for the employer, and not an employment agency</li><li>Your organisation is not in dispute with the <abbr title="Association of Educational Psychologists">AEP</abbr></li></ul>', 'wp-job-manager' ),
-	  );
+		'priority' => 9,
+		'description' => __('<p>We follow the <a href="https://www.asa.org.uk/type/non_broadcast/code_section/20.html">CAP Code for employment advertisements</a>. Please confirm:</p><ul><li>This is a genuine employment opportunity</li><li>All details provided are comprehensive and accurate</li><li>You are acting directly for the employer, and not an employment agency</li><li>Your organisation is not in dispute with the <abbr title="Association of Educational Psychologists">AEP</abbr></li></ul>', 'wp-job-manager'),
+	);
 
 	unset($fields['company']['company_video']);
 	unset($fields['company']['company_tagline']);
 	unset($fields['company']['company_twitter']);
 
-    // And return the modified fields
-    return $fields;
+	// And return the modified fields
+	return $fields;
 }
 
-add_filter( 'job_manager_job_listing_data_fields', 'admin_add_custom_admin_fields' );
+add_filter('job_manager_job_listing_data_fields', 'admin_add_custom_admin_fields');
 
-function admin_add_custom_admin_fields( $fields ) {
-	
+function admin_add_custom_admin_fields($fields)
+{
+
 	$fields['_closing_date'] = array(
-		'label'       => __( 'Job closing date', 'wp-job_manager' ),
-		'data_type'   => 'string',
-		'classes'     => [ 'job-manager-datepicker' ],
+		'label' => __('Job closing date', 'wp-job_manager'),
+		'data_type' => 'string',
+		'classes' => ['job-manager-datepicker'],
 		'show_in_admin' => true,
 		'placeholder' => '',
 		'description' => 'I confirm the above is true',
-		'priority'    => 13,
-	  );
-	  $fields['_cap_declaration'] = array(
-		'label'       => __( 'Declaration', 'wp-job_manager' ),
-		'type'        => 'checkbox',
-		'data_type'   => 'integer',
+		'priority' => 13,
+	);
+	$fields['_cap_declaration'] = array(
+		'label' => __('Declaration', 'wp-job_manager'),
+		'type' => 'checkbox',
+		'data_type' => 'integer',
 		'show_in_admin' => true,
 		'placeholder' => '',
 		'description' => 'I confirm the above is true',
-		'priority'    => 12,
-	  );
-	  unset($fields['company']['company_video']);
-	  unset($fields['company']['company_tagline']);
-	  unset($fields['company']['company_twitter']);
-	 
+		'priority' => 12,
+	);
+	unset($fields['company']['company_video']);
+	unset($fields['company']['company_tagline']);
+	unset($fields['company']['company_twitter']);
+
 	return $fields;
-  }
+}
 
 
-add_filter( 'wpjm_get_registration_fields', 'custom_registration_fields' );
+add_filter('wpjm_get_registration_fields', 'custom_registration_fields');
 
-function custom_registration_fields( $fields ) {
-    // Here we target one of the job fields (job_title) and change it's label
+function custom_registration_fields($fields)
+{
+	// Here we target one of the job fields (job_title) and change it's label
 	$fields['create_account_email']['label'] = "Your email";
 	$fields['create_account_email']['placeholder'] = "";
 	$fields['create_account_email']['description'] = "";
-    // And return the modified fields
-    return $fields;
-} 
-
-
-add_filter( 'submit_job_form_submit_button_text', 'custom_submit_job_form_submit_button_text' );
-
-function custom_submit_job_form_submit_button_text( $button_text ) {
-	return __( 'Preview and continue', 'wp-job-manager-simple-paid-listings' );
+	// And return the modified fields
+	return $fields;
 }
 
-add_filter( 'submit_job_step_preview_submit_text', 'custom_submit_button_text' );
 
-function custom_submit_button_text( $button_text ) {
-	return __( 'Confirm and pay', 'wp-job-manager-simple-paid-listings' );
+add_filter('submit_job_form_submit_button_text', 'custom_submit_job_form_submit_button_text');
+
+function custom_submit_job_form_submit_button_text($button_text)
+{
+	return __('Preview and continue', 'wp-job-manager-simple-paid-listings');
 }
 
-add_filter( 'job_manager_update_job_listings_message', 'custom_job_manager_update_job_listings_message' );
+add_filter('submit_job_step_preview_submit_text', 'custom_submit_button_text');
 
-function custom_job_manager_update_job_listings_message( $save_message ) { 
-	return ('<i class="far fa-check-circle"></i> Your changes have been saved. <a href="' . esc_url( job_manager_get_permalink( 'job_dashboard' )) . '">Return to your dashboard</a>.');
+function custom_submit_button_text($button_text)
+{
+	return __('Confirm and pay', 'wp-job-manager-simple-paid-listings');
 }
 
-add_filter( 'submit_job_form_fields', 'remove_remote_option' );
+add_filter('job_manager_update_job_listings_message', 'custom_job_manager_update_job_listings_message');
 
-function remove_remote_option( $fields ) {
-    //remove the remote_position field
-    unset($fields['job']['remote_position']);
+function custom_job_manager_update_job_listings_message($save_message)
+{
+	return ('<i class="far fa-check-circle"></i> Your changes have been saved. <a href="' . esc_url(job_manager_get_permalink('job_dashboard')) . '">Return to your dashboard</a>.');
+}
 
-    return $fields;
+add_filter('submit_job_form_fields', 'remove_remote_option');
+
+function remove_remote_option($fields)
+{
+	//remove the remote_position field
+	unset($fields['job']['remote_position']);
+
+	return $fields;
 }
 
 // URL-slug Remove job type
-add_filter( 'submit_job_form_prefix_post_name_with_job_type', '__return_false' );
+add_filter('submit_job_form_prefix_post_name_with_job_type', '__return_false');
 
 // Add Job ID to slug
-function custom_job_post_type_link( $post_id, $post ) {
+function custom_job_post_type_link($post_id, $post)
+{
 
 	// don't add the id if it's already part of the slug
 	$permalink = $post->post_name;
-	if ( strpos( $permalink, strval( $post_id ) ) ) {
+	if (strpos($permalink, strval($post_id))) {
 		return;
 	}
-	
-	// unhook this function to prevent infinite looping
-	remove_action( 'save_post_job_listing', 'custom_job_post_type_link', 10, 2 );
 
- // add the id to the slug
+	// unhook this function to prevent infinite looping
+	remove_action('save_post_job_listing', 'custom_job_post_type_link', 10, 2);
+
+	// add the id to the slug
 	$permalink .= '-' . $post_id;
 
 	// update the post slug
-	wp_update_post( array(
+	wp_update_post(array(
 		'ID' => $post_id,
 		'post_name' => $permalink
 	));
 
 	// re-hook this function
-	add_action( 'save_post_job_listing', 'custom_job_post_type_link', 10, 2 );
+	add_action('save_post_job_listing', 'custom_job_post_type_link', 10, 2);
 }
-add_action( 'save_post_job_listing', 'custom_job_post_type_link', 10, 2 );
+add_action('save_post_job_listing', 'custom_job_post_type_link', 10, 2);
 
 // Change jobs shortcode output
- 
+
 add_action("init", function () {
 
 
-    remove_shortcode("job_summary");
+	remove_shortcode("job_summary");
 
-    add_shortcode("job_summary", function ($atts) {
+	add_shortcode("job_summary", function ($atts) {
 
 		$atts = shortcode_atts(
 			[
-				'id'       => '',
-				'width'    => '250px',
-				'align'    => 'left',
+				'id' => '',
+				'width' => '250px',
+				'align' => 'left',
 				'featured' => null, // True to show only featured, false to hide featured, leave null to show both (when leaving out id).
-				'limit'    => 1,
+				'limit' => 1,
 			],
 			$atts
 		);
@@ -476,55 +493,55 @@ add_action("init", function () {
 		ob_start();
 
 		$args = [
-			'post_type'   => 'job_listing',
+			'post_type' => 'job_listing',
 			'post_status' => 'publish',
 		];
 
-		if ( ! $atts['id'] ) {
+		if (!$atts['id']) {
 			$args['posts_per_page'] = $atts['limit'];
-			$args['orderby']        = 'rand';
-			if ( ! is_null( $atts['featured'] ) ) {
+			$args['orderby'] = 'rand';
+			if (!is_null($atts['featured'])) {
 				$args['meta_query'] = [
 					[
-						'key'     => '_featured',
-						'value'   => '1',
+						'key' => '_featured',
+						'value' => '1',
 						'compare' => $atts['featured'] ? '=' : '!=',
 					],
 				];
 			}
 		} else {
-			$args['p'] = absint( $atts['id'] );
+			$args['p'] = absint($atts['id']);
 		}
 
-		$jobs = new WP_Query( $args );
+		$jobs = new WP_Query($args);
 
-		if ( $jobs->have_posts() ) {
-			while ( $jobs->have_posts() ) {
+		if ($jobs->have_posts()) {
+			while ($jobs->have_posts()) {
 				$jobs->the_post();
 				$width = $atts['width'] ? $atts['width'] : 'auto';
-				get_job_manager_template_part( 'content-summary', 'job_listing' );
-				}
+				get_job_manager_template_part('content-summary', 'job_listing');
+			}
 		}
 
 		wp_reset_postdata();
 
 		return ob_get_clean();
-    });
+	});
 
 });
 
 
 add_action("init", function () {
 
-   add_shortcode("job_summary_crp", function ($atts) {
+	add_shortcode("job_summary_crp", function ($atts) {
 
 		$atts = shortcode_atts(
 			[
-				'id'       => '',
-				'width'    => '250px',
-				'align'    => 'left',
+				'id' => '',
+				'width' => '250px',
+				'align' => 'left',
 				'featured' => null, // True to show only featured, false to hide featured, leave null to show both (when leaving out id).
-				'limit'    => 1,
+				'limit' => 1,
 			],
 			$atts
 		);
@@ -532,51 +549,52 @@ add_action("init", function () {
 		ob_start();
 
 		$args = [
-			'post_type'   => 'job_listing',
+			'post_type' => 'job_listing',
 			'post_status' => 'publish',
 		];
 
-		if ( ! $atts['id'] ) {
+		if (!$atts['id']) {
 			$args['posts_per_page'] = $atts['limit'];
-			$args['orderby']        = 'rand';
-			if ( ! is_null( $atts['featured'] ) ) {
+			$args['orderby'] = 'rand';
+			if (!is_null($atts['featured'])) {
 				$args['meta_query'] = [
 					[
-						'key'     => '_featured',
-						'value'   => '1',
+						'key' => '_featured',
+						'value' => '1',
 						'compare' => $atts['featured'] ? '=' : '!=',
 					],
 				];
 			}
 		} else {
-			$args['p'] = absint( $atts['id'] );
+			$args['p'] = absint($atts['id']);
 		}
 
-		$jobs = new WP_Query( $args );
+		$jobs = new WP_Query($args);
 
-		if ( $jobs->have_posts() ) {
-			while ( $jobs->have_posts() ) {
+		if ($jobs->have_posts()) {
+			while ($jobs->have_posts()) {
 				$jobs->the_post();
 				$width = $atts['width'] ? $atts['width'] : 'auto';
-				get_job_manager_template_part( 'content-summary-crp', 'job_listing' );
-				}
+				get_job_manager_template_part('content-summary-crp', 'job_listing');
+			}
 		}
 
 		wp_reset_postdata();
 
 		return ob_get_clean();
-    });
+	});
 
 });
 
 
 // Jobs in CRP 
 
-function crp_after_list_show_jobs() {
+function crp_after_list_show_jobs()
+{
 
-	$after_list = '<div class="span4 post type-post has-post-thumbnail hentry category-blog category-features job_summary_shortcode">'. do_shortcode( '[job_summary_crp width="" align=""]') . '</div>';
+	$after_list = '<div class="span4 post type-post has-post-thumbnail hentry category-blog category-features job_summary_shortcode">' . do_shortcode('[job_summary_crp width="" align=""]') . '</div>';
 
-	return apply_filters( 'crp_after_list_show_jobs', $after_list );
+	return apply_filters('crp_after_list_show_jobs', $after_list);
 
 }
 
@@ -588,58 +606,60 @@ add_filter('crp_after_list', 'crp_after_list_show_jobs');
  * Register our sidebars and widgetized areas.
  *
  */
-function arphabet_widgets_init() {
+function arphabet_widgets_init()
+{
 
-	register_sidebar( array(
-		'name'          => 'Post call to action area',
-		'id'            => 'post_cta_1',
+	register_sidebar(array(
+		'name' => 'Post call to action area',
+		'id' => 'post_cta_1',
 		'before_widget' => '<div class="post_cta" id="signup">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h2>',
-		'after_title'   => '</h2>',
-	) );
+		'after_widget' => '</div>',
+		'before_title' => '<h2>',
+		'after_title' => '</h2>',
+	));
 
-	register_sidebar( array(
-		'name'          => 'Jobs call to action area',
-		'id'            => 'post_cta_2',
+	register_sidebar(array(
+		'name' => 'Jobs call to action area',
+		'id' => 'post_cta_2',
 		'before_widget' => '<div class="post_cta" id="signup">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h2>',
-		'after_title'   => '</h2>',
-	) );
+		'after_widget' => '</div>',
+		'before_title' => '<h2>',
+		'after_title' => '</h2>',
+	));
 
-	register_sidebar( array(
-		'name'          => 'Jobs admin call to action area',
-		'id'            => 'post_cta_3',
+	register_sidebar(array(
+		'name' => 'Jobs admin call to action area',
+		'id' => 'post_cta_3',
 		'before_widget' => '<div class="post_cta" id="signup">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h2>',
-		'after_title'   => '</h2>',
-	) );
+		'after_widget' => '</div>',
+		'before_title' => '<h2>',
+		'after_title' => '</h2>',
+	));
 
 }
-add_action( 'widgets_init', 'arphabet_widgets_init' );
+add_action('widgets_init', 'arphabet_widgets_init');
 //Quick fix - WP 6.4.2 issue
 //add_action( 'single_job_listing_meta_start', 'display_job_closing_date' );
 add_action('after_setup_theme', 'remove_admin_bar');
-add_action( 'single_job_listing_date_fields_combined', 'gma_wpjmef_display_combined_dates' );
+add_action('single_job_listing_date_fields_combined', 'gma_wpjmef_display_combined_dates');
 
-function gma_wpjmef_display_combined_dates() {
-  
-   
+function gma_wpjmef_display_combined_dates()
+{
+
+
 	global $post;
-	$closing = get_post_meta($post->ID, '_closing_date', true, get_option('date_format') );
-	
+	$closing = get_post_meta($post->ID, '_closing_date', true, get_option('date_format'));
+
 	echo '<li class="wpjmef-field-combined"><i class="fas fa-clock fa-fw"></i><div class="wpjmef-dates"><span class="wpjmef-posted"><span>Posted:&nbsp;</span><span>';
 	the_job_publish_date();
 	echo '&nbsp;</span></span>';
 
-	if ( $closing ) {
-	  echo '<span class="wpjmef-field-closing"><span>Closing date:&nbsp;</span><span>' . date("j F Y", strtotime($closing) ) . ' </span></span>';
+	if ($closing) {
+		echo '<span class="wpjmef-field-closing"><span>Closing date:&nbsp;</span><span>' . date("j F Y", strtotime($closing)) . ' </span></span>';
 	}
-      
+
 	echo '</div></li>';
-  
+
 }
 /*
 function display_job_closing_date() {
@@ -652,105 +672,125 @@ function display_job_closing_date() {
 	}
   }
 */
-function remove_admin_bar() {
-if (!current_user_can('administrator') && !is_admin()) {
-  show_admin_bar(false);
-}
+function remove_admin_bar()
+{
+	if (!current_user_can('administrator') && !is_admin()) {
+		show_admin_bar(false);
+	}
 }
 
 // Tribe community events - submission form help text (to avoid changig the field php)
 
 // Taxonomy = category
 
-function tribe_add_datetime_helptext() {
-    echo '<p class="tribe-helptext"><strong>For events that span non-consecutive dates</strong> (eg 7 March and 9 April) add the start date, then put the full details in the description</p>';
-}
- 
-add_action( 'tribe_events_community_section_after_datetime', 'tribe_add_datetime_helptext' );
-
-function tribe_add_website_helptext() {
-    echo '<p class="tribe-helptext">For more information about the event. Don\'t worry if there isn\'t one</p>';
+function tribe_add_datetime_helptext()
+{
+	echo '<p class="tribe-helptext"><strong>For events that span non-consecutive dates</strong> (eg 7 March and 9 April) add the start date, then put the full details in the description</p>';
 }
 
-add_action( 'tribe_events_community_section_after_website', 'tribe_add_website_helptext' );
+add_action('tribe_events_community_section_after_datetime', 'tribe_add_datetime_helptext');
+
+function tribe_add_website_helptext()
+{
+	echo '<p class="tribe-helptext">For more information about the event. Don\'t worry if there isn\'t one</p>';
+}
+
+add_action('tribe_events_community_section_after_website', 'tribe_add_website_helptext');
 
 
 // Tribe events 
 
 // Add the custom event cost column to the admin list view
-function tribe_events_add_column_headers( $columns ) {
+function tribe_events_add_column_headers($columns)
+{
 	$events_label_singular = tribe_get_event_label_singular();
 
-	foreach ( (array) $columns as $key => $value ) {
-		$mycolumns[ $key ] = $value;
-		if ( $key == 'author' ) {
-			$mycolumns['events-cats'] = sprintf( esc_html__( '%s Categories', 'the-events-calendar' ), $events_label_singular );
+	foreach ((array) $columns as $key => $value) {
+		$mycolumns[$key] = $value;
+		if ($key == 'author') {
+			$mycolumns['events-cats'] = sprintf(esc_html__('%s Categories', 'the-events-calendar'), $events_label_singular);
 		}
 	}
 	$columns = $mycolumns;
 
-	unset( $columns['date'] );
-	$columns['start-date'] = esc_html__( 'Start Date', 'the-events-calendar' );
-	$columns['end-date']   = esc_html__( 'End Date', 'the-events-calendar' );
+	unset($columns['date']);
+	$columns['start-date'] = esc_html__('Start Date', 'the-events-calendar');
+	$columns['end-date'] = esc_html__('End Date', 'the-events-calendar');
 	// Cost addition
-	$columns['cost']   = esc_html__( 'Cost', 'the-events-calendar' );
+	$columns['cost'] = esc_html__('Cost', 'the-events-calendar');
 	return $columns;
 }
 add_filter('manage_tribe_events_posts_columns', 'tribe_events_add_column_headers', 10, 1);
 
 // Display the event cost in the custom column
-function tribe_events_show_event_cost_column($column, $post_id) {
-    if ($column === 'cost') {
-        $event_cost = get_post_meta($post_id, '_EventCost', true);
-        if (!empty($event_cost)) {
-            echo $event_cost;
-        } else {
-            echo '-';
-        }
-    }
+function tribe_events_show_event_cost_column($column, $post_id)
+{
+	if ($column === 'cost') {
+		$event_cost = get_post_meta($post_id, '_EventCost', true);
+		if (!empty($event_cost)) {
+			echo $event_cost;
+		} else {
+			echo '-';
+		}
+	}
 }
 add_action('manage_tribe_events_posts_custom_column', 'tribe_events_show_event_cost_column', 10, 2);
 
 
 // Register the tribe events cost custom column as sortable
-function tribe_events_custom_sortable_columns($columns) {
-    $columns['cost'] = 'cost';
-    return $columns;
+function tribe_events_custom_sortable_columns($columns)
+{
+	$columns['cost'] = 'cost';
+	return $columns;
 }
 add_filter('manage_edit-tribe_events_sortable_columns', 'tribe_events_custom_sortable_columns');
 
 // Modify the sorting query
-function tribe_events_custom_orderby($query) {
-    if (!is_admin() || !$query->is_main_query()) {
-        return;
-    }
+function tribe_events_custom_orderby($query)
+{
+	if (!is_admin() || !$query->is_main_query()) {
+		return;
+	}
 
-    $orderby = $query->get('orderby');
+	$orderby = $query->get('orderby');
 
-    if ('cost' == $orderby) {
-        // Set the meta key for the event cost
-        $query->set('meta_key', '_EventCost');
-        // Order by meta value as an integer
-        $query->set('orderby', 'meta_value_num');
-    }
+	if ('cost' == $orderby) {
+		// Set the meta key for the event cost
+		$query->set('meta_key', '_EventCost');
+		// Order by meta value as an integer
+		$query->set('orderby', 'meta_value_num');
+	}
 }
 add_action('pre_get_posts', 'tribe_events_custom_orderby');
 
 // Directory
 
-add_shortcode( 'get_search_term_used', function () {
-    /* translators: %s: Search query/keyword. */
-    return sprintf(
-        __( 'Search Results for "%s"', 'business-directory-plugin' ),
-        esc_attr( get_search_query() )
-    );
-} );
+add_shortcode('get_search_term_used', function () {
+	/* translators: %s: Search query/keyword. */
+	return sprintf(
+		__('Search Results for "%s"', 'business-directory-plugin'),
+		esc_attr(get_search_query())
+	);
+});
+
+// Wordfence email 
+function modify_wordfence_ip_display($formatted_row, $row)
+{
+	if (isset($row['IP'])) {
+		$ip = $row['IP'];
+		$ip_url = sprintf('<a href="https://cpanel.edpsy.org.uk/cpsess8093929927/frontend/jupiter/denyip/add.html?ip=%s" target="_blank">%s</a>', $ip, $ip);
+		$formatted_row = str_replace($ip, $ip_url, $formatted_row);
+	}
+	return $formatted_row;
+}
+add_filter('wordfence_attack_table_row', 'modify_wordfence_ip_display', 10, 2);
 
 // Admin css
 add_action('admin_head', 'custom_css'); // admin_head is a hook my_custom_fonts is a function we are adding it to the hook
 
-function custom_css() {
-  echo '<style>
+function custom_css()
+{
+	echo '<style>
     .post-type-tribe_events #post-body #postbox-container-2 {
     clear: left;
 }
