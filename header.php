@@ -31,14 +31,18 @@
 <body <?php body_class(); ?>>
 
 	<!--promospace -->
-	<!--<div class="cta-header-block cta-header-block--black">
+	<div class="cta-header-block cta-header-block--green-bright">
 		<div class="container">
 			<div class="row-fluid fixedrow">
-				<p>Urgent appeal: <a href="https://www.justgiving.com/page/edpsy-pcrf-fundraiser">Support Palestinian children</a></p>
-				<p class="cta-second-link"><a href="https://www.justgiving.com/page/edpsy-pcrf-fundraiser">Donate to Palestine Childrens Relief Fund</a></p>
+				<p><i class="far fa-calendar-alt"></i> edpsy hosts: <a
+						href="https://edpsy.org.uk/event/edpsy-hosts-dr-mary-stanley-duke-mediating-learning-supporting-children-to-get-the-most-from-every-learning-task-06-25/">Dr
+						Mary Stanley-Duke - Mediating learning - 10 June</a></p>
+				<p class="cta-second-link"><a
+						href="https://edpsy.org.uk/event/edpsy-hosts-dr-mary-stanley-duke-mediating-learning-supporting-children-to-get-the-most-from-every-learning-task-06-25/">Find
+						out more</a></p>
 			</div>
 		</div>
-	</div>-->
+	</div>
 	<!--/promospace-->
 	<div id="wrapper" class="skepage ">
 		<div id="header" class="skehead-headernav clearfix">
