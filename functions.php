@@ -254,7 +254,7 @@ function tribe_breadcrumbs()
 
 		$term_slug = $wp_query->query_vars['tribe_events_cat'];
 		$term = get_term_by('slug', $term_slug, 'tribe_events_cat');
-		get_term($term_id, 'tribe_events_cat');
+		get_term($term, 'tribe_events_cat');
 		$name = $term->name;
 		echo $separator;
 		echo '<a href="' . tribe_get_events_link() . '">Events</a>';
@@ -306,6 +306,7 @@ function tribe_breadcrumbs()
 	}
 	echo '</p></div>';
 }
+
 
 /**
  * Changing Job Manager fields
