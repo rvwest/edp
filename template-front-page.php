@@ -20,15 +20,46 @@
 
 				<?php
 				$advertica_blogno = esc_attr(get_theme_mod('home_blog_num', '6'));
-				// checks for jobs, removes a blog 
 				$jobs = get_job_listings();
 				if ($jobs->have_posts()) {
 					$advertica_blogno--;
 				}
 				if (!empty($advertica_blogno) && ($advertica_blogno > 0)) {
-					$advertica_lite_latest_loop = new WP_Query(array('post_type' => 'post', 'posts_per_page' => $advertica_blogno, 'ignore_sticky_posts' => true, 'category_name' => 'blog'));
+					$args = array(
+						'post_type' => 'post',
+						'posts_per_page' => $advertica_blogno * 3, // Fetch more than needed to allow for filtering
+						'ignore_sticky_posts' => true,
+						'category_name' => 'blog',
+					);
 				} else {
-					$advertica_lite_latest_loop = new WP_Query(array('post_type' => 'post', 'posts_per_page' => -1, 'ignore_sticky_posts' => true, 'category_name' => 'blog'));
+					$args = array(
+						'post_type' => 'post',
+						'posts_per_page' => -1,
+						'ignore_sticky_posts' => true,
+						'category_name' => 'blog',
+					);
+				}
+				$advertica_lite_latest_loop = new WP_Query($args);
+
+				// Filter: only allow one post with category '5-things' in the loop, but always fill up to $advertica_blogno
+				$filtered_posts = array();
+				$found_5things = false;
+				if ($advertica_lite_latest_loop->have_posts()) {
+					foreach ($advertica_lite_latest_loop->posts as $post) {
+						if (has_category('5-things', $post)) {
+							if ($found_5things) {
+								continue; // Skip additional 5-things posts
+							} else {
+								$found_5things = true; // Keep the first one
+							}
+						}
+						$filtered_posts[] = $post;
+						if (count($filtered_posts) >= $advertica_blogno) {
+							break;
+						}
+					}
+					$advertica_lite_latest_loop->posts = $filtered_posts;
+					$advertica_lite_latest_loop->post_count = count($filtered_posts);
 				} ?>
 				<?php if ($advertica_lite_latest_loop->have_posts()): ?>
 
