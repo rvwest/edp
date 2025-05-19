@@ -35,7 +35,8 @@ $event_id = get_the_ID();
 		<?php if (strpos(implode(' ', get_body_class()), 'event-cat-on-demand') === false): ?>
 			<?php echo tribe_events_event_schedule_details($event_id, '<div>', '</div>'); ?>
 		<?php else: ?>
-			<div>On-demand training</div>
+			<div><span class="tribe-event-date-start">On-demand training</span> <i class="far fa-bolt on-demand-icon"></i>
+			</div>
 		<?php endif; ?>
 
 		<?php if (tribe_get_cost()): ?>

@@ -22,8 +22,10 @@ $container_classes['tribe-events-calendar-list__event-row--featured'] = $event->
 $event_classes = tribe_get_post_class(['tribe-events-calendar-list__event', 'tribe-common-g-row', 'tribe-common-g-row--gutters'], $event->ID);
 ?>
 <?php
+$is_on_demand = false;
 foreach ($event_classes as $class) {
 	if (strpos($class, 'cat_on-demand') !== false) {
+		$is_on_demand = true;
 		$container_classes[] = 'cat_on-demand';
 		break;
 	}
@@ -31,7 +33,7 @@ foreach ($event_classes as $class) {
 ?>
 <div <?php tribe_classes($container_classes); ?>>
 
-	<?php if (array_filter($event_classes, fn($class) => strpos($class, 'cat_on-demand') !== false)): ?>
+	<?php if ($is_on_demand): ?>
 		<?php $this->template('list/event/ondemand-tag') ?>
 	<?php else: ?>
 		<?php $this->template('list/event/date-tag', ['event' => $event]); ?>
@@ -44,9 +46,20 @@ foreach ($event_classes as $class) {
 			<div class="tribe-events-calendar-list__event-details tribe-common-g-col">
 
 				<header class="tribe-events-calendar-list__event-header">
+
 					<?php $this->template('list/event/date', ['event' => $event]); ?>
 					<?php $this->template('list/event/title', ['event' => $event]); ?>
-					<?php $this->template('list/event/venue', ['event' => $event]); ?>
+					<?php if ($is_on_demand): ?>
+						<address class="tribe-events-calendar-list__event-venue tribe-common-b2">
+							<span class="tribe-events-calendar-list__event-venue-title tribe-common-b2--bold">
+								On-demand training </span>
+							<span class="tribe-events-calendar-list__event-venue-address">
+							</span>
+						</address>
+					<?php else: ?>
+						<?php $this->template('list/event/venue', ['event' => $event]); ?>
+					<?php endif; ?>
+
 				</header>
 
 				<?php $this->template('list/event/description', ['event' => $event]); ?>
