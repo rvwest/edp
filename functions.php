@@ -764,6 +764,22 @@ function tribe_events_custom_orderby($query)
 }
 add_action('pre_get_posts', 'tribe_events_custom_orderby');
 
+// Add event categories to body tag
+
+function add_event_category_to_body_class($classes)
+{
+	if (is_singular('tribe_events')) {
+		$categories = get_the_terms(get_the_ID(), 'tribe_events_cat');
+		if ($categories && !is_wp_error($categories)) {
+			foreach ($categories as $category) {
+				$classes[] = 'event-cat-' . sanitize_html_class($category->slug);
+			}
+		}
+	}
+	return $classes;
+}
+add_filter('body_class', 'add_event_category_to_body_class');
+
 // Directory
 
 add_shortcode('get_search_term_used', function () {
