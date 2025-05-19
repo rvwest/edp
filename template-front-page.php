@@ -41,12 +41,12 @@
 				}
 				$advertica_lite_latest_loop = new WP_Query($args);
 
-				// Filter: only allow one post with category '5-things' in the loop, but always fill up to $advertica_blogno
+				// Filter: only allow one post with tag '5-things' in the loop, but always fill up to $advertica_blogno
 				$filtered_posts = array();
 				$found_5things = false;
 				if ($advertica_lite_latest_loop->have_posts()) {
 					foreach ($advertica_lite_latest_loop->posts as $post) {
-						if (has_category('5-things', $post)) {
+						if (has_tag('5-things', $post)) {
 							if ($found_5things) {
 								continue; // Skip additional 5-things posts
 							} else {
