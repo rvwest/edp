@@ -9,5 +9,6 @@
             "savePath": "/css",
             "savePathReplacementPairs": null
         }
-    ]
+    ],
+    "workbench.colorTheme": "Kimbie Dark"
 }

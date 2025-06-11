@@ -508,11 +508,26 @@ ul.menu li {
 	background: linear-gradient(135deg, #000 0%, #3c3c3c 100%)
 }
 
-.cta-header-block--festival {
+.cta-header-block--festival-25 {
+	background: #0c1729 url("../images/banner-festival-25-2.jpg");
+	background-size: cover;
+
+	p {
+		color: black;
+
+		a:link,
+		a:visited,
+		a:hover,
+		a:active {
+			color: black;
+		}
+	}
+}
+
+.cta-header-block--festival-1 {
 	background: #0c1729 url("../images/banner-festival-2.jpg") right no-repeat;
 	background-size: 1000px;
 }
-
 
 .cta-header-block--green-light {
 	background: $color-about;

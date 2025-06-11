@@ -31,15 +31,13 @@
 <body <?php body_class(); ?>>
 
 	<!--promospace -->
-	<div class="cta-header-block cta-header-block--green-bright">
+	<div class="cta-header-block cta-header-block--festival-25">
 		<div class="container">
 			<div class="row-fluid fixedrow">
-				<p><i class="far fa-calendar-alt"></i> edpsy hosts: <a
-						href="https://edpsy.org.uk/event/edpsy-hosts-dr-mary-stanley-duke-mediating-learning-supporting-children-to-get-the-most-from-every-learning-task-06-25/">Dr
-						Mary Stanley-Duke - Mediating learning - 10 June</a></p>
-				<p class="cta-second-link"><a
-						href="https://edpsy.org.uk/event/edpsy-hosts-dr-mary-stanley-duke-mediating-learning-supporting-children-to-get-the-most-from-every-learning-task-06-25/">Find
-						out more</a></p>
+				<p><i class="far fa-campground fa_eventicon"></i>&nbsp; Come join us: <a
+						href="https://festival.edpsy.org.uk/">Festival of Educational
+						Psychology</a></p>
+				<p class="cta-second-link"><a href="https://festival.edpsy.org.uk/">Find out more</a></p>
 			</div>
 		</div>
 	</div>
