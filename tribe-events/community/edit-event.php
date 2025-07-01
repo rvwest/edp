@@ -17,38 +17,46 @@
  * @var int|string $tribe_event_id
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	die( '-1' );
+if (!defined('ABSPATH')) {
+	die('-1');
 }
 
-if ( ! isset( $tribe_event_id ) ) {
+if (!isset($tribe_event_id)) {
 	$tribe_event_id = null;
 }
 
 $datepicker_format = Tribe__Date_Utils::get_datepicker_format_index();
 ?>
 
-<?php tribe_get_template_part( 'community/modules/header-links' ); ?>
+<?php tribe_get_template_part('community/modules/header-links'); ?>
 
-<?php do_action( 'tribe_events_community_form_before_template', $tribe_event_id ); ?>
+<?php do_action('tribe_events_community_form_before_template', $tribe_event_id); ?>
 
-<div class="events-promo"><p><b>From January 2025</b></p> <ul><li>Free and low-cost events (tickets under £100) - free to add an event</li><li>For other events - £49 per event</li></ul> <p>No time limits, and all events will be shared on the site and in our events mailouts.</p></div>
+<div class="events-promo">
+	<p><b>Prices</b></p>
+	<ul>
+		<li>Free and low-cost events (tickets under £15) - free to add an event</li>
+		<li>For other events - £49 per event</li>
+	</ul>
+	<p>No time limits, and all events will be shared on the site and in our events mailouts.</p>
+</div>
 
-<form method="post" enctype="multipart/form-data" data-datepicker_format="<?php echo esc_attr( $datepicker_format ); ?>">
-	<input type="hidden" name="post_ID" id="post_ID" value="<?php echo absint( $tribe_event_id ); ?>"/>
-	<?php wp_nonce_field( 'ecp_event_submission' ); ?>
+<form method="post" enctype="multipart/form-data"
+	data-datepicker_format="<?php echo esc_attr($datepicker_format); ?>">
+	<input type="hidden" name="post_ID" id="post_ID" value="<?php echo absint($tribe_event_id); ?>" />
+	<?php wp_nonce_field('ecp_event_submission'); ?>
 
-	<?php tribe_get_template_part( 'community/modules/title' ); ?>
+	<?php tribe_get_template_part('community/modules/title'); ?>
 
-	<?php tribe_get_template_part( 'community/modules/description' ); ?>
+	<?php tribe_get_template_part('community/modules/description'); ?>
 
-	<?php tribe_get_template_part( 'integrations/the-events-calendar/modules/datepickers' ); ?>
+	<?php tribe_get_template_part('integrations/the-events-calendar/modules/datepickers'); ?>
 
-	<?php tribe_get_template_part( 'community/modules/image' ); ?>
+	<?php tribe_get_template_part('community/modules/image'); ?>
 
-<!--    <?php tribe_get_template_part( 'community/modules/taxonomy', null, [ 'taxonomy' => Tribe__Events__Main::TAXONOMY ] ); ?> 
+	<!--    <?php tribe_get_template_part('community/modules/taxonomy', null, ['taxonomy' => Tribe__Events__Main::TAXONOMY]); ?> 
 
-	<?php tribe_get_template_part( 'community/modules/taxonomy', null, [ 'taxonomy' => 'post_tag' ] ); ?> -->
+	<?php tribe_get_template_part('community/modules/taxonomy', null, ['taxonomy' => 'post_tag']); ?> -->
 
 	<?php
 	/**
@@ -60,12 +68,12 @@ $datepicker_format = Tribe__Date_Utils::get_datepicker_format_index();
 	 *
 	 * @param int|string $tribe_event_id The Event ID.
 	 */
-	do_action( 'tribe_events_community_form_before_linked_posts', $tribe_event_id );
+	do_action('tribe_events_community_form_before_linked_posts', $tribe_event_id);
 	?>
 
-	<?php tribe_get_template_part( 'community/modules/venue' ); ?>
+	<?php tribe_get_template_part('community/modules/venue'); ?>
 
-	<?php tribe_get_template_part( 'community/modules/organizer' ); ?>
+	<?php tribe_get_template_part('community/modules/organizer'); ?>
 
 	<?php
 	/**
@@ -77,20 +85,20 @@ $datepicker_format = Tribe__Date_Utils::get_datepicker_format_index();
 	 *
 	 * @param int|string $tribe_event_id The Event ID.
 	 */
-	do_action( 'tribe_events_community_form_after_linked_posts', $tribe_event_id );
+	do_action('tribe_events_community_form_after_linked_posts', $tribe_event_id);
 	?>
 
-	<?php tribe_get_template_part( 'community/modules/website' ); ?>
+	<?php tribe_get_template_part('community/modules/website'); ?>
 
-	<?php tribe_get_template_part( 'community/modules/custom' ); ?>
+	<?php tribe_get_template_part('community/modules/custom'); ?>
 
-	<?php tribe_get_template_part( 'community/modules/cost' ); ?>
+	<?php tribe_get_template_part('community/modules/cost'); ?>
 
-	<?php tribe_get_template_part( 'community/modules/spam-control' ); ?>
+	<?php tribe_get_template_part('community/modules/spam-control'); ?>
 
-	<?php tribe_get_template_part( 'community/modules/terms' ); ?>
+	<?php tribe_get_template_part('community/modules/terms'); ?>
 
-	<?php tribe_get_template_part( 'community/modules/submit' ); ?>
+	<?php tribe_get_template_part('community/modules/submit'); ?>
 </form>
 
-<?php do_action( 'tribe_events_community_form_after_template', $tribe_event_id ); ?>
+<?php do_action('tribe_events_community_form_after_template', $tribe_event_id); ?>
