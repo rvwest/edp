@@ -514,7 +514,7 @@ ul.menu li {
 
 	p {
 		color: black;
-		background: rgba(255, 255, 255, 0.79);
+		background: rgba(255, 255, 255, 0.93);
 		padding: 5px 7px;
 
 		i.far {
@@ -528,6 +528,18 @@ ul.menu li {
 			color: #9f3287;
 			font-weight: 400;
 			text-decoration: none;
+		}
+
+		a:link,
+		a:visited {
+
+			text-decoration: none;
+		}
+
+
+		a:hover,
+		a:active {
+			text-decoration: underline;
 		}
 	}
 }
