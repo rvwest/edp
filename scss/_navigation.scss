@@ -518,14 +518,16 @@ ul.menu li {
 		padding: 5px 7px;
 
 		i.far {
-			color: #821369
+			color: #9f3287
 		}
 
 		a:link,
 		a:visited,
 		a:hover,
 		a:active {
-			color: #821369;
+			color: #9f3287;
+			font-weight: 400;
+			text-decoration: none;
 		}
 	}
 }
