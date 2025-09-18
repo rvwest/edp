@@ -34,10 +34,10 @@
 	<div class="cta-header-block cta-header-block--festival-25">
 		<div class="container">
 			<div class="row-fluid fixedrow">
-				<p><i class="far fa-campground fa_eventicon"></i>&nbsp; Come join us: <a
-						href="https://festival.edpsy.org.uk/">Festival of Educational
-						Psychology</a></p>
-				<p class="cta-second-link"><a href="https://festival.edpsy.org.uk/">Find out more</a></p>
+				<p><i class="far fa-campground fa_eventicon"></i>&nbsp; Last day for tickets: <a
+						href="https://festival.edpsy.org.uk/">online Festival of Educational Psychology - this
+						Friday!</a></p>
+				<p class="cta-second-link"><a href="https://festival.edpsy.org.uk/">Book now</a></p>
 			</div>
 		</div>
 	</div>
