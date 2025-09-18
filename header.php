@@ -31,7 +31,7 @@
 <body <?php body_class(); ?>>
 
 	<!--promospace -->
-	<div class="cta-header-block cta-header-block--festival-25">
+	<!--	<div class="cta-header-block cta-header-block--festival-25">
 		<div class="container">
 			<div class="row-fluid fixedrow">
 				<p><i class="far fa-campground fa_eventicon"></i>&nbsp; Last day for tickets: <a
@@ -40,7 +40,7 @@
 				<p class="cta-second-link"><a href="https://festival.edpsy.org.uk/">Book now</a></p>
 			</div>
 		</div>
-	</div>
+	</div>-->
 	<!--/promospace-->
 	<div id="wrapper" class="skepage ">
 		<div id="header" class="skehead-headernav clearfix">
